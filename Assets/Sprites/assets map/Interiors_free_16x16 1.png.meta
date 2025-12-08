@@ -6069,15 +6069,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interiors_free_16x16 1_236
+      name: shell
       rect:
         serializedVersion: 2
         x: 64
-        y: 1120
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 1097
+        width: 30
+        height: 31
+      alignment: 9
+      pivot: {x: 0.50638103, y: 0.49362183}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -11613,11 +11613,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interiors_free_16x16 1_488
+      name: carpet
       rect:
         serializedVersion: 2
         x: 208
-        y: 800
+        y: 792
         width: 16
         height: 16
       alignment: 0
@@ -11833,16 +11833,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Interiors_free_16x16 1_498
+      name: teacher_table2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 121
         y: 784
-        width: 16
-        height: 16
+        width: 28
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 1, z: 0, w: 12}
       customData: 
       outline: []
       physicsShape: []
@@ -25736,7 +25736,6 @@ TextureImporter:
       Interiors_free_16x16 1_233: -1479186446220444667
       Interiors_free_16x16 1_234: -8188212984339775756
       Interiors_free_16x16 1_235: 2925103350684419184
-      Interiors_free_16x16 1_236: 5635626283184790409
       Interiors_free_16x16 1_237: 7116027182474483263
       Interiors_free_16x16 1_238: 4386962028524517823
       Interiors_free_16x16 1_239: -3950790624856533307
@@ -26010,7 +26009,6 @@ TextureImporter:
       Interiors_free_16x16 1_485: -243340279
       Interiors_free_16x16 1_486: -746957719
       Interiors_free_16x16 1_487: -1289803895
-      Interiors_free_16x16 1_488: -1679879320
       Interiors_free_16x16 1_489: 967827247
       Interiors_free_16x16 1_49: -7866136936906549207
       Interiors_free_16x16 1_490: -1769313697
@@ -26020,7 +26018,6 @@ TextureImporter:
       Interiors_free_16x16 1_495: 1061947667
       Interiors_free_16x16 1_496: 324475101
       Interiors_free_16x16 1_497: -2016806528
-      Interiors_free_16x16 1_498: 942142185
       Interiors_free_16x16 1_499: 867278810
       Interiors_free_16x16 1_5: 4693575429997696151
       Interiors_free_16x16 1_50: 8738836257749176114
@@ -26576,13 +26573,16 @@ TextureImporter:
       Interiors_free_16x16 1_999: -831440007
       board_1: 57041310
       board_2: -250425831
+      carpet: -1679879320
       chair: 2127863209
       chair_: -1487495411
       chair_1: -62550362
       chair_2: 346015449
       chair_3: -2031262133
       chari_4: -1219361440
+      shell: 5635626283184790409
       teacher_table: -57924471
+      teacher_table2: 942142185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

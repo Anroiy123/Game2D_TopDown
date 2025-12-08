@@ -87,3 +87,13 @@ NPC/Adam
 - `sitOffset`: Adjust Y to position player on chair (typically Y = 1.2 to 1.5)
 - `interactionRange`: NPC detection radius (default: 2)
 - `textSpeed`: Typewriter effect speed (default: 0.05)
+
+## Searching Codebase
+
+- always use codebase-retrieval tool when :
+  Don't know which file contains the code you're looking for
+  Need an overview of the codebase
+  Learn how to implement a feature
+  Find code related to a concept
+  Start a new task, need to gather context
+  Semantic search

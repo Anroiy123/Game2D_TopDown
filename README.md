@@ -112,3 +112,5 @@ MIT License - Xem file [LICENSE](LICENSE) để biết thêm chi tiết.
 ---
 
 **Made with ❤️ using Unity**
+
+cốt truyện : https://docs.google.com/document/d/10_BDYeSPHmhrsQGLkuvwZt2ko-SPkldQgseSSnkpYgo/edit?tab=t.0

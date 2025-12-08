@@ -5,12 +5,18 @@ public class NPCInteraction : MonoBehaviour
 {
     [Header("NPC Settings")]
     [SerializeField] private string npcName = "Adam";
+    
+    [Header("Legacy Dialogue (Simple Mode)")]
     [SerializeField] private string[] dialogueLines = new string[]
     {
         "Xin chào! Tôi là Adam.",
         "Chào mừng bạn đến lớp học!",
         "Bạn cần giúp gì không?"
     };
+
+    [Header("Advanced Dialogue (With Choices)")]
+    [SerializeField] private DialogueData dialogueData; // ScriptableObject cho dialogue phức tạp
+    [SerializeField] private bool useAdvancedDialogue = false; // Sử dụng dialogue với choices
 
     [Header("Interaction Settings")]
     [SerializeField] private float interactionRange = 2f;
@@ -52,7 +58,7 @@ public class NPCInteraction : MonoBehaviour
         }
 
         // Tìm DialogueSystem
-        dialogueSystem = FindObjectOfType<DialogueSystem>();
+        dialogueSystem = FindFirstObjectByType<DialogueSystem>();
 
         // Setup UI tên
         if (nameUI != null)
@@ -134,8 +140,45 @@ public class NPCInteraction : MonoBehaviour
             playerMovement.SetTalkingState(true);
         }
 
-        // Bắt đầu hội thoại
-        dialogueSystem.StartDialogue(npcName, dialogueLines, OnDialogueEnd);
+        // Bắt đầu hội thoại - chọn mode phù hợp
+        if (useAdvancedDialogue && dialogueData != null)
+        {
+            // Sử dụng dialogue với choices
+            dialogueSystem.StartDialogueWithChoices(dialogueData, OnDialogueEnd, OnDialogueAction);
+        }
+        else
+        {
+            // Sử dụng dialogue đơn giản (legacy)
+            dialogueSystem.StartDialogue(npcName, dialogueLines, OnDialogueEnd);
+        }
+    }
+
+    /// <summary>
+    /// Callback khi player chọn một action đặc biệt trong dialogue
+    /// </summary>
+    private void OnDialogueAction(string actionId)
+    {
+        Debug.Log($"NPC {npcName} received action: {actionId}");
+        
+        // Xử lý các action khác nhau
+        switch (actionId)
+        {
+            case "give_item":
+                // Ví dụ: cho item
+                Debug.Log("Action: Give item to player");
+                break;
+            case "open_shop":
+                // Ví dụ: mở shop
+                Debug.Log("Action: Open shop");
+                break;
+            case "start_quest":
+                // Ví dụ: bắt đầu quest
+                Debug.Log("Action: Start quest");
+                break;
+            default:
+                Debug.Log($"Unknown action: {actionId}");
+                break;
+        }
     }
 
     private void FacePlayer()
