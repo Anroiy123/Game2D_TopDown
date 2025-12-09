@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "augmentcode": {
+      "type": "stdio",
+      "command": "auggie",
+      "args": ["--mcp", "-m", "default"]
+    }
+  },
+  "inputs": []
+}

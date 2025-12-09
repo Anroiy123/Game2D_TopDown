@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 330c6393e8b78bd4f8424861a7b4dec9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8830067042430768719
+    second: Mom_push _cart_0
+  - first:
+      213: -3863620042350463601
+    second: Mom_push _cart_1
+  - first:
+      213: 6195207181366681854
+    second: Mom_push _cart_2
+  - first:
+      213: 857745560347503540
+    second: Mom_push _cart_3
+  - first:
+      213: -522377358586473097
+    second: Mom_push _cart_4
+  - first:
+      213: 8083777495422313396
+    second: Mom_push _cart_5
+  - first:
+      213: 3723331894608500161
+    second: Mom_push _cart_6
+  - first:
+      213: 3719109969723539356
+    second: Mom_push _cart_7
+  - first:
+      213: -1962967509034713813
+    second: Mom_push _cart_8
+  - first:
+      213: 5753019952735190581
+    second: Mom_push _cart_9
+  - first:
+      213: -3057150081600874929
+    second: Mom_push _cart_10
+  - first:
+      213: -2942772411621162779
+    second: Mom_push _cart_11
+  - first:
+      213: 1560110747826280953
+    second: Mom_push _cart_12
+  - first:
+      213: 1190586404030678530
+    second: Mom_push _cart_13
+  - first:
+      213: 2154566475251365495
+    second: Mom_push _cart_14
+  - first:
+      213: 8050396679126592086
+    second: Mom_push _cart_15
+  - first:
+      213: -1046475849611760303
+    second: Mom_push _cart_16
+  - first:
+      213: -8115499019796028975
+    second: Mom_push _cart_17
+  - first:
+      213: 7273996479134758360
+    second: Mom_push _cart_18
+  - first:
+      213: 8266924839061881514
+    second: Mom_push _cart_19
+  - first:
+      213: 6712516180211807056
+    second: Mom_push _cart_20
+  - first:
+      213: 7273581135453073295
+    second: Mom_push _cart_21
+  - first:
+      213: -8232992382370307203
+    second: Mom_push _cart_22
+  - first:
+      213: -2119253532173075788
+    second: Mom_push _cart_23
+  - first:
+      213: 4689644171886519068
+    second: Mom_push _cart_24
+  - first:
+      213: 1296893077785660818
+    second: Mom_push _cart_25
+  - first:
+      213: -4162820086317854656
+    second: Mom_push _cart_26
+  - first:
+      213: 8983428474389868587
+    second: Mom_push _cart_27
+  - first:
+      213: -822856450773392606
+    second: Mom_push _cart_28
+  - first:
+      213: -4620894891884849944
+    second: Mom_push _cart_29
+  - first:
+      213: 8358260516541163372
+    second: Mom_push _cart_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mom_push _cart_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4658fef033ba8a70800000000000000
+      internalID: 8830067042430768719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85fe94ba0aa16ac0800000000000000
+      internalID: -3863620042350463601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef06f4b9b1cc9f550800000000000000
+      internalID: 6195207181366681854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb6e28ea0357eb00800000000000000
+      internalID: 857745560347503540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7751fbe5f8420c8f0800000000000000
+      internalID: -522377358586473097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3a1f96dc85f2070800000000000000
+      internalID: 8083777495422313396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 98
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5950f81aeeba330800000000000000
+      internalID: 3723331894608500161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f3cf110deec9330800000000000000
+      internalID: 3719109969723539356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d3a56637322c4e0800000000000000
+      internalID: -1962967509034713813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ef38c8a25d6df40800000000000000
+      internalID: 5753019952735190581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f469f11c232d295d0800000000000000
+      internalID: -3057150081600874929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e04086451c2927d0800000000000000
+      internalID: -2942772411621162779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f954769570a6a510800000000000000
+      internalID: 1560110747826280953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20688a6c600d58010800000000000000
+      internalID: 1190586404030678530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_14
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776b25a3bce86ed10800000000000000
+      internalID: 2154566475251365495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a23587021c8bf60800000000000000
+      internalID: 8050396679126592086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_16
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15daddd52cb2a71f0800000000000000
+      internalID: -1046475849611760303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_17
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d1e606a3a4ff5f80800000000000000
+      internalID: -8115499019796028975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_18
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5f44c224d62f460800000000000000
+      internalID: 7273996479134758360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_19
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 3
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2032157540ab270800000000000000
+      internalID: 8266924839061881514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_20
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 3
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0533696c6e5a72d50800000000000000
+      internalID: 6712516180211807056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_21
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 3
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fa9af6183f0f460800000000000000
+      internalID: 7273581135453073295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_22
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 3
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73225a6c098ebd80800000000000000
+      internalID: -8232992382370307203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_23
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 3
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4baf4d90426e692e0800000000000000
+      internalID: -2119253532173075788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_24
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 3
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13e64c0786f41140800000000000000
+      internalID: 4689644171886519068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_25
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 3
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dc31d026d7ff110800000000000000
+      internalID: 1296893077785660818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_26
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 3
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040d923ef21ba36c0800000000000000
+      internalID: -4162820086317854656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_27
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 3
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b203329e99c8bac70800000000000000
+      internalID: 8983428474389868587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_28
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 0
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223638eea60a494f0800000000000000
+      internalID: -822856450773392606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_29
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 0
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e459c014984fdfb0800000000000000
+      internalID: -4620894891884849944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_push _cart_30
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 0
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67eb94e7a18ef370800000000000000
+      internalID: 8358260516541163372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mom_push _cart_0: 8830067042430768719
+      Mom_push _cart_1: -3863620042350463601
+      Mom_push _cart_10: -3057150081600874929
+      Mom_push _cart_11: -2942772411621162779
+      Mom_push _cart_12: 1560110747826280953
+      Mom_push _cart_13: 1190586404030678530
+      Mom_push _cart_14: 2154566475251365495
+      Mom_push _cart_15: 8050396679126592086
+      Mom_push _cart_16: -1046475849611760303
+      Mom_push _cart_17: -8115499019796028975
+      Mom_push _cart_18: 7273996479134758360
+      Mom_push _cart_19: 8266924839061881514
+      Mom_push _cart_2: 6195207181366681854
+      Mom_push _cart_20: 6712516180211807056
+      Mom_push _cart_21: 7273581135453073295
+      Mom_push _cart_22: -8232992382370307203
+      Mom_push _cart_23: -2119253532173075788
+      Mom_push _cart_24: 4689644171886519068
+      Mom_push _cart_25: 1296893077785660818
+      Mom_push _cart_26: -4162820086317854656
+      Mom_push _cart_27: 8983428474389868587
+      Mom_push _cart_28: -822856450773392606
+      Mom_push _cart_29: -4620894891884849944
+      Mom_push _cart_3: 857745560347503540
+      Mom_push _cart_30: 8358260516541163372
+      Mom_push _cart_4: -522377358586473097
+      Mom_push _cart_5: 8083777495422313396
+      Mom_push _cart_6: 3723331894608500161
+      Mom_push _cart_7: 3719109969723539356
+      Mom_push _cart_8: -1962967509034713813
+      Mom_push _cart_9: 5753019952735190581
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

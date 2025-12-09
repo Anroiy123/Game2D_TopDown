@@ -1,0 +1,7111 @@
+fileFormatVersion: 2
+guid: b9786591fba0f3347a1ba7d1d315072a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8896843927468393426
+    second: Bully_0
+  - first:
+      213: 201918924079868124
+    second: Bully_1
+  - first:
+      213: -5291562479957025985
+    second: Bully_2
+  - first:
+      213: 2981572762255283501
+    second: Bully_3
+  - first:
+      213: -3509163943956821863
+    second: Bully_4
+  - first:
+      213: -3641298604621103258
+    second: Bully_5
+  - first:
+      213: 6414666377209865027
+    second: Bully_6
+  - first:
+      213: 7787435715470284668
+    second: Bully_7
+  - first:
+      213: -4349569062980762282
+    second: Bully_8
+  - first:
+      213: -6755995921402176375
+    second: Bully_9
+  - first:
+      213: -1232119560730310435
+    second: Bully_10
+  - first:
+      213: -905152970611826269
+    second: Bully_11
+  - first:
+      213: -1731300723988649873
+    second: Bully_12
+  - first:
+      213: 4332582388665096044
+    second: Bully_13
+  - first:
+      213: -2949623715400381423
+    second: Bully_14
+  - first:
+      213: 8428361919324070841
+    second: Bully_15
+  - first:
+      213: -3966951972730086031
+    second: Bully_16
+  - first:
+      213: -9117241746773851772
+    second: Bully_17
+  - first:
+      213: -4079670434675328843
+    second: Bully_18
+  - first:
+      213: -4695343183131732329
+    second: Bully_19
+  - first:
+      213: 2632602236787351792
+    second: Bully_20
+  - first:
+      213: -4740920886589836992
+    second: Bully_21
+  - first:
+      213: -8808157442508481718
+    second: Bully_22
+  - first:
+      213: -3971471518358223769
+    second: Bully_23
+  - first:
+      213: 3766658454123871100
+    second: Bully_24
+  - first:
+      213: 4944182865137254977
+    second: Bully_25
+  - first:
+      213: -5093745188501614634
+    second: Bully_26
+  - first:
+      213: -5379428049352383350
+    second: Bully_27
+  - first:
+      213: 2546740478980986625
+    second: Bully_28
+  - first:
+      213: 3243820443403735112
+    second: Bully_29
+  - first:
+      213: 6997561699099093640
+    second: Bully_30
+  - first:
+      213: 7284884258221198159
+    second: Bully_31
+  - first:
+      213: 4909687936286717622
+    second: Bully_32
+  - first:
+      213: -4916254458827594891
+    second: Bully_33
+  - first:
+      213: -3820261520681709610
+    second: Bully_34
+  - first:
+      213: -6770433358903403342
+    second: Bully_35
+  - first:
+      213: 3304043942406760141
+    second: Bully_36
+  - first:
+      213: 2808322170593287404
+    second: Bully_37
+  - first:
+      213: -4401794984451172537
+    second: Bully_38
+  - first:
+      213: 4599263984238656273
+    second: Bully_39
+  - first:
+      213: 5255198854298733070
+    second: Bully_40
+  - first:
+      213: -6367103536697316708
+    second: Bully_41
+  - first:
+      213: -251104492108890449
+    second: Bully_42
+  - first:
+      213: -6059391537580228475
+    second: Bully_43
+  - first:
+      213: 8180535411402642822
+    second: Bully_44
+  - first:
+      213: -2120484973002225761
+    second: Bully_45
+  - first:
+      213: -7250053766212397933
+    second: Bully_46
+  - first:
+      213: -3341689716674943654
+    second: Bully_47
+  - first:
+      213: 8547202985226771055
+    second: Bully_48
+  - first:
+      213: 5609924273941396248
+    second: Bully_49
+  - first:
+      213: -7417487990213675662
+    second: Bully_50
+  - first:
+      213: -1992202847859037619
+    second: Bully_51
+  - first:
+      213: 3603398958365322917
+    second: Bully_52
+  - first:
+      213: 5789757357696267575
+    second: Bully_53
+  - first:
+      213: 3607629431277638329
+    second: Bully_54
+  - first:
+      213: 316847672671867473
+    second: Bully_55
+  - first:
+      213: -1484356859765323374
+    second: Bully_56
+  - first:
+      213: 7123588034864980838
+    second: Bully_57
+  - first:
+      213: 4272120236300401972
+    second: Bully_58
+  - first:
+      213: 5191371473376931887
+    second: Bully_59
+  - first:
+      213: 4594118559551252601
+    second: Bully_60
+  - first:
+      213: 6640389555426474812
+    second: Bully_61
+  - first:
+      213: -9138172457266258560
+    second: Bully_62
+  - first:
+      213: 1228312716282801309
+    second: Bully_63
+  - first:
+      213: 8442466034871130955
+    second: Bully_64
+  - first:
+      213: 6097889574563626462
+    second: Bully_65
+  - first:
+      213: -1817890907996464607
+    second: Bully_66
+  - first:
+      213: 5908932131583109633
+    second: Bully_67
+  - first:
+      213: -938239921597727255
+    second: Bully_68
+  - first:
+      213: -7999250592761495365
+    second: Bully_69
+  - first:
+      213: 4756459209525374401
+    second: Bully_70
+  - first:
+      213: 1310237013585736932
+    second: Bully_71
+  - first:
+      213: -3831187772058755151
+    second: Bully_72
+  - first:
+      213: 7194308605101326078
+    second: Bully_73
+  - first:
+      213: 6839368984303768502
+    second: Bully_74
+  - first:
+      213: -2846652680989788673
+    second: Bully_75
+  - first:
+      213: 8828022410587102133
+    second: Bully_76
+  - first:
+      213: -1101222089472534341
+    second: Bully_77
+  - first:
+      213: -5018520100812025404
+    second: Bully_78
+  - first:
+      213: -7962148350909417934
+    second: Bully_79
+  - first:
+      213: 3059035353560261014
+    second: Bully_80
+  - first:
+      213: 2380332706133193776
+    second: Bully_81
+  - first:
+      213: -4909529026108670888
+    second: Bully_82
+  - first:
+      213: -1407310143512897695
+    second: Bully_83
+  - first:
+      213: 7639791387240029617
+    second: Bully_84
+  - first:
+      213: -1711700853150198727
+    second: Bully_85
+  - first:
+      213: 8571467273499809689
+    second: Bully_86
+  - first:
+      213: -7543038435332652898
+    second: Bully_87
+  - first:
+      213: 5430120453212679803
+    second: Bully_88
+  - first:
+      213: -7905210612317514063
+    second: Bully_89
+  - first:
+      213: 2642138552979384215
+    second: Bully_90
+  - first:
+      213: 1348653228733429827
+    second: Bully_91
+  - first:
+      213: -8443494588022016131
+    second: Bully_92
+  - first:
+      213: -1615034085558070896
+    second: Bully_93
+  - first:
+      213: -5407746068786667443
+    second: Bully_94
+  - first:
+      213: -8896856834768961615
+    second: Bully_95
+  - first:
+      213: 4202709713654207525
+    second: Bully_96
+  - first:
+      213: -5478815019042399739
+    second: Bully_97
+  - first:
+      213: -5020122843748120542
+    second: Bully_98
+  - first:
+      213: 2693413558019861487
+    second: Bully_99
+  - first:
+      213: -7001454271928283375
+    second: Bully_100
+  - first:
+      213: -3868766918885953810
+    second: Bully_101
+  - first:
+      213: -41482625998767506
+    second: Bully_102
+  - first:
+      213: 4398920192824884162
+    second: Bully_103
+  - first:
+      213: 1132529673074071560
+    second: Bully_104
+  - first:
+      213: 4777625095811505197
+    second: Bully_105
+  - first:
+      213: 5972232537503862630
+    second: Bully_106
+  - first:
+      213: -7616963395172134977
+    second: Bully_107
+  - first:
+      213: 6892772701765520760
+    second: Bully_108
+  - first:
+      213: 7956091789588050918
+    second: Bully_109
+  - first:
+      213: -5054173162402995958
+    second: Bully_110
+  - first:
+      213: -5448524365767407359
+    second: Bully_111
+  - first:
+      213: -7301709661154680018
+    second: Bully_112
+  - first:
+      213: -3127327533987795429
+    second: Bully_113
+  - first:
+      213: 6728331092328702412
+    second: Bully_114
+  - first:
+      213: 5324099575555922087
+    second: Bully_115
+  - first:
+      213: -4439732114895841490
+    second: Bully_116
+  - first:
+      213: 717719308283331201
+    second: Bully_117
+  - first:
+      213: -1792604292890279268
+    second: Bully_118
+  - first:
+      213: -7248346242203196419
+    second: Bully_119
+  - first:
+      213: -3052762064175259046
+    second: Bully_120
+  - first:
+      213: -8987332718764326183
+    second: Bully_121
+  - first:
+      213: 4848793417797368562
+    second: Bully_122
+  - first:
+      213: 4700685027646150090
+    second: Bully_123
+  - first:
+      213: 4983828556343979220
+    second: Bully_124
+  - first:
+      213: -6653630839512079879
+    second: Bully_125
+  - first:
+      213: -8002811360295933890
+    second: Bully_126
+  - first:
+      213: 240828755705461762
+    second: Bully_127
+  - first:
+      213: -7866290879147729414
+    second: Bully_128
+  - first:
+      213: 2153996084119972849
+    second: Bully_129
+  - first:
+      213: -342152534085815354
+    second: Bully_130
+  - first:
+      213: 5756677141239799069
+    second: Bully_131
+  - first:
+      213: 556779700746559713
+    second: Bully_132
+  - first:
+      213: 644117583487021628
+    second: Bully_133
+  - first:
+      213: 3295821771944535008
+    second: Bully_134
+  - first:
+      213: 832259943878135050
+    second: Bully_135
+  - first:
+      213: 4198766201647729641
+    second: Bully_136
+  - first:
+      213: 4618780234334586128
+    second: Bully_137
+  - first:
+      213: -2217768633605319477
+    second: Bully_138
+  - first:
+      213: -8253592825545018303
+    second: Bully_139
+  - first:
+      213: -6379603968734587708
+    second: Bully_140
+  - first:
+      213: -7282083042529803610
+    second: Bully_141
+  - first:
+      213: 8777327319797709307
+    second: Bully_142
+  - first:
+      213: 6035231983633648405
+    second: Bully_143
+  - first:
+      213: 2504243089677879852
+    second: Bully_144
+  - first:
+      213: 6173842371599658154
+    second: Bully_145
+  - first:
+      213: -3351047705427958979
+    second: Bully_146
+  - first:
+      213: -6886562185434305009
+    second: Bully_147
+  - first:
+      213: -9201366322892143255
+    second: Bully_148
+  - first:
+      213: 7915289899475303534
+    second: Bully_149
+  - first:
+      213: 7734124485245404522
+    second: Bully_150
+  - first:
+      213: -4967414807092511832
+    second: Bully_151
+  - first:
+      213: 6216078589323994409
+    second: Bully_152
+  - first:
+      213: 5177329380397997652
+    second: Bully_153
+  - first:
+      213: -8449638176147493482
+    second: Bully_154
+  - first:
+      213: -509715045003797972
+    second: Bully_155
+  - first:
+      213: -1553226948054839141
+    second: Bully_156
+  - first:
+      213: 6752389672324220199
+    second: Bully_157
+  - first:
+      213: 9210498555420930072
+    second: Bully_158
+  - first:
+      213: 7399665857006775377
+    second: Bully_159
+  - first:
+      213: 6613686563194682969
+    second: Bully_160
+  - first:
+      213: -3621416340855639127
+    second: Bully_161
+  - first:
+      213: -6026207471771106981
+    second: Bully_162
+  - first:
+      213: 1957489062536675483
+    second: Bully_163
+  - first:
+      213: -2582275765681634088
+    second: Bully_164
+  - first:
+      213: -2105010770964397025
+    second: Bully_165
+  - first:
+      213: -1385493725696756290
+    second: Bully_166
+  - first:
+      213: 2811095411155984302
+    second: Bully_167
+  - first:
+      213: -5090805957080589603
+    second: Bully_168
+  - first:
+      213: -5691698088031506188
+    second: Bully_169
+  - first:
+      213: -4900090298285601009
+    second: Bully_170
+  - first:
+      213: 2118240476975618767
+    second: Bully_171
+  - first:
+      213: -2574011245446347287
+    second: Bully_172
+  - first:
+      213: -8465789615288943269
+    second: Bully_173
+  - first:
+      213: 7303610830734698642
+    second: Bully_174
+  - first:
+      213: -3284176868647988158
+    second: Bully_175
+  - first:
+      213: -2469695025529821203
+    second: Bully_176
+  - first:
+      213: 7780885495903871420
+    second: Bully_177
+  - first:
+      213: -1888558038434774984
+    second: Bully_178
+  - first:
+      213: -6799989529890231369
+    second: Bully_179
+  - first:
+      213: 8152702041135379891
+    second: Bully_180
+  - first:
+      213: 3918994698970001316
+    second: Bully_181
+  - first:
+      213: 178150631055870562
+    second: Bully_182
+  - first:
+      213: -7751928011383246909
+    second: Bully_183
+  - first:
+      213: -4463863728273181698
+    second: Bully_184
+  - first:
+      213: 7920127063399990339
+    second: Bully_185
+  - first:
+      213: 543019748783222703
+    second: Bully_186
+  - first:
+      213: -1153671395654195245
+    second: Bully_187
+  - first:
+      213: 5360670548099316634
+    second: Bully_188
+  - first:
+      213: -8515801668162466481
+    second: Bully_189
+  - first:
+      213: -5913517502246231594
+    second: Bully_190
+  - first:
+      213: -5752589300153136175
+    second: Bully_191
+  - first:
+      213: 8767300822896913860
+    second: Bully_192
+  - first:
+      213: 8181543517282875101
+    second: Bully_193
+  - first:
+      213: 3343829626157480230
+    second: Bully_194
+  - first:
+      213: 4772153221920184753
+    second: Bully_195
+  - first:
+      213: -1444909417278715219
+    second: Bully_196
+  - first:
+      213: 7698304472955188640
+    second: Bully_197
+  - first:
+      213: 1342716544694678120
+    second: Bully_198
+  - first:
+      213: 5366420466927771228
+    second: Bully_199
+  - first:
+      213: -8326435749903658132
+    second: Bully_200
+  - first:
+      213: 116575163680740618
+    second: Bully_201
+  - first:
+      213: 1433254722848258777
+    second: Bully_202
+  - first:
+      213: -394697585606001526
+    second: Bully_203
+  - first:
+      213: 6017161975884982256
+    second: Bully_204
+  - first:
+      213: -3408245729597353832
+    second: Bully_205
+  - first:
+      213: -2292566326937837820
+    second: Bully_206
+  - first:
+      213: -2084701889779134581
+    second: Bully_207
+  - first:
+      213: -4319030410685549252
+    second: Bully_208
+  - first:
+      213: -894588149431930097
+    second: Bully_209
+  - first:
+      213: 7583543372919412670
+    second: Bully_210
+  - first:
+      213: -7494983680347545751
+    second: Bully_211
+  - first:
+      213: 1160974027600021252
+    second: Bully_212
+  - first:
+      213: -2047254690188614810
+    second: Bully_213
+  - first:
+      213: -7904243319277464193
+    second: Bully_214
+  - first:
+      213: -4110926336240955051
+    second: Bully_215
+  - first:
+      213: 8369529563385092485
+    second: Bully_216
+  - first:
+      213: 3309624318336345680
+    second: Bully_217
+  - first:
+      213: 5015230704215380933
+    second: Bully_218
+  - first:
+      213: -1373919987753703610
+    second: Bully_219
+  - first:
+      213: -8635928120902620758
+    second: Bully_220
+  - first:
+      213: -1775991613979056548
+    second: Bully_221
+  - first:
+      213: 2479829807709584971
+    second: Bully_222
+  - first:
+      213: -8590674312976338768
+    second: Bully_223
+  - first:
+      213: 7235783769017759311
+    second: Bully_224
+  - first:
+      213: 8184572266100730525
+    second: Bully_225
+  - first:
+      213: -307047231178219338
+    second: Bully_226
+  - first:
+      213: -3355735243299561912
+    second: Bully_227
+  - first:
+      213: 8000543440476968841
+    second: Bully_228
+  - first:
+      213: 8916275535853792736
+    second: Bully_229
+  - first:
+      213: 5488198643359233733
+    second: Bully_230
+  - first:
+      213: 4452312073751059782
+    second: Bully_231
+  - first:
+      213: 1701470009246395726
+    second: Bully_232
+  - first:
+      213: -565386459044239427
+    second: Bully_233
+  - first:
+      213: 8742521320299438793
+    second: Bully_234
+  - first:
+      213: -128539904959310166
+    second: Bully_235
+  - first:
+      213: 3231904424108266370
+    second: Bully_236
+  - first:
+      213: -4445622623004621814
+    second: Bully_237
+  - first:
+      213: 4857883680861356500
+    second: Bully_238
+  - first:
+      213: 4183405502032515079
+    second: Bully_239
+  - first:
+      213: -1160695216745156325
+    second: Bully_240
+  - first:
+      213: 1131620548910157257
+    second: Bully_241
+  - first:
+      213: 8337775864261840633
+    second: Bully_242
+  - first:
+      213: 790982702558810216
+    second: Bully_243
+  - first:
+      213: 4352062205889879172
+    second: Bully_244
+  - first:
+      213: 8946935469593793869
+    second: Bully_245
+  - first:
+      213: 3173135019855576041
+    second: Bully_246
+  - first:
+      213: 8553253793472547127
+    second: Bully_247
+  - first:
+      213: -7295437484279768363
+    second: Bully_248
+  - first:
+      213: -3634660769889452741
+    second: Bully_249
+  - first:
+      213: -5301542337498057215
+    second: Bully_250
+  - first:
+      213: 1340665247203501600
+    second: Bully_251
+  - first:
+      213: -8679584370627920402
+    second: Bully_252
+  - first:
+      213: 7371581778192465513
+    second: Bully_253
+  - first:
+      213: -5038250134001080827
+    second: Bully_254
+  - first:
+      213: -688986651270977294
+    second: Bully_255
+  - first:
+      213: -2238339914375166291
+    second: Bully_256
+  - first:
+      213: 8998100671902363654
+    second: Bully_257
+  - first:
+      213: 2203362259099211578
+    second: Bully_258
+  - first:
+      213: 4661231921842510841
+    second: Bully_259
+  - first:
+      213: 8244981400138651718
+    second: Bully_260
+  - first:
+      213: -7660090878177449670
+    second: Bully_261
+  - first:
+      213: -6856729108096316589
+    second: Bully_262
+  - first:
+      213: -4050325254013849657
+    second: Bully_263
+  - first:
+      213: 7189979519023947095
+    second: Bully_264
+  - first:
+      213: 643907214404654315
+    second: Bully_265
+  - first:
+      213: 3133587666697197562
+    second: Bully_266
+  - first:
+      213: -8133817851683669452
+    second: Bully_267
+  - first:
+      213: 5278259385221312521
+    second: Bully_268
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bully_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cb721e59f088480800000000000000
+      internalID: -8896843927468393426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 607
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8a53f013c5dc200800000000000000
+      internalID: 201918924079868124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 575
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b506bd5f79096b0800000000000000
+      internalID: -5291562479957025985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 575
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25d43651aca06920800000000000000
+      internalID: 2981572762255283501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 575
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99848dd3cf1fc4fc0800000000000000
+      internalID: -3509163943956821863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 575
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ffe662632877dc0800000000000000
+      internalID: -3641298604621103258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_6
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 575
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3436c3e6519750950800000000000000
+      internalID: 6414666377209865027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 575
+        width: 114
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77dbcb0687821c60800000000000000
+      internalID: 7787435715470284668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_8
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 575
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655c0037bf933a3c0800000000000000
+      internalID: -4349569062980762282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 575
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98cd5d81181ed32a0800000000000000
+      internalID: -6755995921402176375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_10
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 575
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd80cdd99c1a6eee0800000000000000
+      internalID: -1232119560730310435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_11
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 575
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1ea4f3b204073f0800000000000000
+      internalID: -905152970611826269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_12
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 575
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68a7431a2f29f7e0800000000000000
+      internalID: -1731300723988649873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_13
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 575
+        width: 114
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c671f7c3abc602c30800000000000000
+      internalID: 4332582388665096044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c0e7ecbd4d017d0800000000000000
+      internalID: -2949623715400381423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 544
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3adbf928e87f470800000000000000
+      internalID: 8428361919324070841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 543
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d5368d23e82f8c0800000000000000
+      internalID: -3966951972730086031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_17
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 543
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481ce20cfec097180800000000000000
+      internalID: -9117241746773851772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_18
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 544
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8738cca591267c0800000000000000
+      internalID: -4079670434675328843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 543
+        width: 114
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79691ee704ac6deb0800000000000000
+      internalID: -4695343183131732329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_20
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 511
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f0eb9649c1e88420800000000000000
+      internalID: 2632602236787351792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_21
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 511
+        width: 18
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0413596729dd43eb0800000000000000
+      internalID: -4740920886589836992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_22
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 544
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b9191497323c580800000000000000
+      internalID: -8808157442508481718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_23
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 543
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7644da022bf72e8c0800000000000000
+      internalID: -3971471518358223769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_24
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 543
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b764c48ebd54430800000000000000
+      internalID: 3766658454123871100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_25
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 544
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1424415de144d9440800000000000000
+      internalID: 4944182865137254977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_26
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 543
+        width: 114
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df81072db16f49b0800000000000000
+      internalID: -5093745188501614634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 524
+        width: 97
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a842497c0be6855b0800000000000000
+      internalID: -5379428049352383350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_28
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 524
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10715c0f8f6d75320800000000000000
+      internalID: 2546740478980986625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_29
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 528
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840da3cb18d540d20800000000000000
+      internalID: 3243820443403735112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_30
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 511
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a2ea86a455c1160800000000000000
+      internalID: 6997561699099093640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 515
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b0c19c2ab191560800000000000000
+      internalID: 7284884258221198159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_32
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 520
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6f3685a27b22440800000000000000
+      internalID: 4909687936286717622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573a62cfd94f5cbb0800000000000000
+      internalID: -4916254458827594891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_34
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 480
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df4ca63364bbfac0800000000000000
+      internalID: -3820261520681709610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_35
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 480
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc9b1b3bb69a02a0800000000000000
+      internalID: -6770433358903403342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_36
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 480
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6af65c5725add20800000000000000
+      internalID: 3304043942406760141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_37
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 480
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec1111922a29f620800000000000000
+      internalID: 2808322170593287404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_38
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 480
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74711b988cea9e2c0800000000000000
+      internalID: -4401794984451172537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_39
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 480
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bfac8c93ed3df30800000000000000
+      internalID: 4599263984238656273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_40
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 480
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a0486c3873ee840800000000000000
+      internalID: 5255198854298733070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_41
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 480
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ae507511183a7a0800000000000000
+      internalID: -6367103536697316708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_42
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 480
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae385a7bc5e38cf0800000000000000
+      internalID: -251104492108890449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_43
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 480
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580c5872087b8eba0800000000000000
+      internalID: -6059391537580228475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68598254d99178170800000000000000
+      internalID: 8180535411402642822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_45
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 448
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9706a0e6268292e0800000000000000
+      internalID: -2120484973002225761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_46
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 448
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3945d661382a26b90800000000000000
+      internalID: -7250053766212397933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_47
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 448
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55a30068eeef91d0800000000000000
+      internalID: -3341689716674943654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_48
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 448
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a999d74d3cd9670800000000000000
+      internalID: 8547202985226771055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_49
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 448
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b3e1d87647add40800000000000000
+      internalID: 5609924273941396248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_50
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 448
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2757691f8f9cf0990800000000000000
+      internalID: -7417487990213675662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_51
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 448
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a27d4a0164a54e0800000000000000
+      internalID: -1992202847859037619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_52
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 448
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aea061d248d10230800000000000000
+      internalID: 3603398958365322917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_53
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 448
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735b03134a9595050800000000000000
+      internalID: 5789757357696267575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_54
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 448
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b25c8c8adfd01230800000000000000
+      internalID: 3607629431277638329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 193
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1521481974ba56400800000000000000
+      internalID: 316847672671867473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 193
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29906cdec41866be0800000000000000
+      internalID: -1484356859765323374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_57
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663a95843911cd260800000000000000
+      internalID: 7123588034864980838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_58
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d717268be994b30800000000000000
+      internalID: 4272120236300401972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_59
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f207ab799d47b0840800000000000000
+      internalID: 5191371473376931887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_60
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978e41e3d7691cf30800000000000000
+      internalID: 4594118559551252601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_61
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3bb86d4e17672c50800000000000000
+      internalID: 6640389555426474812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_62
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08dd264f090be2180800000000000000
+      internalID: -9138172457266258560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_63
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ca12758e7db0110800000000000000
+      internalID: 1228312716282801309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_64
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b5bcce02aa92570800000000000000
+      internalID: 8442466034871130955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_65
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 386
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd3c63924e00a450800000000000000
+      internalID: 6097889574563626462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_66
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 387
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a557cc9dd85c6e0800000000000000
+      internalID: -1817890907996464607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_67
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 386
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a27e0877eb00250800000000000000
+      internalID: 5908932131583109633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_68
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 386
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edb31723c3baf2f0800000000000000
+      internalID: -938239921597727255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb04e1db7f3fcf090800000000000000
+      internalID: -7999250592761495365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_70
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 352
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd25644376520240800000000000000
+      internalID: 4756459209525374401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_71
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 351
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4b8563f95ee2210800000000000000
+      internalID: 1310237013585736932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_72
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 351
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf1e921503e4dac0800000000000000
+      internalID: -3831187772058755151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_73
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 352
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efeb99b2f8157d360800000000000000
+      internalID: 7194308605101326078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_74
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 351
+        width: 114
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3104dcad15aee50800000000000000
+      internalID: 6839368984303768502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_75
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 351
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5b0b60878ae78d0800000000000000
+      internalID: -2846652680989788673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_76
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 352
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb5b3c0c9f638a70800000000000000
+      internalID: 8828022410587102133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_77
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 351
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb81d2a185ca7b0f0800000000000000
+      internalID: -1101222089472534341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_78
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 351
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c111fcbe82aa5ab0800000000000000
+      internalID: -5018520100812025404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_79
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 352
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236f4179244c08190800000000000000
+      internalID: -7962148350909417934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_80
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 351
+        width: 114
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69122545270e37a20800000000000000
+      internalID: 3059035353560261014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_81
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03430541cf3a80120800000000000000
+      internalID: 2380332706133193776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_82
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85cb250dc59dddbb0800000000000000
+      internalID: -4909529026108670888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_83
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1671c1771ea387ce0800000000000000
+      internalID: -1407310143512897695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_84
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 355
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bdd7821acdf50a60800000000000000
+      internalID: 7639791387240029617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_85
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 355
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934df3e9421de38e0800000000000000
+      internalID: -1711700853150198727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_86
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 355
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99797d85218f3f670800000000000000
+      internalID: 8571467273499809689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_87
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9001eef18eb15790800000000000000
+      internalID: -7543038435332652898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_88
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e235d38c9ab5b40800000000000000
+      internalID: 5430120453212679803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_89
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b69a2ae4dc0b4290800000000000000
+      internalID: -7905210612317514063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_90
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 351
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79763b9e303caa420800000000000000
+      internalID: 2642138552979384215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_91
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 351
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348f6df47f067b210800000000000000
+      internalID: 1348653228733429827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_92
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 351
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77b302686ea2da80800000000000000
+      internalID: -8443494588022016131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_93
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091d9265e0f3699e0800000000000000
+      internalID: -1615034085558070896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_94
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40a4761a93d3f4b0800000000000000
+      internalID: -5407746068786667443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_95
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 319
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bff61aa8d3088480800000000000000
+      internalID: -8896856834768961615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_96
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 319
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5245178b736035a30800000000000000
+      internalID: 4202709713654207525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_97
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 319
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a17e7a4c657f3b0800000000000000
+      internalID: -5478815019042399739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_98
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 319
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228c1911fd0f45ab0800000000000000
+      internalID: -5020122843748120542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_99
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febaef65c5de06520800000000000000
+      internalID: 2693413558019861487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_100
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11fc29a5f66d5de90800000000000000
+      internalID: -7001454271928283375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_101
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee25012cf06f4ac0800000000000000
+      internalID: -3868766918885953810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_102
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a3efc75cf9c6ff0800000000000000
+      internalID: -41482625998767506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_103
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbbe90eb9a1c0d30800000000000000
+      internalID: 4398920192824884162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_104
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 319
+        width: 210
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8085b2dbcbd87bf00800000000000000
+      internalID: 1132529673074071560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_105
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c16d136b88d4240800000000000000
+      internalID: 4777625095811505197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_106
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f82f1c9d1a1e250800000000000000
+      internalID: 5972232537503862630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_107
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 319
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf8c93062c1b4690800000000000000
+      internalID: -7616963395172134977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_108
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 319
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d4e36b04c08af50800000000000000
+      internalID: 6892772701765520760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_109
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 319
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e33cc65457b96e60800000000000000
+      internalID: 7956091789588050918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_110
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 319
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0128a57948fbd9b0800000000000000
+      internalID: -5054173162402995958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_111
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1098f54f4f3f264b0800000000000000
+      internalID: -5448524365767407359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_112
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2366d1dfbd1baa90800000000000000
+      internalID: -7301709661154680018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_113
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1eeb585d208994d0800000000000000
+      internalID: -3127327533987795429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_114
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1e771fa75df5d50800000000000000
+      internalID: 6728331092328702412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_115
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 319
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a891dd0b5003e940800000000000000
+      internalID: 5324099575555922087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_116
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 319
+        width: 210
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e275db90a27e262c0800000000000000
+      internalID: -4439732114895841490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182caa288e9d5f900800000000000000
+      internalID: 717719308283331201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_118
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c924f6ba4e36f17e0800000000000000
+      internalID: -1792604292890279268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_119
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3e0700f73b86b90800000000000000
+      internalID: -7248346242203196419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_120
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52ab0da31962a5d0800000000000000
+      internalID: -3052762064175259046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_121
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d28ecb5284964380800000000000000
+      internalID: -8987332718764326183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_122
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa70196cef5a4340800000000000000
+      internalID: 4848793417797368562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_123
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac598d990203c3140800000000000000
+      internalID: 4700685027646150090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_124
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 287
+        width: 210
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dca452aaad1a2540800000000000000
+      internalID: 4983828556343979220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_125
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f16c40010e89a3a0800000000000000
+      internalID: -6653630839512079879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_126
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38a911f77d40f090800000000000000
+      internalID: -8002811360295933890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_127
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20cf5833a78975300800000000000000
+      internalID: 240828755705461762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_128
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd11807f1255d290800000000000000
+      internalID: -7866290879147729414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_129
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbad81b60884ed10800000000000000
+      internalID: 2153996084119972849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_130
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 287
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3b0d2451e604bf0800000000000000
+      internalID: -342152534085815354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_131
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 287
+        width: 50
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d953a1c53d3ef40800000000000000
+      internalID: 5756677141239799069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_132
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 287
+        width: 178
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0a52910341ab700800000000000000
+      internalID: 556779700746559713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_133
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 289
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32b35d878d50f800800000000000000
+      internalID: 644117583487021628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_134
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 289
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3a0c7807c1dbd20800000000000000
+      internalID: 3295821771944535008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d84ab6208cc8b00800000000000000
+      internalID: 832259943878135050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_136
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 255
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb01284d93054a30800000000000000
+      internalID: 4198766201647729641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_137
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015cb1bd624391040800000000000000
+      internalID: 4618780234334586128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_138
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc493ff8d27e831e0800000000000000
+      internalID: -2217768633605319477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_139
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1443da8fd09557d80800000000000000
+      internalID: -8253592825545018303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_140
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c417e3bdf71777a0800000000000000
+      internalID: -6379603968734587708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_141
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 255
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a28d111e08d0fa90800000000000000
+      internalID: -7282083042529803610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_142
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 255
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9bfdd61b45fc970800000000000000
+      internalID: 8777327319797709307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_143
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 255
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b4f89538371c350800000000000000
+      internalID: 6035231983633648405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_144
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a0a7f62dbd0c220800000000000000
+      internalID: 2504243089677879852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_145
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aace3723de4eda550800000000000000
+      internalID: 6173842371599658154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_146
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d332494dddfae71d0800000000000000
+      internalID: -3351047705427958979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_147
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0eec8dcd240e60a0800000000000000
+      internalID: -6886562185434305009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_148
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 255
+        width: 242
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96585cb841e2e4080800000000000000
+      internalID: -9201366322892143255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_149
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 255
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c76700a32c8dd60800000000000000
+      internalID: 7915289899475303534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_150
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 255
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6504bffd31255b60800000000000000
+      internalID: 7734124485245404522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_151
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab3c3b2d82301bb0800000000000000
+      internalID: -4967414807092511832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_152
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9256194fa82f34650800000000000000
+      internalID: 6216078589323994409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_153
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ed0db04a199d740800000000000000
+      internalID: 5177329380397997652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_154
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d262ec8dadcba80800000000000000
+      internalID: -8449638176147493482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_155
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 255
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a50edfdd02de8f0800000000000000
+      internalID: -509715045003797972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_156
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 255
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9090a1f154d17ae0800000000000000
+      internalID: -1553226948054839141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_157
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 255
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 725c6eb91ae45bd50800000000000000
+      internalID: 6752389672324220199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_158
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810fc1803a342df70800000000000000
+      internalID: 9210498555420930072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_159
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ca97f44e4e0b660800000000000000
+      internalID: 7399665857006775377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_160
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e3efe63e888cb50800000000000000
+      internalID: 6613686563194682969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_161
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 255
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3318b66052ebdc0800000000000000
+      internalID: -3621416340855639127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_162
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 255
+        width: 241
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51474e8b3c9e5ca0800000000000000
+      internalID: -6026207471771106981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_163
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9006306ee56a2b10800000000000000
+      internalID: 1957489062536675483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_164
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d442726fd9e92cd0800000000000000
+      internalID: -2582275765681634088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_165
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14cb4c4bdf79c2e0800000000000000
+      internalID: -2105010770964397025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_166
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5ff411cccb5cce0800000000000000
+      internalID: -1385493725696756290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_167
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafdea3f164030720800000000000000
+      internalID: 2811095411155984302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_168
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddad4cb44f2d959b0800000000000000
+      internalID: -5090805957080589603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_169
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0bc1eaeb60301b0800000000000000
+      internalID: -5691698088031506188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_170
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f4953e5d16ffbb0800000000000000
+      internalID: -4900090298285601009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_171
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca5cfaad70856d10800000000000000
+      internalID: 2118240476975618767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_172
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 223
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e54f43f866474cd0800000000000000
+      internalID: -2574011245446347287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_173
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5df285d239738a80800000000000000
+      internalID: -8465789615288943269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_174
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29823a7ba53ab5560800000000000000
+      internalID: 7303610830734698642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_175
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2449eacc9824c62d0800000000000000
+      internalID: -3284176868647988158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_176
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 223
+        width: 242
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7eeb39571e9bdd0800000000000000
+      internalID: -2469695025529821203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_177
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1e65532224bfb60800000000000000
+      internalID: 7780885495903871420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_178
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8300365587e7ac5e0800000000000000
+      internalID: -1888558038434774984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_179
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb648aec8591a1a0800000000000000
+      internalID: -6799989529890231369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_180
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5f971cf47342170800000000000000
+      internalID: 8152702041135379891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_181
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afeebc3ae0136630800000000000000
+      internalID: 3918994698970001316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_182
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ac8981e0be87200800000000000000
+      internalID: 178150631055870562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_183
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cfe91d8b8e9b6490800000000000000
+      internalID: -7751928011383246909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_184
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3b686f69b2d02c0800000000000000
+      internalID: -4463863728273181698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_185
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 223
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3440aedf991f9ed60800000000000000
+      internalID: 7920127063399990339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_186
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafee30a591398700800000000000000
+      internalID: 543019748783222703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_187
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 223
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7a0826af55dffe0800000000000000
+      internalID: -1153671395654195245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_188
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 223
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bbb51267de46a40800000000000000
+      internalID: 5360670548099316634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_189
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 223
+        width: 241
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d4f7f508bc1d980800000000000000
+      internalID: -8515801668162466481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_190
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1ee81b927feeda0800000000000000
+      internalID: -5913517502246231594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_191
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 191
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbc8a19282ba20b0800000000000000
+      internalID: -5752589300153136175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_192
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 191
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cda2c3b5a5bba970800000000000000
+      internalID: 8767300822896913860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_193
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 191
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6bb063b7eaa8170800000000000000
+      internalID: 8181543517282875101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_194
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 191
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6293b80245ba76e20800000000000000
+      internalID: 3343829626157480230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_195
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 191
+        width: 114
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9d94642181a3240800000000000000
+      internalID: 4772153221920184753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_196
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 191
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa4c7a5a86a2fbe0800000000000000
+      internalID: -1444909417278715219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_197
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 191
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a57b4b712fd5da60800000000000000
+      internalID: 7698304472955188640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_198
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 191
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862f098559942a210800000000000000
+      internalID: 1342716544694678120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_199
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 191
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e9d9e6bfa597a40800000000000000
+      internalID: 5366420466927771228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_200
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 191
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6311e10dce827c80800000000000000
+      internalID: -8326435749903658132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_201
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 191
+        width: 114
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05d2d46e782e9100800000000000000
+      internalID: 116575163680740618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_202
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da7504a391f3e310800000000000000
+      internalID: 1433254722848258777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_203
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 159
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8cff3813a0c58af0800000000000000
+      internalID: -394697585606001526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_204
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 159
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f7ac90dfe0418350800000000000000
+      internalID: 6017161975884982256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_205
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 159
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8909b1c019a73b0d0800000000000000
+      internalID: -3408245729597353832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_206
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 159
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f19da721b2f20e0800000000000000
+      internalID: -2292566326937837820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_207
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 159
+        width: 114
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f012d2da6a113e0800000000000000
+      internalID: -2084701889779134581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_208
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 159
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c357af489b8bf04c0800000000000000
+      internalID: -4319030410685549252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_209
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 159
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03f5dc51d8c593f0800000000000000
+      internalID: -894588149431930097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_210
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 159
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb711a1b4882e3960800000000000000
+      internalID: 7583543372919412670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_211
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 159
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fd8878d087cf790800000000000000
+      internalID: -7494983680347545751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_212
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 159
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407cd8c1abb9c1010800000000000000
+      internalID: 1160974027600021252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_213
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 159
+        width: 114
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6632e82c4b0b693e0800000000000000
+      internalID: -2047254690188614810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_214
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f755630649c7e4290800000000000000
+      internalID: -7904243319277464193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_215
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 127
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5515f8e174e03f6c0800000000000000
+      internalID: -4110926336240955051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_216
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 127
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589d2b25bca862470800000000000000
+      internalID: 8369529563385092485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_217
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 127
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 056ae6a48c52eed20800000000000000
+      internalID: 3309624318336345680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_218
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 127
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3d36fe0cda99540800000000000000
+      internalID: 5015230704215380933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_219
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 127
+        width: 114
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647a12cec0bdeece0800000000000000
+      internalID: -1373919987753703610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_220
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 127
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9eacf0125072880800000000000000
+      internalID: -8635928120902620758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_221
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 127
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56a4b469096a57e0800000000000000
+      internalID: -1775991613979056548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_222
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 127
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e74f742102a6220800000000000000
+      internalID: 2479829807709584971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_223
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 127
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0f8f94a3bc7c880800000000000000
+      internalID: -8590674312976338768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_224
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 127
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4637d7400baa6460800000000000000
+      internalID: 7235783769017759311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_225
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 127
+        width: 114
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9aa27fbc11759170800000000000000
+      internalID: 8184572266100730525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_226
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 129
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0ea588b262dbbf0800000000000000
+      internalID: -307047231178219338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_227
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 129
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84edede53980e61d0800000000000000
+      internalID: -3355735243299561912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_228
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 128
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98716b3ded3a70f60800000000000000
+      internalID: 8000543440476968841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_229
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 129
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed22120c59fcbb70800000000000000
+      internalID: 8916275535853792736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_230
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 128
+        width: 74
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c63532a69ff92c40800000000000000
+      internalID: 5488198643359233733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_231
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 129
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d5d11ed3ac9cd30800000000000000
+      internalID: 4452312073751059782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_232
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 129
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4dac1965f5dc9710800000000000000
+      internalID: 1701470009246395726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_233
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 128
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db72ad3d2085728f0800000000000000
+      internalID: -565386459044239427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_234
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 129
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c22ab922dca35970800000000000000
+      internalID: 8742521320299438793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_235
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 131
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6107133a5573ef0800000000000000
+      internalID: -128539904959310166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_236
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 127
+        width: 62
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2839cfa43f70adc20800000000000000
+      internalID: 3231904424108266370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_237
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 133
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a048e5e37c9fd42c0800000000000000
+      internalID: -4445622623004621814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_238
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d188e5387baa6340800000000000000
+      internalID: 4857883680861356500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_239
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 95
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7001014b3217e0a30800000000000000
+      internalID: 4183405502032515079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_240
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 95
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11f86999d164efe0800000000000000
+      internalID: -1160695216745156325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_241
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 95
+        width: 82
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd8256c4e254bf00800000000000000
+      internalID: 1131620548910157257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_242
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 95
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe072e19fab5b370800000000000000
+      internalID: 8337775864261840633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_243
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 95
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8601f71c3922afa00800000000000000
+      internalID: 790982702558810216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_244
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 95
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c187e9481a56c30800000000000000
+      internalID: 4352062205889879172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_245
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 95
+        width: 82
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d451b7d1866e92c70800000000000000
+      internalID: 8946935469593793869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_246
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebf7d21d7d390c20800000000000000
+      internalID: 3173135019855576041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_247
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73981b1120343b670800000000000000
+      internalID: 8553253793472547127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_248
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 63
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da5f6cc24661ca90800000000000000
+      internalID: -7295437484279768363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_249
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 63
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3df0bb79471f8dc0800000000000000
+      internalID: -3634660769889452741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_250
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106fbb335532d66b0800000000000000
+      internalID: -5301542337498057215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_251
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 63
+        width: 114
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 026a64e60fffa9210800000000000000
+      internalID: 1340665247203501600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_252
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedb0b6500ceb8780800000000000000
+      internalID: -8679584370627920402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_253
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e77e9229e1d4660800000000000000
+      internalID: 7371581778192465513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_254
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 63
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5062d49623a841ab0800000000000000
+      internalID: -5038250134001080827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_255
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 63
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f8e1048a4a3076f0800000000000000
+      internalID: -688986651270977294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_256
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 63
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6071505b1dfe0e0800000000000000
+      internalID: -2238339914375166291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_257
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 63
+        width: 114
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600b1f913ecafdc70800000000000000
+      internalID: 8998100671902363654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_258
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a375c1dfc4ae39e10800000000000000
+      internalID: 2203362259099211578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_259
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 82
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb52259cb500b040800000000000000
+      internalID: 4661231921842510841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_260
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 31
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64897fe46ee0c6270800000000000000
+      internalID: 8244981400138651718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_261
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 31
+        width: 75
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39e5036ee3e1b590800000000000000
+      internalID: -7660090878177449670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_262
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b86d6643108d0a0800000000000000
+      internalID: -6856729108096316589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_263
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfe5b914aa5ac7c0800000000000000
+      internalID: -4050325254013849657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_264
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 66
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d91c54740f7c360800000000000000
+      internalID: 7189979519023947095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_265
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be496ee233e9fe800800000000000000
+      internalID: 643907214404654315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_266
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af71802616dbc7b20800000000000000
+      internalID: 3133587666697197562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_267
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 66
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43af9aa32cfde1f80800000000000000
+      internalID: -8133817851683669452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_268
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 6
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900fc7802f4204940800000000000000
+      internalID: 5278259385221312521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bully_0: -8896843927468393426
+      Bully_1: 201918924079868124
+      Bully_10: -1232119560730310435
+      Bully_100: -7001454271928283375
+      Bully_101: -3868766918885953810
+      Bully_102: -41482625998767506
+      Bully_103: 4398920192824884162
+      Bully_104: 1132529673074071560
+      Bully_105: 4777625095811505197
+      Bully_106: 5972232537503862630
+      Bully_107: -7616963395172134977
+      Bully_108: 6892772701765520760
+      Bully_109: 7956091789588050918
+      Bully_11: -905152970611826269
+      Bully_110: -5054173162402995958
+      Bully_111: -5448524365767407359
+      Bully_112: -7301709661154680018
+      Bully_113: -3127327533987795429
+      Bully_114: 6728331092328702412
+      Bully_115: 5324099575555922087
+      Bully_116: -4439732114895841490
+      Bully_117: 717719308283331201
+      Bully_118: -1792604292890279268
+      Bully_119: -7248346242203196419
+      Bully_12: -1731300723988649873
+      Bully_120: -3052762064175259046
+      Bully_121: -8987332718764326183
+      Bully_122: 4848793417797368562
+      Bully_123: 4700685027646150090
+      Bully_124: 4983828556343979220
+      Bully_125: -6653630839512079879
+      Bully_126: -8002811360295933890
+      Bully_127: 240828755705461762
+      Bully_128: -7866290879147729414
+      Bully_129: 2153996084119972849
+      Bully_13: 4332582388665096044
+      Bully_130: -342152534085815354
+      Bully_131: 5756677141239799069
+      Bully_132: 556779700746559713
+      Bully_133: 644117583487021628
+      Bully_134: 3295821771944535008
+      Bully_135: 832259943878135050
+      Bully_136: 4198766201647729641
+      Bully_137: 4618780234334586128
+      Bully_138: -2217768633605319477
+      Bully_139: -8253592825545018303
+      Bully_14: -2949623715400381423
+      Bully_140: -6379603968734587708
+      Bully_141: -7282083042529803610
+      Bully_142: 8777327319797709307
+      Bully_143: 6035231983633648405
+      Bully_144: 2504243089677879852
+      Bully_145: 6173842371599658154
+      Bully_146: -3351047705427958979
+      Bully_147: -6886562185434305009
+      Bully_148: -9201366322892143255
+      Bully_149: 7915289899475303534
+      Bully_15: 8428361919324070841
+      Bully_150: 7734124485245404522
+      Bully_151: -4967414807092511832
+      Bully_152: 6216078589323994409
+      Bully_153: 5177329380397997652
+      Bully_154: -8449638176147493482
+      Bully_155: -509715045003797972
+      Bully_156: -1553226948054839141
+      Bully_157: 6752389672324220199
+      Bully_158: 9210498555420930072
+      Bully_159: 7399665857006775377
+      Bully_16: -3966951972730086031
+      Bully_160: 6613686563194682969
+      Bully_161: -3621416340855639127
+      Bully_162: -6026207471771106981
+      Bully_163: 1957489062536675483
+      Bully_164: -2582275765681634088
+      Bully_165: -2105010770964397025
+      Bully_166: -1385493725696756290
+      Bully_167: 2811095411155984302
+      Bully_168: -5090805957080589603
+      Bully_169: -5691698088031506188
+      Bully_17: -9117241746773851772
+      Bully_170: -4900090298285601009
+      Bully_171: 2118240476975618767
+      Bully_172: -2574011245446347287
+      Bully_173: -8465789615288943269
+      Bully_174: 7303610830734698642
+      Bully_175: -3284176868647988158
+      Bully_176: -2469695025529821203
+      Bully_177: 7780885495903871420
+      Bully_178: -1888558038434774984
+      Bully_179: -6799989529890231369
+      Bully_18: -4079670434675328843
+      Bully_180: 8152702041135379891
+      Bully_181: 3918994698970001316
+      Bully_182: 178150631055870562
+      Bully_183: -7751928011383246909
+      Bully_184: -4463863728273181698
+      Bully_185: 7920127063399990339
+      Bully_186: 543019748783222703
+      Bully_187: -1153671395654195245
+      Bully_188: 5360670548099316634
+      Bully_189: -8515801668162466481
+      Bully_19: -4695343183131732329
+      Bully_190: -5913517502246231594
+      Bully_191: -5752589300153136175
+      Bully_192: 8767300822896913860
+      Bully_193: 8181543517282875101
+      Bully_194: 3343829626157480230
+      Bully_195: 4772153221920184753
+      Bully_196: -1444909417278715219
+      Bully_197: 7698304472955188640
+      Bully_198: 1342716544694678120
+      Bully_199: 5366420466927771228
+      Bully_2: -5291562479957025985
+      Bully_20: 2632602236787351792
+      Bully_200: -8326435749903658132
+      Bully_201: 116575163680740618
+      Bully_202: 1433254722848258777
+      Bully_203: -394697585606001526
+      Bully_204: 6017161975884982256
+      Bully_205: -3408245729597353832
+      Bully_206: -2292566326937837820
+      Bully_207: -2084701889779134581
+      Bully_208: -4319030410685549252
+      Bully_209: -894588149431930097
+      Bully_21: -4740920886589836992
+      Bully_210: 7583543372919412670
+      Bully_211: -7494983680347545751
+      Bully_212: 1160974027600021252
+      Bully_213: -2047254690188614810
+      Bully_214: -7904243319277464193
+      Bully_215: -4110926336240955051
+      Bully_216: 8369529563385092485
+      Bully_217: 3309624318336345680
+      Bully_218: 5015230704215380933
+      Bully_219: -1373919987753703610
+      Bully_22: -8808157442508481718
+      Bully_220: -8635928120902620758
+      Bully_221: -1775991613979056548
+      Bully_222: 2479829807709584971
+      Bully_223: -8590674312976338768
+      Bully_224: 7235783769017759311
+      Bully_225: 8184572266100730525
+      Bully_226: -307047231178219338
+      Bully_227: -3355735243299561912
+      Bully_228: 8000543440476968841
+      Bully_229: 8916275535853792736
+      Bully_23: -3971471518358223769
+      Bully_230: 5488198643359233733
+      Bully_231: 4452312073751059782
+      Bully_232: 1701470009246395726
+      Bully_233: -565386459044239427
+      Bully_234: 8742521320299438793
+      Bully_235: -128539904959310166
+      Bully_236: 3231904424108266370
+      Bully_237: -4445622623004621814
+      Bully_238: 4857883680861356500
+      Bully_239: 4183405502032515079
+      Bully_24: 3766658454123871100
+      Bully_240: -1160695216745156325
+      Bully_241: 1131620548910157257
+      Bully_242: 8337775864261840633
+      Bully_243: 790982702558810216
+      Bully_244: 4352062205889879172
+      Bully_245: 8946935469593793869
+      Bully_246: 3173135019855576041
+      Bully_247: 8553253793472547127
+      Bully_248: -7295437484279768363
+      Bully_249: -3634660769889452741
+      Bully_25: 4944182865137254977
+      Bully_250: -5301542337498057215
+      Bully_251: 1340665247203501600
+      Bully_252: -8679584370627920402
+      Bully_253: 7371581778192465513
+      Bully_254: -5038250134001080827
+      Bully_255: -688986651270977294
+      Bully_256: -2238339914375166291
+      Bully_257: 8998100671902363654
+      Bully_258: 2203362259099211578
+      Bully_259: 4661231921842510841
+      Bully_26: -5093745188501614634
+      Bully_260: 8244981400138651718
+      Bully_261: -7660090878177449670
+      Bully_262: -6856729108096316589
+      Bully_263: -4050325254013849657
+      Bully_264: 7189979519023947095
+      Bully_265: 643907214404654315
+      Bully_266: 3133587666697197562
+      Bully_267: -8133817851683669452
+      Bully_268: 5278259385221312521
+      Bully_27: -5379428049352383350
+      Bully_28: 2546740478980986625
+      Bully_29: 3243820443403735112
+      Bully_3: 2981572762255283501
+      Bully_30: 6997561699099093640
+      Bully_31: 7284884258221198159
+      Bully_32: 4909687936286717622
+      Bully_33: -4916254458827594891
+      Bully_34: -3820261520681709610
+      Bully_35: -6770433358903403342
+      Bully_36: 3304043942406760141
+      Bully_37: 2808322170593287404
+      Bully_38: -4401794984451172537
+      Bully_39: 4599263984238656273
+      Bully_4: -3509163943956821863
+      Bully_40: 5255198854298733070
+      Bully_41: -6367103536697316708
+      Bully_42: -251104492108890449
+      Bully_43: -6059391537580228475
+      Bully_44: 8180535411402642822
+      Bully_45: -2120484973002225761
+      Bully_46: -7250053766212397933
+      Bully_47: -3341689716674943654
+      Bully_48: 8547202985226771055
+      Bully_49: 5609924273941396248
+      Bully_5: -3641298604621103258
+      Bully_50: -7417487990213675662
+      Bully_51: -1992202847859037619
+      Bully_52: 3603398958365322917
+      Bully_53: 5789757357696267575
+      Bully_54: 3607629431277638329
+      Bully_55: 316847672671867473
+      Bully_56: -1484356859765323374
+      Bully_57: 7123588034864980838
+      Bully_58: 4272120236300401972
+      Bully_59: 5191371473376931887
+      Bully_6: 6414666377209865027
+      Bully_60: 4594118559551252601
+      Bully_61: 6640389555426474812
+      Bully_62: -9138172457266258560
+      Bully_63: 1228312716282801309
+      Bully_64: 8442466034871130955
+      Bully_65: 6097889574563626462
+      Bully_66: -1817890907996464607
+      Bully_67: 5908932131583109633
+      Bully_68: -938239921597727255
+      Bully_69: -7999250592761495365
+      Bully_7: 7787435715470284668
+      Bully_70: 4756459209525374401
+      Bully_71: 1310237013585736932
+      Bully_72: -3831187772058755151
+      Bully_73: 7194308605101326078
+      Bully_74: 6839368984303768502
+      Bully_75: -2846652680989788673
+      Bully_76: 8828022410587102133
+      Bully_77: -1101222089472534341
+      Bully_78: -5018520100812025404
+      Bully_79: -7962148350909417934
+      Bully_8: -4349569062980762282
+      Bully_80: 3059035353560261014
+      Bully_81: 2380332706133193776
+      Bully_82: -4909529026108670888
+      Bully_83: -1407310143512897695
+      Bully_84: 7639791387240029617
+      Bully_85: -1711700853150198727
+      Bully_86: 8571467273499809689
+      Bully_87: -7543038435332652898
+      Bully_88: 5430120453212679803
+      Bully_89: -7905210612317514063
+      Bully_9: -6755995921402176375
+      Bully_90: 2642138552979384215
+      Bully_91: 1348653228733429827
+      Bully_92: -8443494588022016131
+      Bully_93: -1615034085558070896
+      Bully_94: -5407746068786667443
+      Bully_95: -8896856834768961615
+      Bully_96: 4202709713654207525
+      Bully_97: -5478815019042399739
+      Bully_98: -5020122843748120542
+      Bully_99: 2693413558019861487
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

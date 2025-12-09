@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: 17e767b75ef477c4a8cdf36a8bcdc159
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6532775809428950676
+    second: Mom_pickup_0
+  - first:
+      213: -5001748516379988657
+    second: Mom_pickup_1
+  - first:
+      213: -5667072845427299714
+    second: Mom_pickup_2
+  - first:
+      213: 296015811999025685
+    second: Mom_pickup_3
+  - first:
+      213: 9021916181776762004
+    second: Mom_pickup_4
+  - first:
+      213: -3618053058393442661
+    second: Mom_pickup_5
+  - first:
+      213: -3272772370334886211
+    second: Mom_pickup_6
+  - first:
+      213: -1551477930031342054
+    second: Mom_pickup_7
+  - first:
+      213: -9070965886149130812
+    second: Mom_pickup_8
+  - first:
+      213: -8720803684215618291
+    second: Mom_pickup_9
+  - first:
+      213: 698050365552083478
+    second: Mom_pickup_10
+  - first:
+      213: -7987279185800264426
+    second: Mom_pickup_11
+  - first:
+      213: 4864872884950152090
+    second: Mom_pickup_12
+  - first:
+      213: 5357827312299858561
+    second: Mom_pickup_13
+  - first:
+      213: -4202408360722081955
+    second: Mom_pickup_14
+  - first:
+      213: -7256424261074098054
+    second: Mom_pickup_15
+  - first:
+      213: -4142102803223873653
+    second: Mom_pickup_16
+  - first:
+      213: -2986962498511351802
+    second: Mom_pickup_17
+  - first:
+      213: 9156769661159864265
+    second: Mom_pickup_18
+  - first:
+      213: 7368286528765256018
+    second: Mom_pickup_19
+  - first:
+      213: 7604768912047991667
+    second: Mom_pickup_20
+  - first:
+      213: 6113815710625712301
+    second: Mom_pickup_21
+  - first:
+      213: 6892474571675293538
+    second: Mom_pickup_22
+  - first:
+      213: -3631846415362622020
+    second: Mom_pickup_23
+  - first:
+      213: 8815343444368845566
+    second: Mom_pickup_24
+  - first:
+      213: -1334738923938605598
+    second: Mom_pickup_25
+  - first:
+      213: -3084074191906949754
+    second: Mom_pickup_26
+  - first:
+      213: -6839673108160448847
+    second: Mom_pickup_27
+  - first:
+      213: 8899881013036571263
+    second: Mom_pickup_28
+  - first:
+      213: -5706210385105887228
+    second: Mom_pickup_29
+  - first:
+      213: 7396497141334238395
+    second: Mom_pickup_30
+  - first:
+      213: -2296942271505493967
+    second: Mom_pickup_31
+  - first:
+      213: 8958303333476093314
+    second: Mom_pickup_32
+  - first:
+      213: -8451195355769275032
+    second: Mom_pickup_33
+  - first:
+      213: 7767240456696583060
+    second: Mom_pickup_34
+  - first:
+      213: -1284250622470787896
+    second: Mom_pickup_35
+  - first:
+      213: -4348019945530256577
+    second: Mom_pickup_36
+  - first:
+      213: -1393717947689513151
+    second: Mom_pickup_37
+  - first:
+      213: 9021997429934197097
+    second: Mom_pickup_38
+  - first:
+      213: 4699016886661556571
+    second: Mom_pickup_39
+  - first:
+      213: -5146706651633854232
+    second: Mom_pickup_40
+  - first:
+      213: -7457140334717720342
+    second: Mom_pickup_41
+  - first:
+      213: -210836895951786664
+    second: Mom_pickup_42
+  - first:
+      213: -1494704809301245814
+    second: Mom_pickup_43
+  - first:
+      213: -3605906333210127167
+    second: Mom_pickup_44
+  - first:
+      213: 8173054769261349271
+    second: Mom_pickup_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mom_pickup_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e074e8cf419aa50800000000000000
+      internalID: 6532775809428950676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d65598938369ab0800000000000000
+      internalID: -5001748516379988657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a2b04c5438a51b0800000000000000
+      internalID: -5667072845427299714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ac91a00d8ab1400800000000000000
+      internalID: 296015811999025685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494072897f8443d70800000000000000
+      internalID: 9021916181776762004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9671f3a9e71acdc0800000000000000
+      internalID: -3618053058393442661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6d97b7ed6c492d0800000000000000
+      internalID: -3272772370334886211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e9f9fea0b087ae0800000000000000
+      internalID: -1551477930031342054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_8
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5056a26947d1280800000000000000
+      internalID: -9070965886149130812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d050966014b79f680800000000000000
+      internalID: -8720803684215618291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612401aeb19ffa900800000000000000
+      internalID: 698050365552083478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615018026eb772190800000000000000
+      internalID: -7987279185800264426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_12
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9332e81d10838340800000000000000
+      internalID: 4864872884950152090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ad485bd83da5a40800000000000000
+      internalID: 5357827312299858561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57570a7cdb0ea5c0800000000000000
+      internalID: -4202408360722081955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78e62ba4900c4b90800000000000000
+      internalID: -7256424261074098054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87f0be327b4486c0800000000000000
+      internalID: -4142102803223873653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_17
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60051d6ee6d2c86d0800000000000000
+      internalID: -2986962498511351802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7f18ffd71631f70800000000000000
+      internalID: 9156769661159864265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251695e1f89614660800000000000000
+      internalID: 7368286528765256018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37bed81a801998960800000000000000
+      internalID: 7604768912047991667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da84c061ff2a8d450800000000000000
+      internalID: 6113815710625712301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2675e14ea1df6af50800000000000000
+      internalID: 6892474571675293538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_23
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdf8857de6199dc0800000000000000
+      internalID: -3631846415362622020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_24
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa6cae2824665a70800000000000000
+      internalID: 8815343444368845566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_25
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e590ca350e0a7de0800000000000000
+      internalID: -1334738923938605598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_26
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685bf62dcda2335d0800000000000000
+      internalID: -3084074191906949754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_27
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b6fd48db899411a0800000000000000
+      internalID: -6839673108160448847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_28
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ad945b0aab28b70800000000000000
+      internalID: 8899881013036571263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_29
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4006e1633e77fc0b0800000000000000
+      internalID: -5706210385105887228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_30
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb46b6336f2a5a660800000000000000
+      internalID: 7396497141334238395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130165d7c2f9f10e0800000000000000
+      internalID: -2296942271505493967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_32
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d4a0e2b69425c70800000000000000
+      internalID: 8958303333476093314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_33
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86df0fba99257ba80800000000000000
+      internalID: -8451195355769275032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_34
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4935172fa08cacb60800000000000000
+      internalID: 7767240456696583060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_35
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cced05fcdc6d2ee0800000000000000
+      internalID: -1284250622470787896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_36
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f331b5675eab8a3c0800000000000000
+      internalID: -4348019945530256577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_37
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f41ea29e488ace0800000000000000
+      internalID: -1393717947689513151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_38
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96907b7acd2943d70800000000000000
+      internalID: 9021997429934197097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_39
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 0
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59260346f2463140800000000000000
+      internalID: 4699016886661556571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_40
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8593a91993398b0800000000000000
+      internalID: -5146706651633854232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_41
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8a9ec006ae28890800000000000000
+      internalID: -7457140334717720342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_42
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d6f3fc5f4f21df0800000000000000
+      internalID: -210836895951786664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_43
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 0
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80088d25edb14be0800000000000000
+      internalID: -1494704809301245814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_44
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 0
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4ddab7b4f35fdc0800000000000000
+      internalID: -3605906333210127167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mom_pickup_45
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 0
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79982ab82068c6170800000000000000
+      internalID: 8173054769261349271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mom_pickup_0: 6532775809428950676
+      Mom_pickup_1: -5001748516379988657
+      Mom_pickup_10: 698050365552083478
+      Mom_pickup_11: -7987279185800264426
+      Mom_pickup_12: 4864872884950152090
+      Mom_pickup_13: 5357827312299858561
+      Mom_pickup_14: -4202408360722081955
+      Mom_pickup_15: -7256424261074098054
+      Mom_pickup_16: -4142102803223873653
+      Mom_pickup_17: -2986962498511351802
+      Mom_pickup_18: 9156769661159864265
+      Mom_pickup_19: 7368286528765256018
+      Mom_pickup_2: -5667072845427299714
+      Mom_pickup_20: 7604768912047991667
+      Mom_pickup_21: 6113815710625712301
+      Mom_pickup_22: 6892474571675293538
+      Mom_pickup_23: -3631846415362622020
+      Mom_pickup_24: 8815343444368845566
+      Mom_pickup_25: -1334738923938605598
+      Mom_pickup_26: -3084074191906949754
+      Mom_pickup_27: -6839673108160448847
+      Mom_pickup_28: 8899881013036571263
+      Mom_pickup_29: -5706210385105887228
+      Mom_pickup_3: 296015811999025685
+      Mom_pickup_30: 7396497141334238395
+      Mom_pickup_31: -2296942271505493967
+      Mom_pickup_32: 8958303333476093314
+      Mom_pickup_33: -8451195355769275032
+      Mom_pickup_34: 7767240456696583060
+      Mom_pickup_35: -1284250622470787896
+      Mom_pickup_36: -4348019945530256577
+      Mom_pickup_37: -1393717947689513151
+      Mom_pickup_38: 9021997429934197097
+      Mom_pickup_39: 4699016886661556571
+      Mom_pickup_4: 9021916181776762004
+      Mom_pickup_40: -5146706651633854232
+      Mom_pickup_41: -7457140334717720342
+      Mom_pickup_42: -210836895951786664
+      Mom_pickup_43: -1494704809301245814
+      Mom_pickup_44: -3605906333210127167
+      Mom_pickup_45: 8173054769261349271
+      Mom_pickup_5: -3618053058393442661
+      Mom_pickup_6: -3272772370334886211
+      Mom_pickup_7: -1551477930031342054
+      Mom_pickup_8: -9070965886149130812
+      Mom_pickup_9: -8720803684215618291
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

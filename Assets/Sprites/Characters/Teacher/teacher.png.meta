@@ -1,0 +1,8021 @@
+fileFormatVersion: 2
+guid: ec9bb8cc00337e044a452d5f6091c96d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -135558089773148155
+    second: teacher_0
+  - first:
+      213: -2986814653869962063
+    second: teacher_1
+  - first:
+      213: -8706059816360996002
+    second: teacher_2
+  - first:
+      213: 2556180762662690456
+    second: teacher_3
+  - first:
+      213: -2520787916070274061
+    second: teacher_4
+  - first:
+      213: -5727549828004819155
+    second: teacher_5
+  - first:
+      213: 3551024712060551030
+    second: teacher_6
+  - first:
+      213: 1655467096923724642
+    second: teacher_7
+  - first:
+      213: -2744093248696577261
+    second: teacher_8
+  - first:
+      213: -2681320550079372093
+    second: teacher_9
+  - first:
+      213: -3189951205535195782
+    second: teacher_10
+  - first:
+      213: -67530910576543600
+    second: teacher_11
+  - first:
+      213: 105319401310263601
+    second: teacher_12
+  - first:
+      213: -6107797340346144250
+    second: teacher_13
+  - first:
+      213: -17942571716303636
+    second: teacher_14
+  - first:
+      213: -2489013710637289676
+    second: teacher_15
+  - first:
+      213: 5412711969899002503
+    second: teacher_16
+  - first:
+      213: 3494135503556150508
+    second: teacher_17
+  - first:
+      213: 3762224174886104148
+    second: teacher_18
+  - first:
+      213: 7763860827085416581
+    second: teacher_19
+  - first:
+      213: -117420316834755426
+    second: teacher_20
+  - first:
+      213: -5022008512905069335
+    second: teacher_21
+  - first:
+      213: -2099613055132451377
+    second: teacher_22
+  - first:
+      213: 3849420822037614736
+    second: teacher_23
+  - first:
+      213: 3866280108496306499
+    second: teacher_24
+  - first:
+      213: 32402035039880611
+    second: teacher_25
+  - first:
+      213: 2761608286628742932
+    second: teacher_26
+  - first:
+      213: -2272014662184995819
+    second: teacher_27
+  - first:
+      213: -884816562545582206
+    second: teacher_28
+  - first:
+      213: -4700246162086411126
+    second: teacher_29
+  - first:
+      213: -615096964118600088
+    second: teacher_30
+  - first:
+      213: 2921791322664075015
+    second: teacher_31
+  - first:
+      213: 7465722255820548043
+    second: teacher_32
+  - first:
+      213: 8657885077838126169
+    second: teacher_33
+  - first:
+      213: 2294812216387184850
+    second: teacher_34
+  - first:
+      213: 4847916215147041325
+    second: teacher_35
+  - first:
+      213: 1364388974255198881
+    second: teacher_36
+  - first:
+      213: 1493349682667603210
+    second: teacher_37
+  - first:
+      213: 1423358857837903141
+    second: teacher_38
+  - first:
+      213: 200583146189955004
+    second: teacher_39
+  - first:
+      213: 5915717190723025285
+    second: teacher_40
+  - first:
+      213: 8920879235035145101
+    second: teacher_41
+  - first:
+      213: 7104806471824552537
+    second: teacher_42
+  - first:
+      213: -8947743912946926275
+    second: teacher_43
+  - first:
+      213: -8063053106026378948
+    second: teacher_44
+  - first:
+      213: -1851437574890306758
+    second: teacher_45
+  - first:
+      213: -991578561051647291
+    second: teacher_46
+  - first:
+      213: 2916393560512259882
+    second: teacher_47
+  - first:
+      213: -4785638397523936585
+    second: teacher_48
+  - first:
+      213: -6590150333431179253
+    second: teacher_49
+  - first:
+      213: 8152903088098186019
+    second: teacher_50
+  - first:
+      213: -5162118926089088818
+    second: teacher_51
+  - first:
+      213: -8322674629313557350
+    second: teacher_52
+  - first:
+      213: 6634683624356136965
+    second: teacher_53
+  - first:
+      213: -9159976871351223199
+    second: teacher_54
+  - first:
+      213: 4088673484238966771
+    second: teacher_55
+  - first:
+      213: -3628100521910631256
+    second: teacher_56
+  - first:
+      213: -6730002486420514526
+    second: teacher_57
+  - first:
+      213: -4156097678288869149
+    second: teacher_58
+  - first:
+      213: 7548211872839594959
+    second: teacher_59
+  - first:
+      213: 1354763042746706231
+    second: teacher_60
+  - first:
+      213: 6396671364061635808
+    second: teacher_61
+  - first:
+      213: -1641619470199811421
+    second: teacher_62
+  - first:
+      213: 7169791478434461563
+    second: teacher_63
+  - first:
+      213: -2230428661646798936
+    second: teacher_64
+  - first:
+      213: -543586038106957626
+    second: teacher_65
+  - first:
+      213: 903206525534810607
+    second: teacher_66
+  - first:
+      213: -572823803063249113
+    second: teacher_67
+  - first:
+      213: -9109557121293756496
+    second: teacher_68
+  - first:
+      213: -1583214238602111972
+    second: teacher_69
+  - first:
+      213: -8436119578982839695
+    second: teacher_70
+  - first:
+      213: 3082636691555815496
+    second: teacher_71
+  - first:
+      213: 2696114208293215279
+    second: teacher_72
+  - first:
+      213: -3143556374685634910
+    second: teacher_73
+  - first:
+      213: 6095599727665911999
+    second: teacher_74
+  - first:
+      213: 2428220579344576336
+    second: teacher_75
+  - first:
+      213: 5198845741285320744
+    second: teacher_76
+  - first:
+      213: -5179278768972462965
+    second: teacher_77
+  - first:
+      213: 8171664320492868035
+    second: teacher_78
+  - first:
+      213: -1041139532875059988
+    second: teacher_79
+  - first:
+      213: 9053472433579439278
+    second: teacher_80
+  - first:
+      213: -6537303317050599836
+    second: teacher_81
+  - first:
+      213: -7621748155845884211
+    second: teacher_82
+  - first:
+      213: 7040833146248178549
+    second: teacher_83
+  - first:
+      213: 2173629022447347246
+    second: teacher_84
+  - first:
+      213: -5861117576728894582
+    second: teacher_85
+  - first:
+      213: 2242074489812145876
+    second: teacher_86
+  - first:
+      213: -2978008913335505401
+    second: teacher_87
+  - first:
+      213: -8176609758019904716
+    second: teacher_88
+  - first:
+      213: 1318485218406849023
+    second: teacher_89
+  - first:
+      213: 287997258889661497
+    second: teacher_90
+  - first:
+      213: -1332578984838198479
+    second: teacher_91
+  - first:
+      213: 65424937121513084
+    second: teacher_92
+  - first:
+      213: -9084216531241014290
+    second: teacher_93
+  - first:
+      213: 7494526968821230756
+    second: teacher_94
+  - first:
+      213: -8007170295990645169
+    second: teacher_95
+  - first:
+      213: 6766466291380491904
+    second: teacher_96
+  - first:
+      213: 830515445189106914
+    second: teacher_97
+  - first:
+      213: 4024775757237062663
+    second: teacher_98
+  - first:
+      213: 7642292507487123924
+    second: teacher_99
+  - first:
+      213: -7535245328955297949
+    second: teacher_100
+  - first:
+      213: -2602967740350961788
+    second: teacher_101
+  - first:
+      213: -4563507868643861808
+    second: teacher_102
+  - first:
+      213: 8789892781327685595
+    second: teacher_103
+  - first:
+      213: -8366962555341861903
+    second: teacher_104
+  - first:
+      213: 3085911882157117450
+    second: teacher_105
+  - first:
+      213: -4389434855428415583
+    second: teacher_106
+  - first:
+      213: -1461616821032536403
+    second: teacher_107
+  - first:
+      213: -2473350277389197589
+    second: teacher_108
+  - first:
+      213: 8055314922446388723
+    second: teacher_109
+  - first:
+      213: 2094672058393692929
+    second: teacher_110
+  - first:
+      213: 1847833422115192266
+    second: teacher_111
+  - first:
+      213: 9067221797655722832
+    second: teacher_112
+  - first:
+      213: -7580791514521538656
+    second: teacher_113
+  - first:
+      213: 2830592536115761184
+    second: teacher_114
+  - first:
+      213: 6242759975889147077
+    second: teacher_115
+  - first:
+      213: 6676247430469819675
+    second: teacher_116
+  - first:
+      213: -301869685262129536
+    second: teacher_117
+  - first:
+      213: 2666412825453265404
+    second: teacher_118
+  - first:
+      213: 4159024904695656573
+    second: teacher_119
+  - first:
+      213: -1969328295052021422
+    second: teacher_120
+  - first:
+      213: 107550178832657138
+    second: teacher_121
+  - first:
+      213: 7553925875918357902
+    second: teacher_122
+  - first:
+      213: 2190708995913476489
+    second: teacher_123
+  - first:
+      213: 7480127375421594979
+    second: teacher_124
+  - first:
+      213: -3913142499643150660
+    second: teacher_125
+  - first:
+      213: -6982196916239967609
+    second: teacher_126
+  - first:
+      213: 1520460763158733174
+    second: teacher_127
+  - first:
+      213: 5765929128442739586
+    second: teacher_128
+  - first:
+      213: 6616551420690493486
+    second: teacher_129
+  - first:
+      213: -5277750402803399920
+    second: teacher_130
+  - first:
+      213: 1358669327529159849
+    second: teacher_131
+  - first:
+      213: -1719479487016048960
+    second: teacher_132
+  - first:
+      213: -4311031605974293291
+    second: teacher_133
+  - first:
+      213: -2532072996558901535
+    second: teacher_134
+  - first:
+      213: -4745393723409272858
+    second: teacher_135
+  - first:
+      213: -7185929406969783568
+    second: teacher_136
+  - first:
+      213: -6930958604150309098
+    second: teacher_137
+  - first:
+      213: -6139009122958134483
+    second: teacher_138
+  - first:
+      213: 8597907964550870499
+    second: teacher_139
+  - first:
+      213: 3370380491897527965
+    second: teacher_140
+  - first:
+      213: 6790424140315343409
+    second: teacher_141
+  - first:
+      213: -4856629609343780619
+    second: teacher_142
+  - first:
+      213: -1739831472963219320
+    second: teacher_143
+  - first:
+      213: -3052209997778718657
+    second: teacher_144
+  - first:
+      213: -4712728362112628583
+    second: teacher_145
+  - first:
+      213: -6561586998542364127
+    second: teacher_146
+  - first:
+      213: 3710553669283823070
+    second: teacher_147
+  - first:
+      213: -2471508671414159985
+    second: teacher_148
+  - first:
+      213: 3529022157354515234
+    second: teacher_149
+  - first:
+      213: 4358212022287048258
+    second: teacher_150
+  - first:
+      213: 291015024709883118
+    second: teacher_151
+  - first:
+      213: 6154974363895607917
+    second: teacher_152
+  - first:
+      213: 8393541935494470784
+    second: teacher_153
+  - first:
+      213: 3639067298690300511
+    second: teacher_154
+  - first:
+      213: -7233188357107825818
+    second: teacher_155
+  - first:
+      213: -8477590755882394514
+    second: teacher_156
+  - first:
+      213: -6745947841494073634
+    second: teacher_157
+  - first:
+      213: 8833992605587094716
+    second: teacher_158
+  - first:
+      213: -8863698942092957238
+    second: teacher_159
+  - first:
+      213: -391824706163839493
+    second: teacher_160
+  - first:
+      213: 5001625957555383331
+    second: teacher_161
+  - first:
+      213: 7214303218230448800
+    second: teacher_162
+  - first:
+      213: 4061002211581849495
+    second: teacher_163
+  - first:
+      213: -8696695410370372860
+    second: teacher_164
+  - first:
+      213: 648425745948589627
+    second: teacher_165
+  - first:
+      213: 4450749252789345243
+    second: teacher_166
+  - first:
+      213: 2122035748204511250
+    second: teacher_167
+  - first:
+      213: -6058388866884162234
+    second: teacher_168
+  - first:
+      213: 7014098824386026881
+    second: teacher_169
+  - first:
+      213: 7718894640613420075
+    second: teacher_170
+  - first:
+      213: -5744707719010852238
+    second: teacher_171
+  - first:
+      213: 867901698460563353
+    second: teacher_172
+  - first:
+      213: 4322140779363518851
+    second: teacher_173
+  - first:
+      213: -6925587222807544163
+    second: teacher_174
+  - first:
+      213: 160600408648674648
+    second: teacher_175
+  - first:
+      213: 2045690118381310659
+    second: teacher_176
+  - first:
+      213: -8966631634897240135
+    second: teacher_177
+  - first:
+      213: -9089139117579704668
+    second: teacher_178
+  - first:
+      213: 4042550135383901980
+    second: teacher_179
+  - first:
+      213: 3597655931903553733
+    second: teacher_180
+  - first:
+      213: 1550894214822737960
+    second: teacher_181
+  - first:
+      213: 2459973503219680667
+    second: teacher_182
+  - first:
+      213: 6538316883993770117
+    second: teacher_183
+  - first:
+      213: -781555109152524553
+    second: teacher_184
+  - first:
+      213: -3844826085515142984
+    second: teacher_185
+  - first:
+      213: 7690116833677244185
+    second: teacher_186
+  - first:
+      213: 3347524924682488299
+    second: teacher_187
+  - first:
+      213: 5591447856864662778
+    second: teacher_188
+  - first:
+      213: -3402888737975405384
+    second: teacher_189
+  - first:
+      213: -6319448928260032097
+    second: teacher_190
+  - first:
+      213: 4439711552353316282
+    second: teacher_191
+  - first:
+      213: 6984523206341340413
+    second: teacher_192
+  - first:
+      213: -6636187214643661419
+    second: teacher_193
+  - first:
+      213: 3339199453753913796
+    second: teacher_194
+  - first:
+      213: 6059654983357180554
+    second: teacher_195
+  - first:
+      213: -243188983137931623
+    second: teacher_196
+  - first:
+      213: 7771672792687141878
+    second: teacher_197
+  - first:
+      213: 6898781029145165196
+    second: teacher_198
+  - first:
+      213: -439401921119200520
+    second: teacher_199
+  - first:
+      213: -8243224139033297197
+    second: teacher_200
+  - first:
+      213: 9181151691035747092
+    second: teacher_201
+  - first:
+      213: 2171106172940112325
+    second: teacher_202
+  - first:
+      213: -8434356333534342916
+    second: teacher_203
+  - first:
+      213: -3652694154222932865
+    second: teacher_204
+  - first:
+      213: 7292718037819682455
+    second: teacher_205
+  - first:
+      213: 3572823898798121448
+    second: teacher_206
+  - first:
+      213: 5537301010203131714
+    second: teacher_207
+  - first:
+      213: 8828356502240867270
+    second: teacher_208
+  - first:
+      213: -5881949486895740701
+    second: teacher_209
+  - first:
+      213: 6146812751735957138
+    second: teacher_210
+  - first:
+      213: -5963518938524180411
+    second: teacher_211
+  - first:
+      213: 4553032090708334224
+    second: teacher_212
+  - first:
+      213: 7905204302138395317
+    second: teacher_213
+  - first:
+      213: 8891211162166451935
+    second: teacher_214
+  - first:
+      213: 814768973833782533
+    second: teacher_215
+  - first:
+      213: -8791339035866564023
+    second: teacher_216
+  - first:
+      213: -7321444412050617330
+    second: teacher_217
+  - first:
+      213: -7064503265600110915
+    second: teacher_218
+  - first:
+      213: -8330694642722324635
+    second: teacher_219
+  - first:
+      213: 269783435318371577
+    second: teacher_220
+  - first:
+      213: 1973164898630331123
+    second: teacher_221
+  - first:
+      213: 5897289789123085780
+    second: teacher_222
+  - first:
+      213: -3394408670490054251
+    second: teacher_223
+  - first:
+      213: 7577975832487415644
+    second: teacher_224
+  - first:
+      213: 8687654351816695699
+    second: teacher_225
+  - first:
+      213: -5210314748187628410
+    second: teacher_226
+  - first:
+      213: 8490694748072004153
+    second: teacher_227
+  - first:
+      213: 256399286822713425
+    second: teacher_228
+  - first:
+      213: -4646397666958972407
+    second: teacher_229
+  - first:
+      213: -4390483235204439579
+    second: teacher_230
+  - first:
+      213: -7233550622816477368
+    second: teacher_231
+  - first:
+      213: 3530573685338527830
+    second: teacher_232
+  - first:
+      213: 8224699075512102768
+    second: teacher_233
+  - first:
+      213: 7794500586439825273
+    second: teacher_234
+  - first:
+      213: 2955406625876953757
+    second: teacher_235
+  - first:
+      213: -7126075173086375998
+    second: teacher_236
+  - first:
+      213: -8944440949032169594
+    second: teacher_237
+  - first:
+      213: -7685643357556447294
+    second: teacher_238
+  - first:
+      213: -2820745026723813014
+    second: teacher_239
+  - first:
+      213: -5090987756598543247
+    second: teacher_240
+  - first:
+      213: 2643957803964805996
+    second: teacher_241
+  - first:
+      213: 21022595091631579
+    second: teacher_242
+  - first:
+      213: 90830198023578935
+    second: teacher_243
+  - first:
+      213: 4073343153585870797
+    second: teacher_244
+  - first:
+      213: 700395087176148191
+    second: teacher_245
+  - first:
+      213: 7226397696308306826
+    second: teacher_246
+  - first:
+      213: -8842721564435520444
+    second: teacher_247
+  - first:
+      213: 9109453943077693558
+    second: teacher_248
+  - first:
+      213: 4824248068240120392
+    second: teacher_249
+  - first:
+      213: 118178846748619574
+    second: teacher_250
+  - first:
+      213: 1790775993857771067
+    second: teacher_251
+  - first:
+      213: -6843310875261593903
+    second: teacher_252
+  - first:
+      213: 2647078522260093352
+    second: teacher_253
+  - first:
+      213: 6091118921347309233
+    second: teacher_254
+  - first:
+      213: 3284556067753239858
+    second: teacher_255
+  - first:
+      213: 4957961134576646630
+    second: teacher_256
+  - first:
+      213: -4190345573669888788
+    second: teacher_257
+  - first:
+      213: 5427597134092897641
+    second: teacher_258
+  - first:
+      213: 9123412015971505226
+    second: teacher_259
+  - first:
+      213: -4139378052884413216
+    second: teacher_260
+  - first:
+      213: -2415420989304544470
+    second: teacher_261
+  - first:
+      213: -81064385422224903
+    second: teacher_262
+  - first:
+      213: 7335813673844672604
+    second: teacher_263
+  - first:
+      213: -1851222622771636947
+    second: teacher_264
+  - first:
+      213: -5663020854937044120
+    second: teacher_265
+  - first:
+      213: -1109395353701053358
+    second: teacher_266
+  - first:
+      213: 400338040166079051
+    second: teacher_267
+  - first:
+      213: 1011289330243131463
+    second: teacher_268
+  - first:
+      213: 2647463347247766771
+    second: teacher_269
+  - first:
+      213: -3093620266426476129
+    second: teacher_270
+  - first:
+      213: -7539930580017308219
+    second: teacher_271
+  - first:
+      213: -2575884586143405205
+    second: teacher_272
+  - first:
+      213: -6395170720525526746
+    second: teacher_273
+  - first:
+      213: -603756890887267936
+    second: teacher_274
+  - first:
+      213: 4387138381913486106
+    second: teacher_275
+  - first:
+      213: 4776020885532619006
+    second: teacher_276
+  - first:
+      213: -4422900388990006095
+    second: teacher_277
+  - first:
+      213: -5776419680056082445
+    second: teacher_278
+  - first:
+      213: 7481372352776856216
+    second: teacher_279
+  - first:
+      213: -7975614026888711399
+    second: teacher_280
+  - first:
+      213: -4415027200510803494
+    second: teacher_281
+  - first:
+      213: -2601719207962825810
+    second: teacher_282
+  - first:
+      213: -8245595042593119282
+    second: teacher_283
+  - first:
+      213: -7801286204083291578
+    second: teacher_284
+  - first:
+      213: 875639850132262987
+    second: teacher_285
+  - first:
+      213: 2954600305321370669
+    second: teacher_286
+  - first:
+      213: 6157640760316250127
+    second: teacher_287
+  - first:
+      213: 4742488233104424234
+    second: teacher_288
+  - first:
+      213: 1024614835856438402
+    second: teacher_289
+  - first:
+      213: 3713935379354912571
+    second: teacher_290
+  - first:
+      213: -6564389822936638040
+    second: teacher_291
+  - first:
+      213: 1810296922490170486
+    second: teacher_292
+  - first:
+      213: -5718704493961005626
+    second: teacher_293
+  - first:
+      213: 5526410606781368278
+    second: teacher_294
+  - first:
+      213: -7407366987589794746
+    second: teacher_295
+  - first:
+      213: -6872576215196068643
+    second: teacher_296
+  - first:
+      213: 3875178941961377845
+    second: teacher_297
+  - first:
+      213: -3256432765198106914
+    second: teacher_298
+  - first:
+      213: -2469126575627021198
+    second: teacher_299
+  - first:
+      213: 8228086321992514866
+    second: teacher_300
+  - first:
+      213: 6825579081774809207
+    second: teacher_301
+  - first:
+      213: 6818268628654627420
+    second: teacher_302
+  - first:
+      213: -3646004498950982648
+    second: teacher_303
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: teacher_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50814a4b2a66e1ef0800000000000000
+      internalID: -135558089773148155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 607
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc462aa5e3bc86d0800000000000000
+      internalID: -2986814653869962063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 607
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53108449bcdd2780800000000000000
+      internalID: -8706059816360996002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 607
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e52344cd0697320800000000000000
+      internalID: 2556180762662690456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 575
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fbb88cfebc540dd0800000000000000
+      internalID: -2520787916070274061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 575
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f4c6cf6c7a380b0800000000000000
+      internalID: -5727549828004819155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 575
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67fb0075926c74130800000000000000
+      internalID: 3551024712060551030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 575
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b5c79bd8669f610800000000000000
+      internalID: 1655467096923724642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 575
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31394e8aab50be9d0800000000000000
+      internalID: -2744093248696577261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 575
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4609b7a290acad0800000000000000
+      internalID: -2681320550079372093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_10
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 575
+        width: 98
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7dde3797440bb3d0800000000000000
+      internalID: -3189951205535195782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 575
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098f9bf9ef4101ff0800000000000000
+      internalID: -67530910576543600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_12
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 575
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1391e0fff6b267100800000000000000
+      internalID: 105319401310263601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 575
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60aa790fdaebc3ba0800000000000000
+      internalID: -6107797340346144250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 575
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce42e7a735140cff0800000000000000
+      internalID: -17942571716303636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 575
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f2360b73f357dd0800000000000000
+      internalID: -2489013710637289676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_16
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 575
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ab55ddbd0dd1b40800000000000000
+      internalID: 5412711969899002503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_17
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 575
+        width: 98
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce48b8e4ab9ad7030800000000000000
+      internalID: 3494135503556150508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c297534fa163430800000000000000
+      internalID: 3762224174886104148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 544
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5882ffb9946cebb60800000000000000
+      internalID: 7763860827085416581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 543
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c86ad08d6de5ef0800000000000000
+      internalID: -117420316834755426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 543
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec3e418ddd3e4ab0800000000000000
+      internalID: -5022008512905069335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 544
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcdbe03fc0dacd2e0800000000000000
+      internalID: -2099613055132451377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_23
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 543
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0905b80b7d3eb6530800000000000000
+      internalID: 3849420822037614736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_24
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 543
+        width: 98
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341c4153649c7a530800000000000000
+      internalID: 3866280108496306499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_25
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 511
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a54d8caa7d137000800000000000000
+      internalID: 32402035039880611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_26
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 511
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4170845ea14335620800000000000000
+      internalID: 2761608286628742932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 544
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514fbffc3be2870e0800000000000000
+      internalID: -2272014662184995819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_28
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 543
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f961a360088b3f0800000000000000
+      internalID: -884816562545582206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 543
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8442ffb40f55ceb0800000000000000
+      internalID: -4700246162086411126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_30
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 544
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8662a4fe19cb677f0800000000000000
+      internalID: -615096964118600088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_31
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 543
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ff5374ab94c8820800000000000000
+      internalID: 2921791322664075015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_32
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 543
+        width: 98
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc769e926d29b9760800000000000000
+      internalID: 7465722255820548043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 524
+        width: 97
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c52ba5b9cf62870800000000000000
+      internalID: 8657885077838126169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_34
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 524
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d82cf76d8fc8df10800000000000000
+      internalID: 2294812216387184850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_35
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 528
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2212b0cc12474340800000000000000
+      internalID: 4847916215147041325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_36
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 511
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2d0f11b884fe210800000000000000
+      internalID: 1364388974255198881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_37
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 515
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0548d0df9179b410800000000000000
+      internalID: 1493349682667603210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_38
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 520
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d75550759c0c310800000000000000
+      internalID: 1423358857837903141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf15980f4d98c200800000000000000
+      internalID: 200583146189955004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_40
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 480
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589b7b03179d81250800000000000000
+      internalID: 5915717190723025285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83ad6046645dcb70800000000000000
+      internalID: 8920879235035145101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_42
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 480
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952bffed7d7599260800000000000000
+      internalID: 7104806471824552537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d72af715a33d380800000000000000
+      internalID: -8947743912946926275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_44
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 480
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3900328be74a1090800000000000000
+      internalID: -8063053106026378948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a334ad0c55f5e46e0800000000000000
+      internalID: -1851437574890306758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_46
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 480
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2af956d843d32f0800000000000000
+      internalID: -991578561051647291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27e197dd7c197820800000000000000
+      internalID: 2916393560512259882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_48
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 480
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7babd1c9b3ff59db0800000000000000
+      internalID: -4785638397523936585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08996710351b84a0800000000000000
+      internalID: -6590150333431179253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_50
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 480
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3231746a92ee42170800000000000000
+      internalID: 8152903088098186019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec09322df287c58b0800000000000000
+      internalID: -5162118926089088818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 448
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c0c92258bef7c80800000000000000
+      internalID: -8322674629313557350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_53
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50849d2ba91231c50800000000000000
+      internalID: 6634683624356136965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_54
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 448
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cf050319931e080800000000000000
+      internalID: -9159976871351223199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff4f960fd2edb830800000000000000
+      internalID: 4088673484238966771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_56
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 448
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a48b1e3cc566adc0800000000000000
+      internalID: -3628100521910631256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_57
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229d86b456a3a92a0800000000000000
+      internalID: -6730002486420514526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_58
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 448
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e824c97e239256c0800000000000000
+      internalID: -4156097678288869149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_59
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc37df9c4b2a0c860800000000000000
+      internalID: 7548211872839594959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_60
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 448
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739aebd3fc51dc210800000000000000
+      internalID: 1354763042746706231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4aecfe6ba85c850800000000000000
+      internalID: 6396671364061635808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_62
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 448
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2106e1acbc739e0800000000000000
+      internalID: -1641619470199811421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 193
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7775b9cc57308360800000000000000
+      internalID: 7169791478434461563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 193
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af41b513fceb01e0800000000000000
+      internalID: -2230428661646798936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_65
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8d5cdd06bc478f0800000000000000
+      internalID: -543586038106957626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_66
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe13151bc85d88c00800000000000000
+      internalID: 903206525534810607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_67
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727d68b39cbec08f0800000000000000
+      internalID: -572823803063249113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_68
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7d72c001a549180800000000000000
+      internalID: -9109557121293756496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_69
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14d7c8c90b470ae0800000000000000
+      internalID: -1583214238602111972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_70
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a820c70f1ecea80800000000000000
+      internalID: -8436119578982839695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_71
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84015cb0db9b7ca20800000000000000
+      internalID: 3082636691555815496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_72
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 386
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c533b76958a6520800000000000000
+      internalID: 2696114208293215279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_73
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 386
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aea27be128df54d0800000000000000
+      internalID: -3143556374685634910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_74
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 387
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb89e7c08abe79450800000000000000
+      internalID: 6095599727665911999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_75
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 386
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f602c60c5c2b120800000000000000
+      internalID: 2428220579344576336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_76
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 386
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8282d5338a2062840800000000000000
+      internalID: 5198845741285320744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b848cae86618f18b0800000000000000
+      internalID: -5179278768972462965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_78
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 352
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c116b67765976170800000000000000
+      internalID: 8171664320492868035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_79
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 351
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecad5d6c112d81f0800000000000000
+      internalID: -1041139532875059988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_80
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 351
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea43b43063564ad70800000000000000
+      internalID: 9053472433579439278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466573ee445d645a0800000000000000
+      internalID: -6537303317050599836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_82
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 351
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6415b1f6c1a3690800000000000000
+      internalID: -7621748155845884211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_83
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 351
+        width: 98
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b2bec417016b160800000000000000
+      internalID: 7040833146248178549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_84
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 351
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26247c54184a2e10800000000000000
+      internalID: 2173629022447347246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_85
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 352
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83a6441e9029aea0800000000000000
+      internalID: -5861117576728894582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_86
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 351
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6d7359ed27d1f10800000000000000
+      internalID: 2242074489812145876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_87
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 351
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ea0b6ebacfba6d0800000000000000
+      internalID: -2978008913335505401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b1b322fb8d68e80800000000000000
+      internalID: -8176609758019904716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_89
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 351
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff95ebc02533c4210800000000000000
+      internalID: 1318485218406849023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_90
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 351
+        width: 98
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c87682bfb2ff300800000000000000
+      internalID: 287997258889661497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_91
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b819d397ab18de0800000000000000
+      internalID: -1332578984838198479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_92
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e749832af68e000800000000000000
+      internalID: 65424937121513084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_93
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebe5a0f1316ee180800000000000000
+      internalID: -9084216531241014290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_94
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 355
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4acac280298e10860800000000000000
+      internalID: 7494526968821230756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_95
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 355
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e0b632a01d0e090800000000000000
+      internalID: -8007170295990645169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_96
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 355
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0869362ed3157ed50800000000000000
+      internalID: 6766466291380491904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_97
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ecd8faa565968b00800000000000000
+      internalID: 830515445189106914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_98
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c08be1a30ead730800000000000000
+      internalID: 4024775757237062663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_99
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 355
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d936628b80ee0a60800000000000000
+      internalID: 7642292507487123924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_100
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 351
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36fa238fb4e6d6790800000000000000
+      internalID: -7535245328955297949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_101
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 351
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487649a91a660ebd0800000000000000
+      internalID: -2602967740350961788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_102
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 351
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da58cf95c92ba0c0800000000000000
+      internalID: -4563507868643861808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd79ecce9e8fbf970800000000000000
+      internalID: 8789892781327685595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_104
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb8adfc2e392eb80800000000000000
+      internalID: -8366962555341861903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_105
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 319
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00d128c18c53da20800000000000000
+      internalID: 3085911882157117450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_106
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 319
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af987551489513c0800000000000000
+      internalID: -4389434855428415583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_107
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 319
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6be98ce3b47bbe0800000000000000
+      internalID: -1461616821032536403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_108
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 319
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee5a1fe605ecadd0800000000000000
+      internalID: -2473350277389197589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_109
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdf15a3e3a3acf60800000000000000
+      internalID: 8055314922446388723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_110
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10b0e799325c11d10800000000000000
+      internalID: 2094672058393692929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_111
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd354905b2d4a910800000000000000
+      internalID: 1847833422115192266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_112
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05bb2fc4f2e35dd70800000000000000
+      internalID: 9067221797655722832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_113
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afe5a4484e9bc690800000000000000
+      internalID: -7580791514521538656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_114
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0205d0b1ae8484720800000000000000
+      internalID: 2830592536115761184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_115
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 319
+        width: 194
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c416ec5f1db2a650800000000000000
+      internalID: 6242759975889147077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_116
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d94cd6aabc6ac50800000000000000
+      internalID: 6676247430469819675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_117
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086ed71ee1b8fcbf0800000000000000
+      internalID: -301869685262129536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_118
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 319
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf100b56650010520800000000000000
+      internalID: 2666412825453265404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_119
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 319
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7033688d13d7b930800000000000000
+      internalID: 4159024904695656573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_120
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 319
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2517c4f795a8ba4e0800000000000000
+      internalID: -1969328295052021422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_121
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 319
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2faa9dc51581e7100800000000000000
+      internalID: 107550178832657138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_122
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85cebdcf8fe4d860800000000000000
+      internalID: 7553925875918357902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_123
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989eca39936f66e10800000000000000
+      internalID: 2190708995913476489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_124
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36dddae6730cec760800000000000000
+      internalID: 7480127375421594979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_125
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe294911a9b1b9c0800000000000000
+      internalID: -3913142499643150660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_126
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a50bfd5e04a1f90800000000000000
+      internalID: -6982196916239967609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_127
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 319
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671eef22203c91510800000000000000
+      internalID: 1520460763158733174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_128
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 319
+        width: 194
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b38ec3ef1b40050800000000000000
+      internalID: 5765929128442739586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_129
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e20fc5c0676b2db50800000000000000
+      internalID: 6616551420690493486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_130
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0138abba8f9a1c6b0800000000000000
+      internalID: -5277750402803399920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_131
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac289a0e86fad210800000000000000
+      internalID: 1358669327529159849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_132
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c666d9448e2328e0800000000000000
+      internalID: -1719479487016048960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_133
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d4ab6e58932c24c0800000000000000
+      internalID: -4311031605974293291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_134
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee6fbe66054cdcd0800000000000000
+      internalID: -2532072996558901535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_135
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef62dcfc89f42eb0800000000000000
+      internalID: -4745393723409272858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_136
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 287
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa588ce643764c90800000000000000
+      internalID: -7185929406969783568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_137
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 287
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ffeae0fd940df90800000000000000
+      internalID: -6930958604150309098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_138
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23b2318abbddcaa0800000000000000
+      internalID: -6139009122958134483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_139
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 287
+        width: 162
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e57e867db7e15770800000000000000
+      internalID: 8597907964550870499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_140
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e5579433ff5ce20800000000000000
+      internalID: 3370380491897527965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_141
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13abbb547ce6c3e50800000000000000
+      internalID: 6790424140315343409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_142
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f87b611a19c99cb0800000000000000
+      internalID: -4856629609343780619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_143
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8809bfc4e70ead7e0800000000000000
+      internalID: -1739831472963219320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_144
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30f086ad2f54a5d0800000000000000
+      internalID: -3052209997778718657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_145
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9984e551686099eb0800000000000000
+      internalID: -4712728362112628583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_146
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1229f0db36f80f4a0800000000000000
+      internalID: -6561586998542364127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_147
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 287
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd3fa127e88e7330800000000000000
+      internalID: 3710553669283823070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_148
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 287
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85bf0d35ff63bdd0800000000000000
+      internalID: -2471508671414159985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_149
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 287
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b399d54fa99f030800000000000000
+      internalID: 3529022157354515234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_150
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 287
+        width: 162
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e91445eba7b7c30800000000000000
+      internalID: 4358212022287048258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_151
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 289
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee452248f94e90400800000000000000
+      internalID: 291015024709883118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_152
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 289
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6232a1d29cda6550800000000000000
+      internalID: 6154974363895607917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_153
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c1e706be9db7470800000000000000
+      internalID: 8393541935494470784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_154
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5afc247d60908230800000000000000
+      internalID: 3639067298690300511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_155
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 663c815238d8e9b90800000000000000
+      internalID: -7233188357107825818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_156
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c9e7caf1c895a80800000000000000
+      internalID: -8477590755882394514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_157
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edebe620e249162a0800000000000000
+      internalID: -6745947841494073634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_158
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc32746875a89a70800000000000000
+      internalID: 8833992605587094716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_159
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac92b8826c0ddf480800000000000000
+      internalID: -8863698942092957238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_160
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfde1e67185ff8af0800000000000000
+      internalID: -391824706163839493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_161
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c26730f48596540800000000000000
+      internalID: 5001625957555383331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_162
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a25590dd8a5e1460800000000000000
+      internalID: 7214303218230448800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_163
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f696dcef39b5830800000000000000
+      internalID: 4061002211581849495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_164
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b9a11f9912f4780800000000000000
+      internalID: -8696695410370372860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_165
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ebb7ac7cbaff800800000000000000
+      internalID: 648425745948589627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_166
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb18d44ddc34cd30800000000000000
+      internalID: 4450749252789345243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_167
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 255
+        width: 226
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210096c154cf27d10800000000000000
+      internalID: 2122035748204511250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_168
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d203e9c674ceba0800000000000000
+      internalID: -6058388866884162234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_169
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d930fe7b5175160800000000000000
+      internalID: 7014098824386026881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_170
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ced6877c50f1b60800000000000000
+      internalID: 7718894640613420075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_171
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272e9ed24c2b640b0800000000000000
+      internalID: -5744707719010852238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_172
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99733b41ff76b0c00800000000000000
+      internalID: 867901698460563353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_173
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389413f93245bfb30800000000000000
+      internalID: 4322140779363518851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_174
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e729b3d1f53ef90800000000000000
+      internalID: -6925587222807544163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_175
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85d694488319a3200800000000000000
+      internalID: 160600408648674648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_176
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c215aaf250c36c10800000000000000
+      internalID: 2045690118381310659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_177
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bf7b2a0900209380800000000000000
+      internalID: -8966631634897240135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_178
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6ed8ef024ecd180800000000000000
+      internalID: -9089139117579704668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_179
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17c3460ee50a1830800000000000000
+      internalID: 4042550135383901980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_180
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 255
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0303542017de130800000000000000
+      internalID: 3597655931903553733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_181
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 255
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828b7b64212e58510800000000000000
+      internalID: 1550894214822737960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_182
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 255
+        width: 225
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9548402ed4932220800000000000000
+      internalID: 2459973503219680667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_183
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58833638094ccba50800000000000000
+      internalID: 6538316883993770117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_184
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f67292e4cb5725f0800000000000000
+      internalID: -781555109152524553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_185
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8d6b5cb0f64aac0800000000000000
+      internalID: -3844826085515142984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_186
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91775982488c8ba60800000000000000
+      internalID: 7690116833677244185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_187
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be9477cde2cc47e20800000000000000
+      internalID: 3347524924682488299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_188
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af499887330d89d40800000000000000
+      internalID: 5591447856864662778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_189
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b47ccad8b286c0d0800000000000000
+      internalID: -3402888737975405384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_190
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9976de7eaecc48a0800000000000000
+      internalID: -6319448928260032097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_191
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abda73f52260d9d30800000000000000
+      internalID: 4439711552353316282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_192
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 223
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfca27fb9d20ee060800000000000000
+      internalID: 6984523206341340413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_193
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595fc2863e687e3a0800000000000000
+      internalID: -6636187214643661419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_194
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c13e2b1638375e20800000000000000
+      internalID: 3339199453753913796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_195
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a2e681a18381450800000000000000
+      internalID: 6059654983357180554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_196
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e66c688e400acf0800000000000000
+      internalID: -243188983137931623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_197
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 223
+        width: 226
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f36fa69a378adb60800000000000000
+      internalID: 7771672792687141878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_198
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8db6617bc46dbf50800000000000000
+      internalID: 6898781029145165196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_199
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fad012e74ee6e9f0800000000000000
+      internalID: -439401921119200520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_200
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3debefce15f2a9d80800000000000000
+      internalID: -8243224139033297197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_201
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413a925b1d00a6f70800000000000000
+      internalID: 9181151691035747092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_202
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1d0cfaf81512e10800000000000000
+      internalID: 2171106172940112325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_203
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf09e9e0a9523fa80800000000000000
+      internalID: -8434356333534342916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_204
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c656005060f4dc0800000000000000
+      internalID: -3652694154222932865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_205
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e635bba60f43560800000000000000
+      internalID: 7292718037819682455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_206
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e163e40868359130800000000000000
+      internalID: 3572823898798121448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_207
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 223
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24fb19f4ee178dc40800000000000000
+      internalID: 5537301010203131714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_208
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3b392d67f948a70800000000000000
+      internalID: 8828356502240867270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_209
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 223
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8c9c60b1e1f5ea0800000000000000
+      internalID: -5881949486895740701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_210
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296201861addd4550800000000000000
+      internalID: 6146812751735957138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_211
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 223
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540a3f91f135d3da0800000000000000
+      internalID: -5963518938524180411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_212
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 223
+        width: 225
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096df91409e9f2f30800000000000000
+      internalID: 4553032090708334224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_213
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba49d1ed6de4bd60800000000000000
+      internalID: 7905204302138395317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_214
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 191
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde5befb17de36b70800000000000000
+      internalID: 8891211162166451935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_215
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 191
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5054f5b9014ae4b00800000000000000
+      internalID: 814768973833782533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_216
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 191
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94af523b9b3eef580800000000000000
+      internalID: -8791339035866564023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_217
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c44f01911056a90800000000000000
+      internalID: -7321444412050617330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_218
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 191
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe715395b7d5fd90800000000000000
+      internalID: -7064503265600110915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_219
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 191
+        width: 98
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f39404c5d636c80800000000000000
+      internalID: -8330694642722324635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_220
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 191
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4af64ea967eb300800000000000000
+      internalID: 269783435318371577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_221
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 191
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa61226507126b10800000000000000
+      internalID: 1973164898630331123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_222
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 191
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5483a61d167d150800000000000000
+      internalID: 5897289789123085780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_223
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 191
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5913fec6c43a4e0d0800000000000000
+      internalID: -3394408670490054251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_224
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 191
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f48ebaed06a2960800000000000000
+      internalID: 7577975832487415644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_225
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 191
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f19639a9fb09870800000000000000
+      internalID: 8687654351816695699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_226
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 191
+        width: 98
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c2c4a875e31b7b0800000000000000
+      internalID: -5210314748187628410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_227
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a4b1343e105d570800000000000000
+      internalID: 8490694748072004153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_228
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 159
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1583bbbfac9ee8300800000000000000
+      internalID: 256399286822713425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_229
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 159
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90ae4b780fda48fb0800000000000000
+      internalID: -4646397666958972407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_230
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 159
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1e45562ced113c0800000000000000
+      internalID: -4390483235204439579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_231
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 159
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84fd73698044d9b90800000000000000
+      internalID: -7233550622816477368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_232
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 159
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658d1ff9f0e1ff030800000000000000
+      internalID: 3530573685338527830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_233
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 159
+        width: 98
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fe16c9b30042270800000000000000
+      internalID: 8224699075512102768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_234
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977d1508cf0ab2c60800000000000000
+      internalID: 7794500586439825273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_235
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 159
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a4b36faa6b30920800000000000000
+      internalID: 2955406625876953757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_236
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 159
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cfc479b2681b1d90800000000000000
+      internalID: -7126075173086375998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_237
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 159
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68fca76b856fed380800000000000000
+      internalID: -8944440949032169594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_238
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 159
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7e18a261c175590800000000000000
+      internalID: -7685643357556447294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_239
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 159
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a696d28d753bad8d0800000000000000
+      internalID: -2820745026723813014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_240
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 159
+        width: 98
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17cb41ccb9d2959b0800000000000000
+      internalID: -5090987756598543247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_241
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63b17a4d9931b420800000000000000
+      internalID: 2643957803964805996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_242
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 127
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd81b850ffaa4000800000000000000
+      internalID: 21022595091631579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_243
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735e2187591b24100800000000000000
+      internalID: 90830198023578935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_244
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 127
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc751c5440c678830800000000000000
+      internalID: 4073343153585870797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_245
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 127
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd42095fe9d48b900800000000000000
+      internalID: 700395087176148191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_246
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 127
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83682eea62594460800000000000000
+      internalID: 7226397696308306826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_247
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 127
+        width: 98
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44462208697584580800000000000000
+      internalID: -8842721564435520444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_248
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 127
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6786de6e8184b6e70800000000000000
+      internalID: 9109453943077693558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_249
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 127
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a11dfde0c23f240800000000000000
+      internalID: 4824248068240120392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_250
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 127
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633ba64f80bd3a100800000000000000
+      internalID: 118178846748619574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_251
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 127
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36803a474d1ad810800000000000000
+      internalID: 1790775993857771067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_252
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 127
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d61770340da701a0800000000000000
+      internalID: -6843310875261593903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_253
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 127
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9f0e324ef4cb420800000000000000
+      internalID: 2647078522260093352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_254
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 127
+        width: 98
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be11970360088450800000000000000
+      internalID: 6091118921347309233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_255
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 129
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235294f5756159d20800000000000000
+      internalID: 3284556067753239858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_256
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 129
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e932ac22673ec440800000000000000
+      internalID: 4957961134576646630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_257
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 128
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec9643f6e6e8d5c0800000000000000
+      internalID: -4190345573669888788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_258
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 129
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d098936d2b25b40800000000000000
+      internalID: 5427597134092897641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_259
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 128
+        width: 74
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44138ff3eedc9e70800000000000000
+      internalID: 9123412015971505226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_260
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 129
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4c6ce9799fd86c0800000000000000
+      internalID: -4139378052884413216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_261
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 129
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23ea7d5863ba7ed0800000000000000
+      internalID: -2415420989304544470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_262
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 128
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f119f6fe5000eef0800000000000000
+      internalID: -81064385422224903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_263
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 129
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5807f76bab0ec560800000000000000
+      internalID: 7335813673844672604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_264
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 131
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25978135d22f46e0800000000000000
+      internalID: -1851222622771636947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_265
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 127
+        width: 62
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86b39d15988e861b0800000000000000
+      internalID: -5663020854937044120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_266
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 133
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c0e2bbdc2aa90f0800000000000000
+      internalID: -1109395353701053358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_267
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4adc2293594e8500800000000000000
+      internalID: 400338040166079051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_268
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 95
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748d84ea942d80e00800000000000000
+      internalID: 1011289330243131463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_269
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fcd19033edadb420800000000000000
+      internalID: 2647463347247766771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_270
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 95
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9953b522c04115d0800000000000000
+      internalID: -3093620266426476129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_271
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 95
+        width: 66
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd96f2f519cc5790800000000000000
+      internalID: -7539930580017308219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_272
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 95
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ba484dd9e904cd0800000000000000
+      internalID: -2575884586143405205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_273
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 95
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629d81ddc1acf37a0800000000000000
+      internalID: -6395170720525526746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_274
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 95
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a958fb7e460f97f0800000000000000
+      internalID: -603756890887267936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_275
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 95
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a137f624d1f32ec30800000000000000
+      internalID: 4387138381913486106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_276
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 95
+        width: 66
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0b402e0b5d74240800000000000000
+      internalID: 4776020885532619006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_277
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc405d9783be92c0800000000000000
+      internalID: -4422900388990006095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_278
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 63
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff7ea0e7e806dfa0800000000000000
+      internalID: -5776419680056082445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_279
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89261bf448c23d760800000000000000
+      internalID: 7481372352776856216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_280
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 63
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913fca59c4de05190800000000000000
+      internalID: -7975614026888711399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_281
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1cdd7272caab2c0800000000000000
+      internalID: -4415027200510803494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_282
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63
+        width: 128
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaba0143a26d4ebd0800000000000000
+      internalID: -2601719207962825810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_283
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 63
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3e38ceef2c19d80800000000000000
+      internalID: -8245595042593119282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_284
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 63
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ab576c7834cb390800000000000000
+      internalID: -7801286204083291578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_285
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 63
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b405f4aedc5e62c00800000000000000
+      internalID: 875639850132262987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_286
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 63
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24e0f3d259d00920800000000000000
+      internalID: 2954600305321370669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_287
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 63
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08cd1d95a5547550800000000000000
+      internalID: 6157640760316250127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_288
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 63
+        width: 98
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2db8a5dbe3b0d140800000000000000
+      internalID: 4742488233104424234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_289
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28471dab3c9283e00800000000000000
+      internalID: 1024614835856438402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_290
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37843ddc8c8a8330800000000000000
+      internalID: 3713935379354912571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_291
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 80
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad1ca45c3a96e4a0800000000000000
+      internalID: -6564389822936638040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_292
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 31
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c620ba5777f1910800000000000000
+      internalID: 1810296922490170486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_293
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 31
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5360ecf8413a0b0800000000000000
+      internalID: -5718704493961005626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_294
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 31
+        width: 59
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7872caa21c1bc40800000000000000
+      internalID: 5526410606781368278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_295
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64441cf78feb33990800000000000000
+      internalID: -7407366987589794746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_296
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd490714854bf90a0800000000000000
+      internalID: -6872576215196068643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_297
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5389ea457b667c530800000000000000
+      internalID: 3875178941961377845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_298
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede7c6347a3dec2d0800000000000000
+      internalID: -3256432765198106914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_299
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27456422676ebbdd0800000000000000
+      internalID: -2469126575627021198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_300
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d3d936ae8003270800000000000000
+      internalID: 8228086321992514866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_301
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770468be20459be50800000000000000
+      internalID: 6825579081774809207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_302
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 50
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a162a613b5f9e50800000000000000
+      internalID: 6818268628654627420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teacher_303
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 6
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804fc8eb93ac66dc0800000000000000
+      internalID: -3646004498950982648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      teacher_0: -135558089773148155
+      teacher_1: -2986814653869962063
+      teacher_10: -3189951205535195782
+      teacher_100: -7535245328955297949
+      teacher_101: -2602967740350961788
+      teacher_102: -4563507868643861808
+      teacher_103: 8789892781327685595
+      teacher_104: -8366962555341861903
+      teacher_105: 3085911882157117450
+      teacher_106: -4389434855428415583
+      teacher_107: -1461616821032536403
+      teacher_108: -2473350277389197589
+      teacher_109: 8055314922446388723
+      teacher_11: -67530910576543600
+      teacher_110: 2094672058393692929
+      teacher_111: 1847833422115192266
+      teacher_112: 9067221797655722832
+      teacher_113: -7580791514521538656
+      teacher_114: 2830592536115761184
+      teacher_115: 6242759975889147077
+      teacher_116: 6676247430469819675
+      teacher_117: -301869685262129536
+      teacher_118: 2666412825453265404
+      teacher_119: 4159024904695656573
+      teacher_12: 105319401310263601
+      teacher_120: -1969328295052021422
+      teacher_121: 107550178832657138
+      teacher_122: 7553925875918357902
+      teacher_123: 2190708995913476489
+      teacher_124: 7480127375421594979
+      teacher_125: -3913142499643150660
+      teacher_126: -6982196916239967609
+      teacher_127: 1520460763158733174
+      teacher_128: 5765929128442739586
+      teacher_129: 6616551420690493486
+      teacher_13: -6107797340346144250
+      teacher_130: -5277750402803399920
+      teacher_131: 1358669327529159849
+      teacher_132: -1719479487016048960
+      teacher_133: -4311031605974293291
+      teacher_134: -2532072996558901535
+      teacher_135: -4745393723409272858
+      teacher_136: -7185929406969783568
+      teacher_137: -6930958604150309098
+      teacher_138: -6139009122958134483
+      teacher_139: 8597907964550870499
+      teacher_14: -17942571716303636
+      teacher_140: 3370380491897527965
+      teacher_141: 6790424140315343409
+      teacher_142: -4856629609343780619
+      teacher_143: -1739831472963219320
+      teacher_144: -3052209997778718657
+      teacher_145: -4712728362112628583
+      teacher_146: -6561586998542364127
+      teacher_147: 3710553669283823070
+      teacher_148: -2471508671414159985
+      teacher_149: 3529022157354515234
+      teacher_15: -2489013710637289676
+      teacher_150: 4358212022287048258
+      teacher_151: 291015024709883118
+      teacher_152: 6154974363895607917
+      teacher_153: 8393541935494470784
+      teacher_154: 3639067298690300511
+      teacher_155: -7233188357107825818
+      teacher_156: -8477590755882394514
+      teacher_157: -6745947841494073634
+      teacher_158: 8833992605587094716
+      teacher_159: -8863698942092957238
+      teacher_16: 5412711969899002503
+      teacher_160: -391824706163839493
+      teacher_161: 5001625957555383331
+      teacher_162: 7214303218230448800
+      teacher_163: 4061002211581849495
+      teacher_164: -8696695410370372860
+      teacher_165: 648425745948589627
+      teacher_166: 4450749252789345243
+      teacher_167: 2122035748204511250
+      teacher_168: -6058388866884162234
+      teacher_169: 7014098824386026881
+      teacher_17: 3494135503556150508
+      teacher_170: 7718894640613420075
+      teacher_171: -5744707719010852238
+      teacher_172: 867901698460563353
+      teacher_173: 4322140779363518851
+      teacher_174: -6925587222807544163
+      teacher_175: 160600408648674648
+      teacher_176: 2045690118381310659
+      teacher_177: -8966631634897240135
+      teacher_178: -9089139117579704668
+      teacher_179: 4042550135383901980
+      teacher_18: 3762224174886104148
+      teacher_180: 3597655931903553733
+      teacher_181: 1550894214822737960
+      teacher_182: 2459973503219680667
+      teacher_183: 6538316883993770117
+      teacher_184: -781555109152524553
+      teacher_185: -3844826085515142984
+      teacher_186: 7690116833677244185
+      teacher_187: 3347524924682488299
+      teacher_188: 5591447856864662778
+      teacher_189: -3402888737975405384
+      teacher_19: 7763860827085416581
+      teacher_190: -6319448928260032097
+      teacher_191: 4439711552353316282
+      teacher_192: 6984523206341340413
+      teacher_193: -6636187214643661419
+      teacher_194: 3339199453753913796
+      teacher_195: 6059654983357180554
+      teacher_196: -243188983137931623
+      teacher_197: 7771672792687141878
+      teacher_198: 6898781029145165196
+      teacher_199: -439401921119200520
+      teacher_2: -8706059816360996002
+      teacher_20: -117420316834755426
+      teacher_200: -8243224139033297197
+      teacher_201: 9181151691035747092
+      teacher_202: 2171106172940112325
+      teacher_203: -8434356333534342916
+      teacher_204: -3652694154222932865
+      teacher_205: 7292718037819682455
+      teacher_206: 3572823898798121448
+      teacher_207: 5537301010203131714
+      teacher_208: 8828356502240867270
+      teacher_209: -5881949486895740701
+      teacher_21: -5022008512905069335
+      teacher_210: 6146812751735957138
+      teacher_211: -5963518938524180411
+      teacher_212: 4553032090708334224
+      teacher_213: 7905204302138395317
+      teacher_214: 8891211162166451935
+      teacher_215: 814768973833782533
+      teacher_216: -8791339035866564023
+      teacher_217: -7321444412050617330
+      teacher_218: -7064503265600110915
+      teacher_219: -8330694642722324635
+      teacher_22: -2099613055132451377
+      teacher_220: 269783435318371577
+      teacher_221: 1973164898630331123
+      teacher_222: 5897289789123085780
+      teacher_223: -3394408670490054251
+      teacher_224: 7577975832487415644
+      teacher_225: 8687654351816695699
+      teacher_226: -5210314748187628410
+      teacher_227: 8490694748072004153
+      teacher_228: 256399286822713425
+      teacher_229: -4646397666958972407
+      teacher_23: 3849420822037614736
+      teacher_230: -4390483235204439579
+      teacher_231: -7233550622816477368
+      teacher_232: 3530573685338527830
+      teacher_233: 8224699075512102768
+      teacher_234: 7794500586439825273
+      teacher_235: 2955406625876953757
+      teacher_236: -7126075173086375998
+      teacher_237: -8944440949032169594
+      teacher_238: -7685643357556447294
+      teacher_239: -2820745026723813014
+      teacher_24: 3866280108496306499
+      teacher_240: -5090987756598543247
+      teacher_241: 2643957803964805996
+      teacher_242: 21022595091631579
+      teacher_243: 90830198023578935
+      teacher_244: 4073343153585870797
+      teacher_245: 700395087176148191
+      teacher_246: 7226397696308306826
+      teacher_247: -8842721564435520444
+      teacher_248: 9109453943077693558
+      teacher_249: 4824248068240120392
+      teacher_25: 32402035039880611
+      teacher_250: 118178846748619574
+      teacher_251: 1790775993857771067
+      teacher_252: -6843310875261593903
+      teacher_253: 2647078522260093352
+      teacher_254: 6091118921347309233
+      teacher_255: 3284556067753239858
+      teacher_256: 4957961134576646630
+      teacher_257: -4190345573669888788
+      teacher_258: 5427597134092897641
+      teacher_259: 9123412015971505226
+      teacher_26: 2761608286628742932
+      teacher_260: -4139378052884413216
+      teacher_261: -2415420989304544470
+      teacher_262: -81064385422224903
+      teacher_263: 7335813673844672604
+      teacher_264: -1851222622771636947
+      teacher_265: -5663020854937044120
+      teacher_266: -1109395353701053358
+      teacher_267: 400338040166079051
+      teacher_268: 1011289330243131463
+      teacher_269: 2647463347247766771
+      teacher_27: -2272014662184995819
+      teacher_270: -3093620266426476129
+      teacher_271: -7539930580017308219
+      teacher_272: -2575884586143405205
+      teacher_273: -6395170720525526746
+      teacher_274: -603756890887267936
+      teacher_275: 4387138381913486106
+      teacher_276: 4776020885532619006
+      teacher_277: -4422900388990006095
+      teacher_278: -5776419680056082445
+      teacher_279: 7481372352776856216
+      teacher_28: -884816562545582206
+      teacher_280: -7975614026888711399
+      teacher_281: -4415027200510803494
+      teacher_282: -2601719207962825810
+      teacher_283: -8245595042593119282
+      teacher_284: -7801286204083291578
+      teacher_285: 875639850132262987
+      teacher_286: 2954600305321370669
+      teacher_287: 6157640760316250127
+      teacher_288: 4742488233104424234
+      teacher_289: 1024614835856438402
+      teacher_29: -4700246162086411126
+      teacher_290: 3713935379354912571
+      teacher_291: -6564389822936638040
+      teacher_292: 1810296922490170486
+      teacher_293: -5718704493961005626
+      teacher_294: 5526410606781368278
+      teacher_295: -7407366987589794746
+      teacher_296: -6872576215196068643
+      teacher_297: 3875178941961377845
+      teacher_298: -3256432765198106914
+      teacher_299: -2469126575627021198
+      teacher_3: 2556180762662690456
+      teacher_30: -615096964118600088
+      teacher_300: 8228086321992514866
+      teacher_301: 6825579081774809207
+      teacher_302: 6818268628654627420
+      teacher_303: -3646004498950982648
+      teacher_31: 2921791322664075015
+      teacher_32: 7465722255820548043
+      teacher_33: 8657885077838126169
+      teacher_34: 2294812216387184850
+      teacher_35: 4847916215147041325
+      teacher_36: 1364388974255198881
+      teacher_37: 1493349682667603210
+      teacher_38: 1423358857837903141
+      teacher_39: 200583146189955004
+      teacher_4: -2520787916070274061
+      teacher_40: 5915717190723025285
+      teacher_41: 8920879235035145101
+      teacher_42: 7104806471824552537
+      teacher_43: -8947743912946926275
+      teacher_44: -8063053106026378948
+      teacher_45: -1851437574890306758
+      teacher_46: -991578561051647291
+      teacher_47: 2916393560512259882
+      teacher_48: -4785638397523936585
+      teacher_49: -6590150333431179253
+      teacher_5: -5727549828004819155
+      teacher_50: 8152903088098186019
+      teacher_51: -5162118926089088818
+      teacher_52: -8322674629313557350
+      teacher_53: 6634683624356136965
+      teacher_54: -9159976871351223199
+      teacher_55: 4088673484238966771
+      teacher_56: -3628100521910631256
+      teacher_57: -6730002486420514526
+      teacher_58: -4156097678288869149
+      teacher_59: 7548211872839594959
+      teacher_6: 3551024712060551030
+      teacher_60: 1354763042746706231
+      teacher_61: 6396671364061635808
+      teacher_62: -1641619470199811421
+      teacher_63: 7169791478434461563
+      teacher_64: -2230428661646798936
+      teacher_65: -543586038106957626
+      teacher_66: 903206525534810607
+      teacher_67: -572823803063249113
+      teacher_68: -9109557121293756496
+      teacher_69: -1583214238602111972
+      teacher_7: 1655467096923724642
+      teacher_70: -8436119578982839695
+      teacher_71: 3082636691555815496
+      teacher_72: 2696114208293215279
+      teacher_73: -3143556374685634910
+      teacher_74: 6095599727665911999
+      teacher_75: 2428220579344576336
+      teacher_76: 5198845741285320744
+      teacher_77: -5179278768972462965
+      teacher_78: 8171664320492868035
+      teacher_79: -1041139532875059988
+      teacher_8: -2744093248696577261
+      teacher_80: 9053472433579439278
+      teacher_81: -6537303317050599836
+      teacher_82: -7621748155845884211
+      teacher_83: 7040833146248178549
+      teacher_84: 2173629022447347246
+      teacher_85: -5861117576728894582
+      teacher_86: 2242074489812145876
+      teacher_87: -2978008913335505401
+      teacher_88: -8176609758019904716
+      teacher_89: 1318485218406849023
+      teacher_9: -2681320550079372093
+      teacher_90: 287997258889661497
+      teacher_91: -1332578984838198479
+      teacher_92: 65424937121513084
+      teacher_93: -9084216531241014290
+      teacher_94: 7494526968821230756
+      teacher_95: -8007170295990645169
+      teacher_96: 6766466291380491904
+      teacher_97: 830515445189106914
+      teacher_98: 4024775757237062663
+      teacher_99: 7642292507487123924
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
