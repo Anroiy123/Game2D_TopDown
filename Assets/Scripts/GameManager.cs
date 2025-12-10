@@ -124,6 +124,49 @@ public class GameManager : MonoBehaviour
     {
         isTransitioningScene = false;
         Debug.Log($"[GameManager] Scene loaded: {scene.name}");
+
+        // Tìm player và spawn tại đúng vị trí
+        StartCoroutine(SpawnPlayerAtTargetPoint());
+    }
+
+    /// <summary>
+    /// Spawn player tại spawn point được chỉ định
+    /// </summary>
+    private System.Collections.IEnumerator SpawnPlayerAtTargetPoint()
+    {
+        // Đợi 1 frame để đảm bảo scene đã load hoàn toàn
+        yield return null;
+
+        // Tìm SpawnManager trong scene mới
+        SpawnManager spawnManager = FindFirstObjectByType<SpawnManager>();
+        if (spawnManager == null)
+        {
+            Debug.LogWarning("[GameManager] SpawnManager not found in scene!");
+            yield break;
+        }
+
+        // Tìm Player trong scene
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null)
+        {
+            Debug.LogWarning("[GameManager] Player not found in scene!");
+            yield break;
+        }
+
+        // Spawn player tại spawn point
+        string spawnId = targetSpawnPointId;
+
+        // Nếu không có targetSpawnPointId, thử tìm theo previous scene
+        if (string.IsNullOrEmpty(spawnId) && !string.IsNullOrEmpty(previousSceneName))
+        {
+            spawnId = "from_" + previousSceneName.ToLower().Replace("scene", "");
+            Debug.Log($"[GameManager] Auto-generated spawn ID: {spawnId}");
+        }
+
+        spawnManager.SpawnPlayer(player, spawnId);
+
+        // Reset target spawn point sau khi spawn xong
+        targetSpawnPointId = "";
     }
     #endregion
 
