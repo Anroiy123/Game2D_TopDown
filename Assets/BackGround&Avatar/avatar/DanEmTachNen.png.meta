@@ -5,9 +5,6 @@ TextureImporter:
   - first:
       213: 265032481448299849
     second: DanEmTachNen_0
-  - first:
-      213: 6181426965490055284
-    second: DanEmTachNen_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,8 +105,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2048
-        height: 1142
+        width: 471
+        height: 906
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,28 +117,6 @@ TextureImporter:
       bones: []
       spriteID: 94d8aae33a59da300800000000000000
       internalID: 265032481448299849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DanEmTachNen_1
-      rect:
-        serializedVersion: 2
-        x: 2039
-        y: 1136
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4783e031317d8c550800000000000000
-      internalID: 6181426965490055284
       vertices: []
       indices: 
       edges: []
@@ -161,7 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       DanEmTachNen_0: 265032481448299849
-      DanEmTachNen_1: 6181426965490055284
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

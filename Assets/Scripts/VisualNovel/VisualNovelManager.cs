@@ -214,7 +214,9 @@ public class VisualNovelManager : MonoBehaviour
             }
 
             backgroundImage.color = tint;
-            backgroundImage.preserveAspect = true;
+            // Không preserve aspect để background full màn hình
+            backgroundImage.preserveAspect = false;
+            backgroundImage.type = Image.Type.Simple;
 
             Debug.Log($"[VNManager] Background set: sprite={scene.backgroundImage != null}, tint={tint}");
         }
@@ -490,6 +492,12 @@ public class VisualNovelManager : MonoBehaviour
             dialogueSystem.OnSpeakerChanged -= OnSpeakerChanged;
         }
 
+        // Apply on complete effects for current scene
+        if (currentScene != null)
+        {
+            currentScene.ApplyOnCompleteEffects();
+        }
+
         // Check for next scene
         if (currentScene != null && currentScene.sceneData.nextScene != null)
         {
@@ -547,6 +555,7 @@ public class VisualNovelManager : MonoBehaviour
 
     #region Player Control
     private GameObject cachedPlayer; // Cache player reference vì SetActive(false) sẽ khiến FindWithTag không tìm thấy
+    private MonoBehaviour cachedCinemachineCamera; // Cache Cinemachine camera
 
     private void DisablePlayerControls()
     {
@@ -571,6 +580,43 @@ public class VisualNovelManager : MonoBehaviour
             if (collider != null) collider.enabled = false;
 
             Debug.Log("[VNManager] Player controls disabled");
+        }
+
+        // Disable Cinemachine camera để không follow player
+        DisableCinemachineCamera();
+    }
+
+    private void DisableCinemachineCamera()
+    {
+        try
+        {
+            var allMonoBehaviours = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None);
+            foreach (var mb in allMonoBehaviours)
+            {
+                if (mb == null) continue;
+                var typeName = mb.GetType().Name;
+                if (typeName == "CinemachineCamera" || typeName == "CinemachineVirtualCamera")
+                {
+                    cachedCinemachineCamera = mb;
+                    mb.enabled = false;
+                    Debug.Log($"[VNManager] Disabled Cinemachine camera: {mb.name}");
+                    break;
+                }
+            }
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogWarning($"[VNManager] Error disabling Cinemachine: {e.Message}");
+        }
+    }
+
+    private void EnableCinemachineCamera()
+    {
+        if (cachedCinemachineCamera != null)
+        {
+            cachedCinemachineCamera.enabled = true;
+            Debug.Log($"[VNManager] Enabled Cinemachine camera: {cachedCinemachineCamera.name}");
+            cachedCinemachineCamera = null;
         }
     }
 
@@ -604,6 +650,9 @@ public class VisualNovelManager : MonoBehaviour
         {
             Debug.LogWarning("[VNManager] Could not find Player to enable controls!");
         }
+
+        // Enable Cinemachine camera
+        EnableCinemachineCamera();
 
         // Clear cache sau khi enable (để tìm lại player mới nếu scene thay đổi)
         cachedPlayer = null;

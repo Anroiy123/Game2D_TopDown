@@ -92,7 +92,7 @@ Background Sprite: [Kéo ảnh background vào]
 
 ### Bước 3: Chỉnh sửa Dialogue
 ```
-Mở: Assets/Scripts/Data/VisualNovel/Day1_Morning_Dialogue.asset
+Mở: Assets/Data/VisualNovel/Day1_Morning_Dialogue.asset
 Chỉnh sửa nodes trong Inspector
 ```
 

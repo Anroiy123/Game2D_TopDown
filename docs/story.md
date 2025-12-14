@@ -3,33 +3,42 @@
 ## TỔNG QUAN
 
 ### Bối cảnh nhân vật chính
+
 - **Tên**: Đức
 - **Đặc điểm**: Học sinh chuyển trường, cô đơn, chưa có bạn bè, cận thị, nhìn đụt đụt, wibu
 - **Tính cách**: Nhút nhát, thiếu tự tin, khó hòa nhập
 - **Aura**: Tỏa ra vẻ ngoài của người dễ bị bắt nạt
 
 ### Chủ đề game
+
 Game miêu tả cuộc sống thường ngày của Đức trong quá trình trước, trong và sau khi bị bắt nạt, với nhiều lựa chọn dẫn đến các kết cục khác nhau.
 
 ---
 
 ## NGÀY 1: NGÀY ĐẦU TIÊN
 
-### Buổi sáng tại nhà
-**Địa điểm**: Phòng ngủ Đức (không có avatar)
+### 🎬 Cảnh 1: Buổi sáng tại nhà - Phòng ngủ
+
+**Chế độ**: `Visual Novel` (Background phòng ngủ Đức, không có avatar)
+**Scene ID**: `Day1_Scene1_Bedroom`
 
 **Mẹ Đức**: "Đức ơi dậy đi con, nay buổi đầu đi nhận lớp đấy, dậy ăn sáng rồi đi không kẻo muộn"
 
 ---
 
-**Địa điểm**: Phòng khách (có avatar Đức)
+### 🎬 Cảnh 2: Phòng khách - Ăn sáng
 
-**Đức**: *(Miệng ngậm lát bánh mì vừa xỏ giày vừa đi ra cổng)* "Thưa mẹ con đi học."
+**Chế độ**: `Visual Novel` (Background phòng khách - avatar Đức)
+**Scene ID**: `Day1_Scene2_Livingroom`
+
+**Đức**: _(Miệng ngậm lát bánh mì vừa xỏ giày vừa đi ra cổng)_ "Thưa mẹ con đi học."
 
 ---
 
-### Trên trường - Lớp học
-**Địa điểm**: Lớp học (avatar cô giáo)
+### 🎬 Cảnh 3: Trên trường - Lớp học
+
+**Chế độ**: `Visual Novel` (Background lớp học - avatar cô giáo)
+**Scene ID**: `Day1_Scene3_Classroom`
 
 **Cô giáo**: "Cả lớp im lặng, bắt đầu từ hôm nay lớp chúng ta sẽ chào đón một bạn mới chuyển vào, các em nhớ hãy hòa đồng và cùng giúp đỡ bạn để làm quen với lớp chúng ta nhanh hơn nhé. Nào, Đức lên đây và tự giới thiệu bản thân đi em."
 
@@ -43,32 +52,50 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 ---
 
-### Trên đường về nhà
-**Địa điểm**: Trên đường
+### 🎬 Cảnh 4: Trên đường về nhà
+
+**Chế độ**: `Visual Novel` (Background ngoài đường)
+**Scene ID**: `Day1_Scene4_Street`
 
 **Đức**: "Ngày đầu mệt thật, giờ phải về nhanh để còn kịp cày daily quest hôm nay nữa. Nhớ mấy em oai fu quá"
 
-*(Đi đường - Top down: Đức đi trên đường thì tụi bắt nạt xuất hiện và đi theo)*
+---
+
+### 🎮 Cảnh 5: Đi đường về nhà
+
+**Chế độ**: `Top-down` (Đức đi trên đường, tụi bắt nạt xuất hiện và đi theo)
+
+_(Người chơi điều khiển Đức đi về nhà, tụi bắt nạt theo sau)_
+
+---
+
+### 🎬 Cảnh 6: Phát hiện bị theo dõi
+
+**Chế độ**: `Visual Novel` (Background ngoài đường)
+**Scene ID**: `Day1_Scene6_Street_Noticed`
 
 **Đức**: "Hửm, sao mấy con vợ đằng sau cứ nhìn rồi đi theo mình nãy giờ thế nhỉ"
-
 
 ---
 
 ## LỰA CHỌN 1.1: GẶP TỤI BẮT NẠT LẦN ĐẦU
 
-### Lựa chọn A: Quay lại hỏi thăm
-**Địa điểm**: Ngoài đường
+### 🔀 Lựa chọn A: Quay lại hỏi thăm
+
+#### 🎬 Cảnh 7A: Đối mặt với tụi bắt nạt
+
+**Chế độ**: `Visual Novel` (Background ngoài đường)
+**Scene ID**: `Day1_Scene7A_Confrontation`
 
 **Đức**: "Này sao mấy ông cứ đi theo tôi làm gì thế à"
 
 **Thủ lĩnh**: "Ồ không có gì đâu ông bạn, chả là tụi tôi thấy ông khá lạ, chưa gặp lần nào nên muốn đến chào hỏi thôi ấy mà, đúng không tụi bay"
 
-**Đức**: "À vậy à, đúng là tôi mới chuyển đến đây năm nay, tôi tên là Đức, nếu giới thiệu xong rồi thì tôi về đây, tôi còn việc ở nhà phải làm" *(Quay gót vội)*
+**Đức**: "À vậy à, đúng là tôi mới chuyển đến đây năm nay, tôi tên là Đức, nếu giới thiệu xong rồi thì tôi về đây, tôi còn việc ở nhà phải làm" _(Quay gót vội)_
 
 **Đàn em**: "Ê đợi đ--"
 
-**Đức**: *(Quay đầu lại)* "Hả còn j nữa à"
+**Đức**: _(Quay đầu lại)_ "Hả còn j nữa à"
 
 **Thủ lĩnh**: "Ấy không có gì đâu, ông về nhanh đi còn việc bận ở nhà mà, lần sau chúng ta lại gặp lại à…."
 
@@ -80,26 +107,45 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 ---
 
-### Lựa chọn B: Chạy lẹ về nhà (Lần 1)
-*(Đức chạy về nhà để tránh rắc rối)*
+### 🔀 Lựa chọn B: Chạy lẹ về nhà (Lần 1)
+
+#### 🎮 Cảnh 7B: Bỏ chạy
+
+**Chế độ**: `Top-down` (Đức chạy về nhà để tránh rắc rối)
+
+_(Người chơi điều khiển Đức chạy về nhà)_
 
 ---
 
-### Về đến nhà
-**Địa điểm**: Phòng khách (Top-down, mẹ đứng ngay cửa)
+### 🎮 Cảnh 8: Về đến nhà
+
+**Chế độ**: `Top-down` (Phòng khách, mẹ đứng ngay cửa)
+**Scene ID**: `Day1_Scene8_Home_Livingroom`
 
 **Mẹ**: "Nay đi học có vui không con, làm quen với thầy cô với lớp học chưa, đã kết bạn được với ai chưa"
 
 **Đức**: "Mẹ cứ từ từ đã, sao hỏi dồn dập thế, nay con đi học bình thường, mẹ không cần gì phải lo cả đâu"
 
-*(Top-down: Nhân vật Đức phóng vội lên phòng)*
+---
+
+### 🎮 Cảnh 9: Lên phòng
+
+**Chế độ**: `Top-down` (Đức phóng vội lên phòng)
+
+_(Hoạt ảnh: Đức chạy lên cầu thang và biến mất)_
 
 ---
 
-## SAU 1 TUẦN
+## SAU 1 TUẦN - TRÔI QUA
 
-### Trên trường - Giờ ra chơi
-**Địa điểm**: Lớp học (avatar bạn)
+_(Chuyển cảnh: Màn hình đen với chú thích "Trôi qua 1 tuần...")_
+
+---
+
+### 🎬 Cảnh 10: Trên trường - Giờ ra chơi
+
+**Chế độ**: `Visual Novel` (Background lớp học - avatar bạn)
+**Scene ID**: `Week1_Scene1_Classroom_Break`
 
 **Bạn**: "Ê Đức, ra sân chơi bóng với tụi tao đi, vui lắm, cứ ngồi một mình ở đây như này không chán à, đi đi, giờ mày không biết thì chơi vài lần là quen"
 
@@ -113,15 +159,28 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Đức**: "Thôi tụi mày đi đi, tao không thích, tao ngồi đây được rồi"
 
-**Mấy đứa bạn khác**: "Thôi đi mày ơi, mày nói nãy giờ câu nào nó cũng từ chối, mày rủ nhiều thế tao cũng nể đấy, thôi đi lẹ đi sắp hết giờ ra chơi rồi kìa."
-
-*(Top-down: Đám bạn đi ra ngoài cửa)*
-
+**Mấy đứa bạn khác** _(không có avatar)_: "Thôi đi mày ơi, mày nói nãy giờ câu nào nó cũng từ chối, mày rủ nhiều thế tao cũng nể đấy, thôi đi lẹ đi sắp hết giờ ra chơi rồi kìa."
 
 ---
 
-### Cuối giờ học - Gặp giáo viên
-**Địa điểm**: Phòng giáo viên
+### 🎮 Cảnh 11: Đám bạn đi ra ngoài
+
+**Chế độ**: `Top-down` (Đám bạn đi ra ngoài cửa lớp)
+
+_(Hoạt ảnh: Các bạn đi ra khỏi lớp)_
+
+---
+
+_(Chuyển cảnh: Màn hình đen)_
+
+---
+
+### 🎬 Cảnh 12: Cuối giờ học - Gặp giáo viên
+
+**Chế độ**: `Visual Novel` (Background phòng giáo viên - avatar cô giáo)
+**Scene ID**: `Week1_Scene2_TeacherRoom`
+
+_(Chú thích: Cuối tiết học cuối cùng, GVCN gọi Đức lên phòng GV trao đổi)_
 
 **Giáo viên**: "Đức này, em có biết vì sao cô gọi em lên đây không?"
 
@@ -137,17 +196,23 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 ---
 
-### Trên đường về
-**Địa điểm**: Trên đường (Top down)
+### 🎮 Cảnh 13: Trên đường về
 
-*(Tụi bắt nạt lại đi theo Đức, Đức quay lại nhìn và lựa chọn)*
+**Chế độ**: `Top-down` (Đức đi trên đường, tụi bắt nạt lại đi theo)
+**Scene ID**: `Week1_Scene3_Street_Followed`
+
+_(Tụi bắt nạt lại đi theo Đức, Đức quay lại nhìn và lựa chọn)_
 
 ---
 
 ## LỰA CHỌN 1.2: GẶP LẠI TỤI BẮT NẠT
 
-### Lựa chọn A: Đối mặt
-**Địa điểm**: Ngoài đường
+### 🔀 Lựa chọn A: Đối mặt
+
+#### 🎬 Cảnh 14A: Đối mặt lần 2
+
+**Chế độ**: `Visual Novel` (Background ngoài đường)
+**Scene ID**: `Week1_Scene4A_SecondEncounter`
 
 **Thủ lĩnh**: "Ô này anh bạn, lâu lắm mới gặp ông, hình như 1 tuần rồi nhỉ, ông làm quen được với trường mới chưa, hay vẫn còn khó khăn"
 
@@ -157,7 +222,20 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Đức**: "…."
 
-*(Top-down: Cả đám vây quanh Đức)*
+---
+
+#### 🎮 Cảnh 14A-1: Bị vây quanh
+
+**Chế độ**: `Top-down` (Cả đám vây quanh Đức)
+
+_(Hoạt ảnh: Tụi bắt nạt vây quanh Đức)_
+
+---
+
+#### 🎬 Cảnh 14A-2: Ép buộc kết bạn
+
+**Chế độ**: `Visual Novel` (Background ngoài đường - có thể dùng Top-down luôn)
+**Scene ID**: `Week1_Scene4A2_Forced_Friend`
 
 **Đám đàn em**: "Đúng đấy, đúng đấy, anh tao đã ngỏ lời rồi thì mày đồng ý đi"
 
@@ -171,13 +249,20 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 ---
 
-### Lựa chọn B: Chạy thật nhanh (Lần 2)
-*(Đức chạy về nhà)*
+### 🔀 Lựa chọn B: Chạy thật nhanh (Lần 2)
+
+#### 🎮 Cảnh 14B: Bỏ chạy lần 2
+
+**Chế độ**: `Top-down` (Đức chạy về nhà)
+
+_(Người chơi điều khiển Đức chạy về nhà)_
 
 ---
 
-### Về nhà
-**Địa điểm**: Phòng khách
+### 🎮 Cảnh 15: Về nhà
+
+**Chế độ**: `Top-down` (Phòng khách)
+**Scene ID**: `Week1_Scene5_Home`
 
 **Mẹ**: "Mày đi học về rồi đấy à, nay có gì mới không con, học được 1 tuần rồi đã thân quen với đứa nào chưa"
 
@@ -187,17 +272,28 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Đức**: "Vâng, con biết rồi"
 
-*(Phóng vội lên phòng - hoạt ảnh phóng lên cầu thang rồi biến mất)*
+---
 
+### 🎮 Cảnh 16: Lên phòng
+
+**Chế độ**: `Top-down` (Đức phóng vội lên phòng)
+
+_(Hoạt ảnh: Đức phóng lên cầu thang rồi biến mất)_
 
 ---
 
 ## NGÀY TIẾP THEO
 
-### Trên trường
-**Địa điểm**: Lớp học (Top down)
+_(Chuyển cảnh: Màn hình đen)_
 
-*(Tiếng trống trường - âm thanh hoặc chú thích khung thoại)*
+---
+
+### 🎮 Cảnh 17: Trên trường - Cuối giờ học
+
+**Chế độ**: `Top-down` (Lớp học)
+**Scene ID**: `Day2_Scene1_Classroom`
+
+_(Tiếng trống trường - âm thanh hoặc chú thích khung thoại)_
 
 **Cô giáo**: "Vậy thì các em về nhà làm bài ở trang 69, hôm sau lên nộp cho cô, chúng ta nghỉ ở đây"
 
@@ -205,22 +301,40 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Đức**: "….."
 
-**Bạn kế bên**: "Vậy thôi tôi đi đây" *(hoạt ảnh đi ra ngoài cửa)*
-
-*(Chuyển màn đen đến chiều)*
-
-*(Tùng tùng tùng, hết giờ học - âm thanh hoặc chú thích khung thoại)*
-
-**Đức**: "Haizz, học hành chán thật, mãi mới được về, lại phải về lẹ để cày nhiệm vụ tiếp thôi, à mong hôm nay không gặp lũ kia nữa, nghĩ tới tụi nó mệt mỏi thật"
+**Bạn kế bên**: "Vậy thôi tôi đi đây"
 
 ---
 
-### Trên đường về
-**Địa điểm**: Trên đường (Top down)
+### 🎮 Cảnh 18: Bạn đi ra ngoài
+
+**Chế độ**: `Top-down` (Bạn kế bên đi ra ngoài cửa)
+
+_(Hoạt ảnh: Bạn kế bên đi ra ngoài cửa)_
+
+---
+
+_(Chuyển màn đen đến chiều)_
+
+_(Tùng tùng tùng, hết giờ học - âm thanh hoặc chú thích khung thoại)_
+
+---
+
+### 🎮 Cảnh 19: Chuẩn bị về nhà
+
+**Chế độ**: `Top-down` (Lớp học)
+
+**Đức** _(suy nghĩ)_: "Haizz, học hành chán thật, mãi mới được về, lại phải về lẹ để cày nhiệm vụ tiếp thôi, à mong hôm nay không gặp lũ kia nữa, nghĩ tới tụi nó mệt mỏi thật"
+
+---
+
+### 🎮 Cảnh 20: Trên đường về
+
+**Chế độ**: `Top-down` (Trên đường)
+**Scene ID**: `Day2_Scene2_Street`
 
 **Đức**: "Tụi nó lại đứng chờ mình ở kia nữa rồi"
 
-*(Đám bắt nạt đi tới - hoạt ảnh)*
+_(Đám bắt nạt đi tới - hoạt ảnh)_
 
 ---
 
@@ -246,7 +360,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thủ lĩnh**: "Haizz, tôi đã nói đến thế rồi ông còn không đồng ý, ông biết tôi buồn lắm không, tôi bị tổn thương rồi này, nếu đã vậy thì không còn cách nào khác rồi nhỉ, ae giữ nó lại cho tao."
 
-*(Cả đám bu lại Đức, thủ lĩnh đến gần rồi bụp bụp bụp - top down hoặc background)*
+_(Cả đám bu lại Đức, thủ lĩnh đến gần rồi bụp bụp bụp - top down hoặc background)_
 
 ##### Lựa chọn A2.2: Đồng ý
 
@@ -266,7 +380,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Đức**: "Ơ nhưng.."
 
-**Thủ lĩnh**: "Tao thất vọng về mày quá, tao tưởng mày thông minh lắm, nhưng có vẻ là không rồi, anh em đâu, giữ nó lại cho tao" *(bụp bụp bụp)*
+**Thủ lĩnh**: "Tao thất vọng về mày quá, tao tưởng mày thông minh lắm, nhưng có vẻ là không rồi, anh em đâu, giữ nó lại cho tao" _(bụp bụp bụp)_
 
 #### Lựa chọn B2: Đưa tiền
 
@@ -274,36 +388,47 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thủ lĩnh**: "Tốt, rồi mày về được rồi"
 
-*(Đức chạy vội)*
+_(Đức chạy vội)_
 
 ---
 
 ### Về nhà
+
 **Địa điểm**: Phòng khách
 
-*(Đức trong lòng ấm ức nên phóng thẳng lên phòng luôn)*
+_(Đức trong lòng ấm ức nên phóng thẳng lên phòng luôn)_
 
 **Mẹ**: "Ơ hay nhỉ, thằng này hôm nay đi về không thèm thưa ai à, chắc gặp chuyện gì không vui rồi, thôi kệ nó, mai nhắc nó là được, vô làm nốt việc tí còn đi nấu cơm."
-
 
 ---
 
 ## SAU 1-2 TUẦN (PHASE 2)
 
-*(Chú thích: Trong 1-2 tuần đó cứ cách 2 ngày 1 lần hoặc ngẫu nhiên lại bị xin tiền như trên - màn đen)*
+_(Chú thích: Trong 1-2 tuần đó cứ cách 2 ngày 1 lần hoặc ngẫu nhiên lại bị xin tiền như trên)_
+
+_(Chuyển cảnh: Màn hình đen với chú thích "Trôi qua 1-2 tuần...")_
 
 ---
 
 ## BUỔI SÁNG ĐẦU TUẦN - ĐIỂM CHUYỂN BIẾN
 
-### Tại nhà - Buổi sáng
-**Địa điểm**: Phòng khách (Top down)
+### 🎮 Cảnh 21: Tại nhà - Buổi sáng
+
+**Chế độ**: `Top-down` (Phòng khách)
+**Scene ID**: `Week3_Scene1_Home_Morning`
 
 **Tivi đưa tin**: "Hiện nay, tình trạng giới trẻ là mục tiêu của bạo lực học đường dần gia tăng, hầu hết nạn nhân đều là các học sinh yếu thế trong trường, ít bạn bè và thiếu khả năng giao tiếp xã hội. Đã có nhiều vụ việc xảy ra mang đến cái kết buồn cho gia đình và xã hội. Việc ngăn chặn bạo lực và các hành động tương tự xảy ra không chỉ là trách nhiệm của cá nhân cụ thể nào mà cần phải có sự chung tay của toàn xã hội để chấm dứt tình trạng này."
 
 **Mẹ**: "Nay đi học nhớ tập trung học đấy, với cả tìm đứa nào dễ gần rồi làm quen rồi kết bạn đi, bữa tao có nhắc rồi đấy, tao lo cho mày lắm con ạ, mày cũng lớn rồi, cũng phải học cách mở rộng mối quan hệ của mình đi. Đi lẹ đi không trễ giờ học, chiều về nhớ thưa gọi đàng hoàng đừng như hôm qua, mẹ mày buồn lắm đấy."
 
-*(Khi mở cửa - đi ra chạm vào cửa - màn đen hiện khung thoại)*
+---
+
+### 🎬 Cảnh 22: Khi mở cửa - Tin tức quan trọng
+
+**Chế độ**: `Visual Novel` (Màn đen hiện khung thoại)
+**Scene ID**: `Week3_Scene2_Door_News`
+
+_(Khi mở cửa - đi ra chạm vào cửa - màn đen hiện khung thoại)_
 
 **Loa phát thanh**: "Và đây là bản tin buổi sáng hôm nay, tập đoàn Wingroup vừa tuyên bố phá sản chỉ sau một đêm, nguyên nhân được cho là từ một quyết định sai lầm của chủ tịch,……"
 
@@ -311,21 +436,27 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 ### ⚠️ THÔNG ĐIỆP QUAN TRỌNG
 
+_(Màn hình đen với text nổi bật)_
+
 > **MỌI QUYẾT ĐỊNH MÀ BẠN CHỌN SẼ DẪN LỐI BẠN ĐẾN TỪNG KẾT QUẢ KHÁC NHAU**
-> 
+>
 > **VÌ VẬY HÃY CẨN THẬN VỚI TỪNG LỰA CHỌN CỦA BẢN THÂN**
 
 ---
 
-### Trên trường
-**Địa điểm**: Lớp học (Top down)
+### 🎮 Cảnh 23: Trên trường
+
+**Chế độ**: `Top-down` (Lớp học)
+**Scene ID**: `Week3_Scene3_Classroom`
 
 **Bạn kế bàn**: "Này Đức, mày ngồi đây được mấy tuần rồi đấy, ra chơi với tụi tao đi, vui lắm, vận động tốt cho sức khỏe nữa, mà tao nói vậy thôi, ra hay không thì tùy mày, tao đi đây"
 
 ---
 
-### Trên đường về
-**Địa điểm**: Trên đường (Top down, tụi bắt nạt đi tới chặn đầu)
+### 🎮 Cảnh 24: Trên đường về - Bị chặn đầu
+
+**Chế độ**: `Top-down` (Trên đường, tụi bắt nạt đi tới chặn đầu)
+**Scene ID**: `Week3_Scene4_Street_Blocked`
 
 **Thủ lĩnh**: "Ê bạn tôi ơi, đi đâu mà vội mà vàng, lại đây với tụi tôi một tí nào, cuối tuần không được gặp ông tôi nhớ ông lắm đấy, quen nhau lâu vậy rồi chắc ông biết tụi tôi bây giờ đang muốn gì đúng chứ."
 
@@ -351,7 +482,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thủ lĩnh**: "Làm thế từ đầu có phải nhanh hơn không, cảm ơn bạn hiền"
 
-**Đức** *(tự nói với bản thân)*: "Haizz, tuần này lại nghèo nữa rồi, lần sau phải cứng rắn hơn thôi, nhưng mà thôi thì nốt lần này thôi, lần sau mình không muốn dính dáng gì đến tụi này nữa."
+**Đức** _(tự nói với bản thân)_: "Haizz, tuần này lại nghèo nữa rồi, lần sau phải cứng rắn hơn thôi, nhưng mà thôi thì nốt lần này thôi, lần sau mình không muốn dính dáng gì đến tụi này nữa."
 
 ---
 
@@ -365,28 +496,30 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thủ lĩnh**: "À thế à, thôi thì đến mức này rồi thì, anh em đâu, giữ nó lại cho tao"
 
-*(Bụp bụp bụp)*
+_(Bụp bụp bụp)_
 
 ---
 
 ### Về nhà sau khi bị đánh
+
 **Địa điểm**: Phòng khách (Top down)
 
-*(Đức phóng thẳng lên phòng luôn)*
+_(Đức phóng thẳng lên phòng luôn)_
 
 **Mẹ**: "Ơ thằng này mấy nay hay nhỉ, bữa trước đã nhắc nó rồi mà nay nó về lại quên chào à, chắc chuyện từ bữa chưa giải quyết xong rồi, phải đi hỏi nó mới được chứ cứ thế này là không được rồi"
 
-*(Reng reng reng)*
+_(Reng reng reng)_
 
 **Mẹ**: "À thôi, để làm nốt việc đã, tối hoặc khi nào rảnh mình hỏi nó sau cũng chưa muộn"
-
 
 ---
 
 ## HÔM SAU - ĐIỂM QUYẾT ĐỊNH QUAN TRỌNG NHẤT
 
-### Buổi sáng tại nhà
-**Địa điểm**: Phòng khách (Top down)
+### 🎮 Cảnh 25: Buổi sáng tại nhà
+
+**Chế độ**: `Top-down` (Phòng khách)
+**Scene ID**: `CriticalDay_Scene1_Home_Morning`
 
 **Đức**: "Dạ con chào mẹ, con đi học."
 
@@ -396,25 +529,29 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Mẹ**: "Không có gì đâu, con cứ đi học đi. Chiều cứ về sớm là được. Mẹ muốn nói chuyện với con. Mẹ thấy con dạo này hơi lạ."
 
-**Đức**: *(Hơi giật mình)* "Dạ vâng, con biết rồi. Con sẽ về sớm."
+**Đức**: _(Hơi giật mình)_ "Dạ vâng, con biết rồi. Con sẽ về sớm."
 
 **Mẹ**: "Ừ, đi đi con. Nhớ cẩn thận!"
 
 ---
 
-### Trên trường
-**Địa điểm**: Lớp học (Top down)
+### 🎮 Cảnh 26: Trên trường - Suy nghĩ
 
-**Đức** *(suy nghĩ)*: "Hmm, nay tk kia không qua rủ mình đi chơi nữa à. Thôi thì thoải mới hơn chút nào rồi. Nhưng sao lại có cảm giác trống trải nhỉ? Có phải cảm giác này là do thói quen không nhỉ? Thôi kệ đi. Quan trọng là chiều nay."
+**Chế độ**: `Top-down` (Lớp học)
+**Scene ID**: `CriticalDay_Scene2_School`
 
-**Đức** *(tiếp tục suy nghĩ)*: "Mẹ dặn về sớm. Phải giải quyết chuyện lũ kia cho nhanh. Không dây dưa nữa. Mình cùng mệt mỏi rồi, lúc nào cũng bị tụi nó chèn ép làm tinh thần mình cũng có chút không ổn"
+**Đức** _(suy nghĩ)_: "Hmm, nay tk kia không qua rủ mình đi chơi nữa à. Thôi thì thoải mới hơn chút nào rồi. Nhưng sao lại có cảm giác trống trải nhỉ? Có phải cảm giác này là do thói quen không nhỉ? Thôi kệ đi. Quan trọng là chiều nay."
+
+**Đức** _(tiếp tục suy nghĩ)_: "Mẹ dặn về sớm. Phải giải quyết chuyện lũ kia cho nhanh. Không dây dưa nữa. Mình cùng mệt mỏi rồi, lúc nào cũng bị tụi nó chèn ép làm tinh thần mình cũng có chút không ổn"
 
 ---
 
-### Trên đường về
-**Địa điểm**: Trên đường (Top down)
+### 🎮 Cảnh 27: Trên đường về - Gặp tụi bắt nạt
 
-**Đức**: *(hít hà)* "Tụi nó lại đứng đây. Phải làm nhanh thôi rồi còn về nữa"
+**Chế độ**: `Top-down` (Trên đường)
+**Scene ID**: `CriticalDay_Scene3_Street`
+
+**Đức**: _(hít hà)_ "Tụi nó lại đứng đây. Phải làm nhanh thôi rồi còn về nữa"
 
 **Đức**: "Tiền đây... hôm nay tao đưa hết cho tụi mày. Cầm lấy, rồi để tao đi về."
 
@@ -448,13 +585,13 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thủ lĩnh**: "Ha ha ha! Tự tin gớm nhỉ? Thôi được, chiều mày. Nhưng mày thua, tao sẽ chơi với mày gấp đôi cái trò kia."
 
-*(Sau vài lần bạt tai)*
+_(Sau vài lần bạt tai)_
 
 **Thủ lĩnh**: "Mày dám... Dám nhìn tao kiểu đấy à? Mày nghĩ mày là ai hả?"
 
 **Đức**: "Đủ rồi! Tao không sợ tụi mày nữa!"
 
-*(Cảnh combat cực căng)*
+_(Cảnh combat cực căng)_
 
 **Đức**: "Hà hà hàaaaaaaa, Từ giờ, không ai trong tụi mày được đụng đến tao nữa. Cút hết đi! Tao không phải đứa để tụi mày bắt nạt dễ dàng đâu, tụi mày còn đụng vào tao nữa thì tao hoặc tụi mày phải nằm xuống đấy."
 
@@ -476,17 +613,18 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Đức**: "Bỏ ra! Thả tao ra! Đừng đụng vào tao!"
 
-*(Nguyên đám bu lại - bụp bụp bụp)*
+_(Nguyên đám bu lại - bụp bụp bụp)_
 
-**Thủ lĩnh**: *(Vừa đấm vừa nói)* "Biết điều thì lần sau nghe lời tao nói! Đừng tưởng mày có thể chống lại tao? Mày nghĩ mày là ai, chỉ là thằng yếu đuối dễ dàng bị tụi tao bắt nạt thôi"
-
+**Thủ lĩnh**: _(Vừa đấm vừa nói)_ "Biết điều thì lần sau nghe lời tao nói! Đừng tưởng mày có thể chống lại tao? Mày nghĩ mày là ai, chỉ là thằng yếu đuối dễ dàng bị tụi tao bắt nạt thôi"
 
 ---
 
 ## KẾT CỤC 1: ĐỨNG LÊN CHỐNG LẠI (Good_StandUp)
 
-### Về nhà sau khi thắng
-**Địa điểm**: Phòng khách (Top down)
+### 🎮 Cảnh E1-1: Về nhà sau khi thắng
+
+**Chế độ**: `Top-down` (Phòng khách)
+**Scene ID**: `Ending1_Scene1_Home`
 
 **Mẹ**: "Về rồi đấy à, sao nay về trễ thế con, sáng mẹ có dặn là nay về sớm mà. Con bị gì thế, sao xây xát khắp người thế này, mày có bị sao không con, mày đi đánh nhau à?"
 
@@ -500,8 +638,14 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 ---
 
-### Tối hôm đó - Mẹ gọi điện
-**Địa điểm**: Phòng khách (avatar mẹ đang gọi điện)
+_(Chuyển cảnh: Màn hình đen - Tối hôm đó)_
+
+---
+
+### 🎬 Cảnh E1-2: Tối hôm đó - Mẹ gọi điện
+
+**Chế độ**: `Visual Novel` (Background phòng khách - avatar mẹ gọi điện)
+**Scene ID**: `Ending1_Scene2_PhoneCall`
 
 **Mẹ**: "Alo, cô giáo chủ nhiệm lớp Đức phải không ạ? Em là mẹ cháu Đức đây."
 
@@ -515,8 +659,14 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 ---
 
-### Sáng hôm sau - Trên lớp
-**Địa điểm**: Lớp học (avatar cô giáo)
+_(Chuyển cảnh: Màn hình đen - Sáng hôm sau)_
+
+---
+
+### 🎬 Cảnh E1-3: Sáng hôm sau - Trên lớp
+
+**Chế độ**: `Visual Novel` (Background lớp học - avatar cô giáo)
+**Scene ID**: `Ending1_Scene3_Classroom`
 
 **Cô giáo**: "Đức này, em cảm thấy thế nào rồi, có ổn chưa? Cô nghe mẹ em kể hết rồi. Em đừng lo nữa nhé, nhà trường sẽ xử lý chuyện này. Cuối giờ hôm nay và trong một tuần tới, sẽ có hai bạn trong lớp đi cùng em về nhà để đảm bảo an toàn. Nếu có gì lạ, em báo cô ngay nhé."
 
@@ -524,8 +674,14 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 ---
 
-### Trong một tuần đó
-**Địa điểm**: Trên trường (Top down)
+_(Chuyển cảnh: Màn hình đen - Trong một tuần đó)_
+
+---
+
+### 🎮 Cảnh E1-4: Trong một tuần đó - Bạn bè hộ tống
+
+**Chế độ**: `Top-down` (Trên trường)
+**Scene ID**: `Ending1_Scene4_School_Protected`
 
 **Bạn 1**: "Ê Đức, đi về cùng tụi tao nhé. Cô dặn rồi, đi chung cho an toàn. Mày kể tao nghe coi, tụi kia là tụi nào mà dám bắt nạt mày?"
 
@@ -533,7 +689,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Đức**: "Ừm, cảm ơn tụi mày nhiều."
 
-*(Chú thích: Trong tuần đó, tụi bắt nạt không dám xuất hiện gây sự nữa thật. Chúng sợ bị nhà trường và công an xử lý.)*
+_(Chú thích: Trong tuần đó, tụi bắt nạt không dám xuất hiện gây sự nữa thật. Chúng sợ bị nhà trường và công an xử lý.)_
 
 ---
 
@@ -541,12 +697,12 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thông điệp**: Đứng lên chống lại bạo lực, tìm kiếm sự giúp đỡ từ gia đình và nhà trường là cách đúng đắn để bảo vệ bản thân.
 
-
 ---
 
 ## KẾT CỤC 2: THÚ NHẬN VỚI MẸ (True_TellParents)
 
 ### Về nhà sau khi bị đánh
+
 **Địa điểm**: Phòng khách (Top down)
 
 **Mẹ**: "Về rồi đấy à, sao nay về trễ thế con, sáng mẹ có dặn là nay về sớm mà. Con bị gì thế, sao xây xát khắp người thế này, mày có bị sao không con, mày đi đánh nhau à?"
@@ -562,6 +718,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 ---
 
 ### Tối hôm đó - Mẹ gọi điện
+
 **Địa điểm**: Phòng khách (avatar mẹ gọi điện)
 
 **Mẹ**: "Alo cô ơi, có chuyện này em phải thảo luận với cô gấp. Cháu Đức nhà em mới vào học trường mình được mấy tuần mà thằng bé đã bị bắt nạt đến mức tâm lý không ổn định rồi. Tụi côn đồ hay chặn đường về của cháu, đánh cháu xây xát hết người, bây giờ sợ không dám đi học nữa. Em muốn cho cháu nghỉ một tuần, rồi tính đến chuyện chuyển trường. Cô báo nhà trường giúp em với, phải xử lý mọi chuyện gấp cho em, cho tụi kia không lộng hành được nữa, em nhìn con em xót lắm."
@@ -571,7 +728,8 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 ---
 
 ### Sau đó
-*(Chú thích: Nhà trường phối hợp với công an xử lý tụi bắt nạt, phát hiện chúng dính líu đến chất cấm, nên bị đưa lên phường quản thúc sau đó sẽ điều tra thêm vào cho vào trại giáo dưỡng. Đức được chuyển trường an toàn, bắt đầu cuộc sống mới mà không còn bị bắt nạt.)*
+
+_(Chú thích: Nhà trường phối hợp với công an xử lý tụi bắt nạt, phát hiện chúng dính líu đến chất cấm, nên bị đưa lên phường quản thúc sau đó sẽ điều tra thêm vào cho vào trại giáo dưỡng. Đức được chuyển trường an toàn, bắt đầu cuộc sống mới mà không còn bị bắt nạt.)_
 
 ---
 
@@ -579,12 +737,12 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thông điệp**: Chia sẻ với gia đình khi gặp khó khăn là điều quan trọng. Cha mẹ luôn sẵn sàng bảo vệ và giúp đỡ con cái vượt qua khó khăn.
 
-
 ---
 
 ## KẾT CỤC 3 & 4: GIẤU MẸ - HAI CON ĐƯỜNG
 
 ### Về nhà - Giấu sự thật
+
 **Địa điểm**: Phòng khách
 
 **Đức**: "Dạ không có gì đâu mẹ, con đi đường không để ý lỡ vấp cục đá nên té thôi, con lên phòng trước đây"
@@ -596,44 +754,49 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 ---
 
 ### Trong phòng Đức
+
 **Địa điểm**: Phòng Đức
 
-**Đức** *(suy nghĩ)*: "Sao mình thấy khó chịu thế này... Mai đi học lại gặp tụi nó thì sao? Phải có cách gì đó chứ mình không chịu nổi nữa rồi, mình không muốn bị đau nữa. Hay là mang đồ phòng thân nhỉ?"
+**Đức** _(suy nghĩ)_: "Sao mình thấy khó chịu thế này... Mai đi học lại gặp tụi nó thì sao? Phải có cách gì đó chứ mình không chịu nổi nữa rồi, mình không muốn bị đau nữa. Hay là mang đồ phòng thân nhỉ?"
 
-*(Liếc mắt qua bàn học thấy chiếc dao rọc giấy)*
+_(Liếc mắt qua bàn học thấy chiếc dao rọc giấy)_
 
-**Đức** *(tiếp tục suy nghĩ)*: "Nhưng lỡ lỡ bị phát hiện thì sao …. nhưng mình sợ lắm, mình không muốn bị đau nữa đâu"
+**Đức** _(tiếp tục suy nghĩ)_: "Nhưng lỡ lỡ bị phát hiện thì sao …. nhưng mình sợ lắm, mình không muốn bị đau nữa đâu"
 
 ---
 
 ## LỰA CHỌN ĐỊNH MỆNH: MANG DAO HAY KHÔNG?
 
 ### Lựa chọn A: Mang dao
+
 ### Lựa chọn B: Không mang
 
 ---
 
 ### Sáng hôm sau
+
 **Địa điểm**: Phòng khách (Top down)
 
-**Đức**: *…….*
+**Đức**: _……._
 
 **Mẹ**: "Ơ, thằng này hôm nay sao thế? Đi học mà không thèm chào mình luôn à? Chắc chắn nó bị gì ở trường rồi. Chiều nó về phải hỏi cho ra lẽ."
 
 ---
 
 ### Trên lớp
+
 **Địa điểm**: Lớp học
 
 **Bạn kế bàn**: "Thưa cô, em xung phong ạ"
 
-**Đức**: "Ha, *(che tay đỡ và né tránh)* Đừng, đừng đánh đánh tao!"
+**Đức**: "Ha, _(che tay đỡ và né tránh)_ Đừng, đừng đánh đánh tao!"
 
 **Bạn kế bàn**: "Ơ Đức, mày bị gì thế? Tâm trí mày trên mây à hay lại ảo game rồi."
 
 ---
 
 ### Chiều về - Gặp tụi bắt nạt
+
 **Địa điểm**: Trên đường (Top down)
 
 **Thủ lĩnh**: "Ê mày, lại đây với tụi tao, hôm nay tụi tao có một tin vui cho mày đây, tụi tao vừa nghĩ ra 1 trò chơi mới tên là 'Ai là vua', nếu bây giờ mày chơi với tụi tao và làm tụi tao vui thì từ hôm nay tụi tao sẽ không đụng đến mày nữa."
@@ -641,7 +804,6 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 **Đức**: "Nhưng lần trước tụi mày cũng nói thế mà sao hôm nay tụi mày vẫn chặn đường tao"
 
 **Thủ lĩnh**: "Lần trước là chuyện của lần trước, lần này khác, lần này tao hứa với mày, nếu mày làm tụi tao vui thì tụi tao sẽ tha cho m. Sao mày có muốn chơi không đây? À tao nói trước là chuẩn bị tinh thần đi nhé, nếu tụi tao không vui thì chắc mày biết rồi nhỉ"
-
 
 ---
 
@@ -653,27 +815,27 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thủ lĩnh**: "Uầy, cu em này hôm nay mạnh mồm nhỉ? Hôm qua ăn đánh thế vẫn chưa sợ à"
 
-**Đức**: *(Lôi dao ra)* "Đừng đụng vào tao! Tránh ra, đừng lại gần tao, tao không nhịn tụi mày nữa đâu"
+**Đức**: _(Lôi dao ra)_ "Đừng đụng vào tao! Tránh ra, đừng lại gần tao, tao không nhịn tụi mày nữa đâu"
 
 **Thủ lĩnh**: "Há há há, cu em này hôm nay mang cả dao đi à, cũng gọi là có chút bản lĩnh đấy, để anh xem thử mày có dám làm gì không?"
 
-**Đức**: *(Lùi lại)* "Đừng lại gần đây! Đi ra chỗ khác, tụi mày lại gần là tao xiên"
+**Đức**: _(Lùi lại)_ "Đừng lại gần đây! Đi ra chỗ khác, tụi mày lại gần là tao xiên"
 
 **Thủ lĩnh**: "Thôi em của anh, ngoan nào. Nghe anh nói, trẻ em thì không nên cầm những vật sắc nhọn như này đâu, trả cho người lớn đi em, đưa đây để anh giữ cho."
 
-*(Thủ lĩnh tiến lại gần - top-down)*
+_(Thủ lĩnh tiến lại gần - top-down)_
 
 **Đức**: "Mày tránh ra, arrrrrrgggghhhhhh"
 
-*(Đức vung dao chém, xiên về phía trước)*
+_(Đức vung dao chém, xiên về phía trước)_
 
-*(Xoẹt! Máu bắn lên)*
+_(Xoẹt! Máu bắn lên)_
 
 **Thủ lĩnh**: "Aaaaaarrrrgggg, cổ tao, cư-cư-cư tao …. Ọc ọc ọc ọc"
 
 **Đàn em**: "Đại ca, đại ca."
 
-*(Đàn em chạy lại gần - top down)*
+_(Đàn em chạy lại gần - top down)_
 
 **Đàn em**: "Tụ-tụ-tụi mày nhanh gọi người giúp đi, đại ca không thở nữa, đại ca chết rồi, gọi ai đó đi"
 
@@ -682,28 +844,30 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 ---
 
 ### Tại nhà
+
 **Địa điểm**: Nhà (Background)
 
-**Hàng xóm** *(giấu mặt)*: "Chị ơi, chị ơi, nhanh ra đây đi, con-con chị nó giết người rồi"
+**Hàng xóm** _(giấu mặt)_: "Chị ơi, chị ơi, nhanh ra đây đi, con-con chị nó giết người rồi"
 
 **Mẹ**: "…….. Hả hả, c-chị nói cái gì vậy, c-con em làm gì ………….."
 
-*(Top down trên đường - Mẹ chạy ra, xe cứu thương cảnh sát, í o í o)*
+_(Top down trên đường - Mẹ chạy ra, xe cứu thương cảnh sát, í o í o)_
 
 ---
 
 ### 3 tháng sau - Tòa án
+
 **Địa điểm**: Tòa án
 
-*(Đùng đùng đùng - tiếng gõ búa)*
+_(Đùng đùng đùng - tiếng gõ búa)_
 
 **Thẩm phán**: "Vì các lẽ trên, căn cứ vào Điều 126 Bộ luật Hình sự năm 2015, căn cứ Điều 331 và Điều 333 Bộ luật Tố tụng hình sự, tòa tuyên án bị cáo Đoàn Văn Đức phạm tội giết người trong trạng thái phòng vệ quá mức cần thiết, xử phạt bị cáo Đoàn Văn Đức 3 năm 6 tháng tù giam. Xét thấy trong quá trình xảy ra sự việc, bị hại là người chủ động dùng hung khí tấn công trước, bị cáo hoảng loạn, mất khả năng kiềm chế nên đã chống trả quá mức cần thiết; đây là tình tiết giảm nhẹ theo quy định của pháp luật."
 
 **Thẩm phán**: "Buộc bị cáo phải nộp án phí hình sự sơ thẩm theo quy định. Bị cáo có quyền kháng cáo trong thời hạn 15 ngày kể từ ngày tuyên án."
 
-*(Đùng đùng đùng)*
+_(Đùng đùng đùng)_
 
-**Mẹ**: "Hức hức C-con ơiiiiii" *(Ngất)*
+**Mẹ**: "Hức hức C-con ơiiiiii" _(Ngất)_
 
 **Giáo viên chủ nhiệm**: "Chị ơi, chị ơi"
 
@@ -715,7 +879,6 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thông điệp**: Bạo lực chỉ sinh ra bạo lực. Việc mang hung khí để tự vệ có thể dẫn đến hậu quả không thể lường trước, hủy hoại cả cuộc đời mình và người khác.
 
-
 ---
 
 ## KẾT CỤC 4: KHÔNG MANG DAO - CÁI CHẾT (Bad_Death)
@@ -726,7 +889,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thủ lĩnh**: "Hahaha, được, bây giờ mày vô đây rút thăm đi, ai rút được lá thăm vua thì sẽ được làm vua và ra lệnh cho những người còn lại."
 
-*(Một hồi sau)*
+_(Một hồi sau)_
 
 **Thủ lĩnh**: "Ha ha, tao lại được làm vua rồi! Mày, tk Đức, bây giờ tao ra lệnh cho mày quỳ xuống liếm dép cho tao!"
 
@@ -736,7 +899,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Đức**: "Khôngggg, tao không chơi nữa, tao năn nỉ tụi mày tha cho tao đi"
 
-*(Bắt đầu chuẩn bị chạy)*
+_(Bắt đầu chuẩn bị chạy)_
 
 **Đàn em**: "A, thằng này định đánh bài chuồn à, ae giữ nó lại cho đại ca!"
 
@@ -744,7 +907,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Thủ lĩnh**: "Tụi mày giữ chặt nó"
 
-*(Bụp bụp bụp)*
+_(Bụp bụp bụp)_
 
 **Đức**: "Aaaaa! Hức hức, tha cho tao đi, tao xin lỗi"
 
@@ -754,7 +917,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 **Đàn em**: "Á à, thằng này gan, anh em đâu xông vào hết, chơi nó"
 
-*(Cả đám bụp bụp bụp)*
+_(Cả đám bụp bụp bụp)_
 
 **Đức**: "……………"
 
@@ -769,11 +932,13 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 ---
 
 ### Vài ngày sau - Đức mất
-*(Công an điều tra, tụi bắt nạt bị bắt)*
+
+_(Công an điều tra, tụi bắt nạt bị bắt)_
 
 ---
 
 ### Đám tang
+
 **Địa điểm**: Đám tang
 
 **Mẹ**: "Hức Con ơiiiiii, Đức ơiiiii sao con không kể với mẹ, hức hức hức"
@@ -792,18 +957,19 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 
 ## TỔNG KẾT CÁC KẾT CỤC
 
-| Kết cục | Tên | Điều kiện | Thông điệp chính |
-|---------|-----|-----------|------------------|
-| **Ending 1** | Good_StandUp | Đánh trả thành công + Thú nhận với mẹ | Đứng lên chống lại và tìm kiếm sự giúp đỡ |
-| **Ending 2** | True_TellParents | Bị đánh + Thú nhận với mẹ ngay | Chia sẻ với gia đình là điều quan trọng nhất |
-| **Ending 3** | Bad_Murder | Bị đánh + Giấu mẹ + Mang dao | Bạo lực sinh ra bạo lực, hủy hoại cả hai bên |
-| **Ending 4** | Bad_Death | Bị đánh + Giấu mẹ + Không mang dao | Im lặng chịu đựng dẫn đến bi kịch |
+| Kết cục      | Tên              | Điều kiện                             | Thông điệp chính                             |
+| ------------ | ---------------- | ------------------------------------- | -------------------------------------------- |
+| **Ending 1** | Good_StandUp     | Đánh trả thành công + Thú nhận với mẹ | Đứng lên chống lại và tìm kiếm sự giúp đỡ    |
+| **Ending 2** | True_TellParents | Bị đánh + Thú nhận với mẹ ngay        | Chia sẻ với gia đình là điều quan trọng nhất |
+| **Ending 3** | Bad_Murder       | Bị đánh + Giấu mẹ + Mang dao          | Bạo lực sinh ra bạo lực, hủy hoại cả hai bên |
+| **Ending 4** | Bad_Death        | Bị đánh + Giấu mẹ + Không mang dao    | Im lặng chịu đựng dẫn đến bi kịch            |
 
 ---
 
 ## GHI CHÚ KỸ THUẬT
 
 ### Các cờ story quan trọng
+
 - `MET_BULLIES` - Đã gặp tụi bắt nạt
 - `BEFRIENDED_BULLIES` - Đã "kết bạn" với tụi bắt nạt
 - `GOT_BEATEN` - Đã bị đánh
@@ -813,6 +979,7 @@ Game miêu tả cuộc sống thường ngày của Đức trong quá trình tr�
 - `STOOD_UP` - Đã đứng lên chống lại
 
 ### Biến số quan trọng
+
 - `CURRENT_DAY` - Ngày hiện tại trong game
 - `MONEY` - Số tiền còn lại (bắt đầu: 50000)
 - `FEAR_LEVEL` - Mức độ sợ hãi

@@ -1,0 +1,421 @@
+{
+  "_comment": "Dialogue cho các bạn học trong lớp - ClassroomScene",
+  
+  "dialogues": [
+    {
+      "npcId": "classmate_neighbor",
+      "npcName": "Bạn kế bàn",
+      "conversations": [
+        {
+          "conversationId": "neighbor_first_meet",
+          "requiredFlags": [],
+          "forbiddenFlags": ["talked_to_neighbor_day1"],
+          "startNodeId": 0,
+          "nodes": [
+            {
+              "id": 0,
+              "speaker": "Bạn kế bàn",
+              "isPlayer": false,
+              "lines": [
+                "Uầy uầy uầy!",
+                "Mày là Đức đúng không? Mới chuyển đến hả?"
+              ],
+              "next": 10
+            },
+            {
+              "id": 10,
+              "speaker": "Đức",
+              "isPlayer": true,
+              "lines": [
+                "Ừ... mình mới chuyển đến."
+              ],
+              "next": 20
+            },
+            {
+              "id": 20,
+              "speaker": "Bạn kế bàn",
+              "isPlayer": false,
+              "lines": [
+                "Tao tên là Hùng, ngồi kế mày nè.",
+                "Giúp đỡ nhau nha bro!",
+                "Có gì không hiểu cứ hỏi tao, tao chỉ cho."
+              ],
+              "next": -1,
+              "setFlags": ["talked_to_neighbor_day1", "met_hung"]
+            }
+          ]
+        },
+        {
+          "conversationId": "neighbor_invite_play",
+          "requiredFlags": ["talked_to_neighbor_day1"],
+          "forbiddenFlags": ["accepted_play_invitation"],
+          "startNodeId": 0,
+          "nodes": [
+            {
+              "id": 0,
+              "speaker": "Bạn kế bàn",
+              "isPlayer": false,
+              "lines": [
+                "Ê Đức!",
+                "Ra sân chơi bóng với tụi tao đi, vui lắm!",
+                "Cứ ngồi một mình ở đây như này không chán à?"
+              ],
+              "next": 10,
+              "choices": [
+                {
+                  "text": "Ừ, để tao đi thử xem",
+                  "nextNodeId": 20
+                },
+                {
+                  "text": "Thôi, tao không thích",
+                  "nextNodeId": 30
+                },
+                {
+                  "text": "Để hôm khác đi...",
+                  "nextNodeId": 40
+                }
+              ]
+            },
+            {
+              "id": 20,
+              "speaker": "Bạn kế bàn",
+              "isPlayer": false,
+              "lines": [
+                "Ồ! Tốt lắm!",
+                "Đi theo tao, tụi nó đang chờ ở sân rồi.",
+                "Mày sẽ thấy vui mà, tin tao đi!"
+              ],
+              "next": -1,
+              "setFlags": ["accepted_play_invitation", "friendship_hung_up"]
+            },
+            {
+              "id": 30,
+              "speaker": "Đức",
+              "isPlayer": true,
+              "lines": [
+                "Thôi tụi mày cứ đi đi, tao lười lắm.",
+                "Ra hoạt động mệt lắm, tao không thích."
+              ],
+              "next": 31
+            },
+            {
+              "id": 31,
+              "speaker": "Bạn kế bàn",
+              "isPlayer": false,
+              "lines": [
+                "Vậy thôi, mày không ra chơi cũng được.",
+                "Nhưng cứ ngồi đây hoài 1 mình buồn lắm đó.",
+                "Lần sau tao rủ lại nha!"
+              ],
+              "next": -1,
+              "setFlags": ["refused_play_once"]
+            },
+            {
+              "id": 40,
+              "speaker": "Bạn kế bàn",
+              "isPlayer": false,
+              "lines": [
+                "Oke, hôm khác vậy.",
+                "Nhưng nhớ đừng từ chối hoài nha!",
+                "Tụi tao đi đây, bye!"
+              ],
+              "next": -1
+            }
+          ]
+        },
+        {
+          "conversationId": "neighbor_casual",
+          "requiredFlags": ["talked_to_neighbor_day1"],
+          "forbiddenFlags": [],
+          "startNodeId": 0,
+          "nodes": [
+            {
+              "id": 0,
+              "speaker": "Bạn kế bàn",
+              "isPlayer": false,
+              "lines": [
+                "Ê Đức!",
+                "Nay học có hiểu bài không?",
+                "Bài tập về nhà khó quá trời luôn á!"
+              ],
+              "next": 10,
+              "choices": [
+                {
+                  "text": "Ừ, cũng tạm hiểu",
+                  "nextNodeId": 20
+                },
+                {
+                  "text": "Khó lắm, tao cũng không hiểu",
+                  "nextNodeId": 30
+                }
+              ]
+            },
+            {
+              "id": 20,
+              "speaker": "Bạn kế bàn",
+              "isPlayer": false,
+              "lines": [
+                "Giỏi dữ!",
+                "Vậy lát chỉ tao với nha, tao dốt môn này lắm.",
+                "Hehe!"
+              ],
+              "next": -1
+            },
+            {
+              "id": 30,
+              "speaker": "Bạn kế bàn",
+              "isPlayer": false,
+              "lines": [
+                "Vậy tụi mình cùng hội cùng thuyền rồi!",
+                "Thôi lát hỏi mấy đứa khác vậy.",
+                "Hoặc... chép bài nhau? Hehe!"
+              ],
+              "next": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": "classmate_group",
+      "npcName": "Nhóm bạn",
+      "conversations": [
+        {
+          "conversationId": "group_first_meet",
+          "requiredFlags": [],
+          "forbiddenFlags": ["talked_to_group"],
+          "startNodeId": 0,
+          "nodes": [
+            {
+              "id": 0,
+              "speaker": "Bạn học 1",
+              "isPlayer": false,
+              "lines": [
+                "Ê, mày là đứa mới chuyển đến hả?",
+                "Tao thấy mày hay ngồi một mình hoài á."
+              ],
+              "next": 10
+            },
+            {
+              "id": 10,
+              "speaker": "Bạn học 2",
+              "isPlayer": false,
+              "lines": [
+                "Ừ đúng rồi, sao không ra chơi với tụi tao?",
+                "Tụi tao không cắn đâu mà sợ!"
+              ],
+              "next": 20
+            },
+            {
+              "id": 20,
+              "speaker": "Đức",
+              "isPlayer": true,
+              "lines": [
+                "À... tao... tao không quen mấy.",
+                "Tao cũng không biết nói gì..."
+              ],
+              "next": 30
+            },
+            {
+              "id": 30,
+              "speaker": "Bạn học 1",
+              "isPlayer": false,
+              "lines": [
+                "Trước lạ sau quen mà!",
+                "Cứ ra ngồi chém gió với tụi tao cho vui.",
+                "Toàn anh em bạn bè trong lớp không mà, có gì phải ngại!"
+              ],
+              "next": -1,
+              "setFlags": ["talked_to_group"]
+            }
+          ]
+        },
+        {
+          "conversationId": "group_casual",
+          "requiredFlags": ["talked_to_group"],
+          "forbiddenFlags": [],
+          "startNodeId": 0,
+          "nodes": [
+            {
+              "id": 0,
+              "speaker": "Bạn học 1",
+              "isPlayer": false,
+              "lines": [
+                "Ê Đức!",
+                "Nay có chơi game gì không?"
+              ],
+              "next": 10,
+              "choices": [
+                {
+                  "text": "Có, tao hay chơi game online",
+                  "nextNodeId": 20
+                },
+                {
+                  "text": "Không, tao ít chơi game lắm",
+                  "nextNodeId": 30
+                }
+              ]
+            },
+            {
+              "id": 20,
+              "speaker": "Bạn học 2",
+              "isPlayer": false,
+              "lines": [
+                "Ồ! Chơi game gì vậy?",
+                "Add friend đi, tối nay cùng chơi!",
+                "Tụi tao hay chơi tối lắm!"
+              ],
+              "next": 21
+            },
+            {
+              "id": 21,
+              "speaker": "Đức",
+              "isPlayer": true,
+              "lines": [
+                "Ừm... được, tao sẽ add."
+              ],
+              "next": -1,
+              "setFlags": ["shared_game_interest"]
+            },
+            {
+              "id": 30,
+              "speaker": "Bạn học 1",
+              "isPlayer": false,
+              "lines": [
+                "Vậy à? Vậy mày hay làm gì?",
+                "Xem anime hả? Đọc truyện hả?"
+              ],
+              "next": 31
+            },
+            {
+              "id": 31,
+              "speaker": "Đức",
+              "isPlayer": true,
+              "lines": [
+                "Ừ... tao hay xem anime..."
+              ],
+              "next": 32
+            },
+            {
+              "id": 32,
+              "speaker": "Bạn học 2",
+              "isPlayer": false,
+              "lines": [
+                "Ê! Tao cũng xem anime nè!",
+                "Mày xem bộ nào rồi? Tao recommend cho mấy bộ hay!"
+              ],
+              "next": -1,
+              "setFlags": ["shared_anime_interest"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": "classmate_girl",
+      "npcName": "Bạn nữ",
+      "conversations": [
+        {
+          "conversationId": "girl_first_meet",
+          "requiredFlags": [],
+          "forbiddenFlags": ["talked_to_girl"],
+          "startNodeId": 0,
+          "nodes": [
+            {
+              "id": 0,
+              "speaker": "Bạn nữ",
+              "isPlayer": false,
+              "lines": [
+                "Chào bạn mới!",
+                "Bạn tên Đức đúng không?"
+              ],
+              "next": 10
+            },
+            {
+              "id": 10,
+              "speaker": "Đức",
+              "isPlayer": true,
+              "lines": [
+                "Ừ... đúng rồi..."
+              ],
+              "next": 20
+            },
+            {
+              "id": 20,
+              "speaker": "Bạn nữ",
+              "isPlayer": false,
+              "lines": [
+                "Mình tên Linh, lớp phó học tập nè.",
+                "Có gì không hiểu về bài vở cứ hỏi mình nhé!",
+                "Mình sẽ giúp bạn."
+              ],
+              "next": -1,
+              "setFlags": ["talked_to_girl", "met_linh"]
+            }
+          ]
+        },
+        {
+          "conversationId": "girl_help_study",
+          "requiredFlags": ["talked_to_girl"],
+          "forbiddenFlags": [],
+          "startNodeId": 0,
+          "nodes": [
+            {
+              "id": 0,
+              "speaker": "Bạn nữ",
+              "isPlayer": false,
+              "lines": [
+                "Đức ơi!",
+                "Bạn làm bài tập chưa?",
+                "Có chỗ nào khó không?"
+              ],
+              "next": 10,
+              "choices": [
+                {
+                  "text": "Có, bài số 5 khó quá",
+                  "nextNodeId": 20
+                },
+                {
+                  "text": "Tao làm xong rồi",
+                  "nextNodeId": 30
+                }
+              ]
+            },
+            {
+              "id": 20,
+              "speaker": "Bạn nữ",
+              "isPlayer": false,
+              "lines": [
+                "À bài đó hả?",
+                "Để mình chỉ cho nhé!",
+                "Bạn cần áp dụng công thức này nè..."
+              ],
+              "next": 21
+            },
+            {
+              "id": 21,
+              "speaker": "Đức",
+              "isPlayer": true,
+              "lines": [
+                "À... hiểu rồi. Cảm ơn bạn!"
+              ],
+              "next": -1,
+              "setFlags": ["linh_helped_study"]
+            },
+            {
+              "id": 30,
+              "speaker": "Bạn nữ",
+              "isPlayer": false,
+              "lines": [
+                "Giỏi ghê!",
+                "Vậy bạn có thể giúp mình kiểm tra lại bài được không?",
+                "Mình sợ làm sai..."
+              ],
+              "next": -1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

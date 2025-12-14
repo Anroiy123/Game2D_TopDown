@@ -1,0 +1,35 @@
+{
+  "conversationName": "Classmate_Group_FirstMeet",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Bạn học 1",
+      "isPlayer": false,
+      "lines": ["Ê, mày là đứa mới chuyển đến hả?", "Tao thấy mày hay ngồi một mình hoài á."],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Bạn học 2",
+      "isPlayer": false,
+      "lines": ["Ừ đúng rồi, sao không ra chơi với tụi tao?", "Tụi tao không cắn đâu mà sợ!"],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["À... tao... tao không quen mấy.", "Tao cũng không biết nói gì..."],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Bạn học 1",
+      "isPlayer": false,
+      "lines": ["Trước lạ sau quen mà!", "Cứ ra ngồi chém gió với tụi tao cho vui.", "Toàn anh em bạn bè trong lớp không mà, có gì phải ngại!"],
+      "next": -1,
+      "setFlags": ["talked_to_group"]
+    }
+  ]
+}

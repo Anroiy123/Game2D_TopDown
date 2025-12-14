@@ -48,10 +48,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1067840662217212438, guid: e166694778294a449aaa5351c0e270f5, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1382573034193537818, guid: e166694778294a449aaa5351c0e270f5, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: Mom
       objectReference: {fileID: 0}
+    - target: {fileID: 5729151284390682956, guid: e166694778294a449aaa5351c0e270f5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -521554799, guid: caad2237d49c85f49a816a788f0c01c7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

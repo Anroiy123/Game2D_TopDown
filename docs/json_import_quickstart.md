@@ -10,7 +10,7 @@ Tool này giúp bạn tạo DialogueData (ScriptableObject) từ file JSON đơn
 
 ### **Bước 1: Tạo file JSON**
 
-Tạo file `.json` trong folder `Assets/Scripts/Data/Dialogues/` (hoặc bất kỳ đâu):
+Tạo file `.json` trong folder `Assets/Data/Dialogues/` (hoặc bất kỳ đâu):
 
 ```json
 {
@@ -41,7 +41,7 @@ Unity Menu → Tools → Dialogue → Import JSON to DialogueData
 ```
 
 1. Kéo file JSON vào trường **"JSON File"**
-2. Chọn **Output Folder** (mặc định: `Assets/Scripts/Data/Dialogues`)
+2. Chọn **Output Folder** (mặc định: `Assets/Data/Dialogues`)
 3. Nhấn **"Preview JSON"** để xem trước (optional)
 4. Nhấn **"Import & Create DialogueData"**
 5. ✅ File `.asset` được tạo!

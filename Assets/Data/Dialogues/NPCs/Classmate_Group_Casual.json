@@ -1,0 +1,53 @@
+{
+  "conversationName": "Classmate_Group_Casual",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Bạn học 1",
+      "isPlayer": false,
+      "lines": ["Ê Đức!", "Nay có chơi game gì không?"],
+      "choices": [
+        { "text": "Có, tao hay chơi game online", "next": 20 },
+        { "text": "Không, tao ít chơi game lắm", "next": 30 }
+      ]
+    },
+    {
+      "id": 20,
+      "speaker": "Bạn học 2",
+      "isPlayer": false,
+      "lines": ["Ồ! Chơi game gì vậy?", "Add friend đi, tối nay cùng chơi!", "Tụi tao hay chơi tối lắm!"],
+      "next": 21
+    },
+    {
+      "id": 21,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["Ừm... được, tao sẽ add."],
+      "next": -1,
+      "setFlags": ["shared_game_interest"]
+    },
+    {
+      "id": 30,
+      "speaker": "Bạn học 1",
+      "isPlayer": false,
+      "lines": ["Vậy à? Vậy mày hay làm gì?", "Xem anime hả? Đọc truyện hả?"],
+      "next": 31
+    },
+    {
+      "id": 31,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["Ừ... tao hay xem anime..."],
+      "next": 32
+    },
+    {
+      "id": 32,
+      "speaker": "Bạn học 2",
+      "isPlayer": false,
+      "lines": ["Ê! Tao cũng xem anime nè!", "Mày xem bộ nào rồi? Tao recommend cho mấy bộ hay!"],
+      "next": -1,
+      "setFlags": ["shared_anime_interest"]
+    }
+  ]
+}

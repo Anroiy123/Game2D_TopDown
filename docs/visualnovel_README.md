@@ -12,10 +12,12 @@
 ## 🎯 GIỚI THIỆU
 
 Hệ thống Visual Novel cho phép game chuyển đổi giữa 2 chế độ:
+
 - **Top-Down Mode**: Di chuyển tự do, tương tác với NPC
 - **Visual Novel Mode**: Ảnh nền tĩnh + dialogue + nhân vật (giống Doki Doki Literature Club)
 
 ### Tính năng:
+
 ✅ Hiển thị background fullscreen  
 ✅ Character sprites với vị trí tùy chỉnh  
 ✅ Tích hợp DialogueSystem hiện có  
@@ -23,7 +25,7 @@ Hệ thống Visual Novel cho phép game chuyển đổi giữa 2 chế độ:
 ✅ Branching narrative với choices  
 ✅ Chuyển cảnh tự động  
 ✅ Fade transitions  
-✅ Nhạc nền & sound effects  
+✅ Nhạc nền & sound effects
 
 ---
 
@@ -36,6 +38,7 @@ Unity Editor → Menu → Tools → Visual Novel → Create VN Scene Quick Setup
 ```
 
 Điền thông tin:
+
 - **Scene Name**: Day1_Morning
 - **Location Text**: Phòng ngủ Đức
 - **Background Sprite**: Kéo ảnh vào đây
@@ -45,9 +48,10 @@ Nhấn **"Tạo VN Scene"**
 
 ### Bước 2: Chỉnh sửa Dialogue
 
-File được tạo: `Assets/Scripts/Data/VisualNovel/Day1_Morning_Dialogue.asset`
+File được tạo: `Assets/Data/VisualNovel/Day1_Morning_Dialogue.asset`
 
 Mở trong Inspector và chỉnh sửa:
+
 ```yaml
 Node 0:
   Speaker Name: "Narrator"
@@ -65,6 +69,7 @@ Node 1:
 ### Bước 3: Trigger trong game
 
 **Cách 1: Trigger tự động khi vào scene**
+
 ```
 1. Tạo GameObject trong scene
 2. Add Component: VN Trigger
@@ -73,6 +78,7 @@ Node 1:
 ```
 
 **Cách 2: Trigger bằng code**
+
 ```csharp
 public VNSceneData vnScene;
 
@@ -183,7 +189,7 @@ VNSceneData: "Intro"
   Location Text: ""
   Background: black screen
   Characters: (empty)
-  Dialogue: 
+  Dialogue:
     Node 0:
       Speaker: ""
       Lines: ["Năm 2024, thành phố Thanh Hóa..."]
@@ -244,8 +250,9 @@ VNSequenceManager.PlaySequence(day1Sequence, () => {
 ## 🔧 EDITOR TOOLS
 
 ### Tools → Visual Novel → Create VN Scene Quick Setup
+
 - Tạo nhanh VNSceneData + DialogueData
-- Tự động tạo folder `Assets/Scripts/Data/VisualNovel/`
+- Tự động tạo folder `Assets/Data/VisualNovel/`
 
 ---
 
@@ -253,14 +260,15 @@ VNSequenceManager.PlaySequence(day1Sequence, () => {
 
 Các action ID đặc biệt trong DialogueChoice:
 
-| Action ID | Hiệu ứng |
-|-----------|----------|
-| `end_vn_mode` | Thoát VN mode ngay lập tức |
+| Action ID             | Hiệu ứng                       |
+| --------------------- | ------------------------------ |
+| `end_vn_mode`         | Thoát VN mode ngay lập tức     |
 | `trigger_good_ending` | Set flag "stood_up_to_bullies" |
-| `trigger_true_ending` | Set flag CONFESSED_TO_MOM |
-| `trigger_bad_murder` | Set flag BROUGHT_KNIFE |
+| `trigger_true_ending` | Set flag CONFESSED_TO_MOM      |
+| `trigger_bad_murder`  | Set flag BROUGHT_KNIFE         |
 
 Sử dụng trong DialogueChoice:
+
 ```yaml
 Choice:
   Choice Text: "Thú nhận với mẹ"
@@ -297,7 +305,7 @@ Check Next Scene?
               ↓
 Fade out VN panel
               ↓
-Return to Top Down? 
+Return to Top Down?
   YES → Load scene with spawn point
   NO → Show player lại
               ↓
@@ -353,4 +361,3 @@ A: Có! Trong NPCInteraction, gọi VisualNovelManager.Instance.StartVNScene()
 ---
 
 ✨ **Chúc bạn tạo game thành công!**
-

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Day1_Scene3_Classroom_VNScene
+  m_EditorClassIdentifier: GameScripts::VNSceneData
+  sceneData:
+    sceneName: Day1_Scene3_Classroom
+    locationText: "L\u1EDBp h\u1ECDc - 8:00 AM"
+    backgroundImage: {fileID: 6081253000217835118, guid: 1f97bca4103556b42917e65651d61dc2, type: 3}
+    backgroundTint: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.003921569}
+    characters:
+    - characterSprite: {fileID: -4441732071139527466, guid: 3dcc7ddfc7d634a478634a93f2f25599, type: 3}
+      characterName: "C\xF4 gi\xE1o"
+      position: 2
+      positionOffset: {x: 0, y: -50}
+      scale: {x: 1, y: 1}
+      flipX: 0
+    - characterSprite: {fileID: -2400005554593973897, guid: 333f0e02ff765a042be32da51039f98c, type: 3}
+      characterName: "\u0110\u1EE9c"
+      position: 0
+      positionOffset: {x: 0, y: -50}
+      scale: {x: 1, y: 1}
+      flipX: 0
+    - characterSprite: {fileID: 5834620791710037599, guid: 9c748e2b8a1518644bcd9484dbe416dc, type: 3}
+      characterName: "B\u1EA1n k\u1EBF b\xE0n"
+      position: 2
+      positionOffset: {x: 0, y: -50}
+      scale: {x: 1, y: 1}
+      flipX: 0
+    dialogue: {fileID: 11400000, guid: debae863011dec249b6e5a9d533cc1b2, type: 2}
+    bgm: {fileID: 0}
+    ambience: {fileID: 0}
+    nextScene: {fileID: 0}
+    returnToTopDown: 1
+    topDownSceneName: ClassroomScene
+    spawnPointId: Desk_spawn
+  requiredFlags: []
+  forbiddenFlags: []
+  setFlagsOnEnter: []
+  variableChangesOnEnter: []
+  setFlagsOnComplete:
+  - day1_classroom_completed
+  variableChangesOnComplete: []

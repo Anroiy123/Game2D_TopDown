@@ -17,12 +17,27 @@ public class VNSceneCreator : EditorWindow
     private string locationText = "Phòng ngủ Đức";
     private Sprite backgroundSprite;
     private bool createDialogue = true;
+    
+    // Flags
+    private string setFlagOnComplete = "";
+    private bool autoSetForbiddenFlag = true;
+    
+    // Transition
+    private bool returnToTopDown = true;
+    private string topDownSceneName = "";
+    private string spawnPointId = "";
+
+    private Vector2 scrollPosition;
 
     private void OnGUI()
     {
+        scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
+        
         GUILayout.Label("Tạo VN Scene nhanh", EditorStyles.boldLabel);
         EditorGUILayout.Space();
 
+        // Basic Info
+        EditorGUILayout.LabelField("📋 Thông tin cơ bản", EditorStyles.boldLabel);
         sceneName = EditorGUILayout.TextField("Scene Name:", sceneName);
         locationText = EditorGUILayout.TextField("Location Text:", locationText);
         backgroundSprite = (Sprite)EditorGUILayout.ObjectField("Background Sprite:", backgroundSprite, typeof(Sprite), false);
@@ -30,14 +45,38 @@ public class VNSceneCreator : EditorWindow
         EditorGUILayout.Space();
         createDialogue = EditorGUILayout.Toggle("Tạo DialogueData mẫu", createDialogue);
 
+        // Flags Section
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("🚩 Flags", EditorStyles.boldLabel);
+        setFlagOnComplete = EditorGUILayout.TextField("Set Flag On Complete:", setFlagOnComplete);
+        EditorGUILayout.HelpBox("Flag này sẽ được set TRUE khi VN scene hoàn thành", MessageType.Info);
+        
+        autoSetForbiddenFlag = EditorGUILayout.Toggle("Auto set Forbidden Flag", autoSetForbiddenFlag);
+        if (autoSetForbiddenFlag && !string.IsNullOrEmpty(setFlagOnComplete))
+        {
+            EditorGUILayout.HelpBox($"Forbidden Flag sẽ tự động set: \"{setFlagOnComplete}\"\n→ Ngăn VN trigger lại sau khi hoàn thành", MessageType.Info);
+        }
+
+        // Transition Section
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("🔄 Transition", EditorStyles.boldLabel);
+        returnToTopDown = EditorGUILayout.Toggle("Return To Top Down:", returnToTopDown);
+        if (returnToTopDown)
+        {
+            topDownSceneName = EditorGUILayout.TextField("Top Down Scene Name:", topDownSceneName);
+            spawnPointId = EditorGUILayout.TextField("Spawn Point ID:", spawnPointId);
+        }
+
         EditorGUILayout.Space();
         EditorGUILayout.HelpBox(
             "Tool này sẽ tạo:\n" +
             "1. DialogueData (nếu chọn)\n" +
-            "2. VNSceneData\n" +
-            "Tất cả sẽ được lưu trong Assets/Scripts/Data/VisualNovel/",
+            "2. VNSceneData với flags đã cấu hình\n" +
+            "Tất cả sẽ được lưu trong Assets/Data/VisualNovel/",
             MessageType.Info
         );
+        
+        EditorGUILayout.EndScrollView();
 
         EditorGUILayout.Space();
 
@@ -56,7 +95,7 @@ public class VNSceneCreator : EditorWindow
         }
 
         // Tạo thư mục nếu chưa có
-        string folderPath = "Assets/Scripts/Data/VisualNovel";
+        string folderPath = "Assets/Data/VisualNovel";
         if (!AssetDatabase.IsValidFolder(folderPath))
         {
             string[] folders = folderPath.Split('/');
@@ -115,10 +154,36 @@ public class VNSceneCreator : EditorWindow
             bgm = null,
             ambience = null,
             nextScene = null,
-            returnToTopDown = false,
-            topDownSceneName = "",
-            spawnPointId = ""
+            returnToTopDown = returnToTopDown,
+            topDownSceneName = topDownSceneName,
+            spawnPointId = spawnPointId
         };
+
+        // Set flags on complete
+        if (!string.IsNullOrEmpty(setFlagOnComplete))
+        {
+            vnScene.setFlagsOnComplete = new string[] { setFlagOnComplete };
+        }
+        else
+        {
+            vnScene.setFlagsOnComplete = new string[0];
+        }
+
+        // Auto set forbidden flag (để không trigger lại)
+        if (autoSetForbiddenFlag && !string.IsNullOrEmpty(setFlagOnComplete))
+        {
+            vnScene.forbiddenFlags = new string[] { setFlagOnComplete };
+        }
+        else
+        {
+            vnScene.forbiddenFlags = new string[0];
+        }
+
+        // Initialize other arrays
+        vnScene.requiredFlags = new string[0];
+        vnScene.setFlagsOnEnter = new string[0];
+        vnScene.variableChangesOnEnter = new VariableChange[0];
+        vnScene.variableChangesOnComplete = new VariableChange[0];
 
         string vnScenePath = $"{folderPath}/{sceneName}_VNScene.asset";
         AssetDatabase.CreateAsset(vnScene, vnScenePath);

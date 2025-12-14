@@ -206,8 +206,58 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1212952025823174222, guid: bce180881820727479ee55b6ba0e1a24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1914122876}
   m_SourcePrefab: {fileID: 100100000, guid: bce180881820727479ee55b6ba0e1a24, type: 3}
+--- !u!1 &49406911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 49406913}
+  - component: {fileID: 49406912}
+  m_Layer: 0
+  m_Name: MomPosition_Bedroom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &49406912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49406911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eff8dbbe6c4d9749bd1b5c2bdb076b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::NPCPositionByFlag
+  conditions: []
+  defaultPosition: {fileID: 0}
+  hideByDefault: 0
+--- !u!4 &49406913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49406911}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.55, y: 16.72, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &74744208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1114,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 863829260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &344006806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1212952025823174222, guid: bce180881820727479ee55b6ba0e1a24, type: 3}
+  m_PrefabInstance: {fileID: 7435418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &405283327
 GameObject:
   m_ObjectHideFlags: 0
@@ -6540,6 +6595,37 @@ Transform:
   - {fileID: 863829260}
   m_Father: {fileID: 826964401}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1328347942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328347943}
+  m_Layer: 0
+  m_Name: MomPosition_Kitchen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1328347943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328347942}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.76, y: 4.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1333555306
 GameObject:
   m_ObjectHideFlags: 0
@@ -10473,6 +10559,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 446087355924945520, guid: bce180881820727479ee55b6ba0e1a24, type: 3}
   m_PrefabInstance: {fileID: 7435418}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1914122876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344006806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eff8dbbe6c4d9749bd1b5c2bdb076b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::NPCPositionByFlag
+  conditions:
+  - flagName: day1_scene1_completed
+    flagValue: 1
+    targetPosition: {fileID: 1328347943}
+    hideInstead: 0
+    priority: 0
+  defaultPosition: {fileID: 49406913}
+  hideByDefault: 0
 --- !u!1 &1987467014
 GameObject:
   m_ObjectHideFlags: 0
@@ -17420,3 +17526,5 @@ SceneRoots:
   - {fileID: 568494978}
   - {fileID: 127448705}
   - {fileID: 2122588998}
+  - {fileID: 49406913}
+  - {fileID: 1328347943}

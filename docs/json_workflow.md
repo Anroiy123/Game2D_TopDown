@@ -3,7 +3,7 @@
 ## 📁 RECOMMENDED FOLDER STRUCTURE
 
 ```
-Assets/Scripts/Data/Dialogues/
+Assets/Data/Dialogues/
 ├── NPCs/
 │   ├── adam_dialogue.json
 │   ├── teacher_dialogue.json
@@ -173,12 +173,12 @@ with open("output.json", "w", encoding="utf-8") as f:
 
 ```gitignore
 # IGNORE generated .asset files
-Assets/Scripts/Data/Dialogues/*.asset
-Assets/Scripts/Data/Dialogues/*.asset.meta
+Assets/Data/Dialogues/*.asset
+Assets/Data/Dialogues/*.asset.meta
 
 # KEEP source .json files
-!Assets/Scripts/Data/Dialogues/*.json
-!Assets/Scripts/Data/Dialogues/*.json.meta
+!Assets/Data/Dialogues/*.json
+!Assets/Data/Dialogues/*.json.meta
 ```
 
 **Lý do:** JSON là source of truth, .asset có thể re-generate.
@@ -222,7 +222,7 @@ Assets/Scripts/Data/Dialogues/*.asset.meta
 static void BatchImport()
 {
     string[] jsonFiles = Directory.GetFiles(
-        "Assets/Scripts/Data/Dialogues", 
+        "Assets/Data/Dialogues", 
         "*.json", 
         SearchOption.AllDirectories
     );

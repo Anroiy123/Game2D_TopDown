@@ -1,0 +1,101 @@
+{
+  "_comment": "Day 1 - Scene 3: Classroom - First day introduction",
+  "conversationName": "Day1_Scene3_Classroom",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Cô giáo",
+      "isPlayer": false,
+      "lines": [
+        "Cả lớp im lặng.",
+        "Bắt đầu từ hôm nay lớp chúng ta sẽ chào đón một bạn mới chuyển vào."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Cô giáo",
+      "isPlayer": false,
+      "lines": [
+        "Các em nhớ hãy hòa đồng và cùng giúp đỡ bạn để làm quen với lớp chúng ta nhanh hơn nhé.",
+        "Nào, Đức lên đây và tự giới thiệu bản thân đi em."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "👉👈 Chào mọi người...",
+        "M-mình tên là Đức...",
+        "Năm nay m-mình vừa chuyển đến đây vì lí do gia đình ạ...",
+        "M-mong mọi người giúp đỡ mình ạ."
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Cô giáo",
+      "isPlayer": false,
+      "lines": [
+        "Vì bạn là người mới nên còn hơi nhút nhát.",
+        "Lớp mình đã học chung với nhau 1 năm rồi nên đã quen nhau.",
+        "Cô mong các em đều sẽ giúp đỡ để bạn Đức nhanh chóng hòa nhập để trở thành 1 phần của lớp mình nhé."
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Cô giáo",
+      "isPlayer": false,
+      "lines": [
+        "Và Đức nữa, lần sau cố gắng dũng cảm hơn và nói dõng dạc lên nhé em.",
+        "Mình là đàn ông con trai mà.",
+        "Rồi em về chỗ đi, nay lớp chúng ta sẽ ôn lại bài hôm trước và học tiếp bài mới nhé cả lớp."
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "Cả lớp",
+      "isPlayer": false,
+      "lines": [
+        "Vâng ạ!"
+      ],
+      "next": 60
+    },
+    {
+      "id": 60,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đức về chỗ ngồi của mình...",
+        "Bạn ngồi kế bên quay sang nói chuyện."
+      ],
+      "next": 70
+    },
+    {
+      "id": 70,
+      "speaker": "Bạn kế bàn",
+      "isPlayer": false,
+      "lines": [
+        "Uầy uầy uầy!",
+        "Giúp đỡ nhau nha bro."
+      ],
+      "next": 80
+    },
+    {
+      "id": 80,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Buổi học đầu tiên trôi qua...",
+        "Đức cảm thấy hơi lạc lõng giữa những gương mặt xa lạ."
+      ],
+      "next": -1,
+      "setFlags": ["day1_classroom_vn_completed", "day1_classroom_completed", "met_classmate"]
+    }
+  ]
+}

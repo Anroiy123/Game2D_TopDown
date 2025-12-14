@@ -169,7 +169,7 @@ Assets/
      ]
    }
    ```
-2. **Lưu vào** `Assets/Scripts/Data/Dialogues/YourFile.json`
+2. **Lưu vào** `Assets/Data/Dialogues/YourFile.json`
 3. **Import:** `Tools → Dialogue → Import JSON to DialogueData`
 4. **Kéo asset** vào `NPCInteraction.dialogueData`
 5. **Tick** `Use Advanced Dialogue`

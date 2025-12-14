@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Day1_Scene3_Classroom_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Day1_Scene3_Classroom
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "C\xF4 gi\xE1o"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "C\u1EA3 l\u1EDBp im l\u1EB7ng."
+    - "B\u1EAFt \u0111\u1EA7u t\u1EEB h\xF4m nay l\u1EDBp ch\xFAng ta s\u1EBD ch\xE0o
+      \u0111\xF3n m\u1ED9t b\u1EA1n m\u1EDBi chuy\u1EC3n v\xE0o."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "C\xF4 gi\xE1o"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "C\xE1c em nh\u1EDB h\xE3y h\xF2a \u0111\u1ED3ng v\xE0 c\xF9ng gi\xFAp \u0111\u1EE1
+      b\u1EA1n \u0111\u1EC3 l\xE0m quen v\u1EDBi l\u1EDBp ch\xFAng ta nhanh h\u01A1n
+      nh\xE9."
+    - "N\xE0o, \u0110\u1EE9c l\xEAn \u0111\xE2y v\xE0 t\u1EF1 gi\u1EDBi thi\u1EC7u
+      b\u1EA3n th\xE2n \u0111i em."
+    choices: []
+    nextNodeId: 20
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "\U0001F449\U0001F448 Ch\xE0o m\u1ECDi ng\u01B0\u1EDDi..."
+    - "M-m\xECnh t\xEAn l\xE0 \u0110\u1EE9c..."
+    - "N\u0103m nay m-m\xECnh v\u1EEBa chuy\u1EC3n \u0111\u1EBFn \u0111\xE2y v\xEC
+      l\xED do gia \u0111\xECnh \u1EA1..."
+    - "M-mong m\u1ECDi ng\u01B0\u1EDDi gi\xFAp \u0111\u1EE1 m\xECnh \u1EA1."
+    choices: []
+    nextNodeId: 30
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 30
+    speakerName: "C\xF4 gi\xE1o"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "V\xEC b\u1EA1n l\xE0 ng\u01B0\u1EDDi m\u1EDBi n\xEAn c\xF2n h\u01A1i nh\xFAt
+      nh\xE1t."
+    - "L\u1EDBp m\xECnh \u0111\xE3 h\u1ECDc chung v\u1EDBi nhau 1 n\u0103m r\u1ED3i
+      n\xEAn \u0111\xE3 quen nhau."
+    - "C\xF4 mong c\xE1c em \u0111\u1EC1u s\u1EBD gi\xFAp \u0111\u1EE1 \u0111\u1EC3
+      b\u1EA1n \u0110\u1EE9c nhanh ch\xF3ng h\xF2a nh\u1EADp \u0111\u1EC3 tr\u1EDF
+      th\xE0nh 1 ph\u1EA7n c\u1EE7a l\u1EDBp m\xECnh nh\xE9."
+    choices: []
+    nextNodeId: 40
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 40
+    speakerName: "C\xF4 gi\xE1o"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "V\xE0 \u0110\u1EE9c n\u1EEFa, l\u1EA7n sau c\u1ED1 g\u1EAFng d\u0169ng c\u1EA3m
+      h\u01A1n v\xE0 n\xF3i d\xF5ng d\u1EA1c l\xEAn nh\xE9 em."
+    - "M\xECnh l\xE0 \u0111\xE0n \xF4ng con trai m\xE0."
+    - "R\u1ED3i em v\u1EC1 ch\u1ED7 \u0111i, nay l\u1EDBp ch\xFAng ta s\u1EBD \xF4n
+      l\u1EA1i b\xE0i h\xF4m tr\u01B0\u1EDBc v\xE0 h\u1ECDc ti\u1EBFp b\xE0i m\u1EDBi
+      nh\xE9 c\u1EA3 l\u1EDBp."
+    choices: []
+    nextNodeId: 50
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 50
+    speakerName: "C\u1EA3 l\u1EDBp"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "V\xE2ng \u1EA1!"
+    choices: []
+    nextNodeId: 60
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 60
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\u1EE9c v\u1EC1 ch\u1ED7 ng\u1ED3i c\u1EE7a m\xECnh..."
+    - "B\u1EA1n ng\u1ED3i k\u1EBF b\xEAn quay sang n\xF3i chuy\u1EC7n."
+    choices: []
+    nextNodeId: 70
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 70
+    speakerName: "B\u1EA1n k\u1EBF b\xE0n"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "U\u1EA7y u\u1EA7y u\u1EA7y!"
+    - "Gi\xFAp \u0111\u1EE1 nhau nha bro."
+    choices: []
+    nextNodeId: 80
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 80
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Bu\u1ED5i h\u1ECDc \u0111\u1EA7u ti\xEAn tr\xF4i qua..."
+    - "\u0110\u1EE9c c\u1EA3m th\u1EA5y h\u01A1i l\u1EA1c l\xF5ng gi\u1EEFa nh\u1EEFng
+      g\u01B0\u01A1ng m\u1EB7t xa l\u1EA1."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - day1_classroom_completed
+    - met_classmate
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

@@ -82,16 +82,65 @@ public class DialogueSystem : MonoBehaviour
     private void SetupUI()
     {
         // Force canvas sorting order to be above VN canvas
-        // Tìm Canvas trong parent hierarchy (DialogueCanvas)
-        Canvas canvas = GetComponentInParent<Canvas>();
+        // Tìm Canvas: trước tiên trên chính object này, sau đó trong parent hierarchy
+        Canvas canvas = GetComponent<Canvas>();
+        if (canvas == null)
+        {
+            canvas = GetComponentInParent<Canvas>();
+        }
+        
+        // Nếu vẫn không tìm thấy, tìm DialogueCanvas trong scene
+        if (canvas == null)
+        {
+            GameObject dialogueCanvasObj = GameObject.Find("DialogueCanvas");
+            if (dialogueCanvasObj != null)
+            {
+                canvas = dialogueCanvasObj.GetComponent<Canvas>();
+                if (canvas == null)
+                {
+                    // DialogueCanvas tồn tại nhưng không có Canvas component - thêm vào
+                    Debug.Log("[DialogueSystem] DialogueCanvas found but has no Canvas component, adding...");
+                    canvas = dialogueCanvasObj.AddComponent<Canvas>();
+                    canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+                    
+                    var scaler = dialogueCanvasObj.AddComponent<CanvasScaler>();
+                    scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+                    scaler.referenceResolution = new Vector2(1920, 1080);
+                    scaler.matchWidthOrHeight = 0.5f;
+                    
+                    dialogueCanvasObj.AddComponent<GraphicRaycaster>();
+                }
+                
+                // Di chuyển DialogueSystem vào DialogueCanvas nếu chưa
+                if (transform.parent != dialogueCanvasObj.transform)
+                {
+                    Debug.Log("[DialogueSystem] Moving DialogueSystem under DialogueCanvas...");
+                    transform.SetParent(dialogueCanvasObj.transform, false);
+                }
+            }
+        }
+        
         if (canvas != null)
         {
             canvas.sortingOrder = 400; // Above VN canvas (300)
+            canvas.overrideSorting = true; // Đảm bảo sorting order được áp dụng
             Debug.Log($"[DialogueSystem] Canvas sorting order set to {canvas.sortingOrder}");
         }
         else
         {
-            Debug.LogWarning("[DialogueSystem] No Canvas found in parent! Dialogue may be hidden behind VN background.");
+            // Không tìm thấy Canvas - tạo Canvas mới trên chính object này
+            Debug.LogWarning("[DialogueSystem] No Canvas found anywhere! Creating Canvas on this object...");
+            canvas = gameObject.AddComponent<Canvas>();
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            canvas.sortingOrder = 400; // Above VN canvas (300)
+            
+            var scaler = gameObject.AddComponent<CanvasScaler>();
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(1920, 1080);
+            scaler.matchWidthOrHeight = 0.5f;
+            
+            gameObject.AddComponent<GraphicRaycaster>();
+            Debug.Log($"[DialogueSystem] Canvas created with sorting order {canvas.sortingOrder}");
         }
 
         // Auto-create UI if not assigned
@@ -379,6 +428,8 @@ public class DialogueSystem : MonoBehaviour
         bool isLastLine = currentLineInNode >= currentNode.dialogueLines.Length - 1;
         bool hasChoices = currentNode.choices != null && currentNode.choices.Length > 0;
 
+        Debug.Log($"[DialogueSystem] CheckAndShowChoices: Node {currentNode.nodeId}, line {currentLineInNode}/{currentNode.dialogueLines.Length}, isLastLine={isLastLine}, hasChoices={hasChoices}");
+
         if (isLastLine && hasChoices)
         {
             ShowChoices();
@@ -412,7 +463,13 @@ public class DialogueSystem : MonoBehaviour
     /// </summary>
     private void ShowChoices()
     {
-        if (currentNode == null || currentNode.choices == null) return;
+        if (currentNode == null || currentNode.choices == null)
+        {
+            Debug.LogWarning($"[DialogueSystem] ShowChoices: currentNode={currentNode != null}, choices={currentNode?.choices != null}");
+            return;
+        }
+
+        Debug.Log($"[DialogueSystem] ShowChoices: Node {currentNode.nodeId} has {currentNode.choices.Length} choices");
 
         isShowingChoices = true;
 
@@ -426,14 +483,22 @@ public class DialogueSystem : MonoBehaviour
         if (choicePanel != null)
         {
             choicePanel.SetActive(true);
+            Debug.Log($"[DialogueSystem] ChoicePanel activated: {choicePanel.activeSelf}");
+        }
+        else
+        {
+            Debug.LogWarning("[DialogueSystem] ChoicePanel is NULL!");
         }
 
-        // Tạo các button cho mỗi choice
+        // Tạo các button cho mỗi choice (filter theo conditions)
         ClearChoiceButtons();
         
-        for (int i = 0; i < currentNode.choices.Length; i++)
+        var availableChoices = currentNode.GetAvailableChoices();
+        Debug.Log($"[DialogueSystem] Available choices after filter: {availableChoices?.Length ?? 0}");
+        
+        for (int i = 0; i < availableChoices.Length; i++)
         {
-            DialogueChoice choice = currentNode.choices[i];
+            DialogueChoice choice = availableChoices[i];
             CreateChoiceButton(choice, i);
         }
     }

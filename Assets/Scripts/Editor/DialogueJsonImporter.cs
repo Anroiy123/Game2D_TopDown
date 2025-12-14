@@ -64,7 +64,7 @@ public class DialogueJsonImporter : EditorWindow
     }
 
     private TextAsset jsonFile;
-    private string outputFolder = "Assets/Scripts/Data/Dialogues";
+    private string outputFolder = "Assets/Data/Dialogues";
     private string previewText = "";
     private Vector2 scrollPos;
 

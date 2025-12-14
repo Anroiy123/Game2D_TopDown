@@ -109,6 +109,13 @@ public class VNSceneData : ScriptableObject
     [Tooltip("Biến thay đổi khi vào cảnh")]
     public VariableChange[] variableChangesOnEnter;
 
+    [Header("Effects On Complete")]
+    [Tooltip("Flags set TRUE khi hoàn thành cảnh (sau khi dialogue kết thúc)")]
+    public string[] setFlagsOnComplete;
+
+    [Tooltip("Biến thay đổi khi hoàn thành cảnh")]
+    public VariableChange[] variableChangesOnComplete;
+
     /// <summary>
     /// Kiểm tra điều kiện hiển thị cảnh
     /// </summary>
@@ -137,6 +144,31 @@ public class VNSceneData : ScriptableObject
         if (variableChangesOnEnter != null)
         {
             foreach (var change in variableChangesOnEnter)
+            {
+                change.Apply();
+            }
+        }
+    }
+
+    /// <summary>
+    /// Áp dụng effects khi hoàn thành cảnh
+    /// </summary>
+    public void ApplyOnCompleteEffects()
+    {
+        if (StoryManager.Instance == null) return;
+
+        if (setFlagsOnComplete != null)
+        {
+            foreach (string flag in setFlagsOnComplete)
+            {
+                StoryManager.Instance.SetFlag(flag, true);
+                Debug.Log($"[VNSceneData] Set flag on complete: {flag}");
+            }
+        }
+
+        if (variableChangesOnComplete != null)
+        {
+            foreach (var change in variableChangesOnComplete)
             {
                 change.Apply();
             }

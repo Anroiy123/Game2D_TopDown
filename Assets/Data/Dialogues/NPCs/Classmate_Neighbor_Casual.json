@@ -1,0 +1,30 @@
+{
+  "conversationName": "Classmate_Neighbor_Casual",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Bạn kế bàn",
+      "isPlayer": false,
+      "lines": ["Ê Đức!", "Nay học có hiểu bài không?", "Bài tập về nhà khó quá trời luôn á!"],
+      "choices": [
+        { "text": "Ừ, cũng tạm hiểu", "next": 20 },
+        { "text": "Khó lắm, tao cũng không hiểu", "next": 30 }
+      ]
+    },
+    {
+      "id": 20,
+      "speaker": "Bạn kế bàn",
+      "isPlayer": false,
+      "lines": ["Giỏi dữ!", "Vậy lát chỉ tao với nha, tao dốt môn này lắm.", "Hehe!"],
+      "next": -1
+    },
+    {
+      "id": 30,
+      "speaker": "Bạn kế bàn",
+      "isPlayer": false,
+      "lines": ["Vậy tụi mình cùng hội cùng thuyền rồi!", "Thôi lát hỏi mấy đứa khác vậy.", "Hoặc... chép bài nhau? Hehe!"],
+      "next": -1
+    }
+  ]
+}

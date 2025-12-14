@@ -73,7 +73,7 @@ Tuyệt vời! Tôi thấy đã có folder `Mom` với sprites đầy đủ. Bâ
 - [ ] **2.1. Tạo Animator Controller**
 
   ```
-  Project → Assets/Scripts/Data/ → Right-click → Create → Animator Controller
+  Project → Assets/Data/ → Right-click → Create → Animator Controller
   Tên: "Mom_Animator"
   ```
 
@@ -126,7 +126,7 @@ Tuyệt vời! Tôi thấy đã có folder `Mom` với sprites đầy đủ. Bâ
 - [ ] **Tạo DialogueData Asset**
 
   ```
-  Project → Assets/Scripts/Data/ → Right-click → Create → DialogueData
+  Project → Assets/Data/ → Right-click → Create → DialogueData
   Tên: "Mom_Day1_Morning"
   ```
 

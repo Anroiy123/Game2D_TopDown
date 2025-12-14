@@ -22,6 +22,10 @@ public class NPCInteraction : MonoBehaviour
     [SerializeField] private float interactionRange = 2f;
     [SerializeField] private KeyCode interactionKey = KeyCode.E;
 
+    [Header("Default Direction")]
+    [SerializeField] private bool useCustomDefaultDirection = false;
+    [SerializeField] private Vector2 defaultDirection = new Vector2(0f, -1f); // Mặc định nhìn xuống
+
     [Header("UI References")]
     [SerializeField] private GameObject nameUI; // Canvas hiển thị tên
     [SerializeField] private Text nameText; // Text component
@@ -71,11 +75,23 @@ public class NPCInteraction : MonoBehaviour
             nameText.text = npcName;
         }
 
-        // Set animation về hướng lên (idle - nhìn thấy lưng)
-        if (animator != null)
+        // Chỉ set hướng mặc định nếu KHÔNG có NPCDefaultDirection component
+        // (để NPCDefaultDirection có thể control hướng)
+        NPCDefaultDirection directionController = GetComponent<NPCDefaultDirection>();
+        if (directionController == null && animator != null)
         {
-            animator.SetFloat(horizontalHash, 0f);
-            animator.SetFloat(verticalHash, 1f); // Hướng lên (lưng)
+            // Không có NPCDefaultDirection, dùng config của NPCInteraction
+            if (useCustomDefaultDirection)
+            {
+                animator.SetFloat(horizontalHash, defaultDirection.x);
+                animator.SetFloat(verticalHash, defaultDirection.y);
+            }
+            else
+            {
+                // Mặc định hướng lên (lưng) cho backward compatibility
+                animator.SetFloat(horizontalHash, 0f);
+                animator.SetFloat(verticalHash, 1f);
+            }
             animator.SetFloat(speedHash, 0f);
         }
     }
@@ -187,7 +203,7 @@ public class NPCInteraction : MonoBehaviour
 
         // Tính vector hướng từ NPC đến Player
         Vector2 direction = (player.position - transform.position).normalized;
-        Debug.Log($"FacePlayer: direction = ({direction.x:F2}, {direction.y:F2})");
+        Debug.Log($"[NPC] FacePlayer: direction = ({direction.x:F2}, {direction.y:F2})");
 
         // Xác định hướng chính (trái/phải/lên/xuống)
         float absX = Mathf.Abs(direction.x);
@@ -196,33 +212,37 @@ public class NPCInteraction : MonoBehaviour
         if (absX > absY)
         {
             // Quay ngang (trái hoặc phải)
-            // Chỉ dùng 1 animation side và flip sprite
-            animator.SetFloat(horizontalHash, -1f); // Luôn dùng position (-1, 0) cho side
+            // Blend Tree dùng CÙNG animation NPC_Idle_Side cho cả (-1,0) và (1,0)
+            // Animation gốc nhìn sang TRÁI, nên cần flip khi player ở bên PHẢI
+            animator.SetFloat(horizontalHash, 1f); // Luôn dùng side animation
             animator.SetFloat(verticalHash, 0f);
             
             if (spriteRenderer != null)
             {
-                if (direction.x < 0)
-                {
-                    // Player ở bên TRÁI của Adam
-                    Debug.Log("Adam quay TRÁI (Player ở bên trái)");
-                    spriteRenderer.flipX = false; // Không flip
-                }
-                else
-                {
-                    // Player ở bên PHẢI của Adam
-                    Debug.Log("Adam quay PHẢI (Player ở bên phải)");
-                    spriteRenderer.flipX = true; // Flip sprite
-                }
+                // NPC_Idle_Side animation nhìn sang PHẢI (mặc định)
+                // Nếu player ở bên TRÁI của NPC -> cần flip để NPC nhìn sang trái
+                bool playerOnLeft = direction.x < 0;
+                spriteRenderer.flipX = playerOnLeft;
+                
+                Debug.Log($"[NPC] Quay {(playerOnLeft ? "TRÁI (flip)" : "PHẢI")}, flipX = {spriteRenderer.flipX}");
             }
-            
-            Debug.Log($"Set Horizontal = {animator.GetFloat(horizontalHash)}, flipX = {spriteRenderer?.flipX}");
         }
         else
         {
             // Quay dọc (lên hoặc xuống)
+            // NPC_Idle ở (0, -1) = nhìn xuống, NPC_Idle_Up ở (0, 1) = nhìn lên
+            float verticalValue = direction.y > 0 ? 1f : -1f;
+            
             animator.SetFloat(horizontalHash, 0f);
-            animator.SetFloat(verticalHash, Mathf.Sign(direction.y));
+            animator.SetFloat(verticalHash, verticalValue);
+            
+            // Reset flip khi quay dọc
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.flipX = false;
+            }
+            
+            Debug.Log($"[NPC] Quay {(direction.y > 0 ? "LÊN" : "XUỐNG")}, Vertical = {verticalValue}");
         }
 
         animator.SetFloat(speedHash, 0f); // Đứng yên
@@ -242,11 +262,27 @@ public class NPCInteraction : MonoBehaviour
             }
         }
 
-        // Quay về hướng ban đầu (lên - nhìn thấy lưng)
-        if (animator != null)
+        // Quay về hướng ban đầu
+        NPCDefaultDirection directionController = GetComponent<NPCDefaultDirection>();
+        if (directionController != null)
         {
-            animator.SetFloat(horizontalHash, 0f);
-            animator.SetFloat(verticalHash, 1f); // Hướng lên (lưng)
+            // Có NPCDefaultDirection, để nó xử lý
+            directionController.SetDirection(directionController.GetDefaultDirection());
+        }
+        else if (animator != null)
+        {
+            // Không có NPCDefaultDirection, dùng config của NPCInteraction
+            if (useCustomDefaultDirection)
+            {
+                animator.SetFloat(horizontalHash, defaultDirection.x);
+                animator.SetFloat(verticalHash, defaultDirection.y);
+            }
+            else
+            {
+                // Mặc định hướng lên (lưng)
+                animator.SetFloat(horizontalHash, 0f);
+                animator.SetFloat(verticalHash, 1f);
+            }
             animator.SetFloat(speedHash, 0f);
         }
 

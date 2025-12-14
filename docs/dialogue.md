@@ -9,8 +9,8 @@
 | `Assets/Scripts/NPC/NPCInteraction.cs`          | Xử lý tương tác giữa Player và NPC                                           |
 | `Assets/Scripts/Player/PlayerMovement.cs`       | Điều khiển player, có tích hợp trạng thái nói chuyện                         |
 | `Assets/Scripts/Editor/DialogueJsonImporter.cs` | **[NEW]** Tool import JSON thành DialogueData                                |
-| `Assets/Scripts/Data/AdamDialogue.asset`        | Instance của DialogueData cho NPC Adam                                       |
-| `Assets/Scripts/Data/Dialogues/*.json`          | **[NEW]** JSON dialogue files (example_dialogue.json, advanced_example.json) |
+| `Assets/Data/AdamDialogue.asset`                | Instance của DialogueData cho NPC Adam                                       |
+| `Assets/Data/Dialogues/*.json`                  | **[NEW]** JSON dialogue files (example_dialogue.json, advanced_example.json) |
 | `Assets/Prefabs/Adam.prefab`                    | Prefab NPC Adam                                                              |
 | `Assets/Prefabs/ChoiceButton.prefab`            | Prefab button cho lựa chọn dialogue                                          |
 
@@ -414,7 +414,7 @@ OnDialogueEnd() → SetTalkingState(false) → Player di chuyển lại
 ```
 📝 Dùng VS Code / Notepad++ / Editor yêu thích
    ↓
-💾 Lưu vào Assets/Scripts/Data/Dialogues/MyDialogue.json
+💾 Lưu vào Assets/Data/Dialogues/MyDialogue.json
    ↓
 📂 (Unity tự import thành TextAsset)
 ```

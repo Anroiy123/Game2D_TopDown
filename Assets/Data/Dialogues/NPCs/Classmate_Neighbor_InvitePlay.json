@@ -1,0 +1,47 @@
+{
+  "conversationName": "Classmate_Neighbor_InvitePlay",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Bạn kế bàn",
+      "isPlayer": false,
+      "lines": ["Ê Đức!", "Ra sân chơi bóng với tụi tao đi, vui lắm!", "Cứ ngồi một mình ở đây như này không chán à?"],
+      "choices": [
+        { "text": "Ừ, để tao đi thử xem", "next": 20 },
+        { "text": "Thôi, tao không thích", "next": 30 },
+        { "text": "Để hôm khác đi...", "next": 40 }
+      ]
+    },
+    {
+      "id": 20,
+      "speaker": "Bạn kế bàn",
+      "isPlayer": false,
+      "lines": ["Ồ! Tốt lắm!", "Đi theo tao, tụi nó đang chờ ở sân rồi.", "Mày sẽ thấy vui mà, tin tao đi!"],
+      "next": -1,
+      "setFlags": ["accepted_play_invitation", "friendship_hung_up"]
+    },
+    {
+      "id": 30,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["Thôi tụi mày cứ đi đi, tao lười lắm.", "Ra hoạt động mệt lắm, tao không thích."],
+      "next": 31
+    },
+    {
+      "id": 31,
+      "speaker": "Bạn kế bàn",
+      "isPlayer": false,
+      "lines": ["Vậy thôi, mày không ra chơi cũng được.", "Nhưng cứ ngồi đây hoài 1 mình buồn lắm đó.", "Lần sau tao rủ lại nha!"],
+      "next": -1,
+      "setFlags": ["refused_play_once"]
+    },
+    {
+      "id": 40,
+      "speaker": "Bạn kế bàn",
+      "isPlayer": false,
+      "lines": ["Oke, hôm khác vậy.", "Nhưng nhớ đừng từ chối hoài nha!", "Tụi tao đi đây, bye!"],
+      "next": -1
+    }
+  ]
+}
