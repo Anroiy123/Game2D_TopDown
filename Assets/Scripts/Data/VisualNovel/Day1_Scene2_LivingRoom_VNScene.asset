@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Day1_Scene2_LivingRoom_VNScene
+  m_EditorClassIdentifier: GameScripts::VNSceneData
+  sceneData:
+    sceneName: Day1_Scene2_LivingRoom
+    locationText: LivingRoom
+    backgroundImage: {fileID: 6301699571520885172, guid: e5aa51342fbc44f4b91a91ca979a9aa5, type: 3}
+    backgroundTint: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.003921569}
+    characters:
+    - characterSprite: {fileID: -4020990447090382813, guid: 43ad5034ea78a1f4681acbe53e020560, type: 3}
+      characterName: "M\u1EB9"
+      position: 2
+      positionOffset: {x: 0, y: -50}
+      scale: {x: 1, y: 1}
+      flipX: 0
+    - characterSprite: {fileID: -2400005554593973897, guid: 333f0e02ff765a042be32da51039f98c, type: 3}
+      characterName: "\u0110\u1EE9c"
+      position: 0
+      positionOffset: {x: 0, y: -50}
+      scale: {x: 1, y: 1}
+      flipX: 0
+    dialogue: {fileID: 11400000, guid: c290e1bb5761dbf47bbd0fb7b9259df5, type: 2}
+    bgm: {fileID: 0}
+    ambience: {fileID: 0}
+    nextScene: {fileID: 0}
+    returnToTopDown: 1
+    topDownSceneName: HomeScene
+    spawnPointId: livingroom_spawn
+  requiredFlags: []
+  forbiddenFlags:
+  - day1_scene2_completed
+  setFlagsOnEnter:
+  - day1_scene2_completed
+  variableChangesOnEnter: []

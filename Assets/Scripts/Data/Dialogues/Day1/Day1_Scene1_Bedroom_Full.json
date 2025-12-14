@@ -1,0 +1,224 @@
+{
+  "_comment": "Day 1 - Scene 1: Bedroom morning (Extended version with choices)",
+  "conversationName": "Day1_Scene1_Bedroom_Full",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Ánh sáng ban mai chiếu qua cửa sổ...",
+        "Hôm nay là ngày đầu tiên ở trường mới.",
+        "Một khởi đầu mới... hay là một thử thách mới?"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Đức ơi, dậy đi con!",
+        "Hôm nay là ngày đầu tiên đi học mà.",
+        "Mẹ đã chuẩn bị sẵn bữa sáng rồi đấy!"
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Mình còn buồn ngủ quá...)",
+        "(Nhưng hôm nay là ngày quan trọng...)"
+      ],
+      "choices": [
+        {
+          "text": "Dạ, con dậy ngay ạ!",
+          "next": 30,
+          "setTrue": ["obedient_to_mom"]
+        },
+        {
+          "text": "Dạ... để con ngủ thêm 5 phút...",
+          "next": 40
+        },
+        {
+          "text": "(Im lặng, lật mặt tiếp tục ngủ)",
+          "next": 50
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Con ngoan lắm! Xuống ăn sáng với mẹ nhé.",
+        "Hôm nay mẹ nấu món ưa thích của con đấy!"
+      ],
+      "next": 100,
+      "setFlags": ["mom_happy"],
+      "varChanges": [{ "name": "relationship_mom", "op": "add", "value": 5 }]
+    },
+    {
+      "id": 40,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Thôi được, 5 phút thôi đấy nhé.",
+        "Nhưng đừng để trễ giờ học ngày đầu tiên đấy con!"
+      ],
+      "next": 45
+    },
+    {
+      "id": 45,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": ["...", "5 phút trôi qua..."],
+      "next": 100
+    },
+    {
+      "id": 50,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Đức! Con có nghe mẹ nói không?",
+        "Trễ giờ học ngày đầu thì xấu hổ lắm đấy!"
+      ],
+      "next": 60
+    },
+    {
+      "id": 60,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["(Mẹ hơi giận rồi...)"],
+      "choices": [
+        {
+          "text": "Dạ, con xin lỗi mẹ...",
+          "next": 70
+        },
+        {
+          "text": "Con không muốn đi học...",
+          "next": 80,
+          "setTrue": ["reluctant_student"]
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "*thở dài* Thôi được rồi.",
+        "Dậy nhanh lên, đừng để mẹ phải nói lần thứ hai!"
+      ],
+      "next": 100
+    },
+    {
+      "id": 80,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Con nói gì? Không muốn đi học?",
+        "Con biết mẹ đã vất vả đến mức nào để cho con chuyển trường không?",
+        "Trường cũ có chuyện gì thì... thì ở trường mới sẽ khác mà!"
+      ],
+      "next": 90,
+      "setFlags": ["mom_worried"]
+    },
+    {
+      "id": 90,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Nhìn thấy nỗi lo lắng trong mắt mẹ...)",
+        "Dạ... con sẽ cố gắng ạ."
+      ],
+      "next": 100,
+      "varChanges": [{ "name": "relationship_mom", "op": "add", "value": 3 }]
+    },
+    {
+      "id": 100,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": ["Đức rời khỏi giường...", "Một ngày mới bắt đầu."],
+      "next": 110
+    },
+    {
+      "id": 110,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Đồ dùng học tập mẹ đã chuẩn bị sẵn rồi.",
+        "Còn tiền ăn trưa đây nữa, 20.000 đồng nhé."
+      ],
+      "next": 120,
+      "varChanges": [{ "name": "money", "op": "add", "value": 20000 }]
+    },
+    {
+      "id": 120,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Và này... hãy cố gắng kết bạn với mọi người nhé.",
+        "Nếu có chuyện gì... nhớ nói với mẹ."
+      ],
+      "next": 130
+    },
+    {
+      "id": 130,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["(Mẹ vẫn lo lắng cho mình...)"],
+      "choices": [
+        {
+          "text": "Dạ, con sẽ cẩn thận ạ.",
+          "next": 140
+        },
+        {
+          "text": "Mẹ đừng lo, con ổn mà!",
+          "next": 150,
+          "setTrue": ["reassured_mom"]
+        },
+        {
+          "text": "(Gật đầu, không nói gì)",
+          "next": 160
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": ["Mẹ tin con.", "Giờ đi xuống ăn sáng thôi!"],
+      "next": 200
+    },
+    {
+      "id": 150,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "*cười nhẹ* Con trai mẹ khôn lớn rồi đấy!",
+        "Được rồi, giờ đi ăn sáng thôi!"
+      ],
+      "next": 200,
+      "varChanges": [{ "name": "relationship_mom", "op": "add", "value": 5 }]
+    },
+    {
+      "id": 160,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": ["...", "Thôi được, đi xuống ăn sáng đi con."],
+      "next": 200
+    },
+    {
+      "id": 200,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": ["Sau bữa sáng...", "Đức chuẩn bị xuất phát đến trường."],
+      "next": -1,
+      "setFlags": ["day1_bedroom_completed"]
+    }
+  ]
+}

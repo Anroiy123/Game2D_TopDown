@@ -1,0 +1,107 @@
+{
+  "conversationName": "Bully_Encounter_Example",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Thằng Béo",
+      "lines": [
+        "Ê, thằng mới kìa!",
+        "Mày là thằng nào vậy?"
+      ],
+      "next": 1
+    },
+    {
+      "id": 1,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "..."
+      ],
+      "choices": [
+        {
+          "text": "Tôi là Đức, học sinh mới",
+          "next": 2
+        },
+        {
+          "text": "Kệ mày, tránh ra",
+          "next": 3,
+          "setTrue": ["stood_up_to_bullies"],
+          "varChanges": [
+            { "name": "fear_level", "op": "sub", "value": 10 }
+          ]
+        },
+        {
+          "text": "Đưa tiền cho hắn (10000đ)",
+          "next": 4,
+          "requireFlags": [],
+          "varConditions": [
+            { "name": "money", "op": ">=", "value": 10000 }
+          ],
+          "varChanges": [
+            { "name": "money", "op": "sub", "value": 10000 },
+            { "name": "gave_money_count", "op": "add", "value": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "Thằng Béo",
+      "lines": [
+        "Đức hả? Nghe tên yếu đuối vl.",
+        "Từ nay mày phải nộp tiền bảo kê cho tao!"
+      ],
+      "next": 5,
+      "setFlags": ["met_bullies"],
+      "varChanges": [
+        { "name": "fear_level", "op": "add", "value": 20 }
+      ]
+    },
+    {
+      "id": 3,
+      "speaker": "Thằng Béo",
+      "lines": [
+        "Ê! Mày dám nói với tao như vậy hả?!",
+        "Được, tao sẽ nhớ mày!"
+      ],
+      "next": -1,
+      "setFlags": ["angered_bullies"]
+    },
+    {
+      "id": 4,
+      "speaker": "Thằng Béo",
+      "lines": [
+        "Haha, thằng này biết điều!",
+        "Nhớ tuần sau tiếp nhé!"
+      ],
+      "next": -1,
+      "setFlags": ["gave_money_to_bullies"]
+    },
+    {
+      "id": 5,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "..."
+      ],
+      "choices": [
+        {
+          "text": "Từ chối",
+          "next": 3
+        },
+        {
+          "text": "Ok... (nộp tiền)",
+          "next": 4,
+          "varConditions": [
+            { "name": "money", "op": ">=", "value": 10000 }
+          ],
+          "varChanges": [
+            { "name": "money", "op": "sub", "value": 10000 }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

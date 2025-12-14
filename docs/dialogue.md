@@ -1,16 +1,18 @@
-## 📊 PHÂN TÍCH HỆ THỐNG HỘI THOẠI & NPC
+﻿## 📊 PHÂN TÍCH HỆ THỐNG HỘI THOẠI & NPC
 
 ### 📁 Các File Liên Quan
 
-| File                                 | Chức năng                                                      |
-| ------------------------------------ | -------------------------------------------------------------- |
-| `Assets/Scripts/DialogueSystem.cs`   | Quản lý hiển thị UI hội thoại, xử lý logic chuyển đổi dialogue |
-| `Assets/Scripts/DialogueData.cs`     | Định nghĩa cấu trúc dữ liệu cho dialogue (ScriptableObject)    |
-| `Assets/Scripts/NPCInteraction.cs`   | Xử lý tương tác giữa Player và NPC                             |
-| `Assets/Scripts/PlayerMovement.cs`   | Điều khiển player, có tích hợp trạng thái nói chuyện           |
-| `Assets/Scripts/AdamDialogue.asset`  | Instance của DialogueData cho NPC Adam                         |
-| `Assets/Prefabs/Adam.prefab`         | Prefab NPC Adam                                                |
-| `Assets/Prefabs/ChoiceButton.prefab` | Prefab button cho lựa chọn dialogue                            |
+| File                                            | Chức năng                                                                    |
+| ----------------------------------------------- | ---------------------------------------------------------------------------- |
+| `Assets/Scripts/Dialogue/DialogueSystem.cs`     | Quản lý hiển thị UI hội thoại, xử lý logic chuyển đổi dialogue               |
+| `Assets/Scripts/Dialogue/DialogueData.cs`       | Định nghĩa cấu trúc dữ liệu cho dialogue (ScriptableObject)                  |
+| `Assets/Scripts/NPC/NPCInteraction.cs`          | Xử lý tương tác giữa Player và NPC                                           |
+| `Assets/Scripts/Player/PlayerMovement.cs`       | Điều khiển player, có tích hợp trạng thái nói chuyện                         |
+| `Assets/Scripts/Editor/DialogueJsonImporter.cs` | **[NEW]** Tool import JSON thành DialogueData                                |
+| `Assets/Scripts/Data/AdamDialogue.asset`        | Instance của DialogueData cho NPC Adam                                       |
+| `Assets/Scripts/Data/Dialogues/*.json`          | **[NEW]** JSON dialogue files (example_dialogue.json, advanced_example.json) |
+| `Assets/Prefabs/Adam.prefab`                    | Prefab NPC Adam                                                              |
+| `Assets/Prefabs/ChoiceButton.prefab`            | Prefab button cho lựa chọn dialogue                                          |
 
 ---
 
@@ -258,15 +260,203 @@ OnDialogueEnd() → SetTalkingState(false) → Player di chuyển lại
 
 ---
 
----
+## 🆕 HƯỚNG DẪN SỬ DỤNG JSON IMPORT TOOL
 
----
+### 🎯 TẠI SAO DÙNG JSON?
 
----
+| Lợi ích                | Mô tả                                      |
+| ---------------------- | ------------------------------------------ |
+| ✅ **Dễ viết**         | Cú pháp đơn giản hơn Inspector UI          |
+| ✅ **Dễ sửa**          | Mở bằng text editor, search/replace nhanh  |
+| ✅ **Version Control** | Git diff/merge JSON dễ hơn .asset binary   |
+| ✅ **Backup**          | Copy/paste, duplicate dễ dàng              |
+| ✅ **External Tools**  | Có thể generate từ Excel, Google Sheets... |
 
----
+### 📝 CÚ PHÁP JSON CHI TIẾT
 
----
+#### **JSON Cơ bản:**
+
+```json
+{
+  "conversationName": "Tên_Hội_Thoại",
+  "startNodeId": 0,
+  "nodes": [...]
+}
+```
+
+#### **Node đơn giản (narrator/NPC nói):**
+
+```json
+{
+  "id": 0,
+  "speaker": "Mẹ",
+  "isPlayer": false,
+  "lines": ["Đức ơi, dậy đi con!", "Hôm nay là ngày đầu tiên đi học mà."],
+  "next": 1
+}
+```
+
+#### **Node với choices (player chọn):**
+
+```json
+{
+  "id": 1,
+  "speaker": "Đức",
+  "isPlayer": true,
+  "lines": ["..."],
+  "choices": [
+    {
+      "text": "Chào mẹ",
+      "next": 2,
+      "setTrue": ["greeted_mom"]
+    },
+    {
+      "text": "Im lặng",
+      "next": 3
+    }
+  ]
+}
+```
+
+#### **Node với conditions (nâng cao):**
+
+```json
+{
+  "id": 5,
+  "speaker": "Thằng Béo",
+  "lines": ["Đưa tiền đi!"],
+  "choices": [
+    {
+      "text": "Đưa tiền (10000đ)",
+      "next": 6,
+      "varConditions": [{ "name": "money", "op": ">=", "value": 10000 }],
+      "varChanges": [
+        { "name": "money", "op": "sub", "value": 10000 },
+        { "name": "gave_money_count", "op": "add", "value": 1 }
+      ],
+      "setTrue": ["gave_money_to_bullies"]
+    },
+    {
+      "text": "Từ chối",
+      "next": 7,
+      "requireFlags": ["met_bullies"],
+      "forbidFlags": ["angered_bullies"]
+    }
+  ]
+}
+```
+
+### 🔑 BẢNG TRA CỨU FIELDS
+
+#### **Root Level:**
+
+| Field              | Type   | Bắt buộc        | Mô tả           |
+| ------------------ | ------ | --------------- | --------------- |
+| `conversationName` | string | ✅              | Tên hội thoại   |
+| `startNodeId`      | int    | ❌ (default: 0) | Node bắt đầu    |
+| `nodes`            | array  | ✅              | Danh sách nodes |
+
+#### **Node Fields:**
+
+| Field        | Type     | Bắt buộc            | Mô tả                           |
+| ------------ | -------- | ------------------- | ------------------------------- |
+| `id`         | int      | ✅                  | ID node (unique)                |
+| `speaker`    | string   | ❌                  | Tên người nói (rỗng = narrator) |
+| `isPlayer`   | bool     | ❌ (default: false) | Player đang nói?                |
+| `lines`      | string[] | ✅                  | Nội dung thoại                  |
+| `next`       | int      | ❌                  | Node tiếp theo (-1 = end)       |
+| `choices`    | array    | ❌                  | Lựa chọn (nếu có)               |
+| `setFlags`   | string[] | ❌                  | Set flags TRUE khi vào node     |
+| `varChanges` | array    | ❌                  | Thay đổi biến khi vào node      |
+
+#### **Choice Fields:**
+
+| Field           | Type     | Bắt buộc | Mô tả                |
+| --------------- | -------- | -------- | -------------------- |
+| `text`          | string   | ✅       | Text hiển thị        |
+| `next`          | int      | ✅       | Node tiếp theo       |
+| `action`        | string   | ❌       | Action ID (callback) |
+| `requireFlags`  | string[] | ❌       | Flags CẦN có         |
+| `forbidFlags`   | string[] | ❌       | Flags KHÔNG được có  |
+| `setTrue`       | string[] | ❌       | Set flags TRUE       |
+| `setFalse`      | string[] | ❌       | Set flags FALSE      |
+| `varConditions` | array    | ❌       | Điều kiện biến       |
+| `varChanges`    | array    | ❌       | Thay đổi biến        |
+
+#### **Variable Condition:**
+
+```json
+{ "name": "money", "op": ">=", "value": 10000 }
+```
+
+| Field   | Values                           | Mô tả                                |
+| ------- | -------------------------------- | ------------------------------------ |
+| `name`  | string                           | Tên biến (VD: "money", "fear_level") |
+| `op`    | `>`, `>=`, `<`, `<=`, `==`, `!=` | Phép so sánh                         |
+| `value` | int                              | Giá trị so sánh                      |
+
+#### **Variable Change:**
+
+```json
+{ "name": "money", "op": "sub", "value": 10000 }
+```
+
+| Field   | Values              | Mô tả                    |
+| ------- | ------------------- | ------------------------ |
+| `name`  | string              | Tên biến                 |
+| `op`    | `set`, `add`, `sub` | Phép toán (gán/cộng/trừ) |
+| `value` | int                 | Giá trị thay đổi         |
+
+### 🚀 WORKFLOW GỢI Ý
+
+#### **1. Viết JSON:**
+
+```
+📝 Dùng VS Code / Notepad++ / Editor yêu thích
+   ↓
+💾 Lưu vào Assets/Scripts/Data/Dialogues/MyDialogue.json
+   ↓
+📂 (Unity tự import thành TextAsset)
+```
+
+#### **2. Import vào Unity:**
+
+```
+🔧 Tools → Dialogue → Import JSON to DialogueData
+   ↓
+📄 Kéo JSON vào "JSON File"
+   ↓
+👁️ Nhấn "Preview JSON" (kiểm tra trước)
+   ↓
+✅ Nhấn "Import & Create DialogueData"
+   ↓
+🎯 File .asset được tạo tại Output Folder
+```
+
+#### **3. Sử dụng:**
+
+```
+🎮 Kéo DialogueData.asset vào NPCInteraction.dialogueData
+   ↓
+✅ Tick "Use Advanced Dialogue"
+   ↓
+▶️ Play game và test!
+```
+
+### 📚 FILE MẪU TRONG PROJECT
+
+- **`example_dialogue.json`** - Ví dụ đơn giản (choices cơ bản)
+- **`advanced_example.json`** - Ví dụ nâng cao (conditions, variables, flags)
+
+### 🔧 TIPS & TRICKS
+
+| Tip                        | Mô tả                                                             |
+| -------------------------- | ----------------------------------------------------------------- |
+| 💡 **Copy-paste nodes**    | Dễ dàng duplicate các nodes tương tự                              |
+| 💡 **Search-replace**      | Thay speaker name hàng loạt                                       |
+| 💡 **Comment trick**       | JSON không hỗ trợ comment, dùng field `_comment` (tool sẽ bỏ qua) |
+| 💡 **Version control**     | Commit JSON files, dễ review changes trên GitHub                  |
+| 💡 **External generation** | Viết script Python/Node.js generate JSON từ CSV/Excel             |
 
 ---
 

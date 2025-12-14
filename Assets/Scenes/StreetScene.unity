@@ -102980,7 +102980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: GameScripts::SpawnPoint
   spawnPointId: from_home
   isDefaultSpawn: 0
-  facingDirection: 3
+  facingDirection: 1
   fromSceneName: 
 --- !u!1 &2036674906
 GameObject:

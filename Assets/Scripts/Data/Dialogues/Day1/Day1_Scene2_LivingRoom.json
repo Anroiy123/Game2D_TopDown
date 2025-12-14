@@ -1,0 +1,143 @@
+{
+  "_comment": "Day 1 - Scene 2: Living Room - Breakfast with Mom",
+  "conversationName": "Day1_Scene2_LivingRoom",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Mùi phở thơm phức bay ra từ nhà bếp.",
+        "Đức ngồi xuống bàn ăn cùng mẹ."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Ăn no vào nhé con. Trường mới chắc nhiều chuyện lắm.",
+        "Con có lo lắng gì không?"
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Mình không muốn mẹ lo lắng...)"
+      ],
+      "choices": [
+        {
+          "text": "Con ổn mà mẹ. Mẹ đừng lo.",
+          "next": 30,
+          "setTrue": ["reassured_mom_breakfast"]
+        },
+        {
+          "text": "Con hơi lo một chút...",
+          "next": 40
+        },
+        {
+          "text": "(Im lặng ăn sáng)",
+          "next": 50
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "*cười nhẹ* Con trai mẹ dũng cảm lắm!",
+        "Nếu có chuyện gì thì nhớ nói với mẹ nhé.",
+        "Mẹ luôn ở đây cho con."
+      ],
+      "next": 100,
+      "varChanges": [{ "name": "relationship_mom", "op": "add", "value": 5 }]
+    },
+    {
+      "id": 40,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Lo lắng là bình thường con ạ.",
+        "Ai cũng vậy khi đến môi trường mới.",
+        "Nhưng mẹ tin con sẽ làm được!"
+      ],
+      "next": 45
+    },
+    {
+      "id": 45,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Dạ, con sẽ cố gắng ạ."
+      ],
+      "next": 100,
+      "varChanges": [{ "name": "relationship_mom", "op": "add", "value": 3 }]
+    },
+    {
+      "id": 50,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "...",
+        "Con có chuyện gì muốn nói với mẹ không?"
+      ],
+      "next": 55
+    },
+    {
+      "id": 55,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Lắc đầu)",
+        "Không có gì đâu mẹ."
+      ],
+      "next": 100
+    },
+    {
+      "id": 100,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Sau bữa sáng...",
+        "Đức vội vàng xỏ giày, miệng còn ngậm lát bánh mì."
+      ],
+      "next": 110
+    },
+    {
+      "id": 110,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Thưa mẹ con đi học!"
+      ],
+      "next": 120
+    },
+    {
+      "id": 120,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Đi cẩn thận nhé con!",
+        "Nhớ kết bạn với mọi người đấy!"
+      ],
+      "next": 130
+    },
+    {
+      "id": 130,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đức bước ra khỏi nhà...",
+        "Hướng về phía trường học mới."
+      ],
+      "next": -1,
+      "setFlags": ["day1_livingroom_completed"]
+    }
+  ]
+}
