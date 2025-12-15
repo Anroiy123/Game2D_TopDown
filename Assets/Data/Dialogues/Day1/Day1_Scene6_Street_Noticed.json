@@ -1,0 +1,48 @@
+{
+  "conversationName": "Day1_Scene6_Street_Noticed",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Hửm, sao mấy con vợ đằng sau cứ nhìn rồi đi theo mình nãy giờ thế nhỉ"
+      ],
+      "next": 1
+    },
+    {
+      "id": 1,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Có vẻ như họ đang chú ý đến mình...)",
+        "(Mình nên làm gì đây?)"
+      ],
+      "choices": [
+        {
+          "text": "Quay lại hỏi thăm",
+          "next": -1,
+          "action": "trigger_scene7a",
+          "setTrue": ["confronted_bullies"],
+          "setFalse": ["ran_from_bullies"]
+        },
+        {
+          "text": "Chạy lẹ về nhà",
+          "next": -1,
+          "action": "trigger_scene7b",
+          "setTrue": ["ran_from_bullies"],
+          "setFalse": ["confronted_bullies"],
+          "varChanges": [
+            {
+              "op": "add",
+              "name": "FEAR_LEVEL",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

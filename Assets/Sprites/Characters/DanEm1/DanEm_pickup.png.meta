@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: 4f0be720317226a418a9355124d2eee5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8800491685043980491
+    second: DanEm_pickup_0
+  - first:
+      213: 9012888531752051601
+    second: DanEm_pickup_1
+  - first:
+      213: 6240751838817834050
+    second: DanEm_pickup_2
+  - first:
+      213: 298500513301054500
+    second: DanEm_pickup_3
+  - first:
+      213: 2972429583251106554
+    second: DanEm_pickup_4
+  - first:
+      213: -6407830259838298152
+    second: DanEm_pickup_5
+  - first:
+      213: 2727833409492721659
+    second: DanEm_pickup_6
+  - first:
+      213: -8136574293235850897
+    second: DanEm_pickup_7
+  - first:
+      213: 6031635612297777805
+    second: DanEm_pickup_8
+  - first:
+      213: -5797774570290597554
+    second: DanEm_pickup_9
+  - first:
+      213: -2672841705616056054
+    second: DanEm_pickup_10
+  - first:
+      213: -2490788537904379402
+    second: DanEm_pickup_11
+  - first:
+      213: 8939302106562098828
+    second: DanEm_pickup_12
+  - first:
+      213: 7309166341436314915
+    second: DanEm_pickup_13
+  - first:
+      213: -6734423792388414269
+    second: DanEm_pickup_14
+  - first:
+      213: -8864535935165409995
+    second: DanEm_pickup_15
+  - first:
+      213: -1175199087203206972
+    second: DanEm_pickup_16
+  - first:
+      213: 5702634975042329066
+    second: DanEm_pickup_17
+  - first:
+      213: 9117259714743384536
+    second: DanEm_pickup_18
+  - first:
+      213: 8750738222179908251
+    second: DanEm_pickup_19
+  - first:
+      213: 4393208077280445003
+    second: DanEm_pickup_20
+  - first:
+      213: -2943540615809666711
+    second: DanEm_pickup_21
+  - first:
+      213: 7815532675098392120
+    second: DanEm_pickup_22
+  - first:
+      213: -2053198342743636801
+    second: DanEm_pickup_23
+  - first:
+      213: -9065903019388033337
+    second: DanEm_pickup_24
+  - first:
+      213: -5892061814355088826
+    second: DanEm_pickup_25
+  - first:
+      213: -8826911854510140655
+    second: DanEm_pickup_26
+  - first:
+      213: 6118892619466542661
+    second: DanEm_pickup_27
+  - first:
+      213: -1086945617875315937
+    second: DanEm_pickup_28
+  - first:
+      213: -6460368488691839267
+    second: DanEm_pickup_29
+  - first:
+      213: -5255345327398908488
+    second: DanEm_pickup_30
+  - first:
+      213: 4575547698752295475
+    second: DanEm_pickup_31
+  - first:
+      213: -8747472452259001529
+    second: DanEm_pickup_32
+  - first:
+      213: 4404937360566404387
+    second: DanEm_pickup_33
+  - first:
+      213: -4836329558303355011
+    second: DanEm_pickup_34
+  - first:
+      213: 2246935652484403440
+    second: DanEm_pickup_35
+  - first:
+      213: -4017260640702129557
+    second: DanEm_pickup_36
+  - first:
+      213: -7426686393371317885
+    second: DanEm_pickup_37
+  - first:
+      213: -5216607606612372942
+    second: DanEm_pickup_38
+  - first:
+      213: 2540146086210248788
+    second: DanEm_pickup_39
+  - first:
+      213: -1261052208132486593
+    second: DanEm_pickup_40
+  - first:
+      213: 949850291570571855
+    second: DanEm_pickup_41
+  - first:
+      213: 587089524647852644
+    second: DanEm_pickup_42
+  - first:
+      213: 893046513046488001
+    second: DanEm_pickup_43
+  - first:
+      213: 4760859854586354053
+    second: DanEm_pickup_44
+  - first:
+      213: 1987613202893216550
+    second: DanEm_pickup_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DanEm_pickup_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc843df7f80a12a70800000000000000
+      internalID: 8800491685043980491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193e5470e56341d70800000000000000
+      internalID: 9012888531752051601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2445a148bba9b9650800000000000000
+      internalID: 6240751838817834050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424c494a2ac742400800000000000000
+      internalID: 298500513301054500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa6b8515f0304920800000000000000
+      internalID: 2972429583251106554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7d65d2450d217a0800000000000000
+      internalID: -6407830259838298152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff914388063bd520800000000000000
+      internalID: 2727833409492721659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f612a1b2ac4151f80800000000000000
+      internalID: -8136574293235850897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82da95e1aca4b350800000000000000
+      internalID: 6031635612297777805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41390a0fba2a8fa0800000000000000
+      internalID: -5797774570290597554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a01e7eb41a828ead0800000000000000
+      internalID: -2672841705616056054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f948938501fe6dd0800000000000000
+      internalID: -2490788537904379402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_12
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86f88947e7ce0c70800000000000000
+      internalID: 8939302106562098828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3259d89df006f6560800000000000000
+      internalID: 7309166341436314915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4efb7cd358a82a0800000000000000
+      internalID: -6734423792388414269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535d7c58887daf480800000000000000
+      internalID: -8864535935165409995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8b3ea18aad0bfe0800000000000000
+      internalID: -1175199087203206972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_17
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9dd13cb44d32f40800000000000000
+      internalID: 5702634975042329066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9324eb763078e70800000000000000
+      internalID: 9117259714743384536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9a7777bc0ed07970800000000000000
+      internalID: 8750738222179908251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b428da6587fc7fc30800000000000000
+      internalID: 4393208077280445003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 961fabcc7617627d0800000000000000
+      internalID: -2943540615809666711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836b2bd3f89567c60800000000000000
+      internalID: 7815532675098392120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_23
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4485f4cf29183e0800000000000000
+      internalID: -2053198342743636801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_24
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c62c31bc317f2280800000000000000
+      internalID: -9065903019388033337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_25
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64aa8b05ff03b3ea0800000000000000
+      internalID: -5892061814355088826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_26
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 0
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1131d307f62808580800000000000000
+      internalID: -8826911854510140655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_27
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 0
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e001a0b6caae450800000000000000
+      internalID: 6118892619466542661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_28
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 0
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13df5c28b46ae0f0800000000000000
+      internalID: -1086945617875315937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_29
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde456986192856a0800000000000000
+      internalID: -6460368488691839267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_30
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd016cc4434117b0800000000000000
+      internalID: -5255345327398908488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_31
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3329cf4c36c9f7f30800000000000000
+      internalID: 4575547698752295475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_32
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b4698962cba9680800000000000000
+      internalID: -8747472452259001529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_33
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325486ae03b712d30800000000000000
+      internalID: 4404937360566404387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_34
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 0
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f4b9404e7e1ecb0800000000000000
+      internalID: -4836329558303355011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_35
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f05e773218be2f10800000000000000
+      internalID: 2246935652484403440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_36
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a9acc4bb2df38c0800000000000000
+      internalID: -4017260640702129557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_37
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 0
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38920e0d21c1fe890800000000000000
+      internalID: -7426686393371317885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_38
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232d4434503ea97b0800000000000000
+      internalID: -5216607606612372942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_39
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 0
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450292a3869604320800000000000000
+      internalID: 2540146086210248788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_40
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a8a03b2b7df7ee0800000000000000
+      internalID: -1261052208132486593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_41
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a7dd2cecb8e2d00800000000000000
+      internalID: 949850291570571855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_42
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46afcf7efc2c52800800000000000000
+      internalID: 587089524647852644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_43
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 0
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c38902721db46c00800000000000000
+      internalID: 893046513046488001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_44
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589990a40d8f11240800000000000000
+      internalID: 4760859854586354053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanEm_pickup_45
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 0
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b935d5dab659b10800000000000000
+      internalID: 1987613202893216550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DanEm_pickup_0: 8800491685043980491
+      DanEm_pickup_1: 9012888531752051601
+      DanEm_pickup_10: -2672841705616056054
+      DanEm_pickup_11: -2490788537904379402
+      DanEm_pickup_12: 8939302106562098828
+      DanEm_pickup_13: 7309166341436314915
+      DanEm_pickup_14: -6734423792388414269
+      DanEm_pickup_15: -8864535935165409995
+      DanEm_pickup_16: -1175199087203206972
+      DanEm_pickup_17: 5702634975042329066
+      DanEm_pickup_18: 9117259714743384536
+      DanEm_pickup_19: 8750738222179908251
+      DanEm_pickup_2: 6240751838817834050
+      DanEm_pickup_20: 4393208077280445003
+      DanEm_pickup_21: -2943540615809666711
+      DanEm_pickup_22: 7815532675098392120
+      DanEm_pickup_23: -2053198342743636801
+      DanEm_pickup_24: -9065903019388033337
+      DanEm_pickup_25: -5892061814355088826
+      DanEm_pickup_26: -8826911854510140655
+      DanEm_pickup_27: 6118892619466542661
+      DanEm_pickup_28: -1086945617875315937
+      DanEm_pickup_29: -6460368488691839267
+      DanEm_pickup_3: 298500513301054500
+      DanEm_pickup_30: -5255345327398908488
+      DanEm_pickup_31: 4575547698752295475
+      DanEm_pickup_32: -8747472452259001529
+      DanEm_pickup_33: 4404937360566404387
+      DanEm_pickup_34: -4836329558303355011
+      DanEm_pickup_35: 2246935652484403440
+      DanEm_pickup_36: -4017260640702129557
+      DanEm_pickup_37: -7426686393371317885
+      DanEm_pickup_38: -5216607606612372942
+      DanEm_pickup_39: 2540146086210248788
+      DanEm_pickup_4: 2972429583251106554
+      DanEm_pickup_40: -1261052208132486593
+      DanEm_pickup_41: 949850291570571855
+      DanEm_pickup_42: 587089524647852644
+      DanEm_pickup_43: 893046513046488001
+      DanEm_pickup_44: 4760859854586354053
+      DanEm_pickup_45: 1987613202893216550
+      DanEm_pickup_5: -6407830259838298152
+      DanEm_pickup_6: 2727833409492721659
+      DanEm_pickup_7: -8136574293235850897
+      DanEm_pickup_8: 6031635612297777805
+      DanEm_pickup_9: -5797774570290597554
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

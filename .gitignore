@@ -52,7 +52,7 @@ crashlytics-build.properties
 ehthumbs.db
 Thumbs.db
 
-AGENTS.md
 CLAUDE.md
 .kiro
 .github/
+.augmentignore

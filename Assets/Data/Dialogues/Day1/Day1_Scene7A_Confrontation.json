@@ -1,0 +1,99 @@
+{
+  "conversationName": "Day1_Scene7A_Confrontation",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Này sao mấy ông cứ đi theo tôi làm gì thế à"
+      ],
+      "next": 1
+    },
+    {
+      "id": 1,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Ồ không có gì đâu ông bạn, chả là tụi tôi thấy ông khá lạ, chưa gặp lần nào nên muốn đến chào hỏi thôi ấy mà, đúng không tụi bay"
+      ],
+      "next": 2
+    },
+    {
+      "id": 2,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "À vậy à, đúng là tôi mới chuyển đến đây năm nay, tôi tên là Đức, nếu giới thiệu xong rồi thì tôi về đây, tôi còn việc ở nhà phải làm"
+      ],
+      "next": 3
+    },
+    {
+      "id": 3,
+      "speaker": "Đàn em",
+      "isPlayer": false,
+      "lines": [
+        "Ê đợi đ--"
+      ],
+      "next": 4
+    },
+    {
+      "id": 4,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Hả còn gì nữa à"
+      ],
+      "next": 5
+    },
+    {
+      "id": 5,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Ấy không có gì đâu, ông về nhanh đi còn việc bận ở nhà mà, lần sau chúng ta lại gặp lại à…."
+      ],
+      "next": 6,
+      "setFlags": ["MET_BULLIES"]
+    },
+    {
+      "id": 6,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "(Đức quay gót đi về nhà...)"
+      ],
+      "next": 7
+    },
+    {
+      "id": 7,
+      "speaker": "Đàn em",
+      "isPlayer": false,
+      "lines": [
+        "Sao anh để thằng đó đi dễ vậy anh, sao không quất nó luôn như mấy thằng trước à"
+      ],
+      "next": 8
+    },
+    {
+      "id": 8,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Mày cứ bình tĩnh, ở đây ae mình là trùm, muốn bắt là bắt muốn thả là thả, mày sợ nó chạy à.",
+        "Nhớ kỹ lời tao dạy… đồ ăn càng ngon thì càng không được vội. Động tay sớm quá, lỡ tay bóp nát thì còn gì vui nữa?"
+      ],
+      "next": 9
+    },
+    {
+      "id": 9,
+      "speaker": "Đàn em",
+      "isPlayer": false,
+      "lines": [
+        "À dạ vâng em hiểu rồi đại ca"
+      ],
+      "next": -1
+    }
+  ]
+}
+

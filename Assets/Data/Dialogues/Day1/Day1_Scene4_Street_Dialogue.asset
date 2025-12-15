@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Day1_Scene4_Street_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Day1_Scene4_Street
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Chu\xF4ng tan h\u1ECDc vang l\xEAn..."
+    - "\u0110\u1EE9c b\u01B0\u1EDBc ra kh\u1ECFi c\u1ED5ng tr\u01B0\u1EDDng."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "Ng\xE0y \u0111\u1EA7u m\u1EC7t th\u1EADt..."
+    - "Gi\u1EDD ph\u1EA3i v\u1EC1 nhanh \u0111\u1EC3 c\xF2n k\u1ECBp c\xE0y daily
+      quest h\xF4m nay n\u1EEFa."
+    - "Nh\u1EDB m\u1EA5y em oai fu qu\xE1..."
+    choices: []
+    nextNodeId: 20
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\u1EE9c v\u1EEBa \u0111i v\u1EEBa ngh\u0129 v\u1EC1 nh\u1EEFng nhi\u1EC7m
+      v\u1EE5 trong game..."
+    - "Kh\xF4ng \u0111\u1EC3 \xFD g\xEC xung quanh."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - day1_scene4_street_completed
+    - left_school_day1
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

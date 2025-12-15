@@ -1,0 +1,40 @@
+{
+  "_comment": "Day 1 - Scene 4: Street - After school thoughts",
+  "conversationName": "Day1_Scene4_Street",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Chuông tan học vang lên...",
+        "Đức bước ra khỏi cổng trường."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Ngày đầu mệt thật...",
+        "Giờ phải về nhanh để còn kịp cày daily quest hôm nay nữa.",
+        "Nhớ mấy em oai fu quá..."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đức vừa đi vừa nghĩ về những nhiệm vụ trong game...",
+        "Không để ý gì xung quanh."
+      ],
+      "next": -1,
+      "setFlags": ["day1_scene4_street_completed", "left_school_day1"]
+    }
+  ]
+}
+
