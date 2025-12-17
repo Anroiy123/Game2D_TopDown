@@ -18,6 +18,13 @@ public class DialogueChoice
     [Tooltip("Callback ID để trigger event đặc biệt (optional)")]
     public string actionId;
 
+    [Header("VN Scene Transition")]
+    [Tooltip("VN Scene sẽ chuyển đến khi chọn (thay thế actionId cho VN transitions)")]
+    public VNSceneData nextVNScene;
+
+    [Tooltip("Kết thúc VN mode sau khi chọn (dùng khi không có nextVNScene)")]
+    public bool endVNMode = false;
+
     [Header("Conditions (Khi nào hiển thị choice này)")]
     [Tooltip("Flags cần có để hiển thị choice này (tất cả phải true)")]
     public string[] requiredFlags;
@@ -277,13 +284,13 @@ public class DialogueData : ScriptableObject
 {
     [Tooltip("Tên của conversation này")]
     public string conversationName;
-    
+
     [Tooltip("ID của node bắt đầu")]
     public int startNodeId = 0;
-    
+
     [Tooltip("Danh sách tất cả dialogue nodes")]
     public DialogueNode[] nodes;
-    
+
     /// <summary>
     /// Tìm node theo ID
     /// </summary>
@@ -295,5 +302,106 @@ public class DialogueData : ScriptableObject
                 return node;
         }
         return null;
+    }
+}
+
+/// <summary>
+/// Entry chứa DialogueData với điều kiện để trigger
+/// Dùng cho NPC có nhiều dialogue khác nhau tùy theo scene/flags/variables
+/// </summary>
+[Serializable]
+public class ConditionalDialogueEntry
+{
+    [Header("Dialogue")]
+    [Tooltip("DialogueData sẽ được sử dụng nếu điều kiện thỏa mãn")]
+    public DialogueData dialogueData;
+
+    [Header("Scene Conditions")]
+    [Tooltip("Chỉ trigger trong các scene này (để trống = mọi scene)")]
+    public string[] allowedScenes;
+
+    [Header("Flag Conditions")]
+    [Tooltip("Flags cần có để trigger dialogue này (tất cả phải true)")]
+    public string[] requiredFlags;
+
+    [Tooltip("Flags không được có (nếu có bất kỳ flag nào thì không trigger)")]
+    public string[] forbiddenFlags;
+
+    [Header("Variable Conditions")]
+    [Tooltip("Điều kiện biến (VD: current_day == 8)")]
+    public VariableCondition[] variableConditions;
+
+    [Header("Priority")]
+    [Tooltip("Độ ưu tiên (cao hơn = kiểm tra trước). Mặc định = 0")]
+    public int priority = 0;
+
+    /// <summary>
+    /// Kiểm tra xem entry này có thể được sử dụng không
+    /// </summary>
+    public bool CanUse()
+    {
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        string dialogueName = dialogueData != null ? dialogueData.conversationName : "NULL";
+
+        // Check scene condition
+        if (allowedScenes != null && allowedScenes.Length > 0)
+        {
+            bool sceneMatch = false;
+            string allowedScenesStr = string.Join(", ", allowedScenes);
+
+            foreach (string scene in allowedScenes)
+            {
+                if (string.Equals(scene, currentScene, StringComparison.OrdinalIgnoreCase))
+                {
+                    sceneMatch = true;
+                    break;
+                }
+            }
+
+            if (!sceneMatch)
+            {
+                Debug.Log($"[ConditionalDialogue] '{dialogueName}' REJECTED: Scene '{currentScene}' not in allowedScenes [{allowedScenesStr}]");
+                return false;
+            }
+            Debug.Log($"[ConditionalDialogue] '{dialogueName}' scene check PASSED: '{currentScene}' is in [{allowedScenesStr}]");
+        }
+        else
+        {
+            Debug.LogWarning($"[ConditionalDialogue] '{dialogueName}' has NO allowedScenes set - will match ANY scene! Current: '{currentScene}'");
+        }
+
+        // Check story flags
+        if (StoryManager.Instance != null)
+        {
+            // Check required flags
+            if (!StoryManager.Instance.CheckRequiredFlags(requiredFlags))
+            {
+                Debug.Log($"[ConditionalDialogue] '{dialogueName}' REJECTED: Required flags not met");
+                return false;
+            }
+
+            // Check forbidden flags
+            if (!StoryManager.Instance.CheckForbiddenFlags(forbiddenFlags))
+            {
+                Debug.Log($"[ConditionalDialogue] '{dialogueName}' REJECTED: Has forbidden flags");
+                return false;
+            }
+
+            // Check variable conditions
+            if (variableConditions != null)
+            {
+                foreach (var condition in variableConditions)
+                {
+                    if (!condition.IsMet())
+                    {
+                        Debug.Log($"[ConditionalDialogue] '{dialogueName}' REJECTED: Variable condition '{condition.variableName}' not met");
+                        return false;
+                    }
+                }
+            }
+        }
+
+        Debug.Log($"[ConditionalDialogue] '{dialogueName}' ACCEPTED - all conditions met!");
+        return true;
     }
 }

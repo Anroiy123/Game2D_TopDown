@@ -48,3 +48,6 @@ MonoBehaviour:
   - variableName: current_day
     operation: 0
     value: 1
+  setFlagsOnComplete:
+  - day1_scene1_completed
+  variableChangesOnComplete: []

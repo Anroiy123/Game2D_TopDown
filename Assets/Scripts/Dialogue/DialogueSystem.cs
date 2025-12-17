@@ -39,6 +39,8 @@ public class DialogueSystem : MonoBehaviour
     private bool isShowingChoices = false;
     private List<GameObject> spawnedChoiceButtons = new List<GameObject>();
     private Action<string> onChoiceAction; // Callback khi player chọn một action đặc biệt
+    private Action<VNSceneData> onVNSceneTransition; // Callback khi chuyển sang VN scene khác
+    private Action onEndVNMode; // Callback khi kết thúc VN mode
 
     // Event khi speaker thay đổi (để VNManager có thể ẩn/hiện character)
     public event Action<string> OnSpeakerChanged;
@@ -260,7 +262,12 @@ public class DialogueSystem : MonoBehaviour
     /// <summary>
     /// New method - Bắt đầu dialogue với choices
     /// </summary>
-    public void StartDialogueWithChoices(DialogueData dialogueData, Action onComplete = null, Action<string> onAction = null)
+    public void StartDialogueWithChoices(
+        DialogueData dialogueData,
+        Action onComplete = null,
+        Action<string> onAction = null,
+        Action<VNSceneData> onVNTransition = null,
+        Action onEndVN = null)
     {
         if (dialogueData == null || dialogueData.nodes == null || dialogueData.nodes.Length == 0)
         {
@@ -276,6 +283,8 @@ public class DialogueSystem : MonoBehaviour
         currentDialogueData = dialogueData;
         onDialogueComplete = onComplete;
         onChoiceAction = onAction;
+        onVNSceneTransition = onVNTransition;
+        onEndVNMode = onEndVN;
         dialogueActive = true;
         isShowingChoices = false;
 
@@ -318,9 +327,6 @@ public class DialogueSystem : MonoBehaviour
         isTyping = true;
         dialogueText.text = "";
 
-        // Debug: Kiểm tra text
-        Debug.Log($"Typing line: {line}");
-
         foreach (char letter in line.ToCharArray())
         {
             dialogueText.text += letter;
@@ -328,7 +334,7 @@ public class DialogueSystem : MonoBehaviour
         }
 
         isTyping = false;
-        
+
         // Kiểm tra xem có cần hiện choices không (cho new system)
         if (currentDialogueData != null && currentNode != null)
         {
@@ -370,6 +376,9 @@ public class DialogueSystem : MonoBehaviour
             choicePanel.SetActive(false);
         }
         isShowingChoices = false;
+
+        // Apply on enter effects (set flags, variable changes)
+        currentNode.ApplyOnEnterEffects();
 
         // Fire event khi speaker thay đổi
         OnSpeakerChanged?.Invoke(currentNode.speakerName);
@@ -428,8 +437,6 @@ public class DialogueSystem : MonoBehaviour
         bool isLastLine = currentLineInNode >= currentNode.dialogueLines.Length - 1;
         bool hasChoices = currentNode.choices != null && currentNode.choices.Length > 0;
 
-        Debug.Log($"[DialogueSystem] CheckAndShowChoices: Node {currentNode.nodeId}, line {currentLineInNode}/{currentNode.dialogueLines.Length}, isLastLine={isLastLine}, hasChoices={hasChoices}");
-
         if (isLastLine && hasChoices)
         {
             ShowChoices();
@@ -469,8 +476,6 @@ public class DialogueSystem : MonoBehaviour
             return;
         }
 
-        Debug.Log($"[DialogueSystem] ShowChoices: Node {currentNode.nodeId} has {currentNode.choices.Length} choices");
-
         isShowingChoices = true;
 
         // Ẩn continue icon
@@ -483,7 +488,6 @@ public class DialogueSystem : MonoBehaviour
         if (choicePanel != null)
         {
             choicePanel.SetActive(true);
-            Debug.Log($"[DialogueSystem] ChoicePanel activated: {choicePanel.activeSelf}");
         }
         else
         {
@@ -492,10 +496,9 @@ public class DialogueSystem : MonoBehaviour
 
         // Tạo các button cho mỗi choice (filter theo conditions)
         ClearChoiceButtons();
-        
+
         var availableChoices = currentNode.GetAvailableChoices();
-        Debug.Log($"[DialogueSystem] Available choices after filter: {availableChoices?.Length ?? 0}");
-        
+
         for (int i = 0; i < availableChoices.Length; i++)
         {
             DialogueChoice choice = availableChoices[i];
@@ -576,27 +579,54 @@ public class DialogueSystem : MonoBehaviour
         Button button = buttonObj.GetComponent<Button>();
         if (button != null)
         {
-            int nextNodeId = choice.nextNodeId;
-            string actionId = choice.actionId;
-            
-            button.onClick.AddListener(() => OnChoiceSelected(nextNodeId, actionId));
+            // Capture choice reference for ApplyEffects()
+            DialogueChoice capturedChoice = choice;
+
+            button.onClick.AddListener(() => {
+                // Apply choice effects BEFORE processing choice
+                capturedChoice.ApplyEffects();
+                OnChoiceSelected(capturedChoice.nextNodeId, capturedChoice.actionId, capturedChoice.nextVNScene, capturedChoice.endVNMode);
+            });
         }
     }
 
     /// <summary>
     /// Xử lý khi player chọn một choice
     /// </summary>
-    private void OnChoiceSelected(int nextNodeId, string actionId)
+    private void OnChoiceSelected(int nextNodeId, string actionId, VNSceneData nextVNScene, bool endVNMode)
     {
-        Debug.Log($"Choice selected: nextNode={nextNodeId}, action={actionId}");
+        // Priority 1: VN Scene transition
+        if (nextVNScene != null)
+        {
+            // Notify VNManager to transition to next VN scene
+            onVNSceneTransition?.Invoke(nextVNScene);
+            return; // Don't go to next node, VN scene will handle it
+        }
 
-        // Trigger action callback nếu có
+        // Priority 2: End VN mode
+        if (endVNMode)
+        {
+            // IMPORTANT: Gọi action callback TRƯỚC KHI end VN mode
+            // Để VisualNovelManager có thể xử lý (ví dụ: dừng bullies)
+            if (!string.IsNullOrEmpty(actionId))
+            {
+                onChoiceAction?.Invoke(actionId);
+            }
+
+            // End dialogue first to prevent dialogue overlay on top-down mode
+            EndDialogue();
+            // Then notify VNManager to end VN mode
+            onEndVNMode?.Invoke();
+            return;
+        }
+
+        // Priority 3: Action callback (legacy)
         if (!string.IsNullOrEmpty(actionId))
         {
             onChoiceAction?.Invoke(actionId);
         }
 
-        // Chuyển đến node tiếp theo
+        // Continue dialogue
         GoToNode(nextNodeId);
     }
 
@@ -637,7 +667,11 @@ public class DialogueSystem : MonoBehaviour
         if (index < 0 || index >= currentNode.choices.Length) return;
 
         DialogueChoice choice = currentNode.choices[index];
-        OnChoiceSelected(choice.nextNodeId, choice.actionId);
+
+        // IMPORTANT: Apply choice effects (set flags, change variables) BEFORE processing choice
+        choice.ApplyEffects();
+
+        OnChoiceSelected(choice.nextNodeId, choice.actionId, choice.nextVNScene, choice.endVNMode);
     }
 
     /// <summary>

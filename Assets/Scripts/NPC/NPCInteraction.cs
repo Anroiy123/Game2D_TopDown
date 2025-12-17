@@ -15,8 +15,13 @@ public class NPCInteraction : MonoBehaviour
     };
 
     [Header("Advanced Dialogue (With Choices)")]
+    [Tooltip("DialogueData mặc định (dùng khi không có conditional dialogue nào thỏa mãn)")]
     [SerializeField] private DialogueData dialogueData; // ScriptableObject cho dialogue phức tạp
     [SerializeField] private bool useAdvancedDialogue = false; // Sử dụng dialogue với choices
+
+    [Header("Conditional Dialogues")]
+    [Tooltip("Danh sách dialogue có điều kiện (ưu tiên cao hơn dialogueData mặc định)")]
+    [SerializeField] private ConditionalDialogueEntry[] conditionalDialogues;
 
     [Header("Interaction Settings")]
     [SerializeField] private float interactionRange = 2f;
@@ -29,6 +34,10 @@ public class NPCInteraction : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private GameObject nameUI; // Canvas hiển thị tên
     [SerializeField] private Text nameText; // Text component
+
+    [Header("Interaction Indicator")]
+    [Tooltip("Component hiển thị icon animation phía trên NPC")]
+    [SerializeField] private InteractionIndicator interactionIndicator;
 
     [Header("Components")]
     private Transform player;
@@ -94,6 +103,7 @@ public class NPCInteraction : MonoBehaviour
             }
             animator.SetFloat(speedHash, 0f);
         }
+        // InteractionIndicator sẽ tự quản lý visibility dựa trên khoảng cách player
     }
 
     private void Update()
@@ -157,16 +167,74 @@ public class NPCInteraction : MonoBehaviour
         }
 
         // Bắt đầu hội thoại - chọn mode phù hợp
-        if (useAdvancedDialogue && dialogueData != null)
+        if (useAdvancedDialogue)
         {
-            // Sử dụng dialogue với choices
-            dialogueSystem.StartDialogueWithChoices(dialogueData, OnDialogueEnd, OnDialogueAction);
+            // Tìm dialogue phù hợp với điều kiện hiện tại
+            DialogueData activeDialogue = GetActiveDialogue();
+
+            if (activeDialogue != null)
+            {
+                // Sử dụng dialogue với choices
+                dialogueSystem.StartDialogueWithChoices(activeDialogue, OnDialogueEnd, OnDialogueAction);
+            }
+            else
+            {
+                // Không có dialogue phù hợp, dùng legacy mode
+                Debug.LogWarning($"[NPCInteraction] {npcName}: No matching dialogue found, using legacy mode");
+                dialogueSystem.StartDialogue(npcName, dialogueLines, OnDialogueEnd);
+            }
         }
         else
         {
             // Sử dụng dialogue đơn giản (legacy)
             dialogueSystem.StartDialogue(npcName, dialogueLines, OnDialogueEnd);
         }
+    }
+
+    /// <summary>
+    /// Lấy DialogueData phù hợp với điều kiện hiện tại
+    /// Ưu tiên: conditionalDialogues (theo priority) > dialogueData mặc định
+    /// </summary>
+    private DialogueData GetActiveDialogue()
+    {
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        Debug.Log($"[NPCInteraction] {npcName}: GetActiveDialogue() called in scene '{currentScene}'");
+
+        // Kiểm tra conditional dialogues trước (sắp xếp theo priority giảm dần)
+        if (conditionalDialogues != null && conditionalDialogues.Length > 0)
+        {
+            Debug.Log($"[NPCInteraction] {npcName}: Checking {conditionalDialogues.Length} conditional dialogue(s)...");
+
+            // Sắp xếp theo priority (cao hơn = ưu tiên hơn)
+            var sortedEntries = new System.Collections.Generic.List<ConditionalDialogueEntry>(conditionalDialogues);
+            sortedEntries.Sort((a, b) => b.priority.CompareTo(a.priority));
+
+            foreach (var entry in sortedEntries)
+            {
+                if (entry.dialogueData != null && entry.CanUse())
+                {
+                    Debug.Log($"[NPCInteraction] {npcName}: ✓ Using conditional dialogue '{entry.dialogueData.conversationName}' (priority: {entry.priority})");
+                    return entry.dialogueData;
+                }
+            }
+
+            Debug.Log($"[NPCInteraction] {npcName}: No conditional dialogue matched, falling back to default");
+        }
+        else
+        {
+            Debug.Log($"[NPCInteraction] {npcName}: No conditional dialogues configured");
+        }
+
+        // Fallback về dialogueData mặc định
+        if (dialogueData != null)
+        {
+            Debug.Log($"[NPCInteraction] {npcName}: Using default dialogue '{dialogueData.conversationName}'");
+        }
+        else
+        {
+            Debug.LogWarning($"[NPCInteraction] {npcName}: No default dialogue set!");
+        }
+        return dialogueData;
     }
 
     /// <summary>
@@ -290,6 +358,12 @@ public class NPCInteraction : MonoBehaviour
         if (spriteRenderer != null)
         {
             spriteRenderer.flipX = false;
+        }
+
+        // Ẩn indicator sau khi tương tác (nếu hideAfterInteraction = true)
+        if (interactionIndicator != null)
+        {
+            interactionIndicator.OnInteracted();
         }
     }
 

@@ -23,14 +23,14 @@
         {
           "text": "Quay lại hỏi thăm",
           "next": -1,
-          "action": "trigger_scene7a",
+          "vnScene": "Assets/Data/VisualNovel/Day1/Day1_Scene7A_Confrontation_VNScene_VNScene.asset",
           "setTrue": ["confronted_bullies"],
           "setFalse": ["ran_from_bullies"]
         },
         {
           "text": "Chạy lẹ về nhà",
           "next": -1,
-          "action": "trigger_scene7b",
+          "endVNMode": true,
           "setTrue": ["ran_from_bullies"],
           "setFalse": ["confronted_bullies"],
           "varChanges": [
@@ -45,4 +45,3 @@
     }
   ]
 }
-

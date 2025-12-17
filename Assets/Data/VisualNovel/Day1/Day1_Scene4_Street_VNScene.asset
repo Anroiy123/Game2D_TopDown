@@ -31,7 +31,8 @@ MonoBehaviour:
     returnToTopDown: 1
     topDownSceneName: StreetScene
     spawnPointId: SpawnPoint_PortField
-  requiredFlags: []
+  requiredFlags:
+  - day1_classroom_completed
   forbiddenFlags:
   - day1_scene4_street_completed
   setFlagsOnEnter: []

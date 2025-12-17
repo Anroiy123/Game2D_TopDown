@@ -10,8 +10,14 @@ public class BullyFollowTrigger : MonoBehaviour
     [Header("Trigger Settings")]
     [Tooltip("Chỉ trigger 1 lần duy nhất")]
     [SerializeField] private bool triggerOnce = true;
-    
-    [Tooltip("Flag kiểm tra - nếu đã có flag này thì không trigger")]
+
+    [Tooltip("Flags cần có để trigger được (tất cả phải true)")]
+    [SerializeField] private string[] requiredFlags;
+
+    [Tooltip("Flags không được có (nếu có 1 trong số này thì không trigger)")]
+    [SerializeField] private string[] forbiddenFlags;
+
+    [Tooltip("Flag kiểm tra - nếu đã có flag này thì không trigger (legacy, dùng forbiddenFlags thay thế)")]
     [SerializeField] private string skipIfFlag = "day1_scene5_bullies_spawned";
 
     [Header("Bully NPCs")]
@@ -59,7 +65,7 @@ public class BullyFollowTrigger : MonoBehaviour
 
     private void Start()
     {
-        // Kiểm tra flag
+        // Kiểm tra skipIfFlag (legacy support)
         if (StoryManager.Instance != null && !string.IsNullOrEmpty(skipIfFlag))
         {
             if (StoryManager.Instance.GetFlag(skipIfFlag))
@@ -67,6 +73,29 @@ public class BullyFollowTrigger : MonoBehaviour
                 hasTriggered = true;
                 Debug.Log($"[BullyFollowTrigger] Đã có flag '{skipIfFlag}', không trigger");
             }
+        }
+
+        // Kiểm tra forbiddenFlags
+        if (StoryManager.Instance != null && forbiddenFlags != null && forbiddenFlags.Length > 0)
+        {
+            foreach (string flag in forbiddenFlags)
+            {
+                if (!string.IsNullOrEmpty(flag) && StoryManager.Instance.GetFlag(flag))
+                {
+                    hasTriggered = true;
+                    Debug.Log($"[BullyFollowTrigger] BLOCKED - Có forbidden flag: {flag}");
+                    break;
+                }
+            }
+        }
+
+        // Kiểm tra nếu player đã chạy trốn - ẩn bullies vĩnh viễn
+        if (StoryManager.Instance != null && StoryManager.Instance.GetFlag("ran_from_bullies"))
+        {
+            DeactivateAllBullies();
+            hasTriggered = true; // Prevent re-trigger
+            Debug.Log("[BullyFollowTrigger] Player đã chạy trốn, ẩn tất cả bullies");
+            return; // Skip phần còn lại
         }
 
         // Ẩn existing bullies ban đầu
@@ -92,6 +121,19 @@ public class BullyFollowTrigger : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         if (hasTriggered && triggerOnce) return;
+
+        // Kiểm tra requiredFlags
+        if (StoryManager.Instance != null && requiredFlags != null && requiredFlags.Length > 0)
+        {
+            foreach (string flag in requiredFlags)
+            {
+                if (!string.IsNullOrEmpty(flag) && !StoryManager.Instance.GetFlag(flag))
+                {
+                    Debug.Log($"[BullyFollowTrigger] BLOCKED - Thiếu required flag: {flag}");
+                    return; // Không trigger nếu thiếu flag
+                }
+            }
+        }
 
         TriggerBullySpawn(other.transform);
     }
@@ -282,6 +324,48 @@ public class BullyFollowTrigger : MonoBehaviour
                 if (followScript != null)
                 {
                     followScript.StopFollowing();
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Ẩn tất cả bullies (gọi khi player đã chạy trốn)
+    /// </summary>
+    private void DeactivateAllBullies()
+    {
+        if (existingBullyNPCs != null && existingBullyNPCs.Length > 0)
+        {
+            foreach (var bully in existingBullyNPCs)
+            {
+                if (bully != null)
+                {
+                    // Dừng follow trước khi ẩn
+                    NPCFollowPlayer followScript = bully.GetComponent<NPCFollowPlayer>();
+                    if (followScript != null)
+                    {
+                        followScript.StopFollowing();
+                    }
+
+                    // Ẩn NPC
+                    bully.SetActive(false);
+                }
+            }
+        }
+
+        // Ẩn activeBullies nếu đã được spawn
+        if (activeBullies != null && activeBullies.Length > 0)
+        {
+            foreach (var bully in activeBullies)
+            {
+                if (bully != null)
+                {
+                    NPCFollowPlayer followScript = bully.GetComponent<NPCFollowPlayer>();
+                    if (followScript != null)
+                    {
+                        followScript.StopFollowing();
+                    }
+                    bully.SetActive(false);
                 }
             }
         }

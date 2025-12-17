@@ -1,0 +1,18 @@
+{
+  "_comment": "Day 1 - Scene 9: Time Skip - 1 week passes",
+  "conversationName": "Day1_Scene9_TimeSkip",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Trôi qua 1 tuần..."
+      ],
+      "next": -1,
+      "setFlags": ["day1_completed", "week1_started"]
+    }
+  ]
+}
+

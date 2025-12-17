@@ -43,6 +43,10 @@ public class VisualNovelManager : MonoBehaviour
 
     [Header("Dialogue Integration")]
     [SerializeField] private DialogueSystem dialogueSystem; // Reference đến DialogueSystem
+
+    [Header("Day 1 Scene References")]
+    [Tooltip("Scene 7A - Confrontation (VN mode)")]
+    [SerializeField] private VNSceneData day1Scene7A;
     #endregion
 
     #region Settings
@@ -273,7 +277,12 @@ public class VisualNovelManager : MonoBehaviour
             dialogueSystem.OnSpeakerChanged -= OnSpeakerChanged; // Unsubscribe first to avoid duplicates
             dialogueSystem.OnSpeakerChanged += OnSpeakerChanged;
 
-            dialogueSystem.StartDialogueWithChoices(scene.dialogue, OnDialogueComplete, OnDialogueAction);
+            dialogueSystem.StartDialogueWithChoices(
+                scene.dialogue,
+                OnDialogueComplete,
+                OnDialogueAction,
+                OnVNSceneTransition,
+                () => EndVNMode());
         }
         else
         {
@@ -450,18 +459,42 @@ public class VisualNovelManager : MonoBehaviour
 
         isVNModeActive = false;
 
+        // Dừng bullies nếu player đã confronted hoặc ran away
+        if (StoryManager.Instance != null)
+        {
+            bool confronted = StoryManager.Instance.GetFlag("confronted_bullies");
+            bool ranAway = StoryManager.Instance.GetFlag("ran_from_bullies");
+
+            if (confronted || ranAway)
+            {
+                StopAllBulliesFollowing();
+                Debug.Log($"[VNManager] Dừng bullies - confronted={confronted}, ranAway={ranAway}");
+            }
+        }
+
         // Check if we need to load top-down scene
         if (currentScene != null && currentScene.sceneData.returnToTopDown)
         {
-            string sceneName = currentScene.sceneData.topDownSceneName;
+            string targetSceneName = currentScene.sceneData.topDownSceneName;
             string spawnId = currentScene.sceneData.spawnPointId;
+            string currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
 
-            if (!string.IsNullOrEmpty(sceneName) && GameManager.Instance != null)
+            // CASE 1: Load different scene
+            if (!string.IsNullOrEmpty(targetSceneName) && targetSceneName != currentSceneName && GameManager.Instance != null)
             {
-                GameManager.Instance.LoadScene(sceneName, spawnId);
+                Debug.Log($"[VNManager] Loading different scene: {targetSceneName} with spawn: {spawnId}");
+                GameManager.Instance.LoadScene(targetSceneName, spawnId);
             }
+            // CASE 2: Same scene + has spawn point → Teleport player
+            else if (!string.IsNullOrEmpty(targetSceneName) && targetSceneName == currentSceneName && !string.IsNullOrEmpty(spawnId))
+            {
+                Debug.Log($"[VNManager] Same scene, teleporting to spawn point: {spawnId}");
+                yield return TeleportPlayerToSpawnPoint(spawnId);
+            }
+            // CASE 3: Same scene + no spawn point → Stay in place
             else
             {
+                Debug.Log("[VNManager] Same scene, staying at current position");
                 EnablePlayerControls();
                 if (ScreenFader.Instance != null)
                 {
@@ -480,6 +513,58 @@ public class VisualNovelManager : MonoBehaviour
 
         onVNComplete?.Invoke();
         currentScene = null;
+    }
+
+    /// <summary>
+    /// Teleport player to spawn point in current scene (without reloading scene)
+    /// </summary>
+    private IEnumerator TeleportPlayerToSpawnPoint(string spawnId)
+    {
+        // Find SpawnManager in current scene
+        SpawnManager spawnManager = FindFirstObjectByType<SpawnManager>();
+        if (spawnManager == null)
+        {
+            Debug.LogWarning("[VNManager] SpawnManager not found, staying at current position");
+            EnablePlayerControls();
+            if (ScreenFader.Instance != null)
+            {
+                yield return ScreenFader.Instance.FadeInCoroutine();
+            }
+            yield break;
+        }
+
+        // Enable player first (need to be active to move)
+        EnablePlayerControls();
+
+        // Find player
+        if (cachedPlayer == null)
+        {
+            cachedPlayer = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        if (cachedPlayer == null)
+        {
+            Debug.LogWarning("[VNManager] Player not found, cannot teleport");
+            if (ScreenFader.Instance != null)
+            {
+                yield return ScreenFader.Instance.FadeInCoroutine();
+            }
+            yield break;
+        }
+
+        // Teleport player to spawn point
+        spawnManager.SpawnPlayer(cachedPlayer, spawnId);
+
+        // Snap camera to new position
+        CameraHelper.SnapCameraToTarget(cachedPlayer.transform);
+
+        // Fade in
+        if (ScreenFader.Instance != null)
+        {
+            yield return ScreenFader.Instance.FadeInCoroutine();
+        }
+
+        Debug.Log($"[VNManager] Player teleported to spawn point: {spawnId}");
     }
     #endregion
 
@@ -533,6 +618,101 @@ public class VisualNovelManager : MonoBehaviour
             case "trigger_bad_murder":
                 StoryManager.Instance?.SetFlag(StoryManager.FlagKeys.BROUGHT_KNIFE, true);
                 break;
+
+            // Day 1 Scene 6 choices (DEPRECATED - use nextVNScene instead)
+            case "trigger_scene7a":
+                HandleTriggerScene7A();
+                break;
+            case "trigger_scene7b":
+                HandleTriggerScene7B();
+                break;
+        }
+    }
+
+    /// <summary>
+    /// Handle VN scene transition from dialogue choice
+    /// </summary>
+    private void OnVNSceneTransition(VNSceneData nextScene)
+    {
+        if (nextScene == null)
+        {
+            Debug.LogError("[VNManager] nextVNScene is null!");
+            return;
+        }
+
+        if (!nextScene.CanShow())
+        {
+            Debug.Log($"[VNManager] Scene '{nextScene.name}' conditions not met, ending VN mode.");
+            EndVNMode();
+            return;
+        }
+
+        Debug.Log($"[VNManager] Transitioning to VN scene: {nextScene.name}");
+        currentScene = nextScene;
+        nextScene.ApplyOnEnterEffects();
+        StartCoroutine(TransitionBetweenScenes());
+    }
+
+    /// <summary>
+    /// Handle choice: Quay lại hỏi thăm (Scene 7A - VN Confrontation)
+    /// </summary>
+    private void HandleTriggerScene7A()
+    {
+        Debug.Log("[VNManager] Triggering Scene 7A - Confrontation");
+
+        if (day1Scene7A == null)
+        {
+            Debug.LogError("[VNManager] Scene 7A not assigned! Please assign Day1_Scene7A_Confrontation in VisualNovelManager Inspector.");
+            EndVNMode();
+            return;
+        }
+
+        // Chuyển sang Scene 7A (VN mode tiếp tục)
+        currentScene = day1Scene7A;
+        day1Scene7A.ApplyOnEnterEffects();
+        StartCoroutine(TransitionBetweenScenes());
+    }
+
+    /// <summary>
+    /// Handle choice: Chạy lẹ về nhà (Scene 7B - Top-down Escape)
+    /// </summary>
+    private void HandleTriggerScene7B()
+    {
+        Debug.Log("[VNManager] Triggering Scene 7B - Escape");
+
+        // Dừng tất cả bullies đuổi theo
+        StopAllBulliesFollowing();
+
+        // Kết thúc VN mode và quay về top-down
+        // Player sẽ điều khiển Đức chạy về nhà
+        EndVNMode();
+    }
+
+    /// <summary>
+    /// Dừng tất cả bullies đang follow player (gọi khi player escape)
+    /// </summary>
+    private void StopAllBulliesFollowing()
+    {
+        // Tìm BullyFollowTrigger trong scene
+        BullyFollowTrigger bullyTrigger = FindFirstObjectByType<BullyFollowTrigger>();
+        if (bullyTrigger != null)
+        {
+            bullyTrigger.StopAllBullies();
+            Debug.Log("[VNManager] Đã dừng tất cả bullies qua BullyFollowTrigger");
+        }
+
+        // Tìm trực tiếp tất cả NPCFollowPlayer components (fallback)
+        NPCFollowPlayer[] followers = FindObjectsByType<NPCFollowPlayer>(FindObjectsSortMode.None);
+        if (followers != null && followers.Length > 0)
+        {
+            foreach (var follower in followers)
+            {
+                if (follower != null)
+                {
+                    follower.StopFollowing();
+                }
+            }
+            Debug.Log($"[VNManager] Đã dừng {followers.Length} NPCFollowPlayer components");
         }
     }
 

@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Day1_Scene6_Street_Noticed_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Day1_Scene6_Street_Noticed
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "H\u1EEDm, sao m\u1EA5y con v\u1EE3 \u0111\u1EB1ng sau c\u1EE9 nh\xECn r\u1ED3i
+      \u0111i theo m\xECnh n\xE3y gi\u1EDD th\u1EBF nh\u1EC9"
+    choices: []
+    nextNodeId: 1
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 1
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(C\xF3 v\u1EBB nh\u01B0 h\u1ECD \u0111ang ch\xFA \xFD \u0111\u1EBFn m\xECnh...)"
+    - "(M\xECnh n\xEAn l\xE0m g\xEC \u0111\xE2y?)"
+    choices:
+    - choiceText: "Quay l\u1EA1i h\u1ECFi th\u0103m"
+      nextNodeId: -1
+      actionId: trigger_scene7a
+      nextVNScene: {fileID: 11400000, guid: b7dac2ba66bb4c445be5103a84a9ce06, type: 2}
+      endVNMode: 1
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - confronted_bullies
+      setFlagsFalse:
+      - ran_from_bullies
+      variableChanges: []
+    - choiceText: "Ch\u1EA1y l\u1EB9 v\u1EC1 nh\xE0"
+      nextNodeId: -1
+      actionId: trigger_scene7b
+      nextVNScene: {fileID: 0}
+      endVNMode: 1
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - ran_from_bullies
+      setFlagsFalse:
+      - confronted_bullies
+      variableChanges:
+      - variableName: FEAR_LEVEL
+        operation: 1
+        value: 5
+    nextNodeId: -1
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

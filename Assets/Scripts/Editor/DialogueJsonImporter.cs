@@ -31,6 +31,8 @@ public class ChoiceJson
     public string text;
     public int next;
     public string action;
+    public string vnScene;      // Path to VNSceneData asset
+    public bool endVNMode;      // End VN mode after choice
     public List<string> requireFlags;
     public List<string> forbidFlags;
     public List<VarConditionJson> varConditions;
@@ -201,18 +203,31 @@ public class DialogueJsonImporter : EditorWindow
         List<DialogueChoice> choices = new List<DialogueChoice>();
         foreach (var cj in choiceJsons)
         {
-            choices.Add(new DialogueChoice
+            var choice = new DialogueChoice
             {
                 choiceText = cj.text,
                 nextNodeId = cj.next,
                 actionId = cj.action ?? "",
+                endVNMode = cj.endVNMode,
                 requiredFlags = cj.requireFlags != null ? cj.requireFlags.ToArray() : new string[0],
                 forbiddenFlags = cj.forbidFlags != null ? cj.forbidFlags.ToArray() : new string[0],
                 variableConditions = ConvertVarConditions(cj.varConditions),
                 setFlagsTrue = cj.setTrue != null ? cj.setTrue.ToArray() : new string[0],
                 setFlagsFalse = cj.setFalse != null ? cj.setFalse.ToArray() : new string[0],
                 variableChanges = ConvertVarChanges(cj.varChanges)
-            });
+            };
+
+            // Load VNSceneData if path provided
+            if (!string.IsNullOrEmpty(cj.vnScene))
+            {
+                choice.nextVNScene = AssetDatabase.LoadAssetAtPath<VNSceneData>(cj.vnScene);
+                if (choice.nextVNScene == null)
+                {
+                    Debug.LogWarning($"VNSceneData not found at: {cj.vnScene}");
+                }
+            }
+
+            choices.Add(choice);
         }
         return choices.ToArray();
     }

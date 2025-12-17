@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Day1_Scene6_Street_Noticed_VNScene
+  m_EditorClassIdentifier: GameScripts::VNSceneData
+  sceneData:
+    sceneName: Day1_Scene6_Street_Noticed
+    locationText: "tr\xEAn \u0111\u01B0\u1EDDng"
+    backgroundImage: {fileID: -5858511929094398953, guid: 675fa80022765ed439696daa6f520fa7, type: 3}
+    backgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    characters:
+    - characterSprite: {fileID: -2400005554593973897, guid: 333f0e02ff765a042be32da51039f98c, type: 3}
+      characterName: "\u0110\u1EE9c"
+      position: 0
+      positionOffset: {x: 0, y: -50}
+      scale: {x: 1, y: 1}
+      flipX: 0
+    dialogue: {fileID: 11400000, guid: 336f7eb9ec981514b973b7435925eb88, type: 2}
+    bgm: {fileID: 0}
+    ambience: {fileID: 0}
+    nextScene: {fileID: 0}
+    returnToTopDown: 1
+    topDownSceneName: StreetScene
+    spawnPointId: 
+  requiredFlags:
+  - day1_scene5_bullies_spawned
+  forbiddenFlags:
+  - Day1_Scene6_Completed
+  setFlagsOnEnter:
+  - 
+  variableChangesOnEnter: []
+  setFlagsOnComplete:
+  - Day1_Scene6_Completed
+  variableChangesOnComplete: []

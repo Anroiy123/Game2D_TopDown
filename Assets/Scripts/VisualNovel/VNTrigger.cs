@@ -82,6 +82,7 @@ public class VNTrigger : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
+        Debug.Log($"[VNTrigger] {gameObject.name}: Player entered trigger zone. Mode={mode}");
         playerInRange = true;
 
         if (mode == TriggerMode.OnTriggerEnter && !hasTriggered)
@@ -108,7 +109,13 @@ public class VNTrigger : MonoBehaviour
 
     private void TryTriggerVN()
     {
-        if (hasTriggered && triggerOnce) return;
+        Debug.Log($"[VNTrigger] {gameObject.name}: TryTriggerVN() called. hasTriggered={hasTriggered}, triggerOnce={triggerOnce}");
+
+        if (hasTriggered && triggerOnce)
+        {
+            Debug.Log($"[VNTrigger] {gameObject.name}: Already triggered, skipping.");
+            return;
+        }
         if (!CheckConditions()) return;
 
         if (vnScene == null)
@@ -117,6 +124,7 @@ public class VNTrigger : MonoBehaviour
             return;
         }
 
+        Debug.Log($"[VNTrigger] {gameObject.name}: ✓ Triggering VN scene '{vnScene.name}'");
         hasTriggered = true;
 
         if (interactionPrompt != null)
@@ -131,8 +139,19 @@ public class VNTrigger : MonoBehaviour
     {
         if (StoryManager.Instance == null) return true;
 
-        return StoryManager.Instance.CheckRequiredFlags(requiredFlags) &&
-               StoryManager.Instance.CheckForbiddenFlags(forbiddenFlags);
+        bool requiredMet = StoryManager.Instance.CheckRequiredFlags(requiredFlags);
+        bool forbiddenMet = StoryManager.Instance.CheckForbiddenFlags(forbiddenFlags);
+
+        if (!requiredMet)
+        {
+            Debug.Log($"[VNTrigger] {gameObject.name}: BLOCKED - Required flags not met. Need: [{string.Join(", ", requiredFlags ?? new string[0])}]");
+        }
+        if (!forbiddenMet)
+        {
+            Debug.Log($"[VNTrigger] {gameObject.name}: BLOCKED - Has forbidden flags. Forbidden: [{string.Join(", ", forbiddenFlags ?? new string[0])}]");
+        }
+
+        return requiredMet && forbiddenMet;
     }
 
     private void OnVNComplete()

@@ -43,3 +43,6 @@ MonoBehaviour:
   setFlagsOnEnter:
   - day1_scene2_completed
   variableChangesOnEnter: []
+  setFlagsOnComplete:
+  - day1_scene2_completed
+  variableChangesOnComplete: []

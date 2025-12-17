@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Week1_Scene10_Classroom_Break_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Week1_Scene10_Classroom_Break
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "B\u1EA1n"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\xCA \u0110\u1EE9c, ra s\xE2n ch\u01A1i b\xF3ng v\u1EDBi t\u1EE5i tao \u0111i,
+      vui l\u1EAFm, c\u1EE9 ng\u1ED3i m\u1ED9t m\xECnh \u1EDF \u0111\xE2y nh\u01B0
+      n\xE0y kh\xF4ng ch\xE1n \xE0, \u0111i \u0111i, gi\u1EDD m\xE0y kh\xF4ng bi\u1EBFt
+      th\xEC ch\u01A1i v\xE0i l\u1EA7n l\xE0 quen"
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "Th\xF4i t\u1EE5i m\xE0y c\u1EE9 \u0111i \u0111i, tao l\u01B0\u1EDDi l\u1EAFm,
+      ra ho\u1EA1t \u0111\u1ED9ng m\u1EC7t l\u1EAFm, tao kh\xF4ng th\xEDch"
+    choices: []
+    nextNodeId: 20
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: "B\u1EA1n"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "V\u1EADy th\xF4i, m\xE0y kh\xF4ng ra ch\u01A1i c\u0169ng \u0111\u01B0\u1EE3c,
+      ra ng\u1ED3i ch\xE9m gi\xF3 v\u1EDBi t\u1EE5i tao cho vui, ng\u1ED3i \u0111\xE2y
+      ho\xE0i 1 m\xECnh bu\u1ED3n l\u1EAFm."
+    choices: []
+    nextNodeId: 30
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 30
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "Tao ch\u1ECBu \u0111\u1EA5y, to\xE0n ng\u01B0\u1EDDi l\u1EA1 th\xF4i, tao
+      kh\xF4ng quen tao c\u0169ng kh\xF4ng bi\u1EBFt n\xF3i g\xEC, tao c\u0169ng
+      kh\xF4ng th\xEDch n\xF3i chuy\u1EC7n nhi\u1EC1u v\u1EDBi ng\u01B0\u1EDDi l\u1EA1"
+    choices: []
+    nextNodeId: 40
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 40
+    speakerName: "B\u1EA1n"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Lo g\xEC, tr\u01B0\u1EDBc l\u1EA1 sau quen, c\u1EE9 \u0111i ra ng\u1ED3i n\xF3i
+      1 h\u1ED3i l\xE0 quen m\xE0, to\xE0n anh em b\u1EA1n b\xE8 trong l\u1EDBp kh\xF4ng
+      m\xE0, c\xF3 g\xEC ph\u1EA3i ng\u1EA1i."
+    choices: []
+    nextNodeId: 50
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 50
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "Th\xF4i t\u1EE5i m\xE0y \u0111i \u0111i, tao kh\xF4ng th\xEDch, tao ng\u1ED3i
+      \u0111\xE2y \u0111\u01B0\u1EE3c r\u1ED3i"
+    choices: []
+    nextNodeId: 60
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 60
+    speakerName: "M\u1EA5y \u0111\u1EE9a b\u1EA1n kh\xE1c"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Th\xF4i \u0111i m\xE0y \u01A1i, m\xE0y n\xF3i n\xE3y gi\u1EDD c\xE2u n\xE0o
+      n\xF3 c\u0169ng t\u1EEB ch\u1ED1i, m\xE0y r\u1EE7 nhi\u1EC1u th\u1EBF tao c\u0169ng
+      n\u1EC3 \u0111\u1EA5y, th\xF4i \u0111i l\u1EB9 \u0111i s\u1EAFp h\u1EBFt gi\u1EDD
+      ra ch\u01A1i r\u1ED3i k\xECa."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - week1_scene10_completed
+    - rejected_classmate_invite
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
