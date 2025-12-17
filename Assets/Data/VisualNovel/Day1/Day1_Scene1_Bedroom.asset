@@ -1,4 +1,4 @@
-%YAML 1.1
+﻿%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
@@ -9,27 +9,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 1dd63d338344c064f99a7accb0611b6b, type: 3}
   m_Name: Day1_Scene1_Bedroom
-  m_EditorClassIdentifier: GameScripts::VNSceneData
   sceneData:
     sceneName: Day1_Scene1_Bedroom
     locationText: "Ph\xF2ng ng\u1EE7 \u0110\u1EE9c - 7:00 AM"
     backgroundImage: {fileID: -1261521843963940701, guid: a92b97646b4914d4594fafc8e9976b29, type: 3}
     backgroundTint: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.003921569}
     characters:
-    - characterSprite: {fileID: -4020990447090382813, guid: 43ad5034ea78a1f4681acbe53e020560, type: 3}
-      characterName: "M\u1EB9"
-      position: 2
-      positionOffset: {x: 0, y: -50}
-      scale: {x: 1, y: 1}
-      flipX: 0
-    - characterSprite: {fileID: -2400005554593973897, guid: 333f0e02ff765a042be32da51039f98c, type: 3}
-      characterName: "\u0110\u1EE9c"
-      position: 0
-      positionOffset: {x: 0, y: -100}
-      scale: {x: 1, y: 1}
-      flipX: 0
+      - characterSprite: {fileID: -4020990447090382813, guid: 43ad5034ea78a1f4681acbe53e020560, type: 3}
+        characterName: "M\u1EB9"
+        position: 2
+        positionOffset: {x: 0, y: -50}
+        scale: {x: 1, y: 1}
+        flipX: 0
+      - characterSprite: {fileID: -2400005554593973897, guid: 333f0e02ff765a042be32da51039f98c, type: 3}
+        characterName: "\u0110\u1EE9c"
+        position: 0
+        positionOffset: {x: 0, y: -100}
+        scale: {x: 1, y: 1}
+        flipX: 0
     dialogue: {fileID: 11400000, guid: aa3c215386ada3f41a14b15a03c329e4, type: 2}
     bgm: {fileID: 0}
     ambience: {fileID: 0}
@@ -39,15 +38,15 @@ MonoBehaviour:
     spawnPointId: bedroom_spawn
   requiredFlags: []
   forbiddenFlags:
-  - day1_scene1_completed
+    - day1_scene1_completed
   setFlagsOnEnter:
-  - day1_started
-  - bedroom_scene_visited
-  - day1_scene1_completed
+    - day1_started
+    - bedroom_scene_visited
+    - day1_scene1_completed
   variableChangesOnEnter:
-  - variableName: current_day
-    operation: 0
-    value: 1
+    - variableName: current_day
+      operation: 0
+      value: 1
   setFlagsOnComplete:
-  - day1_scene1_completed
+    - day1_scene1_completed
   variableChangesOnComplete: []

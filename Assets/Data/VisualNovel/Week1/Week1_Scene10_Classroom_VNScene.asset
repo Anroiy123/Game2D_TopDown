@@ -1,4 +1,4 @@
-%YAML 1.1
+﻿%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
@@ -9,34 +9,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 1dd63d338344c064f99a7accb0611b6b, type: 3}
   m_Name: Week1_Scene10_Classroom_VNScene
-  m_EditorClassIdentifier: GameScripts::VNSceneData
   sceneData:
     sceneName: Week1_Scene10_Classroom
     locationText: Classsroom
     backgroundImage: {fileID: 6081253000217835118, guid: 1f97bca4103556b42917e65651d61dc2, type: 3}
     backgroundTint: {r: 1, g: 1, b: 1, a: 1}
     characters:
-    - characterSprite: {fileID: -2400005554593973897, guid: 333f0e02ff765a042be32da51039f98c, type: 3}
-      characterName: "\u0110\u1EE9c"
-      position: 0
-      positionOffset: {x: 0, y: -50}
-      scale: {x: 1, y: 1}
-      flipX: 0
-    - characterSprite: {fileID: 5834620791710037599, guid: 9c748e2b8a1518644bcd9484dbe416dc, type: 3}
-      characterName: "B\u1EA1n"
-      position: 2
-      positionOffset: {x: 0, y: -50}
-      scale: {x: 1, y: 1}
-      flipX: 0
+      - characterSprite: {fileID: -2400005554593973897, guid: 333f0e02ff765a042be32da51039f98c, type: 3}
+        characterName: "\u0110\u1EE9c"
+        position: 0
+        positionOffset: {x: 0, y: -50}
+        scale: {x: 1, y: 1}
+        flipX: 0
+      - characterSprite: {fileID: 5834620791710037599, guid: 9c748e2b8a1518644bcd9484dbe416dc, type: 3}
+        characterName: "B\u1EA1n"
+        position: 2
+        positionOffset: {x: 0, y: -50}
+        scale: {x: 1, y: 1}
+        flipX: 0
     dialogue: {fileID: 11400000, guid: 2dd4bc217f58d9d4782db7ea16d18b53, type: 2}
     bgm: {fileID: 0}
     ambience: {fileID: 0}
     nextScene: {fileID: 0}
     returnToTopDown: 1
     topDownSceneName: ClassroomScene
-    spawnPointId: 
+    spawnPointId:
   requiredFlags: []
   forbiddenFlags: []
   setFlagsOnEnter: []
