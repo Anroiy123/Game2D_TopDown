@@ -1,4 +1,4 @@
-﻿%YAML 1.1
+%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
@@ -11,6 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dd63d338344c064f99a7accb0611b6b, type: 3}
   m_Name: Day1_Scene9_TimeSkip_VNScene
+  m_EditorClassIdentifier: 
   sceneData:
     sceneName: Day1_Scene9_TimeSkip
     locationText: "Ph\xF2ng ng\u1EE7 \u0110\u1EE9c"
@@ -21,12 +22,14 @@ MonoBehaviour:
     bgm: {fileID: 0}
     ambience: {fileID: 0}
     nextScene: {fileID: 11400000, guid: f140921f556574141baeab41efd5c8c7, type: 2}
-    returnToTopDown: 1
-    topDownSceneName:
-    spawnPointId:
-  requiredFlags: []
+    returnToTopDown: 0
+    topDownSceneName: 
+    spawnPointId: 
+  requiredFlags:
+  - day1_scene8_completed
   forbiddenFlags: []
   setFlagsOnEnter: []
   variableChangesOnEnter: []
-  setFlagsOnComplete: []
+  setFlagsOnComplete:
+  - 
   variableChangesOnComplete: []

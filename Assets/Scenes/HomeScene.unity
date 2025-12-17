@@ -1364,6 +1364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: GameScripts::QuickFlagSetter
   flagsToSetTrue:
   - ran_from_bullies
+  - day1_scene8_completed
   flagsToSetFalse: []
   variablesToSet: []
   editorOnly: 1
@@ -1698,7 +1699,7 @@ Transform:
   m_GameObject: {fileID: 562843444}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6, y: -2.61, z: -10}
+  m_LocalPosition: {x: 44.95, y: 15.96, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6392,7 +6393,7 @@ Transform:
   m_GameObject: {fileID: 1194211824}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6, y: -2.61, z: -10}
+  m_LocalPosition: {x: 44.95, y: 15.96, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6455,11 +6456,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7783642297000837500, guid: 439f0f417b7f8e342a32c899d4bdc808, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6
+      value: 44.95
       objectReference: {fileID: 0}
     - target: {fileID: 7783642297000837500, guid: 439f0f417b7f8e342a32c899d4bdc808, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.61
+      value: 15.96
       objectReference: {fileID: 0}
     - target: {fileID: 7783642297000837500, guid: 439f0f417b7f8e342a32c899d4bdc808, type: 3}
       propertyPath: m_LocalPosition.z
