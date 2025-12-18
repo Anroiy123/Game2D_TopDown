@@ -1,0 +1,72 @@
+{
+  "_comment": "Week 1 - Scene 12: Teacher Room - Teacher talks to Duc about making friends",
+  "conversationName": "Week1_Scene12_TeacherRoom",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Giáo viên",
+      "isPlayer": false,
+      "lines": [
+        "Đức này, em có biết vì sao cô gọi em lên đây không?"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Dạ không ạ"
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Giáo viên",
+      "isPlayer": false,
+      "lines": [
+        "Cô nói này, cô thấy tình hình trên lớp của em hiện tại đang không ổn đâu Đức à.",
+        "1 tuần rồi mà cô thấy em hình như vẫn chưa kết bạn được với ai cả, trong lớp chỉ nói được vài câu với bạn kế bên.",
+        "Cô nói em này, ai sống trên đời cũng phải có bạn cả, nhất là trong môi trường học đường.",
+        "Có bạn bè thì giúp đỡ em được nhiều thứ lắm, ví dụ như học tập hay giải trí.",
+        "Cô nói em có hiểu không?"
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Dạ em hiểu ạ"
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Giáo viên",
+      "isPlayer": false,
+      "lines": [
+        "Cô nghĩ em nên mở lòng ra hơn đi Đức.",
+        "Mặc dù môi trường mới này có hơi lạ với em nhưng em phải cố gắng lên.",
+        "Khi làm quen được rồi thì mọi thứ sẽ dễ dàng hơn.",
+        "Nghe cô nha Đức, cố gắng làm quen với các bạn rồi mở rộng mối quan hệ của mình ra.",
+        "Đừng lúc nào cũng cô đơn như vậy.",
+        "Cô thấy em như vậy, là 1 giáo viên chủ nhiệm lớp, cô buồn lắm"
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Dạ vâng, em biết rồi, em sẽ cố gắng ạ."
+      ],
+      "next": -1,
+      "setFlags": ["week1_scene12_completed", "talked_to_teacher"]
+    }
+  ]
+}
+

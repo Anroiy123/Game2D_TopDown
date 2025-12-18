@@ -1,5 +1,5 @@
 ﻿<Solution>
   <Project Path="SuperTiled2UnityEditor.csproj" />
-  <Project Path="SuperTiled2Unity.csproj" />
   <Project Path="GameScripts.csproj" />
+  <Project Path="SuperTiled2Unity.csproj" />
 </Solution>

@@ -5,6 +5,7 @@ using System.Collections;
 /// <summary>
 /// ScreenFader - Quản lý fade in/out màn hình đen khi chuyển scene
 /// Singleton, DontDestroyOnLoad để persist qua các scene
+/// Hỗ trợ hiển thị text trên màn hình đen (transition text)
 /// </summary>
 public class ScreenFader : MonoBehaviour
 {
@@ -13,10 +14,14 @@ public class ScreenFader : MonoBehaviour
     [Header("Fade Settings")]
     [SerializeField] private float fadeDuration = 0.5f;
     [SerializeField] private Color fadeColor = Color.black;
-    
+
+    [Header("Text Settings")]
+    [SerializeField] private float textFadeDuration = 0.5f;
+
     [Header("References")]
     [SerializeField] private Image fadeImage;
     [SerializeField] private Canvas fadeCanvas;
+    private Text transitionText;
 
     private bool isFading = false;
 
@@ -36,6 +41,12 @@ public class ScreenFader : MonoBehaviour
         if (fadeCanvas == null || fadeImage == null)
         {
             SetupFadeUI();
+        }
+
+        // Luôn tạo transition text nếu chưa có
+        if (transitionText == null)
+        {
+            SetupTransitionText();
         }
 
         // Bắt đầu với màn hình trong suốt
@@ -82,6 +93,28 @@ public class ScreenFader : MonoBehaviour
         rect.anchorMax = Vector2.one;
         rect.sizeDelta = Vector2.zero;
         rect.anchoredPosition = Vector2.zero;
+
+        // Tạo Text cho transition
+        SetupTransitionText();
+    }
+
+    private void SetupTransitionText()
+    {
+        GameObject textObj = new GameObject("TransitionText");
+        textObj.transform.SetParent(transform, false);
+
+        transitionText = textObj.AddComponent<Text>();
+        transitionText.text = "";
+        transitionText.fontSize = 48;
+        transitionText.alignment = TextAnchor.MiddleCenter;
+        transitionText.color = new Color(1f, 1f, 1f, 0f);
+        transitionText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+
+        RectTransform textRect = transitionText.rectTransform;
+        textRect.anchorMin = new Vector2(0.1f, 0.4f);
+        textRect.anchorMax = new Vector2(0.9f, 0.6f);
+        textRect.sizeDelta = Vector2.zero;
+        textRect.anchoredPosition = Vector2.zero;
     }
 
     /// <summary>
@@ -171,5 +204,95 @@ public class ScreenFader : MonoBehaviour
 
     public bool IsFading => isFading;
     public float FadeDuration => fadeDuration;
+
+    #region Transition with Text
+    /// <summary>
+    /// Fade ra màn đen, hiển thị text, chờ, rồi fade in
+    /// Dùng cho chuyển cảnh với text như "Cuối giờ học..."
+    /// </summary>
+    public IEnumerator FadeWithTextCoroutine(string text, float displayDuration = 2f)
+    {
+        Debug.Log($"[ScreenFader] FadeWithText: '{text}' for {displayDuration}s");
+
+        // Fade out to black
+        yield return FadeOutCoroutine();
+
+        // Show text với fade in
+        if (transitionText != null)
+        {
+            Debug.Log($"[ScreenFader] Showing text: {text}");
+            transitionText.text = text;
+            yield return FadeTextRoutine(0f, 1f);
+        }
+        else
+        {
+            Debug.LogWarning("[ScreenFader] transitionText is NULL!");
+        }
+
+        // Giữ text trên màn hình
+        yield return new WaitForSecondsRealtime(displayDuration);
+
+        // Fade out text
+        if (transitionText != null)
+        {
+            yield return FadeTextRoutine(1f, 0f);
+            transitionText.text = "";
+        }
+    }
+
+    /// <summary>
+    /// Chỉ hiển thị text (khi đã ở màn đen)
+    /// </summary>
+    public IEnumerator ShowTextCoroutine(string text, float displayDuration = 2f)
+    {
+        if (transitionText != null)
+        {
+            transitionText.text = text;
+            yield return FadeTextRoutine(0f, 1f);
+        }
+
+        yield return new WaitForSecondsRealtime(displayDuration);
+
+        if (transitionText != null)
+        {
+            yield return FadeTextRoutine(1f, 0f);
+            transitionText.text = "";
+        }
+    }
+
+    private IEnumerator FadeTextRoutine(float startAlpha, float endAlpha)
+    {
+        if (transitionText == null) yield break;
+
+        float elapsed = 0f;
+        Color c = transitionText.color;
+
+        while (elapsed < textFadeDuration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float t = Mathf.Clamp01(elapsed / textFadeDuration);
+            c.a = Mathf.Lerp(startAlpha, endAlpha, t);
+            transitionText.color = c;
+            yield return null;
+        }
+
+        c.a = endAlpha;
+        transitionText.color = c;
+    }
+
+    /// <summary>
+    /// Ẩn text ngay lập tức
+    /// </summary>
+    public void HideText()
+    {
+        if (transitionText != null)
+        {
+            transitionText.text = "";
+            Color c = transitionText.color;
+            c.a = 0f;
+            transitionText.color = c;
+        }
+    }
+    #endregion
 }
 

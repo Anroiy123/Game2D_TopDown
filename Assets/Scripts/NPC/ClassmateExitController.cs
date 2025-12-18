@@ -40,6 +40,12 @@ public class ClassmateExitController : MonoBehaviour
     [Tooltip("Fade to black sau khi NPCs đi hết")]
     [SerializeField] private bool fadeToBlack = true;
 
+    [Tooltip("Text hiển thị trên màn đen (VD: 'Cuối giờ học...')")]
+    [SerializeField] private string transitionText = "";
+
+    [Tooltip("Thời gian hiển thị text (giây)")]
+    [SerializeField] private float textDisplayDuration = 2f;
+
     [Tooltip("Load scene tiếp theo (để trống = không load scene mới)")]
     [SerializeField] private string nextSceneName = "";
 
@@ -219,15 +225,27 @@ public class ClassmateExitController : MonoBehaviour
 
     private IEnumerator HandleSceneTransition()
     {
+        bool hasTransitionText = !string.IsNullOrEmpty(transitionText);
+        Debug.Log($"[ClassmateExitController] HandleSceneTransition: hasText={hasTransitionText}, text='{transitionText}', fadeToBlack={fadeToBlack}, ScreenFader={ScreenFader.Instance != null}");
+
         // Option 1: Trigger VN scene
         if (vnSceneToTrigger != null)
         {
-            if (showDebugLogs)
-                Debug.Log($"[ClassmateExitController] Trigger VN scene: {vnSceneToTrigger.name}");
+            Debug.Log($"[ClassmateExitController] Trigger VN scene: {vnSceneToTrigger.name}");
 
             if (fadeToBlack && ScreenFader.Instance != null)
             {
-                yield return ScreenFader.Instance.FadeOutCoroutine();
+                // Fade với text nếu có
+                if (hasTransitionText)
+                {
+                    Debug.Log($"[ClassmateExitController] Calling FadeWithTextCoroutine...");
+                    yield return ScreenFader.Instance.FadeWithTextCoroutine(transitionText, textDisplayDuration);
+                    Debug.Log($"[ClassmateExitController] FadeWithTextCoroutine completed");
+                }
+                else
+                {
+                    yield return ScreenFader.Instance.FadeOutCoroutine();
+                }
             }
 
             // Re-enable player trước khi vào VN
@@ -246,7 +264,13 @@ public class ClassmateExitController : MonoBehaviour
             if (showDebugLogs)
                 Debug.Log($"[ClassmateExitController] Load scene: {nextSceneName}");
 
-            // GameManager.LoadScene đã có fade built-in
+            // Fade với text trước khi load scene
+            if (fadeToBlack && hasTransitionText && ScreenFader.Instance != null)
+            {
+                yield return ScreenFader.Instance.FadeWithTextCoroutine(transitionText, textDisplayDuration);
+            }
+
+            // GameManager.LoadScene đã có fade built-in (sẽ skip nếu đã fade)
             if (GameManager.Instance != null)
             {
                 GameManager.Instance.LoadScene(nextSceneName, nextSpawnPointId);
@@ -259,11 +283,17 @@ public class ClassmateExitController : MonoBehaviour
         {
             if (ScreenFader.Instance != null)
             {
-                yield return ScreenFader.Instance.FadeOutCoroutine();
+                // Fade với text nếu có
+                if (hasTransitionText)
+                {
+                    yield return ScreenFader.Instance.FadeWithTextCoroutine(transitionText, textDisplayDuration);
+                }
+                else
+                {
+                    yield return ScreenFader.Instance.FadeOutCoroutine();
+                    yield return new WaitForSeconds(1f);
+                }
             }
-
-            // Chờ một chút rồi fade in lại
-            yield return new WaitForSeconds(1f);
 
             RestorePlayerState();
 

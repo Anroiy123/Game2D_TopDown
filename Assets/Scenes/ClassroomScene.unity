@@ -10204,7 +10204,7 @@ Transform:
   m_GameObject: {fileID: 812505997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.28, y: -6.62, z: 0}
+  m_LocalPosition: {x: -5.67, y: -7.83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11112,7 +11112,7 @@ Transform:
   m_GameObject: {fileID: 1136280470}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.61, y: -0.46, z: 0}
+  m_LocalPosition: {x: -6.47, y: -1.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14169,11 +14169,60 @@ Transform:
   m_GameObject: {fileID: 1726671687}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.65, y: -27.25, z: 0}
+  m_LocalPosition: {x: -5.81, y: -10.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2123630071}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1772908015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1772908017}
+  - component: {fileID: 1772908016}
+  m_Layer: 0
+  m_Name: ScreenFader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1772908016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772908015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd8181a7ff45859499f55e49567f004d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::ScreenFader
+  fadeDuration: 0.5
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  textFadeDuration: 0.5
+  fadeImage: {fileID: 0}
+  fadeCanvas: {fileID: 0}
+--- !u!4 &1772908017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772908015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.93456, y: 0.8359, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1903110661
 GameObject:
@@ -15179,14 +15228,17 @@ MonoBehaviour:
   hidePlayer: 0
   waitAfterExit: 2
   fadeToBlack: 1
+  transitionText: "H\u1EBFt gi\u1EDD h\u1ECDc .... C\xF4 gi\xE1o g\u1ECDi \u0110\u1EE9c
+    l\xEAn"
+  textDisplayDuration: 4
   nextSceneName: 
   nextSpawnPointId: 
-  vnSceneToTrigger: {fileID: 0}
+  vnSceneToTrigger: {fileID: 11400000, guid: 407dc7e505c8ba343b4a13b8b2f05f60, type: 2}
   requiredFlags:
   - week1_started
   forbiddenFlags: []
-  completionFlag: scene11_classmates_left
-  showDebugLogs: 1
+  completionFlag: week1_classroom_break_completed
+  showDebugLogs: 0
 --- !u!4 &1999066221
 Transform:
   m_ObjectHideFlags: 0
@@ -16019,3 +16071,4 @@ SceneRoots:
   - {fileID: 1564303277}
   - {fileID: 2123630071}
   - {fileID: 1999066221}
+  - {fileID: 1772908017}

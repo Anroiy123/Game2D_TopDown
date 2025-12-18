@@ -66,7 +66,8 @@ MonoBehaviour:
         operation: 1
         value: 5
     nextNodeId: -1
-    setFlagsOnEnter: []
+    setFlagsOnEnter:
+    - day1_scene7_completed
     variableChangesOnEnter: []
     speakerPortrait: {fileID: 0}
     emotion: 
