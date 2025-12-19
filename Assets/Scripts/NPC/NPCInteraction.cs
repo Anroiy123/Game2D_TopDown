@@ -48,6 +48,12 @@ public class NPCInteraction : MonoBehaviour
     private bool playerInRange = false;
     private bool isTalking = false;
     private Vector3 originalScale;
+    
+    // Track conditional dialogue đang được sử dụng để apply effects khi kết thúc
+    private ConditionalDialogueEntry currentConditionalDialogue = null;
+    
+    // Track đã auto trigger chưa (tránh trigger nhiều lần)
+    private bool hasAutoTriggered = false;
 
     // Animation parameters
     private readonly int horizontalHash = Animator.StringToHash("Horizontal");
@@ -104,11 +110,110 @@ public class NPCInteraction : MonoBehaviour
             animator.SetFloat(speedHash, 0f);
         }
         // InteractionIndicator sẽ tự quản lý visibility dựa trên khoảng cách player
+        
+        // Kiểm tra và trigger auto dialogue nếu có
+        CheckAutoTriggerDialogue();
+    }
+    
+    /// <summary>
+    /// Kiểm tra và trigger dialogue tự động khi scene start
+    /// </summary>
+    private void CheckAutoTriggerDialogue()
+    {
+        if (hasAutoTriggered || conditionalDialogues == null || conditionalDialogues.Length == 0)
+            return;
+            
+        // Tìm conditional dialogue có triggerOnSceneStart = true và thỏa mãn điều kiện
+        foreach (var entry in conditionalDialogues)
+        {
+            if (entry.triggerOnSceneStart && entry.dialogueData != null && entry.CanUse())
+            {
+                // Kiểm tra spawn point nếu có yêu cầu
+                if (!string.IsNullOrEmpty(entry.requiredSpawnPointId))
+                {
+                    string currentSpawnId = GameManager.Instance?.GetCurrentSpawnPointId() ?? "";
+                    if (!string.Equals(currentSpawnId, entry.requiredSpawnPointId, System.StringComparison.OrdinalIgnoreCase))
+                    {
+                        Debug.Log($"[NPCInteraction] {npcName}: Auto trigger skipped - spawn point mismatch. Required: '{entry.requiredSpawnPointId}', Current: '{currentSpawnId}'");
+                        continue;
+                    }
+                }
+                
+                Debug.Log($"[NPCInteraction] {npcName}: Found auto trigger dialogue '{entry.dialogueData.conversationName}', delay: {entry.autoTriggerDelay}s");
+                hasAutoTriggered = true;
+                
+                // Trigger sau delay
+                if (entry.autoTriggerDelay > 0)
+                {
+                    StartCoroutine(AutoTriggerDialogueCoroutine(entry));
+                }
+                else
+                {
+                    TriggerAutoDialogue(entry);
+                }
+                break;
+            }
+        }
+    }
+    
+    private System.Collections.IEnumerator AutoTriggerDialogueCoroutine(ConditionalDialogueEntry entry)
+    {
+        yield return new WaitForSeconds(entry.autoTriggerDelay);
+        
+        // Kiểm tra lại điều kiện sau delay (có thể đã thay đổi)
+        if (entry.CanUse() && !isTalking)
+        {
+            TriggerAutoDialogue(entry);
+        }
+    }
+    
+    /// <summary>
+    /// Trigger dialogue tự động (không cần player đến gần)
+    /// </summary>
+    private void TriggerAutoDialogue(ConditionalDialogueEntry entry)
+    {
+        if (dialogueSystem == null || entry.dialogueData == null) return;
+        
+        Debug.Log($"[NPCInteraction] {npcName}: Auto triggering dialogue '{entry.dialogueData.conversationName}'");
+        
+        isTalking = true;
+        currentConditionalDialogue = entry;
+        
+        // Ẩn UI tên
+        if (nameUI != null)
+        {
+            nameUI.SetActive(false);
+        }
+        
+        // Khóa player movement
+        if (player != null)
+        {
+            PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                playerMovement.SetTalkingState(true);
+            }
+        }
+        
+        // Bắt đầu dialogue
+        dialogueSystem.StartDialogueWithChoices(entry.dialogueData, OnDialogueEnd, OnDialogueAction);
     }
 
     private void Update()
     {
         if (player == null) return;
+
+        // QUAN TRỌNG: Không xử lý interaction khi VN mode đang active
+        // Tránh conflict giữa VN dialogue và top-down NPC interaction
+        if (VisualNovelManager.Instance != null && VisualNovelManager.Instance.IsVNModeActive)
+        {
+            // Ẩn UI tên khi VN mode active
+            if (nameUI != null && nameUI.activeSelf)
+            {
+                nameUI.SetActive(false);
+            }
+            return;
+        }
 
         // Kiểm tra khoảng cách đến player
         float distance = Vector2.Distance(transform.position, player.position);
@@ -200,6 +305,9 @@ public class NPCInteraction : MonoBehaviour
         string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         Debug.Log($"[NPCInteraction] {npcName}: GetActiveDialogue() called in scene '{currentScene}'");
 
+        // Reset current conditional dialogue
+        currentConditionalDialogue = null;
+
         // Kiểm tra conditional dialogues trước (sắp xếp theo priority giảm dần)
         if (conditionalDialogues != null && conditionalDialogues.Length > 0)
         {
@@ -214,6 +322,8 @@ public class NPCInteraction : MonoBehaviour
                 if (entry.dialogueData != null && entry.CanUse())
                 {
                     Debug.Log($"[NPCInteraction] {npcName}: ✓ Using conditional dialogue '{entry.dialogueData.conversationName}' (priority: {entry.priority})");
+                    // Lưu lại entry để apply effects khi dialogue kết thúc
+                    currentConditionalDialogue = entry;
                     return entry.dialogueData;
                 }
             }
@@ -319,6 +429,13 @@ public class NPCInteraction : MonoBehaviour
     private void OnDialogueEnd()
     {
         isTalking = false;
+
+        // Apply effects từ conditional dialogue (nếu có)
+        if (currentConditionalDialogue != null)
+        {
+            currentConditionalDialogue.ApplyOnCompleteEffects();
+            currentConditionalDialogue = null;
+        }
 
         // Cho phép player di chuyển lại
         if (player != null)

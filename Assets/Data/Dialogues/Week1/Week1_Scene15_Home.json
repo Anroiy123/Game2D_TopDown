@@ -1,0 +1,56 @@
+{
+  "_comment": "Week 1 - Scene 15: Home - Mom reminds Duc about making friends. Different dialogue based on choice (confronted vs ran away)",
+  "conversationName": "Week1_Scene15_Home",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Mày đi học về rồi đấy à, nay có gì mới không con, học được 1 tuần rồi đã thân quen với đứa nào chưa"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Con chưa, mẹ cứ kệ con đi"
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Tao đã nói với mày rồi, đã đi học thì phải kết bạn, có bạn bè lúc nào cũng sẽ có lợi hơn khi cứ cô đơn một mình đấy con ạ.",
+        "Huống chi mày còn mới chuyển trường tới đây, chân ướt chân ráo không biết gì thì lại càng cần bạn bè hơn.",
+        "Mẹ nói rồi đấy, lo mà kiếm vài đứa bạn thân đi, kẻo sau này lại hối hận, có bạn bè quan trọng hơn mày tưởng đấy.",
+        "Mẹ mày nói con phải nghe đi đừng cãi lời"
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Vâng, con biết rồi"
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đức phóng vội lên phòng..."
+      ],
+      "next": -1,
+      "setFlags": ["week1_scene15_completed"]
+    }
+  ]
+}

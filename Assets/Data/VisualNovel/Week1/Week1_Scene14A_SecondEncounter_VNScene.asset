@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd63d338344c064f99a7accb0611b6b, type: 3}
+  m_Name: Week1_Scene14A_SecondEncounter_VNScene
+  m_EditorClassIdentifier: GameScripts::VNSceneData
+  sceneData:
+    sceneName: Week1_Scene14A_SecondEncounter
+    locationText: "\u0110\u01B0\u1EDDng ph\u1ED1 - G\u1EB7p l\u1EA1i t\u1EE5i b\u1EAFt
+      n\u1EA1t"
+    backgroundImage: {fileID: -7216651109296135376, guid: 5bd050fa3cf818a478c22e2c1260bcf1, type: 3}
+    backgroundTint: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.003921569}
+    characters:
+    - characterSprite: {fileID: 3291045091093565094, guid: 8c44ed1df57d9cd4e9783a6b0b8d0caa, type: 3}
+      characterName: "Th\u1EE7 l\u0129nh"
+      position: 2
+      positionOffset: {x: 0, y: -50}
+      scale: {x: 1, y: 1}
+      flipX: 0
+    - characterSprite: {fileID: 265032481448299849, guid: d558eb14cd1306d49a26493887e4d347, type: 3}
+      characterName: "\u0110\xE0n em"
+      position: 2
+      positionOffset: {x: 0, y: -50}
+      scale: {x: 1, y: 1}
+      flipX: 0
+    - characterSprite: {fileID: -2400005554593973897, guid: 333f0e02ff765a042be32da51039f98c, type: 3}
+      characterName: "\u0110\u1EE9c"
+      position: 0
+      positionOffset: {x: 0, y: -50}
+      scale: {x: 1, y: 1}
+      flipX: 0
+    dialogue: {fileID: 11400000, guid: 4cb634c727ae0384e8338bdca811d790, type: 2}
+    bgm: {fileID: 0}
+    ambience: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: b2a935962ce03ad43b4069e18cb3adc5, type: 2}
+    returnToTopDown: 0
+    topDownSceneName: 
+    spawnPointId: 
+  requiredFlags:
+  - week1_scene13_completed
+  - choice_confronted_week1
+  forbiddenFlags:
+  - week1_scene14a_completed
+  - choice_ran_away_week1
+  setFlagsOnEnter: []
+  variableChangesOnEnter: []
+  setFlagsOnComplete: []
+  variableChangesOnComplete: []

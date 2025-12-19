@@ -1,0 +1,70 @@
+{
+  "_comment": "Week 1 - Scene 14A: Second Encounter - Bully leader invites Duc to be friends",
+  "conversationName": "Week1_Scene14A_SecondEncounter",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Tụi bắt nạt vây quanh Đức...",
+        "Không còn đường thoát."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Ô này anh bạn, lâu lắm mới gặp ông.",
+        "Hình như 1 tuần rồi nhỉ.",
+        "Ông làm quen được với trường mới chưa, hay vẫn còn khó khăn?"
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Ờ ừm…"
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Theo tôi thấy thì hình như ông có vẻ chưa kết bạn với ai đúng không nhỉ.",
+        "Thế thì gay rồi đấy.",
+        "Tôi có ý này, sao ông không kết bạn với tôi đi nhỉ.",
+        "Tôi nghĩ nếu chúng ta là bạn thì sẽ có nhiều thứ vui vẻ đấy."
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "…."
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Không khí im lặng đến ngột ngạt...",
+        "Cả đám đang chờ câu trả lời của Đức."
+      ],
+      "next": -1,
+      "setFlags": ["week1_scene14a_completed", "bully_invitation_received"]
+    }
+  ]
+}
+

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Week1_Scene14A_SecondEncounter_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Week1_Scene14A_SecondEncounter
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "T\u1EE5i b\u1EAFt n\u1EA1t v\xE2y quanh \u0110\u1EE9c..."
+    - "Kh\xF4ng c\xF2n \u0111\u01B0\u1EDDng tho\xE1t."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "Th\u1EE7 l\u0129nh"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\xD4 n\xE0y anh b\u1EA1n, l\xE2u l\u1EAFm m\u1EDBi g\u1EB7p \xF4ng."
+    - "H\xECnh nh\u01B0 1 tu\u1EA7n r\u1ED3i nh\u1EC9."
+    - "\xD4ng l\xE0m quen \u0111\u01B0\u1EE3c v\u1EDBi tr\u01B0\u1EDDng m\u1EDBi
+      ch\u01B0a, hay v\u1EABn c\xF2n kh\xF3 kh\u0103n?"
+    choices: []
+    nextNodeId: 20
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "\u1EDC \u1EEBm\u2026"
+    choices: []
+    nextNodeId: 30
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 30
+    speakerName: "Th\u1EE7 l\u0129nh"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Theo t\xF4i th\u1EA5y th\xEC h\xECnh nh\u01B0 \xF4ng c\xF3 v\u1EBB ch\u01B0a
+      k\u1EBFt b\u1EA1n v\u1EDBi ai \u0111\xFAng kh\xF4ng nh\u1EC9."
+    - "Th\u1EBF th\xEC gay r\u1ED3i \u0111\u1EA5y."
+    - "T\xF4i c\xF3 \xFD n\xE0y, sao \xF4ng kh\xF4ng k\u1EBFt b\u1EA1n v\u1EDBi t\xF4i
+      \u0111i nh\u1EC9."
+    - "T\xF4i ngh\u0129 n\u1EBFu ch\xFAng ta l\xE0 b\u1EA1n th\xEC s\u1EBD c\xF3
+      nhi\u1EC1u th\u1EE9 vui v\u1EBB \u0111\u1EA5y."
+    choices: []
+    nextNodeId: 40
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 40
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "\u2026."
+    choices: []
+    nextNodeId: 50
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 50
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Kh\xF4ng kh\xED im l\u1EB7ng \u0111\u1EBFn ng\u1ED9t ng\u1EA1t..."
+    - "C\u1EA3 \u0111\xE1m \u0111ang ch\u1EDD c\xE2u tr\u1EA3 l\u1EDDi c\u1EE7a \u0110\u1EE9c."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - week1_scene14a_completed
+    - bully_invitation_received
+    - confronted_bullies
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

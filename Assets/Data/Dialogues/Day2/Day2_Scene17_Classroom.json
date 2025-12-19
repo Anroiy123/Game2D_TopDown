@@ -1,0 +1,35 @@
+{
+  "_comment": "Day 2 - Scene 17: Classroom - End of class, classmate invites Duc again",
+  "conversationName": "Day2_Scene17_Classroom",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Bạn kế bên",
+      "isPlayer": false,
+      "lines": [
+        "Này Đức ra chơi rồi, hôm nay ông có hứng ra chơi với tụi tôi chưa, tụi tôi vẫn chờ ông ở sân trước nha"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "….."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Bạn kế bên",
+      "isPlayer": false,
+      "lines": [
+        "Vậy thôi tôi đi đây"
+      ],
+      "next": -1,
+      "setFlags": ["day2_scene17_completed"]
+    }
+  ]
+}

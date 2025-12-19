@@ -39,7 +39,8 @@ MonoBehaviour:
     spawnPointId: default
   requiredFlags:
   - week1_classroom_break_completed
-  forbiddenFlags: []
+  forbiddenFlags:
+  - week1_teacher_talk_completed
   setFlagsOnEnter: []
   variableChangesOnEnter: []
   setFlagsOnComplete:

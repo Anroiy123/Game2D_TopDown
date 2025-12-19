@@ -11,14 +11,18 @@ public class SaveManager : MonoBehaviour
 {
     #region Singleton
     private static SaveManager _instance;
+    private static bool _applicationIsQuitting = false;
+
     public static SaveManager Instance
     {
         get
         {
+            if (_applicationIsQuitting) return null;
+
             if (_instance == null)
             {
                 _instance = FindFirstObjectByType<SaveManager>();
-                if (_instance == null)
+                if (_instance == null && !_applicationIsQuitting)
                 {
                     GameObject go = new GameObject("SaveManager");
                     _instance = go.AddComponent<SaveManager>();
@@ -47,9 +51,22 @@ public class SaveManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        
+
         _instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void OnApplicationQuit()
+    {
+        _applicationIsQuitting = true;
+    }
+
+    private void OnDestroy()
+    {
+        if (_instance == this)
+        {
+            _applicationIsQuitting = true;
+        }
     }
 
     private void Update()

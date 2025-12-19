@@ -69,6 +69,13 @@ public class VNTrigger : MonoBehaviour
 
     private void Update()
     {
+        // QUAN TRỌNG: Không trigger VN mới khi VN mode đang active
+        // (Tránh nested VN scenes hoặc conflict với dialogue trong VN)
+        if (VisualNovelManager.Instance != null && VisualNovelManager.Instance.IsVNModeActive)
+        {
+            return;
+        }
+
         if (mode == TriggerMode.OnInteract && playerInRange && !hasTriggered)
         {
             if (Input.GetKeyDown(interactionKey))

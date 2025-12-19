@@ -1,0 +1,26 @@
+{
+  "_comment": "Day 2 - Scene 17: Classroom - Teacher announces end of class",
+  "conversationName": "Day2_Scene17_Teacher",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Tùng tùng tùng..."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Cô giáo",
+      "isPlayer": false,
+      "lines": [
+        "Vậy thì các em về nhà làm bài ở trang 69, hôm sau lên nộp cho cô, chúng ta nghỉ ở đây"
+      ],
+      "next": -1,
+      "setFlags": ["day2_scene17_teacher_completed"]
+    }
+  ]
+}

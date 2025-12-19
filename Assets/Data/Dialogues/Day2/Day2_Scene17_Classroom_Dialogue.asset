@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Day2_Scene17_Classroom_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Day2_Scene17_Classroom
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "B\u1EA1n k\u1EBF b\xEAn"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "N\xE0y \u0110\u1EE9c ra ch\u01A1i r\u1ED3i, h\xF4m nay \xF4ng c\xF3 h\u1EE9ng
+      ra ch\u01A1i v\u1EDBi t\u1EE5i t\xF4i ch\u01B0a, t\u1EE5i t\xF4i v\u1EABn ch\u1EDD
+      \xF4ng \u1EDF s\xE2n tr\u01B0\u1EDBc nha"
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "\u2026.."
+    choices: []
+    nextNodeId: 20
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: "B\u1EA1n k\u1EBF b\xEAn"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "V\u1EADy th\xF4i t\xF4i \u0111i \u0111\xE2y"
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - day2_scene17_completed
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

@@ -12,14 +12,18 @@ public class VisualNovelManager : MonoBehaviour
 {
     #region Singleton
     private static VisualNovelManager _instance;
+    private static bool _applicationIsQuitting = false;
+
     public static VisualNovelManager Instance
     {
         get
         {
+            if (_applicationIsQuitting) return null;
+
             if (_instance == null)
             {
                 _instance = FindFirstObjectByType<VisualNovelManager>();
-                if (_instance == null)
+                if (_instance == null && !_applicationIsQuitting)
                 {
                     GameObject go = new GameObject("VisualNovelManager");
                     _instance = go.AddComponent<VisualNovelManager>();
@@ -58,6 +62,8 @@ public class VisualNovelManager : MonoBehaviour
     private bool isVNModeActive = false;
     private VNSceneData currentScene;
     private Action onVNComplete;
+    private Vector3 savedPlayerPosition; // Lưu vị trí player trước khi vào VN mode
+    private bool skipRestorePosition = false; // Khi surround_player được trigger, không restore position
     #endregion
 
     #region Character Positions
@@ -82,6 +88,19 @@ public class VisualNovelManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         SetupUI();
         SetupDialogueSystem();
+    }
+
+    private void OnApplicationQuit()
+    {
+        _applicationIsQuitting = true;
+    }
+
+    private void OnDestroy()
+    {
+        if (_instance == this)
+        {
+            _applicationIsQuitting = true;
+        }
     }
 
     private void SetupDialogueSystem()
@@ -177,6 +196,7 @@ public class VisualNovelManager : MonoBehaviour
         if (sceneData == null)
         {
             Debug.LogError("[VNManager] Scene data is null!");
+            onComplete?.Invoke(); // Gọi callback ngay để không bị stuck
             return;
         }
 
@@ -187,6 +207,19 @@ public class VisualNovelManager : MonoBehaviour
             return;
         }
 
+        // QUAN TRỌNG: Nếu VN mode đang active, chuyển sang scene mới ngay
+        // (Dùng cho trường hợp dialogue → surround → VN scene tiếp theo)
+        if (isVNModeActive)
+        {
+            Debug.Log($"[VNManager] VN mode đang active, chuyển sang scene mới: {sceneData.name}");
+            currentScene = sceneData;
+            onVNComplete = onComplete;
+            sceneData.ApplyOnEnterEffects();
+            StartCoroutine(TransitionBetweenScenes());
+            return;
+        }
+
+        Debug.Log($"[VNManager] Starting VN scene: {sceneData.name}");
         currentScene = sceneData;
         onVNComplete = onComplete;
         sceneData.ApplyOnEnterEffects();
@@ -423,6 +456,10 @@ public class VisualNovelManager : MonoBehaviour
         // Ensure UI is setup (recreate if destroyed after scene load)
         SetupUI();
 
+        // QUAN TRỌNG: Lưu vị trí player và dừng tất cả NPC follow TRƯỚC KHI disable player
+        // Điều này ngăn NPC đẩy player đi trong khi VN mode đang chạy
+        SavePlayerPositionAndStopFollowers();
+
         // Disable player
         DisablePlayerControls();
 
@@ -442,6 +479,40 @@ public class VisualNovelManager : MonoBehaviour
         if (ScreenFader.Instance != null)
         {
             yield return ScreenFader.Instance.FadeInCoroutine();
+        }
+    }
+
+    /// <summary>
+    /// Lưu vị trí player và dừng tất cả NPC đang follow
+    /// Gọi TRƯỚC KHI disable player controls
+    /// </summary>
+    private void SavePlayerPositionAndStopFollowers()
+    {
+        // Lưu vị trí player
+        if (cachedPlayer == null)
+        {
+            cachedPlayer = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        if (cachedPlayer != null)
+        {
+            savedPlayerPosition = cachedPlayer.transform.position;
+            Debug.Log($"[VNManager] Saved player position: {savedPlayerPosition}");
+        }
+
+        // Dừng tất cả NPCFollowPlayer ngay lập tức
+        // Điều này ngăn NPC tiếp tục di chuyển và đẩy player
+        NPCFollowPlayer[] followers = FindObjectsByType<NPCFollowPlayer>(FindObjectsSortMode.None);
+        if (followers != null && followers.Length > 0)
+        {
+            foreach (var follower in followers)
+            {
+                if (follower != null && follower.enabled)
+                {
+                    follower.StopFollowing();
+                }
+            }
+            Debug.Log($"[VNManager] Stopped {followers.Length} NPCFollowPlayer(s) on VN enter");
         }
     }
 
@@ -491,11 +562,23 @@ public class VisualNovelManager : MonoBehaviour
                 Debug.Log($"[VNManager] Same scene, teleporting to spawn point: {spawnId}");
                 yield return TeleportPlayerToSpawnPoint(spawnId);
             }
-            // CASE 3: Same scene + no spawn point → Stay in place
+            // CASE 3: Same scene + no spawn point → Restore to saved position (hoặc skip nếu surround đang chạy)
             else
             {
-                Debug.Log("[VNManager] Same scene, staying at current position");
-                EnablePlayerControls();
+                if (skipRestorePosition)
+                {
+                    // Surround đang chạy - KHÔNG restore position, chỉ enable controls
+                    Debug.Log("[VNManager] Skip restore position (surround active)");
+                    skipRestorePosition = false; // Reset flag
+                    EnablePlayerControls();
+                }
+                else
+                {
+                    Debug.Log($"[VNManager] Same scene, restoring to saved position: {savedPlayerPosition}");
+                    RestorePlayerToSavedPosition();
+                    EnablePlayerControls();
+                }
+
                 if (ScreenFader.Instance != null)
                 {
                     yield return ScreenFader.Instance.FadeInCoroutine();
@@ -513,6 +596,27 @@ public class VisualNovelManager : MonoBehaviour
 
         onVNComplete?.Invoke();
         currentScene = null;
+    }
+
+    /// <summary>
+    /// Restore player về vị trí đã lưu trước khi vào VN mode
+    /// </summary>
+    private void RestorePlayerToSavedPosition()
+    {
+        if (cachedPlayer == null)
+        {
+            cachedPlayer = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        if (cachedPlayer != null && savedPlayerPosition != Vector3.zero)
+        {
+            cachedPlayer.transform.position = savedPlayerPosition;
+
+            // Snap camera về vị trí mới
+            CameraHelper.SnapCameraToTarget(cachedPlayer.transform);
+
+            Debug.Log($"[VNManager] Restored player to saved position: {savedPlayerPosition}");
+        }
     }
 
     /// <summary>
@@ -619,6 +723,11 @@ public class VisualNovelManager : MonoBehaviour
                 StoryManager.Instance?.SetFlag(StoryManager.FlagKeys.BROUGHT_KNIFE, true);
                 break;
 
+            // NPC Surround Player - Cảnh 14A-1: Bị vây quanh
+            case "surround_player":
+                TriggerNPCSurround();
+                break;
+
             // Day 1 Scene 6 choices (DEPRECATED - use nextVNScene instead)
             case "trigger_scene7a":
                 HandleTriggerScene7A();
@@ -626,6 +735,66 @@ public class VisualNovelManager : MonoBehaviour
             case "trigger_scene7b":
                 HandleTriggerScene7B();
                 break;
+        }
+    }
+
+    /// <summary>
+    /// Trigger NPCSurroundPlayer để NPCs vây quanh player
+    /// </summary>
+    private void TriggerNPCSurround()
+    {
+        Debug.Log("[VNManager] ========== TRIGGER NPC SURROUND ==========");
+
+        // QUAN TRỌNG: Cập nhật savedPlayerPosition về vị trí HIỆN TẠI của player
+        // Vì player có thể đã di chuyển từ khi VN mode bắt đầu
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            savedPlayerPosition = playerObj.transform.position;
+            Debug.Log($"[VNManager] Updated savedPlayerPosition to: {savedPlayerPosition}");
+        }
+
+        // Set flag để không restore position khi VN mode kết thúc
+        skipRestorePosition = true;
+
+        // QUAN TRỌNG: Kết thúc VN mode TRƯỚC KHI trigger surround
+        // Điều này sẽ:
+        // 1. Ẩn dialogue panel
+        // 2. Enable player controls (renderer, collider)
+        // 3. NHƯNG NPCSurroundPlayer sẽ LOCK movement ngay sau đó
+        Debug.Log("[VNManager] Ending VN mode before surround...");
+        EndVNMode();
+
+        // Delay nhỏ để đảm bảo VN mode đã kết thúc hoàn toàn
+        StartCoroutine(TriggerSurroundAfterDelay());
+    }
+
+    private System.Collections.IEnumerator TriggerSurroundAfterDelay()
+    {
+        // Đợi 1 frame để VN mode kết thúc hoàn toàn
+        yield return null;
+
+        Debug.Log("[VNManager] Triggering surround now...");
+
+        NPCSurroundPlayer surroundPlayer = FindFirstObjectByType<NPCSurroundPlayer>();
+        if (surroundPlayer != null)
+        {
+            surroundPlayer.StartSurrounding();
+            Debug.Log("[VNManager] ✓ Triggered NPCSurroundPlayer.StartSurrounding()");
+        }
+        else
+        {
+            // Thử tìm NPCSurroundController (deprecated)
+            NPCSurroundController controller = FindFirstObjectByType<NPCSurroundController>();
+            if (controller != null)
+            {
+                controller.StartSurround();
+                Debug.Log("[VNManager] ✓ Triggered NPCSurroundController.StartSurround()");
+            }
+            else
+            {
+                Debug.LogError("[VNManager] ✗ NPCSurroundPlayer/Controller not found in scene!");
+            }
         }
     }
 
@@ -822,6 +991,8 @@ public class VisualNovelManager : MonoBehaviour
             if (movement != null)
             {
                 movement.enabled = true;
+                // QUAN TRỌNG: Reset movement lock
+                movement.SetMovementEnabled(true);
             }
 
             Debug.Log("[VNManager] Player controls enabled");

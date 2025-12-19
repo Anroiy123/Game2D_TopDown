@@ -40,6 +40,12 @@ public class DoorController : MonoBehaviour
 
     void Update()
     {
+        // QUAN TRỌNG: Không xử lý interaction khi VN mode đang active
+        if (VisualNovelManager.Instance != null && VisualNovelManager.Instance.IsVNModeActive)
+        {
+            return;
+        }
+
         // 1. Kiểm tra xem người chơi có đang trong vùng Trigger KHÔNG
         if (playerIsNear)
         {

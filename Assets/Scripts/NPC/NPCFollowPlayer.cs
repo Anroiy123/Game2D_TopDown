@@ -76,6 +76,14 @@ public class NPCFollowPlayer : MonoBehaviour
     {
         if (!isFollowing || player == null) return;
 
+        // QUAN TRỌNG: Dừng follow khi VN mode đang active
+        // Tránh NPC đẩy player đi trong khi đang xem VN scene
+        if (VisualNovelManager.Instance != null && VisualNovelManager.Instance.IsVNModeActive)
+        {
+            StopMoving();
+            return;
+        }
+
         FollowPlayer();
     }
 

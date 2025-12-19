@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Week1_Scene13_Street_Followed_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Week1_Scene13_Street_Followed
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "L\u1EDDi c\xF4 gi\xE1o v\u1EABn c\xF2n vang v\u1ECDng trong \u0111\u1EA7u."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(Haizz... C\xF4 b\u1EA3o m\xECnh ph\u1EA3i m\u1EDF l\xF2ng ra...)"
+    - "(Nh\u01B0ng l\xE0m sao m\xECnh c\xF3 th\u1EC3 l\xE0m quen v\u1EDBi ai \u0111\u01B0\u1EE3c...)"
+    choices: []
+    nextNodeId: 20
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\u1EE9c \u0111i tr\xEAn \u0111\u01B0\u1EDDng v\u1EC1 nh\xE0..."
+    - "Kh\xF4ng kh\xED chi\u1EC1u t\xE0 y\xEAn b\xECnh."
+    choices: []
+    nextNodeId: 30
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 30
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "H\u1EEDm..."
+    - "(Sao c\xF3 c\u1EA3m gi\xE1c l\u1EA1 l\u1EA1...)"
+    choices: []
+    nextNodeId: 40
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 40
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\u1EE9c quay \u0111\u1EA7u l\u1EA1i nh\xECn..."
+    - "T\u1EE5i b\u1EAFt n\u1EA1t l\u1EA1i \u0111\u1EE9ng \u0111\xF3, nh\xECn ch\u1EB1m
+      ch\u1EB1m v\xE0o m\xECnh."
+    choices: []
+    nextNodeId: 50
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 50
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "T\u1EE5i n\xF3 l\u1EA1i \u0111\u1EE9ng ch\u1EDD m\xECnh \u1EDF kia n\u1EEFa
+      r\u1ED3i..."
+    choices: []
+    nextNodeId: 60
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 60
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\xE1m b\u1EAFt n\u1EA1t b\u1EAFt \u0111\u1EA7u \u0111i t\u1EDBi..."
+    - "H\u1ECD \u0111ang ti\u1EBFn \u0111\u1EBFn g\u1EA7n \u0110\u1EE9c."
+    choices: []
+    nextNodeId: 70
+    setFlagsOnEnter:
+    - week1_scene13_completed
+    - bullies_following_week1
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 70
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(M\xECnh ph\u1EA3i l\xE0m g\xEC \u0111\xE2y...?)"
+    choices:
+    - choiceText: "\u0110\u1ED1i m\u1EB7t v\u1EDBi ch\xFAng"
+      nextNodeId: -1
+      actionId: 
+      nextVNScene: {fileID: 0}
+      endVNMode: 1
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - choice_confronted_week1
+      setFlagsFalse:
+      - choice_ran_away_week1
+      variableChanges: []
+    - choiceText: "B\u1ECF ch\u1EA1y th\u1EADt nhanh"
+      nextNodeId: -1
+      actionId: 
+      nextVNScene: {fileID: 0}
+      endVNMode: 1
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - choice_ran_away_week1
+      setFlagsFalse:
+      - choice_confronted_week1
+      variableChanges: []
+    nextNodeId: -1
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

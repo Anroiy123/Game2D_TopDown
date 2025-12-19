@@ -58,6 +58,12 @@ public class SceneTransition : MonoBehaviour
 
     private void Update()
     {
+        // QUAN TRỌNG: Không xử lý interaction khi VN mode đang active
+        if (VisualNovelManager.Instance != null && VisualNovelManager.Instance.IsVNModeActive)
+        {
+            return;
+        }
+
         if (mode == TransitionMode.OnInteract && playerInRange)
         {
             if (Input.GetKeyDown(interactionKey))

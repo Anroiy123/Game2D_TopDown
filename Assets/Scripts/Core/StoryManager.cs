@@ -10,14 +10,21 @@ public class StoryManager : MonoBehaviour
 {
     #region Singleton
     private static StoryManager _instance;
+    private static bool _applicationIsQuitting = false;
+
     public static StoryManager Instance
     {
         get
         {
+            if (_applicationIsQuitting)
+            {
+                return null;
+            }
+
             if (_instance == null)
             {
                 _instance = FindFirstObjectByType<StoryManager>();
-                if (_instance == null)
+                if (_instance == null && !_applicationIsQuitting)
                 {
                     GameObject go = new GameObject("StoryManager");
                     _instance = go.AddComponent<StoryManager>();
@@ -90,11 +97,24 @@ public class StoryManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        
+
         _instance = this;
         DontDestroyOnLoad(gameObject);
-        
+
         InitializeDefaultValues();
+    }
+
+    private void OnApplicationQuit()
+    {
+        _applicationIsQuitting = true;
+    }
+
+    private void OnDestroy()
+    {
+        if (_instance == this)
+        {
+            _applicationIsQuitting = true;
+        }
     }
 
     private void InitializeDefaultValues()

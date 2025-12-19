@@ -2,9 +2,8 @@ using UnityEngine;
 using System.Collections;
 
 /// <summary>
-/// ClassmateExitController - Điều khiển Cảnh 11: Đám bạn đi ra khỏi lớp
-/// Kích hoạt sau khi Cảnh 10 (VN) kết thúc, làm nhóm bạn đi ra cửa lớp
-/// Sau đó fade to black và chuyển sang Cảnh 12
+/// ClassmateExitController - Điều khiển cảnh đám bạn đi ra khỏi lớp
+/// Hỗ trợ nhiều cách trigger: On Start, On Flag Set, Manual
 /// </summary>
 public class ClassmateExitController : MonoBehaviour
 {
@@ -17,8 +16,11 @@ public class ClassmateExitController : MonoBehaviour
     [SerializeField] private Transform[] sharedWaypoints;
 
     [Header("Trigger Settings")]
-    [Tooltip("Tự động trigger khi scene load")]
+    [Tooltip("Tự động trigger khi scene load (kiểm tra flags)")]
     [SerializeField] private bool triggerOnStart = true;
+
+    [Tooltip("Trigger khi flag này được set TRUE (để trống = không dùng)")]
+    [SerializeField] private string triggerOnFlagSet = "";
 
     [Tooltip("Delay trước khi NPCs bắt đầu đi (giây)")]
     [SerializeField] private float startDelay = 1f;
@@ -82,18 +84,78 @@ public class ClassmateExitController : MonoBehaviour
             playerMovement = playerObj.GetComponent<PlayerMovement>();
         }
 
-        if (triggerOnStart)
+        // Subscribe to flag change event nếu dùng triggerOnFlagSet
+        if (!string.IsNullOrEmpty(triggerOnFlagSet) && StoryManager.Instance != null)
         {
-            // Kiểm tra flags
-            if (!CheckRequiredFlags() || !CheckForbiddenFlags())
+            StoryManager.Instance.OnFlagChanged += OnFlagChanged;
+            
+            // Kiểm tra flag đã được set chưa (trường hợp flag set trước khi subscribe)
+            if (StoryManager.Instance.GetFlag(triggerOnFlagSet))
             {
                 if (showDebugLogs)
-                    Debug.Log("[ClassmateExitController] Không đủ điều kiện flags, skip cảnh");
-                return;
+                    Debug.Log($"[ClassmateExitController] Flag '{triggerOnFlagSet}' already set, triggering...");
+                TryTrigger();
             }
-
-            StartCoroutine(TriggerClassmatesExit());
         }
+
+        // Trigger on start nếu được bật VÀ không dùng triggerOnFlagSet
+        if (triggerOnStart && string.IsNullOrEmpty(triggerOnFlagSet))
+        {
+            TryTrigger();
+        }
+    }
+    
+    private void OnDestroy()
+    {
+        // Unsubscribe flag event
+        if (StoryManager.Instance != null)
+        {
+            StoryManager.Instance.OnFlagChanged -= OnFlagChanged;
+        }
+        
+        // Unsubscribe NPC events
+        if (classmates != null)
+        {
+            foreach (var classmate in classmates)
+            {
+                if (classmate != null)
+                {
+                    classmate.OnReachedDestination -= OnClassmateReachedDestination;
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    /// Callback khi flag thay đổi
+    /// </summary>
+    private void OnFlagChanged(string flagName, bool value)
+    {
+        // Chỉ trigger khi flag được set TRUE và khớp với triggerOnFlagSet
+        if (value && flagName == triggerOnFlagSet)
+        {
+            if (showDebugLogs)
+                Debug.Log($"[ClassmateExitController] Flag '{flagName}' set to TRUE, triggering...");
+            TryTrigger();
+        }
+    }
+    
+    /// <summary>
+    /// Thử trigger nếu đủ điều kiện
+    /// </summary>
+    private void TryTrigger()
+    {
+        if (hasTriggered) return;
+        
+        // Kiểm tra flags
+        if (!CheckRequiredFlags() || !CheckForbiddenFlags())
+        {
+            if (showDebugLogs)
+                Debug.Log("[ClassmateExitController] Không đủ điều kiện flags, skip");
+            return;
+        }
+
+        StartCoroutine(TriggerClassmatesExit());
     }
 
     private bool CheckRequiredFlags()
@@ -330,19 +392,5 @@ public class ClassmateExitController : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
-    {
-        // Unsubscribe events
-        if (classmates != null)
-        {
-            foreach (var classmate in classmates)
-            {
-                if (classmate != null)
-                {
-                    classmate.OnReachedDestination -= OnClassmateReachedDestination;
-                }
-            }
-        }
-    }
 }
 

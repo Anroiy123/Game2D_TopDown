@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Week1_Scene16_TimeSkip_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Week1_Scene16_TimeSkip
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Tr\xF4i qua 1 tu\u1EA7n..."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

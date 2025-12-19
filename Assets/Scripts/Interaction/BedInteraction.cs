@@ -33,6 +33,12 @@ public class BedInteraction : MonoBehaviour
 
     private void Update()
     {
+        // QUAN TRỌNG: Không xử lý interaction khi VN mode đang active
+        if (VisualNovelManager.Instance != null && VisualNovelManager.Instance.IsVNModeActive)
+        {
+            return;
+        }
+
         if (isPlayerNearby && !isSleeping && Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(SleepRoutine());

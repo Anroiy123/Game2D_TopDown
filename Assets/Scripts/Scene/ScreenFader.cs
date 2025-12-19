@@ -10,6 +10,7 @@ using System.Collections;
 public class ScreenFader : MonoBehaviour
 {
     public static ScreenFader Instance { get; private set; }
+    private static bool _applicationIsQuitting = false;
 
     [Header("Fade Settings")]
     [SerializeField] private float fadeDuration = 0.5f;
@@ -33,7 +34,7 @@ public class ScreenFader : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        
+
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
@@ -51,6 +52,19 @@ public class ScreenFader : MonoBehaviour
 
         // Bắt đầu với màn hình trong suốt
         SetAlpha(0f);
+    }
+
+    private void OnApplicationQuit()
+    {
+        _applicationIsQuitting = true;
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            _applicationIsQuitting = true;
+        }
     }
 
     private void SetupFadeUI()

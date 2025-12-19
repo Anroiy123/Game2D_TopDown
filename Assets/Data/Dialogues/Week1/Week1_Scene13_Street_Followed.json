@@ -1,0 +1,89 @@
+{
+  "_comment": "Week 1 - Scene 13: Street - Duc walking home, bullies following again. Choice: Confront or Run",
+  "conversationName": "Week1_Scene13_Street_Followed",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": ["Lời cô giáo vẫn còn vang vọng trong đầu."],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Haizz... Cô bảo mình phải mở lòng ra...)",
+        "(Nhưng làm sao mình có thể làm quen với ai được...)"
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": ["Đức đi trên đường về nhà...", "Không khí chiều tà yên bình."],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["Hửm...", "(Sao có cảm giác lạ lạ...)"],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đức quay đầu lại nhìn...",
+        "Tụi bắt nạt lại đứng đó, nhìn chằm chằm vào mình."
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["Tụi nó lại đứng chờ mình ở kia nữa rồi..."],
+      "next": 60
+    },
+    {
+      "id": 60,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": ["Đám bắt nạt bắt đầu đi tới...", "Họ đang tiến đến gần Đức."],
+      "next": 70,
+      "setFlags": ["week1_scene13_completed", "bullies_following_week1"]
+    },
+    {
+      "id": 70,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["(Mình phải làm gì đây...?)"],
+      "choices": [
+        {
+          "text": "Đối mặt với chúng",
+          "next": -1,
+          "actionId": "surround_player",
+          "setTrue": ["choice_confronted_week1"],
+          "setFalse": ["choice_ran_away_week1"]
+        },
+        {
+          "text": "Bỏ chạy thật nhanh",
+          "next": -1,
+          "endVNMode": true,
+          "setTrue": ["choice_ran_away_week1", "ran_from_bullies", "week1_encounter_complete"],
+          "setFalse": ["choice_confronted_week1"],
+          "varChanges": [
+            { "op": "add", "name": "escaped_count", "value": 1 },
+            { "op": "add", "name": "fear_level", "value": 5 }
+          ]
+        }
+      ]
+    }
+  ]
+}

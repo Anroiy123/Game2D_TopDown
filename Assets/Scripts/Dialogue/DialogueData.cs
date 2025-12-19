@@ -316,6 +316,16 @@ public class ConditionalDialogueEntry
     [Tooltip("DialogueData sẽ được sử dụng nếu điều kiện thỏa mãn")]
     public DialogueData dialogueData;
 
+    [Header("Trigger Mode")]
+    [Tooltip("Tự động trigger dialogue khi scene bắt đầu (không cần player đến gần)")]
+    public bool triggerOnSceneStart = false;
+
+    [Tooltip("Delay trước khi auto trigger (giây). Chỉ dùng khi triggerOnSceneStart = true")]
+    public float autoTriggerDelay = 0.5f;
+
+    [Tooltip("Spawn Point ID cụ thể để trigger (để trống = trigger bất kể spawn point nào)")]
+    public string requiredSpawnPointId = "";
+
     [Header("Scene Conditions")]
     [Tooltip("Chỉ trigger trong các scene này (để trống = mọi scene)")]
     public string[] allowedScenes;
@@ -330,6 +340,13 @@ public class ConditionalDialogueEntry
     [Header("Variable Conditions")]
     [Tooltip("Điều kiện biến (VD: current_day == 8)")]
     public VariableCondition[] variableConditions;
+
+    [Header("Effects On Complete")]
+    [Tooltip("Flags sẽ được set TRUE khi dialogue kết thúc")]
+    public string[] setFlagsOnComplete;
+
+    [Tooltip("Thay đổi biến khi dialogue kết thúc")]
+    public VariableChange[] variableChangesOnComplete;
 
     [Header("Priority")]
     [Tooltip("Độ ưu tiên (cao hơn = kiểm tra trước). Mặc định = 0")]
@@ -403,5 +420,36 @@ public class ConditionalDialogueEntry
 
         Debug.Log($"[ConditionalDialogue] '{dialogueName}' ACCEPTED - all conditions met!");
         return true;
+    }
+
+    /// <summary>
+    /// Áp dụng effects khi dialogue kết thúc
+    /// </summary>
+    public void ApplyOnCompleteEffects()
+    {
+        if (StoryManager.Instance == null) return;
+
+        // Set flags on complete
+        if (setFlagsOnComplete != null)
+        {
+            foreach (string flag in setFlagsOnComplete)
+            {
+                if (!string.IsNullOrEmpty(flag))
+                {
+                    StoryManager.Instance.SetFlag(flag, true);
+                    Debug.Log($"[ConditionalDialogue] Set flag on complete: {flag}");
+                }
+            }
+        }
+
+        // Apply variable changes
+        if (variableChangesOnComplete != null)
+        {
+            foreach (var change in variableChangesOnComplete)
+            {
+                change.Apply();
+                Debug.Log($"[ConditionalDialogue] Applied variable change on complete: {change.variableName}");
+            }
+        }
     }
 }

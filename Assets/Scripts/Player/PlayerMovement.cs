@@ -28,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
     // Biến kiểm tra có đang gần NPC không (để ưu tiên NPC hơn ghế)
     private bool isNearNPC = false;
 
+    // Biến khóa movement từ bên ngoài (VD: bị vây quanh)
+    private bool isMovementLocked = false;
+
     // Tối ưu hóa tên tham số Animation
     private readonly int speedHash = Animator.StringToHash("Speed");
     private readonly int horizontalHash = Animator.StringToHash("Horizontal");
@@ -48,10 +51,20 @@ public class PlayerMovement : MonoBehaviour
         {
             defaultSortingOrder = spriteRenderer.sortingOrder;
         }
+
+        // Reset movement lock khi scene load
+        isMovementLocked = false;
     }
 
     private void Update()
     {
+        // QUAN TRỌNG: Không xử lý input khi VN mode đang active
+        // VN mode sẽ disable PlayerMovement component, nhưng thêm check này để chắc chắn
+        if (VisualNovelManager.Instance != null && VisualNovelManager.Instance.IsVNModeActive)
+        {
+            return;
+        }
+
         // 1. Kiểm tra lệnh Ngồi (Phím E) - CHỈ KHI KHÔNG Ở GẦN NPC
         if (Input.GetKeyDown(KeyCode.E) && canSit && !isNearNPC)
         {
@@ -64,8 +77,8 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool(sittingHash, isSitting);
         }
 
-        // NẾU ĐANG NGỒI, NÓI CHUYỆN HOẶC NGỦ THÌ KHÔNG LÀM GÌ CẢ (Không di chuyển)
-        if (isSitting || isTalking || isSleeping) return;
+        // NẾU ĐANG NGỒI, NÓI CHUYỆN, NGỦ HOẶC BỊ KHÓA THÌ KHÔNG LÀM GÌ CẢ (Không di chuyển)
+        if (isSitting || isTalking || isSleeping || isMovementLocked) return;
 
         // 2. Nhận Input di chuyển (Chỉ chạy khi KHÔNG ngồi)
         movementInput.x = Input.GetAxisRaw("Horizontal");
@@ -78,8 +91,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Nếu đang ngồi, nói chuyện hoặc ngủ thì dừng hẳn vật lý
-        if (isSitting || isTalking || isSleeping)
+        // Nếu đang ngồi, nói chuyện, ngủ hoặc bị khóa thì dừng hẳn vật lý
+        if (isSitting || isTalking || isSleeping || isMovementLocked)
         {
             rb.linearVelocity = Vector2.zero;
             return;
@@ -211,5 +224,30 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetFloat(speedHash, 0f);
         }
+    }
+
+    /// <summary>
+    /// Khóa/mở khóa movement từ bên ngoài (VD: bị vây quanh, cutscene)
+    /// </summary>
+    public void SetMovementEnabled(bool enabled)
+    {
+        isMovementLocked = !enabled;
+        Debug.Log($"[PlayerMovement] Movement locked: {isMovementLocked}");
+
+        // Dừng animation và velocity ngay lập tức
+        if (isMovementLocked)
+        {
+            movementInput = Vector2.zero;
+            if (rb != null) rb.linearVelocity = Vector2.zero;
+            if (animator != null) animator.SetFloat(speedHash, 0f);
+        }
+    }
+
+    /// <summary>
+    /// Kiểm tra player có thể di chuyển không
+    /// </summary>
+    public bool CanMove()
+    {
+        return !isSitting && !isTalking && !isSleeping && !isMovementLocked;
     }
 }

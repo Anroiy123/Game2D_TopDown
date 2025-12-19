@@ -9,14 +9,18 @@ public class GameManager : MonoBehaviour
 {
     #region Singleton
     private static GameManager _instance;
+    private static bool _applicationIsQuitting = false;
+
     public static GameManager Instance
     {
         get
         {
+            if (_applicationIsQuitting) return null;
+
             if (_instance == null)
             {
                 _instance = FindFirstObjectByType<GameManager>();
-                if (_instance == null)
+                if (_instance == null && !_applicationIsQuitting)
                 {
                     GameObject go = new GameObject("GameManager");
                     _instance = go.AddComponent<GameManager>();
@@ -87,9 +91,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void OnApplicationQuit()
+    {
+        _applicationIsQuitting = true;
+    }
+
     private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        if (_instance == this)
+        {
+            _applicationIsQuitting = true;
+        }
     }
 
     #region Scene Loading
@@ -205,6 +218,10 @@ public class GameManager : MonoBehaviour
         }
 
         spawnManager.SpawnPlayer(player, spawnId);
+        
+        // Lưu lại spawn point ID đã dùng
+        lastUsedSpawnPointId = spawnId;
+        Debug.Log($"[GameManager] Saved lastUsedSpawnPointId: '{lastUsedSpawnPointId}'");
 
         // Snap camera ngay lập tức đến vị trí player
         CameraHelper.SnapCameraToTarget(player.transform);
@@ -241,6 +258,17 @@ public class GameManager : MonoBehaviour
     {
         return SceneManager.GetActiveScene().name;
     }
+    
+    /// <summary>
+    /// Lấy spawn point ID hiện tại (spawn point mà player vừa spawn vào)
+    /// </summary>
+    public string GetCurrentSpawnPointId()
+    {
+        return lastUsedSpawnPointId;
+    }
+    
+    // Track spawn point ID đã dùng gần nhất
+    private string lastUsedSpawnPointId = "";
 
     /// <summary>
     /// Kiểm tra scene có tồn tại trong build settings không

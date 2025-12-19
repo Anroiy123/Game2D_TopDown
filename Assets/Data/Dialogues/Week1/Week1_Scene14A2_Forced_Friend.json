@@ -1,0 +1,82 @@
+{
+  "_comment": "Week 1 - Scene 14A-2: Forced Friend - Bullies pressure Duc to accept friendship",
+  "conversationName": "Week1_Scene14A2_Forced_Friend",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Cả đám vây chặt lại...",
+        "Đức không còn đường lui."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đàn em",
+      "isPlayer": false,
+      "lines": [
+        "Đúng đấy, đúng đấy, anh tao đã ngỏ lời rồi thì mày đồng ý đi!"
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đàn em",
+      "isPlayer": false,
+      "lines": [
+        "Đúng đúng đúng, đồng ý đồng ý đồng ý!"
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Ừm vậy thì được…"
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Phải thế chứ, bây giờ ông với tôi là bạn, quyết định thế nhé.",
+        "Bây giờ cũng hơi trễ rồi, ông về đi mai chúng ta lại gặp."
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Ừm"
+      ],
+      "next": 60
+    },
+    {
+      "id": 60,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Tụi bắt nạt dần dần rời đi...",
+        "Đức đứng một mình giữa đường, lòng đầy bất an."
+      ],
+      "next": -1,
+      "setFlags": ["BEFRIENDED_BULLIES", "week1_scene14a2_completed"],
+      "varChanges": [
+        {
+          "op": "add",
+          "name": "FEAR_LEVEL",
+          "value": 10
+        }
+      ]
+    }
+  ]
+}
+
