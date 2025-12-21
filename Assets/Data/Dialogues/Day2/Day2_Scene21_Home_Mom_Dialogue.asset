@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Day2_Scene21_Home_Mom_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Day2_Scene21_Home_Mom
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u01A0 hay nh\u1EC9, th\u1EB1ng n\xE0y h\xF4m nay \u0111i v\u1EC1 kh\xF4ng
+      th\xE8m th\u01B0a ai \xE0."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: -4020990447090382813, guid: 43ad5034ea78a1f4681acbe53e020560, type: 3}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Ch\u1EAFc g\u1EB7p chuy\u1EC7n g\xEC kh\xF4ng vui r\u1ED3i."
+    - "Th\xF4i k\u1EC7 n\xF3, mai nh\u1EAFc n\xF3 l\xE0 \u0111\u01B0\u1EE3c."
+    - "V\xF4 l\xE0m n\u1ED1t vi\u1EC7c t\xED c\xF2n \u0111i n\u1EA5u c\u01A1m."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - day2_scene21_completed
+    - mom_noticed_something_wrong
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: -4020990447090382813, guid: 43ad5034ea78a1f4681acbe53e020560, type: 3}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

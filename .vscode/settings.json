@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Game2D_TopDown.slnx"
+    "dotnet.defaultSolution": "DoAn2D.slnx"
 }

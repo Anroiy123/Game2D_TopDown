@@ -303,6 +303,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &18378134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18378136}
+  - component: {fileID: 18378135}
+  m_Layer: 0
+  m_Name: Scene23_Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &18378135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18378134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 415003211f4a52347a2b87853cfdb615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::ClassmateExitController
+  classmates:
+  - {fileID: 8374643371303754802}
+  - {fileID: 354442934}
+  - {fileID: 1096516014}
+  - {fileID: 1317837980}
+  - {fileID: 1241767475}
+  - {fileID: 1629332499}
+  - {fileID: 2043866185}
+  sharedWaypoints:
+  - {fileID: 1136280471}
+  - {fileID: 812505998}
+  - {fileID: 1726671688}
+  triggerOnStart: 0
+  triggerOnFlagSet: week3_scene23_completed
+  startDelay: 0.5
+  staggerDelay: 0.3
+  disablePlayerMovement: 0
+  hidePlayer: 0
+  waitAfterExit: 2
+  fadeToBlack: 0
+  transitionText: 
+  textDisplayDuration: 4
+  nextSceneName: StreetScene
+  nextSpawnPointId: SpawnPoint_PortField
+  vnSceneToTrigger: {fileID: 0}
+  requiredFlags:
+  - week3_scene23_completed
+  forbiddenFlags:
+  - week3_scene23_NPCout_completed
+  completionFlag: week3_scene23_break_completed
+  showDebugLogs: 0
+--- !u!4 &18378136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18378134}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.42108, y: 0.89161, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &33825986
 GameObject:
   m_ObjectHideFlags: 0
@@ -10115,15 +10190,15 @@ MonoBehaviour:
   triggerOnFlagSet: day2_scene17_classmate_completed
   startDelay: 1
   staggerDelay: 0.3
-  disablePlayerMovement: 1
+  disablePlayerMovement: 0
   hidePlayer: 0
   waitAfterExit: 2
-  fadeToBlack: 1
-  transitionText: "T\xF9ng t\xF9ng t\xF9ng, h\u1EBFt gi\u1EDD h\u1ECDc"
+  fadeToBlack: 0
+  transitionText: 
   textDisplayDuration: 4
-  nextSceneName: StreetScene
+  nextSceneName: 
   nextSpawnPointId: 
-  vnSceneToTrigger: {fileID: 0}
+  vnSceneToTrigger: {fileID: 11400000, guid: 4362c74cce16c4240bad1188c65395e6, type: 2}
   requiredFlags:
   - day2_scene17_completed
   forbiddenFlags:
@@ -10743,7 +10818,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: npcName
-      value: "B\u1EA1n c\xF9ng b\xE0n"
+      value: "B\u1EA1n k\u1EBF b\xE0n"
       objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: useAdvancedDialogue
@@ -10753,6 +10828,10 @@ PrefabInstance:
       propertyPath: interactionIndicator
       value: 
       objectReference: {fileID: 2043866191}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: avatarEntries.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: dialogueLines.Array.size
       value: 2
@@ -10771,12 +10850,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: conditionalDialogues.Array.size
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: avatarEntries.Array.data[0].speakerName
+      value: "B\u1EA1n k\u1EBF b\xE0n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: avatarEntries.Array.data[0].avatarSprite
+      value: 
+      objectReference: {fileID: 5834620791710037599, guid: 9c748e2b8a1518644bcd9484dbe416dc, type: 3}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[0].priority
+      value: 170
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[1].priority
+      value: 230
       objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].dialogueData
       value: 
       objectReference: {fileID: 11400000, guid: 8bf84398765546845a5cccd42851d115, type: 2}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[1].dialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: e8bb8e103482cf84a942994199556c7b, type: 2}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[1].autoTriggerDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[1].triggerOnFlagSet
+      value: week3_scene22_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[1].triggerOnSceneStart
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].allowedScenes.Array.size
       value: 1
@@ -10786,7 +10897,19 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[1].allowedScenes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[1].requiredFlags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].forbiddenFlags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[1].forbiddenFlags.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
@@ -10798,16 +10921,36 @@ PrefabInstance:
       value: week1_scene16_completed
       objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[1].allowedScenes.Array.data[0]'
+      value: ClassroomScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[1].requiredFlags.Array.data[0]'
+      value: week3_scene22_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[0].forbiddenFlags.Array.data[0]'
       value: day2_scene17_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[1].forbiddenFlags.Array.data[0]'
+      value: week3_scene23_completed
       objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].setFlagsOnComplete.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: conditionalDialogues.Array.data[1].setFlagsOnComplete.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[0].setFlagsOnComplete.Array.data[0]'
       value: day2_scene17_classmate_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5367692884549542188, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[1].setFlagsOnComplete.Array.data[0]'
+      value: week3_scene23_completed
       objectReference: {fileID: 0}
     - target: {fileID: 7740560943011544010, guid: fe8a3b2af95320748b6bd4043326bb76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13753,10 +13896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: GameScripts::QuickFlagSetter
   flagsToSetTrue:
-  - day1_scene1_completed
-  - day1_scene2_completed
-  - day1_scene2_completed
-  - week1_scene16_completed
+  - week3_scene22_completed
   flagsToSetFalse: []
   variablesToSet: []
   editorOnly: 1
@@ -15480,7 +15620,8 @@ MonoBehaviour:
   vnSceneToTrigger: {fileID: 11400000, guid: 407dc7e505c8ba343b4a13b8b2f05f60, type: 2}
   requiredFlags:
   - week1_started
-  forbiddenFlags: []
+  forbiddenFlags:
+  - week1_classroom_break_completed
   completionFlag: week1_classroom_break_completed
   showDebugLogs: 0
 --- !u!4 &1999066221
@@ -16218,6 +16359,10 @@ MonoBehaviour:
   choicePanel: {fileID: 33825986}
   choiceButtonPrefab: {fileID: 6597586065176934239, guid: cae65537930167d4cb40f932c2d92bfb, type: 3}
   choiceContainer: {fileID: 33825987}
+  avatarContainer: {fileID: 0}
+  avatarImage: {fileID: 0}
+  avatarPosition: 1
+  flipAvatarHorizontal: 1
   textSpeed: 0.02
   continueKey: 101
   playerNameColor: {r: 0.254902, g: 0.7137255, b: 0.882353, a: 1}
@@ -16344,4 +16489,5 @@ SceneRoots:
   - {fileID: 2123630071}
   - {fileID: 1999066221}
   - {fileID: 771522218}
+  - {fileID: 18378136}
   - {fileID: 1772908017}

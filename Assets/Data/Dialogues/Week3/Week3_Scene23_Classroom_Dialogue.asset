@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Week3_Scene23_Classroom_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Week3_Scene23_Classroom
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "B\u1EA1n k\u1EBF b\xE0n"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "N\xE0y \u0110\u1EE9c, m\xE0y ng\u1ED3i \u0111\xE2y \u0111\u01B0\u1EE3c m\u1EA5y
+      tu\u1EA7n r\u1ED3i \u0111\u1EA5y, ra ch\u01A1i v\u1EDBi t\u1EE5i tao \u0111i,
+      vui l\u1EAFm."
+    - "V\u1EADn \u0111\u1ED9ng t\u1ED1t cho s\u1EE9c kh\u1ECFe n\u1EEFa."
+    - "M\xE0 tao n\xF3i v\u1EADy th\xF4i, ra hay kh\xF4ng th\xEC t\xF9y m\xE0y, tao
+      \u0111i \u0111\xE2y."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - week3_scene23_completed
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

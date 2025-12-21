@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Week3_Scene21_Home_Morning_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Week3_Scene21_Home_Morning
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: Tivi
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Hi\u1EC7n nay, t\xECnh tr\u1EA1ng gi\u1EDBi tr\u1EBB l\xE0 m\u1EE5c ti\xEAu
+      c\u1EE7a b\u1EA1o l\u1EF1c h\u1ECDc \u0111\u01B0\u1EDDng d\u1EA7n gia t\u0103ng."
+    - "H\u1EA7u h\u1EBFt n\u1EA1n nh\xE2n \u0111\u1EC1u l\xE0 c\xE1c h\u1ECDc sinh
+      y\u1EBFu th\u1EBF trong tr\u01B0\u1EDDng, \xEDt b\u1EA1n b\xE8 v\xE0 thi\u1EBFu
+      kh\u1EA3 n\u0103ng giao ti\u1EBFp x\xE3 h\u1ED9i."
+    - "\u0110\xE3 c\xF3 nhi\u1EC1u v\u1EE5 vi\u1EC7c x\u1EA3y ra mang \u0111\u1EBFn
+      c\xE1i k\u1EBFt bu\u1ED3n cho gia \u0111\xECnh v\xE0 x\xE3 h\u1ED9i."
+    - "Vi\u1EC7c ng\u0103n ch\u1EB7n b\u1EA1o l\u1EF1c v\xE0 c\xE1c h\xE0nh \u0111\u1ED9ng
+      t\u01B0\u01A1ng t\u1EF1 x\u1EA3y ra kh\xF4ng ch\u1EC9 l\xE0 tr\xE1ch nhi\u1EC7m
+      c\u1EE7a c\xE1 nh\xE2n c\u1EE5 th\u1EC3 n\xE0o m\xE0 c\u1EA7n ph\u1EA3i c\xF3
+      s\u1EF1 chung tay c\u1EE7a to\xE0n x\xE3 h\u1ED9i \u0111\u1EC3 ch\u1EA5m d\u1EE9t
+      t\xECnh tr\u1EA1ng n\xE0y."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Nay \u0111i h\u1ECDc nh\u1EDB t\u1EADp trung h\u1ECDc \u0111\u1EA5y."
+    - "V\u1EDBi c\u1EA3 t\xECm \u0111\u1EE9a n\xE0o d\u1EC5 g\u1EA7n r\u1ED3i l\xE0m
+      quen r\u1ED3i k\u1EBFt b\u1EA1n \u0111i, b\u1EEFa tao c\xF3 nh\u1EAFc r\u1ED3i
+      \u0111\u1EA5y."
+    - "Tao lo cho m\xE0y l\u1EAFm con \u1EA1, m\xE0y c\u0169ng l\u1EDBn r\u1ED3i,
+      c\u0169ng ph\u1EA3i h\u1ECDc c\xE1ch m\u1EDF r\u1ED9ng m\u1ED1i quan h\u1EC7
+      c\u1EE7a m\xECnh \u0111i."
+    - "\u0110i l\u1EB9 \u0111i kh\xF4ng tr\u1EC5 gi\u1EDD h\u1ECDc, chi\u1EC1u v\u1EC1
+      nh\u1EDB th\u01B0a g\u1ECDi \u0111\xE0ng ho\xE0ng \u0111\u1EEBng nh\u01B0 h\xF4m
+      qua, m\u1EB9 m\xE0y bu\u1ED3n l\u1EAFm \u0111\u1EA5y."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - week3_scene21_completed
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

@@ -1,0 +1,115 @@
+{
+  "_comment": "Day 2 - Scene 20: Bully dialogue when player chose to run away - requires choice_ran_away_day2 flag",
+  "conversationName": "Day2_Scene20_Bully_RanAway",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đức cố gắng bỏ chạy nhưng bị đàn em chặn lại..."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đàn em",
+      "isPlayer": false,
+      "lines": [
+        "Ê, đứng lại thằng ranh con!",
+        "Sao cứ gặp tụi tao là mày chạy thế, biết tôn trọng người khác không hả?",
+        "Mày có biết ai là trùm khu này không, gặp anh tao mà chưa chào à.",
+        "Chào anh L của tao ngay!"
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "D-dạ, em chào anh L..."
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Tốt đấy, hiểu chuyện nhanh thế là tốt.",
+        "Nói cho mày biết luôn, tao biết mày là thằng học sinh mới chuyển đến đây.",
+        "Nhìn mặt mày lạ lắm, tụi tao quan sát mày 1 tuần rồi và có vẻ mày không có đứa bạn nào nhỉ.",
+        "Vậy thì tốt, không ai làm phiền giữa anh em tao và mày được.",
+        "Biết điều thì móc hết tiền trong túi mày ra cho tụi tao còn không thì mày chắc cũng hiểu rồi chứ."
+      ],
+      "choices": [
+        {
+          "text": "Ơ nhưng...",
+          "next": 100
+        },
+        {
+          "text": "Đưa tiền",
+          "next": 200,
+          "setTrue": ["gave_money_to_bullies"],
+          "varChanges": [
+            { "name": "money", "op": "sub", "value": 500000 },
+            { "name": "gave_money_count", "op": "add", "value": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Tao thất vọng về mày quá, tao tưởng mày thông minh lắm, nhưng có vẻ là không rồi.",
+        "Anh em đâu, giữ nó lại cho tao!"
+      ],
+      "next": 110
+    },
+    {
+      "id": 110,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Bụp! Bụp! Bụp!"
+      ],
+      "next": -1,
+      "setFlags": ["day2_scene20_completed", "got_beaten", "questioned_bullies_got_beaten"],
+      "varChanges": [
+        { "name": "fear_level", "op": "add", "value": 25 }
+      ]
+    },
+    {
+      "id": 200,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Dạ, đây ạ, em đưa hết rồi ạ, mấy anh thả em ra đi..."
+      ],
+      "next": 210
+    },
+    {
+      "id": 210,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Tốt, rồi mày về được rồi."
+      ],
+      "next": 220
+    },
+    {
+      "id": 220,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đức chạy vội về nhà..."
+      ],
+      "next": -1,
+      "setFlags": ["day2_scene20_completed", "gave_money_to_bullies"]
+    }
+  ]
+}

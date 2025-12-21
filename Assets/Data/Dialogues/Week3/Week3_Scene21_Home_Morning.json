@@ -1,0 +1,32 @@
+{
+  "_comment": "Week 3 - Scene 21: Buổi sáng đầu tuần - TV đưa tin + Mẹ nhắc nhở",
+  "conversationName": "Week3_Scene21_Home_Morning",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Tivi",
+      "isPlayer": false,
+      "lines": [
+        "Hiện nay, tình trạng giới trẻ là mục tiêu của bạo lực học đường dần gia tăng.",
+        "Hầu hết nạn nhân đều là các học sinh yếu thế trong trường, ít bạn bè và thiếu khả năng giao tiếp xã hội.",
+        "Đã có nhiều vụ việc xảy ra mang đến cái kết buồn cho gia đình và xã hội.",
+        "Việc ngăn chặn bạo lực và các hành động tương tự xảy ra không chỉ là trách nhiệm của cá nhân cụ thể nào mà cần phải có sự chung tay của toàn xã hội để chấm dứt tình trạng này."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Nay đi học nhớ tập trung học đấy.",
+        "Với cả tìm đứa nào dễ gần rồi làm quen rồi kết bạn đi, bữa tao có nhắc rồi đấy.",
+        "Tao lo cho mày lắm con ạ, mày cũng lớn rồi, cũng phải học cách mở rộng mối quan hệ của mình đi.",
+        "Đi lẹ đi không trễ giờ học, chiều về nhớ thưa gọi đàng hoàng đừng như hôm qua, mẹ mày buồn lắm đấy."
+      ],
+      "next": -1,
+      "setFlags": ["week3_scene21_completed"]
+    }
+  ]
+}

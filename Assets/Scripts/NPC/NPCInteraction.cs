@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class NPCInteraction : MonoBehaviour
 {
@@ -18,6 +19,23 @@ public class NPCInteraction : MonoBehaviour
     [Tooltip("DialogueData mặc định (dùng khi không có conditional dialogue nào thỏa mãn)")]
     [SerializeField] private DialogueData dialogueData; // ScriptableObject cho dialogue phức tạp
     [SerializeField] private bool useAdvancedDialogue = false; // Sử dụng dialogue với choices
+
+    [Header("Avatar Mode (Top-Down with Avatar)")]
+    [Tooltip("Bật chế độ hiển thị avatar trong dialogue (background = scene top-down)")]
+    [SerializeField] private bool useAvatarMode = false;
+    [Tooltip("Avatar sprites cho các speaker (key = speaker name trong DialogueData)")]
+    [SerializeField] private AvatarEntry[] avatarEntries;
+
+    [System.Serializable]
+    public class AvatarEntry
+    {
+        [Tooltip("Tên speaker (phải khớp với speakerName trong DialogueNode)")]
+        public string speakerName;
+        [Tooltip("Avatar sprite cho speaker này")]
+        public Sprite avatarSprite;
+        [Tooltip("Flip avatar theo chiều ngang (để nhân vật quay vào trong màn hình)")]
+        public bool flipHorizontal = true;
+    }
 
     [Header("Conditional Dialogues")]
     [Tooltip("Danh sách dialogue có điều kiện (ưu tiên cao hơn dialogueData mặc định)")]
@@ -54,6 +72,9 @@ public class NPCInteraction : MonoBehaviour
     
     // Track đã auto trigger chưa (tránh trigger nhiều lần)
     private bool hasAutoTriggered = false;
+    
+    // Track các flag đã trigger (tránh trigger nhiều lần cho cùng flag)
+    private System.Collections.Generic.HashSet<string> triggeredFlags = new System.Collections.Generic.HashSet<string>();
 
     // Animation parameters
     private readonly int horizontalHash = Animator.StringToHash("Horizontal");
@@ -111,8 +132,79 @@ public class NPCInteraction : MonoBehaviour
         }
         // InteractionIndicator sẽ tự quản lý visibility dựa trên khoảng cách player
         
+        // Subscribe vào StoryManager.OnFlagChanged để trigger dialogue khi flag được set
+        if (StoryManager.Instance != null)
+        {
+            StoryManager.Instance.OnFlagChanged += OnFlagChanged;
+        }
+        
         // Kiểm tra và trigger auto dialogue nếu có
         CheckAutoTriggerDialogue();
+    }
+    
+    private void OnDestroy()
+    {
+        // Unsubscribe khi NPC bị destroy
+        if (StoryManager.Instance != null)
+        {
+            StoryManager.Instance.OnFlagChanged -= OnFlagChanged;
+        }
+    }
+    
+    /// <summary>
+    /// Callback khi một flag được thay đổi trong StoryManager
+    /// </summary>
+    private void OnFlagChanged(string flagName, bool value)
+    {
+        // Chỉ xử lý khi flag được set TRUE
+        if (!value) return;
+        
+        // Kiểm tra xem đã trigger cho flag này chưa
+        if (triggeredFlags.Contains(flagName)) return;
+        
+        // Tìm conditional dialogue có triggerOnFlagSet khớp với flag vừa được set
+        if (conditionalDialogues == null || conditionalDialogues.Length == 0) return;
+        
+        foreach (var entry in conditionalDialogues)
+        {
+            if (!string.IsNullOrEmpty(entry.triggerOnFlagSet) && 
+                string.Equals(entry.triggerOnFlagSet, flagName, System.StringComparison.OrdinalIgnoreCase) &&
+                entry.dialogueData != null && 
+                entry.CanUse())
+            {
+                Debug.Log($"[NPCInteraction] {npcName}: Flag '{flagName}' set, triggering dialogue '{entry.dialogueData.conversationName}'");
+                
+                // Đánh dấu đã trigger cho flag này
+                triggeredFlags.Add(flagName);
+                
+                // Trigger sau delay
+                if (entry.autoTriggerDelay > 0)
+                {
+                    StartCoroutine(FlagTriggerDialogueCoroutine(entry, flagName));
+                }
+                else
+                {
+                    TriggerAutoDialogue(entry);
+                }
+                break;
+            }
+        }
+    }
+    
+    private System.Collections.IEnumerator FlagTriggerDialogueCoroutine(ConditionalDialogueEntry entry, string flagName)
+    {
+        yield return new WaitForSeconds(entry.autoTriggerDelay);
+        
+        // Kiểm tra lại điều kiện sau delay
+        if (entry.CanUse() && !isTalking)
+        {
+            TriggerAutoDialogue(entry);
+        }
+        else
+        {
+            // Nếu không trigger được, cho phép trigger lại sau
+            triggeredFlags.Remove(flagName);
+        }
     }
     
     /// <summary>
@@ -172,12 +264,21 @@ public class NPCInteraction : MonoBehaviour
     /// </summary>
     private void TriggerAutoDialogue(ConditionalDialogueEntry entry)
     {
+        TriggerAutoDialogue(entry, null);
+    }
+
+    /// <summary>
+    /// Trigger dialogue tự động với callback tùy chọn
+    /// </summary>
+    private void TriggerAutoDialogue(ConditionalDialogueEntry entry, System.Action externalCallback)
+    {
         if (dialogueSystem == null || entry.dialogueData == null) return;
         
         Debug.Log($"[NPCInteraction] {npcName}: Auto triggering dialogue '{entry.dialogueData.conversationName}'");
         
         isTalking = true;
         currentConditionalDialogue = entry;
+        externalDialogueCallback = externalCallback;
         
         // Ẩn UI tên
         if (nameUI != null)
@@ -197,6 +298,65 @@ public class NPCInteraction : MonoBehaviour
         
         // Bắt đầu dialogue
         dialogueSystem.StartDialogueWithChoices(entry.dialogueData, OnDialogueEnd, OnDialogueAction);
+    }
+
+    // Callback từ bên ngoài (NPCSurroundPlayer)
+    private System.Action externalDialogueCallback = null;
+
+    /// <summary>
+    /// Trigger dialogue từ bên ngoài (VD: NPCSurroundPlayer gọi sau khi surround xong)
+    /// Sẽ tìm conditional dialogue phù hợp với flags hiện tại
+    /// </summary>
+    /// <param name="onComplete">Callback khi dialogue kết thúc</param>
+    public void TriggerDialogueFromExternal(System.Action onComplete = null)
+    {
+        if (dialogueSystem == null)
+        {
+            Debug.LogError($"[NPCInteraction] {npcName}: DialogueSystem not found!");
+            onComplete?.Invoke();
+            return;
+        }
+
+        if (isTalking)
+        {
+            Debug.LogWarning($"[NPCInteraction] {npcName}: Already talking, skipping external trigger");
+            onComplete?.Invoke();
+            return;
+        }
+
+        // Tìm dialogue phù hợp
+        DialogueData activeDialogue = GetActiveDialogue();
+        
+        if (activeDialogue == null)
+        {
+            Debug.LogWarning($"[NPCInteraction] {npcName}: No matching dialogue found for external trigger");
+            onComplete?.Invoke();
+            return;
+        }
+
+        Debug.Log($"[NPCInteraction] {npcName}: External trigger dialogue '{activeDialogue.conversationName}'");
+        
+        isTalking = true;
+        externalDialogueCallback = onComplete;
+        
+        // Ẩn UI tên
+        if (nameUI != null)
+        {
+            nameUI.SetActive(false);
+        }
+        
+        // Player đã bị khóa bởi NPCSurroundPlayer, không cần khóa lại
+        
+        // Bắt đầu dialogue
+        if (useAvatarMode)
+        {
+            var (avatarMap, flipMap) = BuildAvatarMaps();
+            dialogueSystem.StartDialogueWithAvatars(activeDialogue, avatarMap, flipMap, false, OnDialogueEnd, OnDialogueAction);
+        }
+        else
+        {
+            dialogueSystem.StartDialogueWithChoices(activeDialogue, OnDialogueEnd, OnDialogueAction);
+        }
     }
 
     private void Update()
@@ -264,11 +424,15 @@ public class NPCInteraction : MonoBehaviour
         // Quay mặt về phía player
         FacePlayer();
 
-        // Thông báo cho player dừng di chuyển
-        PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
-        if (playerMovement != null)
+        // Thông báo cho player dừng di chuyển (nếu không dùng avatar mode)
+        // Avatar mode sẽ tự lock player
+        if (!useAvatarMode)
         {
-            playerMovement.SetTalkingState(true);
+            PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                playerMovement.SetTalkingState(true);
+            }
         }
 
         // Bắt đầu hội thoại - chọn mode phù hợp
@@ -279,8 +443,18 @@ public class NPCInteraction : MonoBehaviour
 
             if (activeDialogue != null)
             {
-                // Sử dụng dialogue với choices
-                dialogueSystem.StartDialogueWithChoices(activeDialogue, OnDialogueEnd, OnDialogueAction);
+                // Kiểm tra có dùng avatar mode không
+                if (useAvatarMode)
+                {
+                    // Tạo avatar map và flip map từ avatarEntries
+                    var (avatarMap, flipMap) = BuildAvatarMaps();
+                    dialogueSystem.StartDialogueWithAvatars(activeDialogue, avatarMap, flipMap, true, OnDialogueEnd, OnDialogueAction);
+                }
+                else
+                {
+                    // Sử dụng dialogue với choices (không có avatar)
+                    dialogueSystem.StartDialogueWithChoices(activeDialogue, OnDialogueEnd, OnDialogueAction);
+                }
             }
             else
             {
@@ -294,6 +468,30 @@ public class NPCInteraction : MonoBehaviour
             // Sử dụng dialogue đơn giản (legacy)
             dialogueSystem.StartDialogue(npcName, dialogueLines, OnDialogueEnd);
         }
+    }
+
+    /// <summary>
+    /// Tạo Dictionary avatar và flip map từ avatarEntries
+    /// </summary>
+    private (Dictionary<string, Sprite> avatarMap, Dictionary<string, bool> flipMap) BuildAvatarMaps()
+    {
+        Dictionary<string, Sprite> avatarMap = new Dictionary<string, Sprite>();
+        Dictionary<string, bool> flipMap = new Dictionary<string, bool>();
+        
+        if (avatarEntries != null)
+        {
+            foreach (var entry in avatarEntries)
+            {
+                if (!string.IsNullOrEmpty(entry.speakerName) && entry.avatarSprite != null)
+                {
+                    avatarMap[entry.speakerName] = entry.avatarSprite;
+                    flipMap[entry.speakerName] = entry.flipHorizontal;
+                }
+            }
+        }
+        
+        Debug.Log($"[NPCInteraction] {npcName}: Built avatar map with {avatarMap.Count} entries");
+        return (avatarMap, flipMap);
     }
 
     /// <summary>
@@ -369,9 +567,31 @@ public class NPCInteraction : MonoBehaviour
                 // Ví dụ: bắt đầu quest
                 Debug.Log("Action: Start quest");
                 break;
+            case "trigger_beat_cutscene":
+                // Trigger cutscene bullies đánh player
+                TriggerBeatCutscene();
+                break;
             default:
                 Debug.Log($"Unknown action: {actionId}");
                 break;
+        }
+    }
+
+    /// <summary>
+    /// Trigger cutscene bullies đánh player
+    /// Tìm BullyBeatCutscene trong scene và chạy
+    /// </summary>
+    private void TriggerBeatCutscene()
+    {
+        BullyBeatCutscene cutscene = FindFirstObjectByType<BullyBeatCutscene>();
+        if (cutscene != null)
+        {
+            Debug.Log($"[NPCInteraction] {npcName}: Triggering BullyBeatCutscene");
+            cutscene.StartBeatCutscene();
+        }
+        else
+        {
+            Debug.LogWarning($"[NPCInteraction] {npcName}: BullyBeatCutscene not found in scene!");
         }
     }
 
@@ -437,8 +657,10 @@ public class NPCInteraction : MonoBehaviour
             currentConditionalDialogue = null;
         }
 
-        // Cho phép player di chuyển lại
-        if (player != null)
+        // Cho phép player di chuyển lại (nếu không dùng avatar mode VÀ không có external callback)
+        // Avatar mode sẽ tự unlock player trong DialogueSystem.EndDialogue()
+        // External callback (từ NPCSurroundPlayer) sẽ tự unlock player
+        if (!useAvatarMode && externalDialogueCallback == null && player != null)
         {
             PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
             if (playerMovement != null)
@@ -481,6 +703,14 @@ public class NPCInteraction : MonoBehaviour
         if (interactionIndicator != null)
         {
             interactionIndicator.OnInteracted();
+        }
+
+        // Gọi external callback nếu có (từ NPCSurroundPlayer)
+        if (externalDialogueCallback != null)
+        {
+            var callback = externalDialogueCallback;
+            externalDialogueCallback = null;
+            callback.Invoke();
         }
     }
 

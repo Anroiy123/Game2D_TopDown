@@ -274,6 +274,8 @@ OnDialogueEnd() → SetTalkingState(false) → Player di chuyển lại
 
 ### 📝 CÚ PHÁP JSON CHI TIẾT
 
+> ⚠️ **QUAN TRỌNG**: Các field name trong JSON phải CHÍNH XÁC như bên dưới. Sai tên field sẽ khiến import thất bại hoặc data bị mất!
+
 #### **JSON Cơ bản:**
 
 ```json
@@ -346,7 +348,25 @@ OnDialogueEnd() → SetTalkingState(false) → Player di chuyển lại
 }
 ```
 
+#### **Node với setFlags và varChanges (khi vào node):**
+
+```json
+{
+  "id": 100,
+  "speaker": "Thủ lĩnh",
+  "isPlayer": false,
+  "lines": ["Tốt lắm, mày biết điều đấy!"],
+  "next": -1,
+  "setFlags": ["day2_scene20_completed", "gave_money_to_bullies"],
+  "varChanges": [
+    { "name": "fear_level", "op": "add", "value": 25 }
+  ]
+}
+```
+
 ### 🔑 BẢNG TRA CỨU FIELDS
+
+> ⚠️ **LƯU Ý QUAN TRỌNG**: Tên field trong JSON phải CHÍNH XÁC. Dùng sai tên sẽ không import được!
 
 #### **Root Level:**
 
@@ -371,17 +391,19 @@ OnDialogueEnd() → SetTalkingState(false) → Player di chuyển lại
 
 #### **Choice Fields:**
 
-| Field           | Type     | Bắt buộc | Mô tả                |
-| --------------- | -------- | -------- | -------------------- |
-| `text`          | string   | ✅       | Text hiển thị        |
-| `next`          | int      | ✅       | Node tiếp theo       |
-| `action`        | string   | ❌       | Action ID (callback) |
-| `requireFlags`  | string[] | ❌       | Flags CẦN có         |
-| `forbidFlags`   | string[] | ❌       | Flags KHÔNG được có  |
-| `setTrue`       | string[] | ❌       | Set flags TRUE       |
-| `setFalse`      | string[] | ❌       | Set flags FALSE      |
-| `varConditions` | array    | ❌       | Điều kiện biến       |
-| `varChanges`    | array    | ❌       | Thay đổi biến        |
+| Field           | Type     | Bắt buộc | Mô tả                         |
+| --------------- | -------- | -------- | ----------------------------- |
+| `text`          | string   | ✅       | Text hiển thị                 |
+| `next`          | int      | ✅       | Node tiếp theo                |
+| `action`        | string   | ❌       | Action ID (callback)          |
+| `vnScene`       | string   | ❌       | Path đến VNSceneData asset    |
+| `endVNMode`     | bool     | ❌       | Kết thúc VN mode sau choice   |
+| `requireFlags`  | string[] | ❌       | Flags CẦN có để hiện choice   |
+| `forbidFlags`   | string[] | ❌       | Flags KHÔNG được có           |
+| `setTrue`       | string[] | ❌       | Set flags TRUE khi chọn       |
+| `setFalse`      | string[] | ❌       | Set flags FALSE khi chọn      |
+| `varConditions` | array    | ❌       | Điều kiện biến để hiện choice |
+| `varChanges`    | array    | ❌       | Thay đổi biến khi chọn        |
 
 #### **Variable Condition:**
 
@@ -406,6 +428,21 @@ OnDialogueEnd() → SetTalkingState(false) → Player di chuyển lại
 | `name`  | string              | Tên biến                 |
 | `op`    | `set`, `add`, `sub` | Phép toán (gán/cộng/trừ) |
 | `value` | int                 | Giá trị thay đổi         |
+
+### ❌ LỖI THƯỜNG GẶP KHI VIẾT JSON
+
+| Sai ❌ | Đúng ✅ | Giải thích |
+|--------|---------|------------|
+| `"nextId": 10` | `"next": 10` | Field trong choice là `next`, không phải `nextId` |
+| `"nextNodeId": 10` | `"next": 10` | Tương tự, dùng `next` |
+| `"setFlags": [...]` (trong choice) | `"setTrue": [...]` | Trong choice dùng `setTrue`/`setFalse` |
+| `"variableName": "money"` | `"name": "money"` | Dùng `name` thay vì `variableName` |
+| `"operation": "Subtract"` | `"op": "sub"` | Dùng `op` với giá trị `set`/`add`/`sub` |
+| `"operation": "Add"` | `"op": "add"` | Tương tự |
+| `"requiredFlags": [...]` | `"requireFlags": [...]` | Không có "d" ở cuối |
+| `"forbiddenFlags": [...]` | `"forbidFlags": [...]` | Viết tắt |
+| `"variableChanges": [...]` | `"varChanges": [...]` | Viết tắt |
+| `"variableConditions": [...]` | `"varConditions": [...]` | Viết tắt |
 
 ### 🚀 WORKFLOW GỢI Ý
 

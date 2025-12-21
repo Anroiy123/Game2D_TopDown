@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Day2_Scene20_Bully_RanAway_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Day2_Scene20_Bully_RanAway
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\u1EE9c c\u1ED1 g\u1EAFng b\u1ECF ch\u1EA1y nh\u01B0ng b\u1ECB \u0111\xE0n
+      em ch\u1EB7n l\u1EA1i..."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "\u0110\xE0n em"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\xCA, \u0111\u1EE9ng l\u1EA1i th\u1EB1ng ranh con!"
+    - "Sao c\u1EE9 g\u1EB7p t\u1EE5i tao l\xE0 m\xE0y ch\u1EA1y th\u1EBF, bi\u1EBFt
+      t\xF4n tr\u1ECDng ng\u01B0\u1EDDi kh\xE1c kh\xF4ng h\u1EA3?"
+    - "M\xE0y c\xF3 bi\u1EBFt ai l\xE0 tr\xF9m khu n\xE0y kh\xF4ng, g\u1EB7p anh
+      tao m\xE0 ch\u01B0a ch\xE0o \xE0."
+    - "Ch\xE0o anh L c\u1EE7a tao ngay!"
+    choices: []
+    nextNodeId: 20
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "D-d\u1EA1, em ch\xE0o anh L..."
+    choices: []
+    nextNodeId: 30
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 30
+    speakerName: "Th\u1EE7 l\u0129nh"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "T\u1ED1t \u0111\u1EA5y, hi\u1EC3u chuy\u1EC7n nhanh th\u1EBF l\xE0 t\u1ED1t."
+    - "N\xF3i cho m\xE0y bi\u1EBFt lu\xF4n, tao bi\u1EBFt m\xE0y l\xE0 th\u1EB1ng
+      h\u1ECDc sinh m\u1EDBi chuy\u1EC3n \u0111\u1EBFn \u0111\xE2y."
+    - "Nh\xECn m\u1EB7t m\xE0y l\u1EA1 l\u1EAFm, t\u1EE5i tao quan s\xE1t m\xE0y
+      1 tu\u1EA7n r\u1ED3i v\xE0 c\xF3 v\u1EBB m\xE0y kh\xF4ng c\xF3 \u0111\u1EE9a
+      b\u1EA1n n\xE0o nh\u1EC9."
+    - "V\u1EADy th\xEC t\u1ED1t, kh\xF4ng ai l\xE0m phi\u1EC1n gi\u1EEFa anh em tao
+      v\xE0 m\xE0y \u0111\u01B0\u1EE3c."
+    - "Bi\u1EBFt \u0111i\u1EC1u th\xEC m\xF3c h\u1EBFt ti\u1EC1n trong t\xFAi m\xE0y
+      ra cho t\u1EE5i tao c\xF2n kh\xF4ng th\xEC m\xE0y ch\u1EAFc c\u0169ng hi\u1EC3u
+      r\u1ED3i ch\u1EE9."
+    choices:
+    - choiceText: "\u01A0 nh\u01B0ng..."
+      nextNodeId: 100
+      actionId: trigger_beat_cutscene
+      nextVNScene: {fileID: 0}
+      endVNMode: 0
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - refused_money_got_beaten
+      - questioned_bullies_got_beaten
+      - got_beaten
+      setFlagsFalse: []
+      variableChanges: []
+    - choiceText: "\u0110\u01B0a ti\u1EC1n"
+      nextNodeId: 200
+      actionId: 
+      nextVNScene: {fileID: 0}
+      endVNMode: 0
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - gave_money_to_bullies
+      - choice_gave_money_day2
+      setFlagsFalse: []
+      variableChanges:
+      - variableName: money
+        operation: 2
+        value: 500000
+      - variableName: gave_money_count
+        operation: 1
+        value: 1
+    nextNodeId: -1
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 100
+    speakerName: "Th\u1EE7 l\u0129nh"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Tao th\u1EA5t v\u1ECDng v\u1EC1 m\xE0y qu\xE1, tao t\u01B0\u1EDFng m\xE0y
+      th\xF4ng minh l\u1EAFm, nh\u01B0ng c\xF3 v\u1EBB l\xE0 kh\xF4ng r\u1ED3i."
+    - "Anh em \u0111\xE2u, gi\u1EEF n\xF3 l\u1EA1i cho tao!"
+    choices: []
+    nextNodeId: 110
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 110
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "B\u1EE5p! B\u1EE5p! B\u1EE5p!"
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - day2_scene20_completed
+    - got_beaten
+    - questioned_bullies_got_beaten
+    variableChangesOnEnter:
+    - variableName: fear_level
+      operation: 1
+      value: 25
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 200
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "D\u1EA1, \u0111\xE2y \u1EA1, em \u0111\u01B0a h\u1EBFt r\u1ED3i \u1EA1, m\u1EA5y
+      anh th\u1EA3 em ra \u0111i..."
+    choices: []
+    nextNodeId: 210
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 210
+    speakerName: "Th\u1EE7 l\u0129nh"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "T\u1ED1t, r\u1ED3i m\xE0y v\u1EC1 \u0111\u01B0\u1EE3c r\u1ED3i."
+    choices: []
+    nextNodeId: 220
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 220
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\u1EE9c ch\u1EA1y v\u1ED9i v\u1EC1 nh\xE0..."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - day2_scene20_completed
+    - gave_money_to_bullies
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

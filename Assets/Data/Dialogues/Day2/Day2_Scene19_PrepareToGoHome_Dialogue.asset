@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Day2_Scene19_PrepareToGoHome_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Day2_Scene19_PrepareToGoHome
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "T\xF9ng t\xF9ng t\xF9ng..."
+    - "Ti\u1EBFng tr\u1ED1ng tr\u01B0\u1EDDng vang l\xEAn b\xE1o hi\u1EC7u h\u1EBFt
+      gi\u1EDD h\u1ECDc."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(Haizz, h\u1ECDc h\xE0nh ch\xE1n th\u1EADt, m\xE3i m\u1EDBi \u0111\u01B0\u1EE3c
+      v\u1EC1...)"
+    - "(L\u1EA1i ph\u1EA3i v\u1EC1 l\u1EB9 \u0111\u1EC3 c\xE0y nhi\u1EC7m v\u1EE5
+      ti\u1EBFp th\xF4i...)"
+    - "(\xC0 mong h\xF4m nay kh\xF4ng g\u1EB7p l\u0169 kia n\u1EEFa, ngh\u0129 t\u1EDBi
+      t\u1EE5i n\xF3 m\u1EC7t m\u1ECFi th\u1EADt...)"
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - day2_scene19_completed
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

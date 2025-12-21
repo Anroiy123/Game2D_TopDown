@@ -1,0 +1,29 @@
+{
+  "_comment": "Day 2 - Scene 21: Về nhà sau khi bị xin tiền/đánh - Mẹ hỏi thăm",
+  "conversationName": "Day2_Scene21_Home_Mom",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Ơ hay nhỉ, thằng này hôm nay đi về không thèm thưa ai à."
+      ],
+      "next": 10,
+      "requiredFlags": ["got_beaten"]
+    },
+    {
+      "id": 10,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Chắc gặp chuyện gì không vui rồi.",
+        "Thôi kệ nó, mai nhắc nó là được.",
+        "Vô làm nốt việc tí còn đi nấu cơm."
+      ],
+      "next": -1,
+      "setFlags": ["day2_scene21_completed", "mom_noticed_something_wrong"]
+    }
+  ]
+}

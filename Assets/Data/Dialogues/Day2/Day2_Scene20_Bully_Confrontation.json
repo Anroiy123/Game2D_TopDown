@@ -1,0 +1,128 @@
+{
+  "_comment": "Day 2 - Scene 20: Bully dialogue when player chose to confront - requires choice_confronted_day2 flag",
+  "conversationName": "Day2_Scene20_Bully_Confrontation",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Này ông bạn, nay ông đi học có vui không?"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "À thì..."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "À thôi bỏ qua chuyện đó đi, tôi có chuyện quan trọng hơn muốn nói với ông này.",
+        "Hôm qua tôi với ông đã trở thành bạn với nhau rồi đúng không, nếu là bạn thì đương nhiên phải giúp đỡ nhau rồi đúng không?",
+        "Chả là dạo này tôi gặp nhiều chuyện tốn tiền quá, giờ trong túi tôi hết sạch rồi.",
+        "Ông có thể cho tôi mượn 500k để xoay sở được không nhỉ?"
+      ],
+      "choices": [
+        {
+          "text": "Đồng ý đưa tiền",
+          "next": 100,
+          "setTrue": ["gave_money_to_bullies"],
+          "varChanges": [
+            { "name": "money", "op": "sub", "value": 500000 },
+            { "name": "gave_money_count", "op": "add", "value": 1 }
+          ]
+        },
+        {
+          "text": "Từ chối",
+          "next": 200
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Ồ, tốt đấy, tôi biết ông là một người hiểu chuyện.",
+        "Vì bạn bè mà, tôi đang vui lắm đấy ông biết không.",
+        "Thôi cũng trễ rồi ông về đi, hôm khác chúng ta lại gặp lại."
+      ],
+      "next": -1,
+      "setFlags": ["day2_scene20_completed"]
+    },
+    {
+      "id": 200,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Này ông ơi, đừng keo kiệt thế, chúng ta là bạn mà.",
+        "Mà đã là bạn thì phải giúp đỡ nhau mọi lúc khi họ cần chứ.",
+        "Đã thế tôi còn là người bạn đầu tiên của ông ở đây nữa, ông phải biết trân trọng tình bạn của chúng ta chứ.",
+        "Tôi thì đang khó, thì bây giờ ông giúp tôi đi sau này tôi giúp lại ông.",
+        "Tôi biết ông không keo kiệt đến như vậy đâu đúng không bạn hiền."
+      ],
+      "choices": [
+        {
+          "text": "Vẫn từ chối",
+          "next": 210
+        },
+        {
+          "text": "Thôi được, đưa tiền",
+          "next": 220,
+          "setTrue": ["gave_money_to_bullies"],
+          "varChanges": [
+            { "name": "money", "op": "sub", "value": 500000 },
+            { "name": "gave_money_count", "op": "add", "value": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Haizz, tôi đã nói đến thế rồi ông còn không đồng ý.",
+        "Ông biết tôi buồn lắm không, tôi bị tổn thương rồi này.",
+        "Nếu đã vậy thì không còn cách nào khác rồi nhỉ.",
+        "Anh em, giữ nó lại cho tao."
+      ],
+      "next": 211
+    },
+    {
+      "id": 211,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Cả đám bu lại Đức...",
+        "Bụp! Bụp! Bụp!"
+      ],
+      "next": -1,
+      "setFlags": ["day2_scene20_completed", "got_beaten", "refused_money_got_beaten"],
+      "varChanges": [
+        { "name": "fear_level", "op": "add", "value": 25 }
+      ]
+    },
+    {
+      "id": 220,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Ồ, tốt đấy, tôi biết ông là một người hiểu chuyện.",
+        "Vì bạn bè mà, tôi đang vui lắm đấy ông biết không.",
+        "Thôi cũng trễ rồi ông về đi, hôm khác chúng ta lại gặp lại."
+      ],
+      "next": -1,
+      "setFlags": ["day2_scene20_completed"]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: Day2_Scene20_PlayerThought_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: Day2_Scene20_PlayerThought
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(T\u1EE5i n\xF3 l\u1EA1i \u0111\u1EE9ng ch\u1EDD m\xECnh \u1EDF kia n\u1EEFa
+      r\u1ED3i...)"
+    - "(M\xECnh ph\u1EA3i l\xE0m g\xEC \u0111\xE2y?)"
+    choices:
+    - choiceText: "\u0110\u1ED1i m\u1EB7t v\u1EDBi t\u1EE5i n\xF3"
+      nextNodeId: 10
+      actionId: 
+      nextVNScene: {fileID: 0}
+      endVNMode: 0
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - choice_confronted_day2
+      - player_decided_action
+      setFlagsFalse: []
+      variableChanges: []
+    - choiceText: "C\u1ED1 g\u1EAFng b\u1ECF ch\u1EA1y"
+      nextNodeId: 20
+      actionId: 
+      nextVNScene: {fileID: 0}
+      endVNMode: 0
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - choice_ran_away_day2
+      - player_decided_action
+      setFlagsFalse: []
+      variableChanges:
+      - variableName: escaped_count
+        operation: 1
+        value: 1
+    nextNodeId: -1
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(Th\xF4i \u0111\u01B0\u1EE3c r\u1ED3i, m\xECnh s\u1EBD \u0111\u1ED1i m\u1EB7t
+      v\u1EDBi t\u1EE5i n\xF3...)"
+    - "(Hy v\u1ECDng kh\xF4ng c\xF3 chuy\u1EC7n g\xEC x\u1EA3y ra...)"
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(Kh\xF4ng \u0111\u01B0\u1EE3c, m\xECnh ph\u1EA3i ch\u1EA1y th\xF4i!)"
+    - "(Ch\u1EA1y nhanh l\xEAn...!)"
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

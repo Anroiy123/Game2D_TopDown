@@ -1,0 +1,51 @@
+{
+  "_comment": "Day 2 - Scene 20: Player's inner thoughts when seeing bullies - triggers on scene start",
+  "conversationName": "Day2_Scene20_PlayerThought",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Tụi nó lại đứng chờ mình ở kia nữa rồi...)",
+        "(Mình phải làm gì đây?)"
+      ],
+      "choices": [
+        {
+          "text": "Đối mặt với tụi nó",
+          "next": 10,
+          "setTrue": ["choice_confronted_day2", "player_decided_action"]
+        },
+        {
+          "text": "Cố gắng bỏ chạy",
+          "next": 20,
+          "setTrue": ["choice_ran_away_day2", "player_decided_action"],
+          "varChanges": [
+            { "name": "escaped_count", "op": "add", "value": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Thôi được rồi, mình sẽ đối mặt với tụi nó...)",
+        "(Hy vọng không có chuyện gì xảy ra...)"
+      ],
+      "next": -1
+    },
+    {
+      "id": 20,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Không được, mình phải chạy thôi!)",
+        "(Chạy nhanh lên...!)"
+      ],
+      "next": -1
+    }
+  ]
+}

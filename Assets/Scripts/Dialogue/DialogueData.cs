@@ -320,10 +320,13 @@ public class ConditionalDialogueEntry
     [Tooltip("Tự động trigger dialogue khi scene bắt đầu (không cần player đến gần)")]
     public bool triggerOnSceneStart = false;
 
-    [Tooltip("Delay trước khi auto trigger (giây). Chỉ dùng khi triggerOnSceneStart = true")]
+    [Tooltip("Tự động trigger dialogue khi flag này được set TRUE")]
+    public string triggerOnFlagSet = "";
+
+    [Tooltip("Delay trước khi auto trigger (giây). Dùng cho cả triggerOnSceneStart và triggerOnFlagSet")]
     public float autoTriggerDelay = 0.5f;
 
-    [Tooltip("Spawn Point ID cụ thể để trigger (để trống = trigger bất kể spawn point nào)")]
+    [Tooltip("Spawn Point ID cụ thể để trigger (để trống = trigger bất kể spawn point nào). Chỉ dùng với triggerOnSceneStart")]
     public string requiredSpawnPointId = "";
 
     [Header("Scene Conditions")]
@@ -358,14 +361,11 @@ public class ConditionalDialogueEntry
     public bool CanUse()
     {
         string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        string dialogueName = dialogueData != null ? dialogueData.conversationName : "NULL";
 
         // Check scene condition
         if (allowedScenes != null && allowedScenes.Length > 0)
         {
             bool sceneMatch = false;
-            string allowedScenesStr = string.Join(", ", allowedScenes);
-
             foreach (string scene in allowedScenes)
             {
                 if (string.Equals(scene, currentScene, StringComparison.OrdinalIgnoreCase))
@@ -374,51 +374,27 @@ public class ConditionalDialogueEntry
                     break;
                 }
             }
-
-            if (!sceneMatch)
-            {
-                Debug.Log($"[ConditionalDialogue] '{dialogueName}' REJECTED: Scene '{currentScene}' not in allowedScenes [{allowedScenesStr}]");
-                return false;
-            }
-            Debug.Log($"[ConditionalDialogue] '{dialogueName}' scene check PASSED: '{currentScene}' is in [{allowedScenesStr}]");
-        }
-        else
-        {
-            Debug.LogWarning($"[ConditionalDialogue] '{dialogueName}' has NO allowedScenes set - will match ANY scene! Current: '{currentScene}'");
+            if (!sceneMatch) return false;
         }
 
         // Check story flags
         if (StoryManager.Instance != null)
         {
-            // Check required flags
             if (!StoryManager.Instance.CheckRequiredFlags(requiredFlags))
-            {
-                Debug.Log($"[ConditionalDialogue] '{dialogueName}' REJECTED: Required flags not met");
                 return false;
-            }
 
-            // Check forbidden flags
             if (!StoryManager.Instance.CheckForbiddenFlags(forbiddenFlags))
-            {
-                Debug.Log($"[ConditionalDialogue] '{dialogueName}' REJECTED: Has forbidden flags");
                 return false;
-            }
 
-            // Check variable conditions
             if (variableConditions != null)
             {
                 foreach (var condition in variableConditions)
                 {
-                    if (!condition.IsMet())
-                    {
-                        Debug.Log($"[ConditionalDialogue] '{dialogueName}' REJECTED: Variable condition '{condition.variableName}' not met");
-                        return false;
-                    }
+                    if (!condition.IsMet()) return false;
                 }
             }
         }
 
-        Debug.Log($"[ConditionalDialogue] '{dialogueName}' ACCEPTED - all conditions met!");
         return true;
     }
 

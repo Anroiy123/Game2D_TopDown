@@ -15,8 +15,12 @@ public class NPCSurroundController : MonoBehaviour
     public float moveSpeed = 5f;
     public float delayBetweenNPCs = 0.2f;
 
-    [Header("Next Scene")]
+    [Header("Next Scene/Dialogue")]
+    [Tooltip("VN Scene sẽ được chạy sau khi vây quanh xong (ưu tiên cao hơn nextDialogueNPC)")]
     public VNSceneData nextVNScene;
+
+    [Tooltip("NPC sẽ trigger dialogue sau khi vây quanh xong (dùng khi nextVNScene = null)")]
+    public NPCInteraction nextDialogueNPC;
 
     [Header("Trigger Settings")]
     public bool triggerOnce = true;
@@ -108,8 +112,9 @@ public class NPCSurroundController : MonoBehaviour
         surroundPlayer.SetMoveSpeed(moveSpeed);
         surroundPlayer.SetDelay(delayBetweenNPCs);
         surroundPlayer.SetNextVNScene(nextVNScene);
+        surroundPlayer.SetNextDialogueNPC(nextDialogueNPC);
 
-        Debug.Log($"[NPCSurroundController] Setup done: {npcBullies?.Length ?? 0} NPCs");
+        Debug.Log($"[NPCSurroundController] Setup done: {npcBullies?.Length ?? 0} NPCs, VNScene={nextVNScene?.name ?? "null"}, DialogueNPC={nextDialogueNPC?.name ?? "null"}");
     }
 
     [ContextMenu("Start Surrounding")]

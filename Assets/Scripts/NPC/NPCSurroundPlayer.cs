@@ -31,12 +31,15 @@ public class NPCSurroundPlayer : MonoBehaviour
     [Tooltip("Có sử dụng flipX cho hướng trái/phải không")]
     [SerializeField] private bool useFlipX = true;
 
-    [Header("Next Scene")]
-    [Tooltip("VN Scene sẽ được chạy sau khi vây quanh xong")]
+    [Header("Next Scene/Dialogue")]
+    [Tooltip("VN Scene sẽ được chạy sau khi vây quanh xong (ưu tiên cao hơn nextDialogueNPC)")]
     [SerializeField] private VNSceneData nextVNScene;
 
-    [Tooltip("Delay trước khi chạy VN scene")]
-    [SerializeField] private float vnSceneDelay = 0.5f;
+    [Tooltip("NPC sẽ trigger dialogue sau khi vây quanh xong (dùng khi nextVNScene = null)")]
+    [SerializeField] private NPCInteraction nextDialogueNPC;
+
+    [Tooltip("Delay trước khi chạy VN scene hoặc dialogue")]
+    [SerializeField] private float nextSceneDelay = 0.5f;
 
     private Transform player;
     private PlayerMovement playerMovement;
@@ -56,6 +59,7 @@ public class NPCSurroundPlayer : MonoBehaviour
     public void SetMoveSpeed(float s) => moveSpeed = s;
     public void SetDelay(float d) => delayBetweenNPCs = d;
     public void SetNextVNScene(VNSceneData scene) => nextVNScene = scene;
+    public void SetNextDialogueNPC(NPCInteraction npc) => nextDialogueNPC = npc;
 
     private void OnEnable()
     {
@@ -172,21 +176,32 @@ public class NPCSurroundPlayer : MonoBehaviour
 
         Debug.Log("[NPCSurroundPlayer] ✓ Đã vây quanh xong!");
 
-        // Chạy VN scene nếu có
+        // Chạy VN scene hoặc dialogue NPC nếu có
         if (nextVNScene != null)
         {
-            Debug.Log($"[NPCSurroundPlayer] Chuẩn bị trigger VN scene: {nextVNScene.name} (delay {vnSceneDelay}s)");
-            yield return new WaitForSeconds(vnSceneDelay);
+            // Ưu tiên VN Scene
+            Debug.Log($"[NPCSurroundPlayer] Chuẩn bị trigger VN scene: {nextVNScene.name} (delay {nextSceneDelay}s)");
+            yield return new WaitForSeconds(nextSceneDelay);
 
             // QUAN TRỌNG: Callback UnlockPlayer sẽ được gọi KHI VN SCENE HOÀN TẤT
             // Player sẽ bị khóa cho đến khi người chơi xem xong VN scene
             Debug.Log($"[NPCSurroundPlayer] → Triggering VN scene: {nextVNScene.name}");
             VisualNovelManager.Instance.StartVNScene(nextVNScene, OnVNSceneComplete);
         }
+        else if (nextDialogueNPC != null)
+        {
+            // Trigger dialogue của NPC
+            Debug.Log($"[NPCSurroundPlayer] Chuẩn bị trigger dialogue của NPC: {nextDialogueNPC.name} (delay {nextSceneDelay}s)");
+            yield return new WaitForSeconds(nextSceneDelay);
+
+            Debug.Log($"[NPCSurroundPlayer] → Triggering NPC dialogue: {nextDialogueNPC.name}");
+            // Gọi method TriggerDialogueFromExternal để trigger dialogue
+            nextDialogueNPC.TriggerDialogueFromExternal(OnDialogueComplete);
+        }
         else
         {
-            Debug.LogWarning("[NPCSurroundPlayer] ✗ nextVNScene is NULL! Player sẽ được unlock ngay.");
-            // Không có VN scene -> unlock player ngay
+            Debug.LogWarning("[NPCSurroundPlayer] ✗ Không có nextVNScene hoặc nextDialogueNPC! Player sẽ được unlock ngay.");
+            // Không có gì -> unlock player ngay
             UnlockPlayer();
         }
 
@@ -199,6 +214,15 @@ public class NPCSurroundPlayer : MonoBehaviour
     private void OnVNSceneComplete()
     {
         Debug.Log("[NPCSurroundPlayer] VN scene hoàn tất, unlock player");
+        UnlockPlayer();
+    }
+
+    /// <summary>
+    /// Callback khi dialogue hoàn tất - Unlock player
+    /// </summary>
+    private void OnDialogueComplete()
+    {
+        Debug.Log("[NPCSurroundPlayer] Dialogue hoàn tất, unlock player");
         UnlockPlayer();
     }
 

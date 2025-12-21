@@ -19,6 +19,18 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private GameObject choiceButtonPrefab; // Prefab cho mỗi nút lựa chọn
     [SerializeField] private Transform choiceContainer; // Container để spawn các nút
 
+    [Header("Avatar Display (Top-Down Mode)")]
+    [Tooltip("Container cho avatar - hiển thị bên trái dialogue panel")]
+    [SerializeField] private GameObject avatarContainer;
+    [Tooltip("Image hiển thị avatar của speaker hiện tại")]
+    [SerializeField] private Image avatarImage;
+    [Tooltip("Vị trí avatar (Left/Right)")]
+    [SerializeField] private AvatarPosition avatarPosition = AvatarPosition.Right;
+    [Tooltip("Flip avatar theo chiều ngang (mặc định: true để nhân vật quay vào trong)")]
+    [SerializeField] private bool flipAvatarHorizontal = true;
+
+    public enum AvatarPosition { Left, Right }
+
     [Header("Settings")]
     [SerializeField] private float textSpeed = 0.05f; // Tốc độ hiện text (typewriter effect)
     [SerializeField] private KeyCode continueKey = KeyCode.E;
@@ -41,6 +53,14 @@ public class DialogueSystem : MonoBehaviour
     private Action<string> onChoiceAction; // Callback khi player chọn một action đặc biệt
     private Action<VNSceneData> onVNSceneTransition; // Callback khi chuyển sang VN scene khác
     private Action onEndVNMode; // Callback khi kết thúc VN mode
+
+    // Avatar mode variables
+    private bool isAvatarModeActive = false;
+    private Dictionary<string, Sprite> currentAvatarMap;
+    private Dictionary<string, bool> currentAvatarFlipMap; // Flip setting per speaker
+    private bool lockPlayerDuringDialogue = true;
+    private GameObject cachedPlayer;
+    private bool currentFlipSetting = true; // Default flip setting
 
     // Event khi speaker thay đổi (để VNManager có thể ẩn/hiện character)
     public event Action<string> OnSpeakerChanged;
@@ -78,6 +98,12 @@ public class DialogueSystem : MonoBehaviour
         if (choicePanel != null)
         {
             choicePanel.SetActive(false);
+        }
+
+        // Ẩn avatar container
+        if (avatarContainer != null)
+        {
+            avatarContainer.SetActive(false);
         }
     }
 
@@ -304,6 +330,253 @@ public class DialogueSystem : MonoBehaviour
         GoToNode(dialogueData.startNodeId);
     }
 
+    /// <summary>
+    /// Bắt đầu dialogue với avatar support (cho top-down mode)
+    /// Background = scene top-down hiện tại, chỉ hiển thị dialogue panel + avatar
+    /// </summary>
+    /// <param name="dialogueData">DialogueData chứa nội dung hội thoại</param>
+    /// <param name="avatarMap">Dictionary mapping speaker name → avatar sprite</param>
+    /// <param name="avatarFlipMap">Dictionary mapping speaker name → flip horizontal (null = dùng default)</param>
+    /// <param name="lockPlayer">Có khóa player movement không (default: true)</param>
+    /// <param name="onComplete">Callback khi dialogue kết thúc</param>
+    /// <param name="onAction">Callback khi có action đặc biệt</param>
+    public void StartDialogueWithAvatars(
+        DialogueData dialogueData,
+        Dictionary<string, Sprite> avatarMap,
+        Dictionary<string, bool> avatarFlipMap = null,
+        bool lockPlayer = true,
+        Action onComplete = null,
+        Action<string> onAction = null)
+    {
+        if (dialogueData == null || dialogueData.nodes == null || dialogueData.nodes.Length == 0)
+        {
+            Debug.LogError("[DialogueSystem] DialogueData is null or empty!");
+            onComplete?.Invoke();
+            return;
+        }
+
+        Debug.Log($"[DialogueSystem] Starting dialogue with avatars: {dialogueData.name}, avatars={avatarMap?.Count ?? 0}");
+
+        // Setup avatar mode
+        isAvatarModeActive = true;
+        currentAvatarMap = avatarMap;
+        currentAvatarFlipMap = avatarFlipMap;
+        lockPlayerDuringDialogue = lockPlayer;
+
+        // Lock player movement nếu cần
+        if (lockPlayer)
+        {
+            LockPlayerMovement(true);
+        }
+
+        // Setup avatar UI
+        SetupAvatarUI();
+        if (avatarContainer != null)
+        {
+            avatarContainer.SetActive(true);
+        }
+
+        // Reset legacy system
+        currentDialogueLines = null;
+        currentLineIndex = 0;
+
+        // Setup new dialogue
+        currentDialogueData = dialogueData;
+        onDialogueComplete = onComplete;
+        onChoiceAction = onAction;
+        onVNSceneTransition = null; // Không dùng VN transition trong avatar mode
+        onEndVNMode = null;
+        dialogueActive = true;
+        isShowingChoices = false;
+
+        // Hiển thị panel
+        if (dialoguePanel != null)
+        {
+            dialoguePanel.SetActive(true);
+        }
+
+        // Ẩn choice panel ban đầu
+        if (choicePanel != null)
+        {
+            choicePanel.SetActive(false);
+        }
+
+        // Bắt đầu từ node đầu tiên
+        GoToNode(dialogueData.startNodeId);
+    }
+
+    /// <summary>
+    /// Setup Avatar UI - tạo nếu chưa có
+    /// </summary>
+    private void SetupAvatarUI()
+    {
+        if (avatarContainer != null && avatarImage != null) return;
+
+        Debug.Log("[DialogueSystem] Auto-creating Avatar UI...");
+
+        // Tìm Canvas parent - ưu tiên từ dialoguePanel
+        Transform canvasParent = null;
+        if (dialoguePanel != null)
+        {
+            // Tìm Canvas trong hierarchy của dialoguePanel
+            Canvas canvas = dialoguePanel.GetComponentInParent<Canvas>();
+            if (canvas != null)
+            {
+                canvasParent = canvas.transform;
+            }
+        }
+        
+        // Fallback: tìm Canvas trong scene
+        if (canvasParent == null)
+        {
+            Canvas[] canvases = FindObjectsByType<Canvas>(FindObjectsSortMode.None);
+            foreach (var c in canvases)
+            {
+                if (c.renderMode == RenderMode.ScreenSpaceOverlay || c.renderMode == RenderMode.ScreenSpaceCamera)
+                {
+                    canvasParent = c.transform;
+                    break;
+                }
+            }
+        }
+
+        if (canvasParent == null)
+        {
+            Debug.LogError("[DialogueSystem] Cannot find Canvas for Avatar UI!");
+            return;
+        }
+
+        // Tìm hoặc tạo avatar container
+        if (avatarContainer == null)
+        {
+            avatarContainer = new GameObject("AvatarContainer");
+            avatarContainer.transform.SetParent(canvasParent, false);
+            
+            // Đặt avatar TRƯỚC dialogue panel trong hierarchy (render phía sau)
+            if (dialoguePanel != null)
+            {
+                int dialogueIndex = dialoguePanel.transform.GetSiblingIndex();
+                avatarContainer.transform.SetSiblingIndex(dialogueIndex);
+            }
+            else
+            {
+                avatarContainer.transform.SetAsFirstSibling();
+            }
+
+            RectTransform containerRect = avatarContainer.AddComponent<RectTransform>();
+            
+            // Avatar to hơn, nằm bên trái/phải, dịch lên trên dialogue panel
+            if (avatarPosition == AvatarPosition.Left)
+            {
+                containerRect.anchorMin = new Vector2(0f, 0.15f);
+                containerRect.anchorMax = new Vector2(0.35f, 0.85f);
+                containerRect.offsetMin = new Vector2(10f, 0f);
+                containerRect.offsetMax = new Vector2(0f, 0f);
+            }
+            else // Right
+            {
+                containerRect.anchorMin = new Vector2(0.65f, 0.15f);
+                containerRect.anchorMax = new Vector2(1f, 0.85f);
+                containerRect.offsetMin = new Vector2(0f, 0f);
+                containerRect.offsetMax = new Vector2(-10f, 0f);
+            }
+        }
+
+        // Tạo avatar image
+        if (avatarImage == null)
+        {
+            GameObject avatarObj = new GameObject("AvatarImage");
+            avatarObj.transform.SetParent(avatarContainer.transform, false);
+
+            avatarImage = avatarObj.AddComponent<Image>();
+            avatarImage.preserveAspect = true;
+            avatarImage.raycastTarget = false;
+
+            RectTransform avatarRect = avatarObj.GetComponent<RectTransform>();
+            avatarRect.anchorMin = Vector2.zero;
+            avatarRect.anchorMax = Vector2.one;
+            avatarRect.sizeDelta = Vector2.zero;
+            avatarRect.pivot = new Vector2(0.5f, 0f); // Pivot ở bottom-center
+        }
+
+        Debug.Log("[DialogueSystem] Avatar UI created successfully!");
+    }
+
+    /// <summary>
+    /// Cập nhật avatar dựa trên speaker hiện tại
+    /// </summary>
+    private void UpdateAvatarForSpeaker(string speakerName)
+    {
+        if (!isAvatarModeActive || avatarImage == null) return;
+
+        if (currentAvatarMap != null && !string.IsNullOrEmpty(speakerName))
+        {
+            if (currentAvatarMap.TryGetValue(speakerName, out Sprite avatar))
+            {
+                avatarImage.sprite = avatar;
+                avatarImage.color = Color.white;
+                avatarImage.gameObject.SetActive(true);
+                
+                // Xử lý flip - kiểm tra flip map trước, nếu không có thì dùng default
+                bool shouldFlip = flipAvatarHorizontal; // Default setting
+                if (currentAvatarFlipMap != null && currentAvatarFlipMap.TryGetValue(speakerName, out bool speakerFlip))
+                {
+                    shouldFlip = speakerFlip;
+                }
+                
+                // Apply flip bằng cách scale X âm
+                RectTransform rect = avatarImage.GetComponent<RectTransform>();
+                if (rect != null)
+                {
+                    Vector3 scale = rect.localScale;
+                    scale.x = shouldFlip ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
+                    rect.localScale = scale;
+                }
+                
+                Debug.Log($"[DialogueSystem] Avatar updated for speaker: {speakerName}, flip: {shouldFlip}");
+            }
+            else
+            {
+                // Không có avatar cho speaker này - ẩn đi
+                avatarImage.gameObject.SetActive(false);
+                Debug.Log($"[DialogueSystem] No avatar found for speaker: {speakerName}");
+            }
+        }
+        else
+        {
+            // Narration hoặc không có avatar map - ẩn avatar
+            avatarImage.gameObject.SetActive(false);
+        }
+    }
+
+    /// <summary>
+    /// Lock/Unlock player movement
+    /// </summary>
+    private void LockPlayerMovement(bool locked)
+    {
+        if (cachedPlayer == null)
+        {
+            cachedPlayer = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        if (cachedPlayer != null)
+        {
+            var movement = cachedPlayer.GetComponent<PlayerMovement>();
+            if (movement != null)
+            {
+                if (locked)
+                {
+                    movement.SetTalkingState(true);
+                }
+                else
+                {
+                    movement.SetTalkingState(false);
+                }
+                Debug.Log($"[DialogueSystem] Player movement locked: {locked}");
+            }
+        }
+    }
+
     private void DisplayLine()
     {
         if (currentLineIndex >= currentDialogueLines.Length)
@@ -382,6 +655,9 @@ public class DialogueSystem : MonoBehaviour
 
         // Fire event khi speaker thay đổi
         OnSpeakerChanged?.Invoke(currentNode.speakerName);
+
+        // Cập nhật avatar nếu đang ở avatar mode
+        UpdateAvatarForSpeaker(currentNode.speakerName);
 
         // Hiển thị dòng đầu tiên của node
         DisplayNodeLine();
@@ -729,6 +1005,40 @@ public class DialogueSystem : MonoBehaviour
         if (speakerNameText != null)
         {
             speakerNameText.gameObject.SetActive(false);
+        }
+
+        // Cleanup avatar mode
+        if (isAvatarModeActive)
+        {
+            if (avatarContainer != null)
+            {
+                avatarContainer.SetActive(false);
+            }
+            if (avatarImage != null)
+            {
+                avatarImage.sprite = null;
+                avatarImage.gameObject.SetActive(false);
+                
+                // Reset scale (in case it was flipped)
+                RectTransform rect = avatarImage.GetComponent<RectTransform>();
+                if (rect != null)
+                {
+                    Vector3 scale = rect.localScale;
+                    scale.x = Mathf.Abs(scale.x);
+                    rect.localScale = scale;
+                }
+            }
+
+            // Unlock player movement
+            if (lockPlayerDuringDialogue)
+            {
+                LockPlayerMovement(false);
+            }
+
+            isAvatarModeActive = false;
+            currentAvatarMap = null;
+            currentAvatarFlipMap = null;
+            cachedPlayer = null;
         }
 
         // Reset dialogue data

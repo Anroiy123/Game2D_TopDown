@@ -319,9 +319,12 @@ _(Tùng tùng tùng, hết giờ học - âm thanh hoặc chú thích khung tho�
 
 ---
 
-### 🎮 Cảnh 19: Chuẩn bị về nhà
+### 🎬 Cảnh 19: Chuẩn bị về nhà
 
-**Chế độ**: `Top-down` (Lớp học)
+**Chế độ**: `Visual Novel` (Background lớp học)
+**Scene ID**: `Day2_Scene19_PrepareToGoHome`
+
+_(Tùng tùng tùng - tiếng trống trường vang lên báo hiệu hết giờ học)_
 
 **Đức** _(suy nghĩ)_: "Haizz, học hành chán thật, mãi mới được về, lại phải về lẹ để cày nhiệm vụ tiếp thôi, à mong hôm nay không gặp lũ kia nữa, nghĩ tới tụi nó mệt mỏi thật"
 

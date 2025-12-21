@@ -1,0 +1,178 @@
+{
+  "_comment": "Week 3 - Scene 24: Trên đường về - Bị chặn đầu xin tiền lần 3",
+  "conversationName": "Week3_Scene24_Street_Blocked",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Ê bạn tôi ơi, đi đâu mà vội mà vàng, lại đây với tụi tôi một tí nào.",
+        "Cuối tuần không được gặp ông tôi nhớ ông lắm đấy.",
+        "Quen nhau lâu vậy rồi chắc ông biết tụi tôi bây giờ đang muốn gì đúng chứ."
+      ],
+      "choices": [
+        {
+          "text": "Đưa tiền ngay",
+          "next": 100,
+          "setTrue": ["gave_money_to_bullies", "week3_gave_money"],
+          "varChanges": [
+            { "name": "money", "op": "sub", "value": 50000 },
+            { "name": "gave_money_count", "op": "add", "value": 1 }
+          ]
+        },
+        {
+          "text": "Do dự",
+          "next": 200
+        },
+        {
+          "text": "Từ chối",
+          "next": 300
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Đây, trong túi tao còn từng này thôi, tụi mày cứ lấy hết đi.",
+        "Đừng đụng vào người tao là được."
+      ],
+      "next": 110
+    },
+    {
+      "id": 110,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Tốt lắm, biết điều thế là tốt.",
+        "Thôi ông về đi, hôm khác gặp lại."
+      ],
+      "next": -1,
+      "setFlags": ["week3_scene24_completed"]
+    },
+    {
+      "id": 200,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Nhưng tuần trước tao đưa tụi mày hết tiền rồi còn gì.",
+        "Tuần này mới đầu tuần tụi mày xin hết của tao thì tao đói mất."
+      ],
+      "next": 210
+    },
+    {
+      "id": 210,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Nhưng tao thực sự cần số tiền đó đấy bạn hiền à.",
+        "Thế bây giờ bạn có cho tôi mượn không đây?"
+      ],
+      "choices": [
+        {
+          "text": "Thôi được rồi, đưa tiền",
+          "next": 220,
+          "setTrue": ["gave_money_to_bullies", "week3_gave_money_hesitant"],
+          "varChanges": [
+            { "name": "money", "op": "sub", "value": 50000 },
+            { "name": "gave_money_count", "op": "add", "value": 1 }
+          ]
+        },
+        {
+          "text": "Không, tao không đưa",
+          "next": 300
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Thôi được rồi, tao không còn nhiều tiền đâu.",
+        "Đây, tụi mày cầm đi và để tao đi về."
+      ],
+      "next": 230
+    },
+    {
+      "id": 230,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Làm thế từ đầu có phải nhanh hơn không, cảm ơn bạn hiền."
+      ],
+      "next": 240
+    },
+    {
+      "id": 240,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Haizz, tuần này lại nghèo nữa rồi...)",
+        "(Lần sau phải cứng rắn hơn thôi, nhưng mà thôi thì nốt lần này thôi...)",
+        "(Lần sau mình không muốn dính dáng gì đến tụi này nữa.)"
+      ],
+      "next": -1,
+      "setFlags": ["week3_scene24_completed"]
+    },
+    {
+      "id": 300,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Không được, tuần trước tụi mày lấy hết tiền của tao rồi.",
+        "Tuần này tao không còn tiền đâu, mà có còn thì tao cũng không đưa tụi mày nữa đâu."
+      ],
+      "next": 310
+    },
+    {
+      "id": 310,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Hả, tôi có nghe nhầm không bạn của tôi?",
+        "Hình như bạn vừa từ chối tôi à, tôi cho bạn nghĩ lại đấy.",
+        "Tôi bây giờ thực sự cần số tiền đó."
+      ],
+      "next": 320
+    },
+    {
+      "id": 320,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Tao nói không là không, mày cần không lẽ tao không cần à.",
+        "Từ ngày gặp tụi mày lúc nào tụi mày cũng lấy hết tiền của tao.",
+        "Từ giờ tao không cho nữa."
+      ],
+      "next": 330
+    },
+    {
+      "id": 330,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "À thế à, thôi thì đến mức này rồi thì...",
+        "Anh em đâu, giữ nó lại cho tao."
+      ],
+      "next": 340
+    },
+    {
+      "id": 340,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Cả đám bu lại Đức...",
+        "Bụp! Bụp! Bụp!"
+      ],
+      "next": -1,
+      "setFlags": ["week3_scene24_completed", "got_beaten", "week3_refused_got_beaten"],
+      "varChanges": [
+        { "name": "fear_level", "op": "add", "value": 30 }
+      ]
+    }
+  ]
+}

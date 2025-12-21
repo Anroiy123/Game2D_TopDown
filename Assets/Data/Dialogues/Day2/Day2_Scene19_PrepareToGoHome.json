@@ -1,0 +1,29 @@
+{
+  "_comment": "Day 2 - Scene 19: Classroom - Duc prepares to go home, thinking about bullies",
+  "conversationName": "Day2_Scene19_PrepareToGoHome",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Tùng tùng tùng...",
+        "Tiếng trống trường vang lên báo hiệu hết giờ học."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Haizz, học hành chán thật, mãi mới được về...)",
+        "(Lại phải về lẹ để cày nhiệm vụ tiếp thôi...)",
+        "(À mong hôm nay không gặp lũ kia nữa, nghĩ tới tụi nó mệt mỏi thật...)"
+      ],
+      "next": -1,
+      "setFlags": ["day2_scene19_completed"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "_comment": "Week 3 - Scene 22: Khi mở cửa - Loa phát thanh + Thông điệp quan trọng",
+  "conversationName": "Week3_Scene22_Door_News",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Loa phát thanh",
+      "isPlayer": false,
+      "lines": [
+        "Và đây là bản tin buổi sáng hôm nay.",
+        "Tập đoàn Wingroup vừa tuyên bố phá sản chỉ sau một đêm, nguyên nhân được cho là từ một quyết định sai lầm của chủ tịch......"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "MỌI QUYẾT ĐỊNH MÀ BẠN CHỌN SẼ DẪN LỐI BẠN ĐẾN TỪNG KẾT QUẢ KHÁC NHAU",
+        "VÌ VẬY HÃY CẨN THẬN VỚI TỪNG LỰA CHỌN CỦA BẢN THÂN"
+      ],
+      "next": -1,
+      "setFlags": ["week3_scene22_completed", "phase2_warning_shown"]
+    }
+  ]
+}

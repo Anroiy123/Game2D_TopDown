@@ -1,0 +1,19 @@
+{
+  "_comment": "Week 3 - Scene 23: Trên trường - Bạn kế bàn rủ đi chơi",
+  "conversationName": "Week3_Scene23_Classroom",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Bạn kế bàn",
+      "isPlayer": false,
+      "lines": [
+        "Này Đức, mày ngồi đây được mấy tuần rồi đấy, ra chơi với tụi tao đi, vui lắm.",
+        "Vận động tốt cho sức khỏe nữa.",
+        "Mà tao nói vậy thôi, ra hay không thì tùy mày, tao đi đây."
+      ],
+      "next": -1,
+      "setFlags": ["week3_scene23_completed"]
+    }
+  ]
+}

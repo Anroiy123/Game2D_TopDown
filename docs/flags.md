@@ -62,10 +62,10 @@
 
 | # | Scene ID | Chế độ | Địa điểm | Mô tả |
 |---|----------|--------|----------|-------|
-| 17 | `Day2_Scene1_Classroom` |  TD | Lớp học | Cuối giờ học |
-| 18 | *(Top-down gameplay)* |  TD | Lớp học | Bạn đi ra ngoài |
-| 19 | *(Top-down gameplay)* |  TD | Lớp học | Chuẩn bị về nhà |
-| 20 | `Day2_Scene2_Street` |  TD | Đường phố | Gặp tụi bắt nạt xin tiền |
+| 17 | `Day2_Scene17_Classroom` |  TD | Lớp học | Cuối giờ học, cô giáo auto dialogue |
+| 18 | *(Top-down gameplay)* |  TD | Lớp học | Bạn đi ra ngoài (ClassmateExitController) |
+| 19 | `Day2_Scene19_PrepareToGoHome` |  VN | Lớp học | Chuẩn bị về nhà, Đức suy nghĩ |
+| 20 | `Day2_Scene20_Street_BullyEncounter` |  TD | Đường phố | Gặp tụi bắt nạt xin tiền lần đầu |
 
 ###  SAU 1-2 TUẦN (Phase 2 - Week 3)
 
@@ -150,6 +150,11 @@
 | `week1_teacher_talk_completed` | Nói chuyện với cô giáo | Week1_Scene2 |
 | `week1_second_encounter_completed` | Gặp lần 2 xong | Week1_Scene4 |
 | `day2_started` | Bắt đầu ngày 2 | Day2_Scene1 |
+| `day2_scene17_teacher_completed` | Hoàn thành dialogue cô giáo Scene 17 | Day2_Scene17 |
+| `day2_scene17_classmate_completed` | Hoàn thành dialogue bạn kế bên Scene 17 | Day2_Scene17 |
+| `day2_scene18_completed` | Bạn đi ra ngoài | Day2_Scene18 |
+| `day2_scene19_completed` | Hoàn thành Scene 19 (VN) | Day2_Scene19 |
+| `day2_scene20_completed` | Hoàn thành Scene 20 (xin tiền) | Day2_Scene20 |
 | `week3_started` | Bắt đầu tuần 3 | Week3_Scene1 |
 | `critical_day_started` | Bắt đầu ngày quyết định | CriticalDay_Scene1 |
 
@@ -176,6 +181,12 @@
 | `choice_ran_away_day1` | Chọn bỏ chạy ngày 1 | Lựa chọn 1.1B |
 | `choice_confronted_week1` | Chọn đối mặt tuần 1 | Lựa chọn 1.2A |
 | `choice_ran_away_week1` | Chọn bỏ chạy tuần 1 | Lựa chọn 1.2B |
+| `choice_confronted_day2` | Chọn đối mặt ngày 2 (Scene 20) | Lựa chọn 2.1A |
+| `choice_ran_away_day2` | Chọn bỏ chạy ngày 2 (Scene 20) | Lựa chọn 2.1B |
+| `choice_gave_money_day2` | Đã đưa tiền ngày 2 | Lựa chọn 2.1 |
+| `gave_money_to_bullies` | Đã đưa tiền cho tụi bắt nạt | Scene 20 |
+| `refused_money_got_beaten` | Từ chối đưa tiền và bị đánh | Scene 20 |
+| `questioned_bullies_got_beaten` | Thắc mắc và bị đánh | Scene 20 |
 | `choice_gave_money` | Đã đưa tiền | Lựa chọn 2.1 |
 | `choice_refused_money` | Từ chối đưa tiền | Lựa chọn 2.1 |
 | `choice_fight_back` | Chọn đánh trả | Lựa chọn cuối |
