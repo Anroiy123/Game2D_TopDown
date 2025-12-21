@@ -1,0 +1,83 @@
+{
+  "_comment": "Critical Day - Scene 25B: Bản tin thời sự khi Đức ra cửa - Tin về vụ bạo lực học đường",
+  "conversationName": "CriticalDay_Scene25B_News",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Khi Đức vừa mở cửa, tiếng tivi từ phòng khách vọng ra..."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Tivi",
+      "isPlayer": false,
+      "lines": [
+        "...Và đây là bản tin nóng sáng nay.",
+        "Vụ việc đau lòng xảy ra tại một trường THCS ở Thanh Hóa.",
+        "Một nam sinh lớp 8 đã tử vong sau khi bị nhóm bạn cùng trường đánh hội đồng."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Tivi",
+      "isPlayer": false,
+      "lines": [
+        "Theo lời kể của nhân chứng, nạn nhân đã bị bắt nạt trong thời gian dài.",
+        "Tuy nhiên, em không dám nói với gia đình hay thầy cô.",
+        "Cho đến khi sự việc đi quá xa..."
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Tivi",
+      "isPlayer": false,
+      "lines": [
+        "Cơ quan chức năng đã vào cuộc điều tra.",
+        "Các chuyên gia tâm lý khuyến cáo: Nếu con em bạn có dấu hiệu bất thường...",
+        "...hãy lắng nghe và đồng hành cùng con trước khi quá muộn."
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(...)",
+        "(Thanh Hóa... Cũng giống như mình...)",
+        "(Không... Mình sẽ không để chuyện đó xảy ra...)",
+        "(Mình phải... phải làm gì đó...)"
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Đức! Sao còn đứng đó? Đi học đi con, muộn rồi!"
+      ],
+      "next": 60
+    },
+    {
+      "id": 60,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "D-dạ, con đi đây mẹ..."
+      ],
+      "next": -1,
+      "setFlags": ["critical_news_watched"],
+      "varChanges": [
+        { "name": "fear_level", "op": "add", "value": 10 }
+      ]
+    }
+  ]
+}

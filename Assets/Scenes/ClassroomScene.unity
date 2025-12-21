@@ -817,6 +817,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &173488477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 173488479}
+  - component: {fileID: 173488478}
+  m_Layer: 0
+  m_Name: Scene26_Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &173488478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173488477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 415003211f4a52347a2b87853cfdb615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::ClassmateExitController
+  classmates:
+  - {fileID: 8374643371303754802}
+  - {fileID: 354442934}
+  - {fileID: 1096516014}
+  - {fileID: 1317837980}
+  - {fileID: 1241767475}
+  - {fileID: 1629332499}
+  - {fileID: 2043866185}
+  sharedWaypoints:
+  - {fileID: 1136280471}
+  - {fileID: 812505998}
+  - {fileID: 1726671688}
+  triggerOnStart: 0
+  triggerOnFlagSet: critical_scene25_news_completed
+  startDelay: 0.5
+  staggerDelay: 0.3
+  disablePlayerMovement: 0
+  hidePlayer: 0
+  waitAfterExit: 2
+  fadeToBlack: 0
+  transitionText: 
+  textDisplayDuration: 4
+  nextSceneName: StreetScene
+  nextSpawnPointId: SpawnPoint_PortField
+  vnSceneToTrigger: {fileID: 0}
+  requiredFlags:
+  - critical_scene25_news_completed
+  forbiddenFlags:
+  - critical_scene26_completed
+  completionFlag: critical_scene26_completed
+  showDebugLogs: 0
+--- !u!4 &173488479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173488477}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.42108, y: 0.89161, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &275267671
 GameObject:
   m_ObjectHideFlags: 0
@@ -10609,7 +10684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &838364439
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10663,7 +10738,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838364438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2842c1908b9540e45a299039ad63384e, type: 3}
   m_Name: 
@@ -11209,6 +11284,118 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &942897921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942897923}
+  - component: {fileID: 942897922}
+  - component: {fileID: 942897924}
+  m_Layer: 0
+  m_Name: DialogueTrigger_critical_scene26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &942897922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942897921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a592313d60f973047ab7fd92839640e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::DialogueTrigger
+  dialogueData: {fileID: 11400000, guid: 32a767edc40c11f44b1c9779cd146900, type: 2}
+  conditionalDialogues: []
+  mode: 0
+  interactionKey: 0
+  triggerOnce: 1
+  triggerDelay: 2
+  requiredFlags:
+  - critical_scene25_news_completed
+  forbiddenFlags: []
+  useAvatarMode: 0
+  avatarEntries: []
+  setFlagsOnComplete: []
+  setFlagsFalse: []
+  variableChanges: []
+  lockPlayerMovement: 1
+  nextVNScene: {fileID: 0}
+  nextDialogue: {fileID: 0}
+  nextSceneName: 
+  nextSpawnPointId: 
+  interactionPrompt: {fileID: 0}
+  showDebugLogs: 0
+--- !u!4 &942897923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942897921}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.39, y: 4.23, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &942897924
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942897921}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.6988629, y: -0.65775335}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.3977258, y: 2.3155067}
+  m_EdgeRadius: 0
 --- !u!1 &959353255
 GameObject:
   m_ObjectHideFlags: 0
@@ -12490,6 +12677,10 @@ PrefabInstance:
     - target: {fileID: 2821167623192150166, guid: cf38ee5fb7faa854badeb615b2065506, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].autoTriggerDelay
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: cf38ee5fb7faa854badeb615b2065506, type: 3}
+      propertyPath: conditionalDialogues.Array.data[0].triggerOnFlagSet
+      value: week1_scene16_completed
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: cf38ee5fb7faa854badeb615b2065506, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].triggerOnSceneStart
@@ -13882,7 +14073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1564303276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13896,7 +14087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: GameScripts::QuickFlagSetter
   flagsToSetTrue:
-  - week3_scene22_completed
+  - week1_scene16_completed
   flagsToSetFalse: []
   variablesToSet: []
   editorOnly: 1
@@ -15579,7 +15770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1999066220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16120,7 +16311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2123630071
 Transform:
   m_ObjectHideFlags: 0
@@ -16491,3 +16682,5 @@ SceneRoots:
   - {fileID: 771522218}
   - {fileID: 18378136}
   - {fileID: 1772908017}
+  - {fileID: 942897923}
+  - {fileID: 173488479}

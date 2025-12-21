@@ -46,7 +46,9 @@ MonoBehaviour:
   requiredFlags:
   - day1_scene2_completed
   forbiddenFlags: []
-  setFlagsOnEnter: []
+  setFlagsOnEnter:
+  - day1_classroom_completed
+  - day1_scene3_completed
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - day1_classroom_completed

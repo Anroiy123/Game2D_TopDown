@@ -1,5 +1,5 @@
 {
-  "_comment": "Week 3 - Scene 24: Trên đường về - Bị chặn đầu xin tiền lần 3",
+  "_comment": "Week 3 - Scene 24: Trên đường về - Bị chặn đầu xin tiền lần 3 (có trigger cutscene đánh)",
   "conversationName": "Week3_Scene24_Street_Blocked",
   "startNodeId": 0,
   "nodes": [
@@ -28,7 +28,8 @@
         },
         {
           "text": "Từ chối",
-          "next": 300
+          "next": 300,
+          "setTrue": ["week3_refused_got_beaten"]
         }
       ]
     },
@@ -83,7 +84,8 @@
         },
         {
           "text": "Không, tao không đưa",
-          "next": 300
+          "next": 300,
+          "setTrue": ["week3_refused_got_beaten"]
         }
       ]
     },
@@ -158,21 +160,9 @@
         "À thế à, thôi thì đến mức này rồi thì...",
         "Anh em đâu, giữ nó lại cho tao."
       ],
-      "next": 340
-    },
-    {
-      "id": 340,
-      "speaker": "",
-      "isPlayer": false,
-      "lines": [
-        "Cả đám bu lại Đức...",
-        "Bụp! Bụp! Bụp!"
-      ],
       "next": -1,
-      "setFlags": ["week3_scene24_completed", "got_beaten", "week3_refused_got_beaten"],
-      "varChanges": [
-        { "name": "fear_level", "op": "add", "value": 30 }
-      ]
+      "setFlags": ["week3_scene24_completed"],
+      "actionId": "trigger_beat_cutscene"
     }
   ]
 }

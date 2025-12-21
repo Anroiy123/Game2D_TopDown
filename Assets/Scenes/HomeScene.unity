@@ -762,7 +762,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &195621715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1299,7 +1299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &374332020
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1534,7 +1534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &435598184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,9 +1548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: GameScripts::QuickFlagSetter
   flagsToSetTrue:
-  - day2_scene20_completed
-  - got_beaten
-  - day2_scene21_timeskip_completed
+  - week3_scene24_home_completed
   flagsToSetFalse: []
   variablesToSet: []
   editorOnly: 1
@@ -1885,7 +1883,7 @@ Transform:
   m_GameObject: {fileID: 562843444}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.01, y: 13.47, z: -10}
+  m_LocalPosition: {x: -0.43, y: -2.56, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2188,7 +2186,7 @@ MonoBehaviour:
     targetPosition: {fileID: 1208045455}
     hideInstead: 0
     priority: 210
-  defaultPosition: {fileID: 49406913}
+  defaultPosition: {fileID: 1208045455}
   hideByDefault: 0
 --- !u!1 &690479093
 GameObject:
@@ -2413,7 +2411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: avatarEntries.Array.data[0].speakerName
@@ -2448,6 +2446,10 @@ PrefabInstance:
       value: 210
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].priority
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].dialogueData
       value: 
       objectReference: {fileID: 11400000, guid: 0e1965abe6a278d4c961477395a9369c, type: 2}
@@ -2459,6 +2461,10 @@ PrefabInstance:
       propertyPath: conditionalDialogues.Array.data[2].dialogueData
       value: 
       objectReference: {fileID: 11400000, guid: a5d925e0d1af46549a3960ab36ed9b62, type: 2}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].dialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: bab131e1c8bdf31419aa0e8bcaf80e99, type: 2}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].allowedScenes.Array.size
       value: 1
@@ -2484,6 +2490,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].allowedScenes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].requiredFlags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].forbiddenFlags.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2493,6 +2507,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[2].forbiddenFlags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].forbiddenFlags.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
@@ -2520,6 +2538,14 @@ PrefabInstance:
       value: day2_scene21_timeskip_completed
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].allowedScenes.Array.data[0]'
+      value: HomeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].requiredFlags.Array.data[0]'
+      value: week3_scene24_home_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[0].forbiddenFlags.Array.data[0]'
       value: day1_scene8_completed
       objectReference: {fileID: 0}
@@ -2530,6 +2556,10 @@ PrefabInstance:
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[2].forbiddenFlags.Array.data[0]'
       value: week3_scene21_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].forbiddenFlags.Array.data[0]'
+      value: critical_scene25_completed
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[1].setFlagsOnComplete.Array.size
@@ -2544,12 +2574,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].setFlagsOnComplete.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[1].setFlagsOnComplete.Array.data[0]'
       value: week1_scene15_completed
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[2].setFlagsOnComplete.Array.data[0]'
       value: week3_scene21_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].setFlagsOnComplete.Array.data[0]'
+      value: critical_day_started
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].setFlagsOnComplete.Array.data[1]'
+      value: critical_scene25_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].setFlagsOnComplete.Array.data[2]'
+      value: mom_worried
       objectReference: {fileID: 0}
     - target: {fileID: 5510346647566054424, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: m_Sprite
@@ -6821,6 +6867,120 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1305983699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1100778016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100778019}
+  - component: {fileID: 1100778018}
+  - component: {fileID: 1100778017}
+  m_Layer: 0
+  m_Name: DialogueTrigger_Scene25
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1100778017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100778016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a592313d60f973047ab7fd92839640e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::DialogueTrigger
+  dialogueData: {fileID: 11400000, guid: 2bd90d7681f846b4ca99076585dcbe20, type: 2}
+  conditionalDialogues: []
+  mode: 0
+  interactionKey: 0
+  triggerOnce: 1
+  triggerDelay: 0
+  requiredFlags:
+  - critical_scene25_completed
+  forbiddenFlags:
+  - critical_scene25_news_completed
+  useAvatarMode: 1
+  avatarEntries: []
+  setFlagsOnComplete:
+  - critical_scene25_news_completed
+  setFlagsFalse: []
+  variableChanges: []
+  lockPlayerMovement: 1
+  nextVNScene: {fileID: 0}
+  nextDialogue: {fileID: 0}
+  nextSceneName: ClassroomScene
+  nextSpawnPointId: Desk_spawn
+  interactionPrompt: {fileID: 0}
+  showDebugLogs: 0
+--- !u!61 &1100778018
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100778016}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.114411354, y: 0.32416448}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.830576, y: 0.35167104}
+  m_EdgeRadius: 0
+--- !u!4 &1100778019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100778016}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.72, y: -2.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1194211824
 GameObject:
   m_ObjectHideFlags: 0
@@ -6910,7 +7070,7 @@ Transform:
   m_GameObject: {fileID: 1194211824}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.01, y: 13.47, z: -10}
+  m_LocalPosition: {x: -0.43, y: -2.56, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6973,11 +7133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7783642297000837500, guid: 439f0f417b7f8e342a32c899d4bdc808, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.01
+      value: -0.43
       objectReference: {fileID: 0}
     - target: {fileID: 7783642297000837500, guid: 439f0f417b7f8e342a32c899d4bdc808, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.47
+      value: -2.56
       objectReference: {fileID: 0}
     - target: {fileID: 7783642297000837500, guid: 439f0f417b7f8e342a32c899d4bdc808, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8644,6 +8804,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769797066}
   m_CullTransparentMesh: 1
+--- !u!1 &1782497614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1782497617}
+  - component: {fileID: 1782497615}
+  - component: {fileID: 1782497616}
+  m_Layer: 0
+  m_Name: DialogueTrigger_Week3_Scene24_Home
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1782497615
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782497614}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.35643482, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.9072857, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1782497616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782497614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a592313d60f973047ab7fd92839640e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::DialogueTrigger
+  dialogueData: {fileID: 11400000, guid: 1095c892c8b95b343bf687f71c8b3116, type: 2}
+  conditionalDialogues: []
+  mode: 0
+  interactionKey: 0
+  triggerOnce: 1
+  triggerDelay: 0
+  requiredFlags:
+  - week3_scene24_completed
+  forbiddenFlags:
+  - week3_scene24_home_completed
+  useAvatarMode: 1
+  avatarEntries:
+  - speakerName: "M\u1EB9"
+    avatarSprite: {fileID: -4020990447090382813, guid: 43ad5034ea78a1f4681acbe53e020560, type: 3}
+    flipHorizontal: 0
+  - speakerName: "\u0110\u1EE9c"
+    avatarSprite: {fileID: -2400005554593973897, guid: 333f0e02ff765a042be32da51039f98c, type: 3}
+    flipHorizontal: 0
+  setFlagsOnComplete:
+  - week3_scene24_home_completed
+  setFlagsFalse: []
+  variableChanges: []
+  lockPlayerMovement: 1
+  nextVNScene: {fileID: 0}
+  nextDialogue: {fileID: 0}
+  nextSceneName: 
+  nextSpawnPointId: 
+  interactionPrompt: {fileID: 0}
+  showDebugLogs: 0
+--- !u!4 &1782497617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782497614}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.6, y: 11.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1791996127
 GameObject:
   m_ObjectHideFlags: 0
@@ -11419,6 +11699,118 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 2.5625}
   m_EdgeRadius: 0
+--- !u!1 &1971837209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1971837212}
+  - component: {fileID: 1971837211}
+  - component: {fileID: 1971837210}
+  m_Layer: 0
+  m_Name: TimeSkipTrigger_Scene24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1971837210
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971837209}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.20176983}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1.4035397}
+  m_EdgeRadius: 0
+--- !u!114 &1971837211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971837209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df3de7d09b9f1549af4c5a0b5965c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::TimeSkipTrigger
+  textEntries: []
+  timeSkipText: "Ng\xE0y h\xF4m sau ..."
+  textDisplayDuration: 2.5
+  mode: 0
+  interactionKey: 0
+  triggerOnce: 1
+  triggerDelay: 0
+  requiredFlags:
+  - week3_scene24_completed
+  forbiddenFlags:
+  - week3_scene24_timeskip_completed
+  daysToAdvance: 7
+  setFlagsTrue:
+  - week3_scene24_timeskip_completed
+  setFlagsFalse: []
+  variableChanges: []
+  afterTimeSkipVNScene: {fileID: 0}
+  targetSceneName: HomeScene
+  targetSpawnPointId: bedroom_spawn
+  interactionPrompt: {fileID: 0}
+  showDebugLogs: 0
+--- !u!4 &1971837212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971837209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.65, y: 16.27, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1987467014
 GameObject:
   m_ObjectHideFlags: 0
@@ -18472,3 +18864,6 @@ SceneRoots:
   - {fileID: 195621716}
   - {fileID: 1707927216}
   - {fileID: 358756198}
+  - {fileID: 1782497617}
+  - {fileID: 1971837212}
+  - {fileID: 1100778019}

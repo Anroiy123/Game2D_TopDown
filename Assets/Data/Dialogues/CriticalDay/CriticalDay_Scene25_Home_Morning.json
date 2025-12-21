@@ -1,0 +1,67 @@
+{
+  "_comment": "Critical Day - Scene 25: Buổi sáng tại nhà - Mẹ dặn về sớm",
+  "conversationName": "CriticalDay_Scene25_Home_Morning",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Dạ con chào mẹ, con đi học."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Đức đấy à. Khoan đã con.",
+        "Hôm nay con nhớ phải về sớm một chút đấy."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Có chuyện gì vậy mẹ?"
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Không có gì đâu, con cứ đi học đi.",
+        "Chiều cứ về sớm là được.",
+        "Mẹ muốn nói chuyện với con.",
+        "Mẹ thấy con dạo này hơi lạ."
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Hơi giật mình...)",
+        "Dạ vâng, con biết rồi. Con sẽ về sớm."
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Ừ, đi đi con. Nhớ cẩn thận!"
+      ],
+      "next": -1,
+      "setFlags": ["critical_day_started", "critical_scene25_completed", "mom_worried"]
+    }
+  ]
+}

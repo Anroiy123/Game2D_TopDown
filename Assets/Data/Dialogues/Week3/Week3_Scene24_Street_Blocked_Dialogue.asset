@@ -58,13 +58,14 @@ MonoBehaviour:
       variableChanges: []
     - choiceText: "T\u1EEB ch\u1ED1i"
       nextNodeId: 300
-      actionId: 
+      actionId: trigger_beat_cutscene
       nextVNScene: {fileID: 0}
       endVNMode: 0
       requiredFlags: []
       forbiddenFlags: []
       variableConditions: []
-      setFlagsTrue: []
+      setFlagsTrue:
+      - week3_refused_got_beaten
       setFlagsFalse: []
       variableChanges: []
     nextNodeId: -1
@@ -150,13 +151,14 @@ MonoBehaviour:
         value: 1
     - choiceText: "Kh\xF4ng, tao kh\xF4ng \u0111\u01B0a"
       nextNodeId: 300
-      actionId: 
+      actionId: trigger_beat_cutscene
       nextVNScene: {fileID: 0}
       endVNMode: 0
       requiredFlags: []
       forbiddenFlags: []
       variableConditions: []
-      setFlagsTrue: []
+      setFlagsTrue:
+      - week3_refused_got_beaten
       setFlagsFalse: []
       variableChanges: []
     nextNodeId: -1
@@ -271,29 +273,10 @@ MonoBehaviour:
       th\xEC..."
     - "Anh em \u0111\xE2u, gi\u1EEF n\xF3 l\u1EA1i cho tao."
     choices: []
-    nextNodeId: 340
-    setFlagsOnEnter: []
-    variableChangesOnEnter: []
-    speakerPortrait: {fileID: 0}
-    emotion: 
-    voiceClip: {fileID: 0}
-    sfxClip: {fileID: 0}
-  - nodeId: 340
-    speakerName: 
-    isPlayerSpeaking: 0
-    dialogueLines:
-    - "C\u1EA3 \u0111\xE1m bu l\u1EA1i \u0110\u1EE9c..."
-    - "B\u1EE5p! B\u1EE5p! B\u1EE5p!"
-    choices: []
     nextNodeId: -1
     setFlagsOnEnter:
     - week3_scene24_completed
-    - got_beaten
-    - week3_refused_got_beaten
-    variableChangesOnEnter:
-    - variableName: fear_level
-      operation: 1
-      value: 30
+    variableChangesOnEnter: []
     speakerPortrait: {fileID: 0}
     emotion: 
     voiceClip: {fileID: 0}

@@ -32,7 +32,7 @@ MonoBehaviour:
     topDownSceneName: StreetScene
     spawnPointId: 
   requiredFlags:
-  - week1_teacher_talk_completed
+  - week1_scene12_completed
   forbiddenFlags:
   - week1_scene13_completed
   setFlagsOnEnter:

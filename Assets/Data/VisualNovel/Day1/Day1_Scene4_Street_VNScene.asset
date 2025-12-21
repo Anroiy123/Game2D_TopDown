@@ -35,7 +35,8 @@ MonoBehaviour:
   - day1_classroom_completed
   forbiddenFlags:
   - day1_scene4_street_completed
-  setFlagsOnEnter: []
+  setFlagsOnEnter:
+  - day1_scene4_street_completed
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - day1_scene4_street_completed

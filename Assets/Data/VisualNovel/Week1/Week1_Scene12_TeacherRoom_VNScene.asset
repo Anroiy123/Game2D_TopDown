@@ -40,8 +40,9 @@ MonoBehaviour:
   requiredFlags:
   - week1_classroom_break_completed
   forbiddenFlags:
-  - week1_teacher_talk_completed
-  setFlagsOnEnter: []
+  - week1_scene12_completed
+  setFlagsOnEnter:
+  - week1_scene12_completed
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - week1_teacher_talk_completed

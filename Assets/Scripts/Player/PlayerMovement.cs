@@ -4,7 +4,11 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float sprintSpeed = 6f;
     [SerializeField] private Vector3 sitOffset = new Vector3(0, 1.2f, 0); // Dịch xuống để ngồi phía trước ghế (Y dương = xuống)
+
+    // Sprint state
+    private bool isSprinting = false;
 
     [Header("Components")]
     private Rigidbody2D rb;
@@ -85,6 +89,9 @@ public class PlayerMovement : MonoBehaviour
         movementInput.y = Input.GetAxisRaw("Vertical");
         movementInput = movementInput.normalized;
 
+        // 3. Check Sprint (Shift key) - chỉ sprint khi đang di chuyển
+        isSprinting = Input.GetKey(KeyCode.LeftShift) && movementInput.sqrMagnitude > 0.01f;
+
         UpdateAnimations();
         UpdateFacing();
     }
@@ -100,7 +107,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (rb != null)
         {
-            rb.linearVelocity = movementInput * moveSpeed;
+            float currentSpeed = isSprinting ? sprintSpeed : moveSpeed;
+            rb.linearVelocity = movementInput * currentSpeed;
         }
     }
 

@@ -34,8 +34,9 @@ MonoBehaviour:
   requiredFlags:
   - day1_scene5_bullies_spawned
   forbiddenFlags:
-  - Day1_Scene6_Completed
-  setFlagsOnEnter: []
+  - day1_scene6_completed
+  setFlagsOnEnter:
+  - day1_scene6_completed
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - Day1_Scene6_Completed

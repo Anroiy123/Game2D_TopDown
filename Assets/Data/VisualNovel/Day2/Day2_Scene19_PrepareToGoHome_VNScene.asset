@@ -35,7 +35,8 @@ MonoBehaviour:
   - day2_scene18_completed
   forbiddenFlags:
   - day2_scene19_completed
-  setFlagsOnEnter: []
+  setFlagsOnEnter:
+  - day2_scene19_completed
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - day2_scene19_completed

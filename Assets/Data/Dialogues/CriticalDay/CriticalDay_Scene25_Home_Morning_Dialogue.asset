@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: CriticalDay_Scene25_Home_Morning_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: CriticalDay_Scene25_Home_Morning
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "D\u1EA1 con ch\xE0o m\u1EB9, con \u0111i h\u1ECDc."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\u1EE9c \u0111\u1EA5y \xE0. Khoan \u0111\xE3 con."
+    - "H\xF4m nay con nh\u1EDB ph\u1EA3i v\u1EC1 s\u1EDBm m\u1ED9t ch\xFAt \u0111\u1EA5y."
+    choices: []
+    nextNodeId: 20
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "C\xF3 chuy\u1EC7n g\xEC v\u1EADy m\u1EB9?"
+    choices: []
+    nextNodeId: 30
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 30
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Kh\xF4ng c\xF3 g\xEC \u0111\xE2u, con c\u1EE9 \u0111i h\u1ECDc \u0111i."
+    - "Chi\u1EC1u c\u1EE9 v\u1EC1 s\u1EDBm l\xE0 \u0111\u01B0\u1EE3c."
+    - "M\u1EB9 mu\u1ED1n n\xF3i chuy\u1EC7n v\u1EDBi con."
+    - "M\u1EB9 th\u1EA5y con d\u1EA1o n\xE0y h\u01A1i l\u1EA1."
+    choices: []
+    nextNodeId: 40
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 40
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(H\u01A1i gi\u1EADt m\xECnh...)"
+    - "D\u1EA1 v\xE2ng, con bi\u1EBFt r\u1ED3i. Con s\u1EBD v\u1EC1 s\u1EDBm."
+    choices: []
+    nextNodeId: 50
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 50
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u1EEA, \u0111i \u0111i con. Nh\u1EDB c\u1EA9n th\u1EADn!"
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - critical_day_started
+    - critical_scene25_completed
+    - mom_worried
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

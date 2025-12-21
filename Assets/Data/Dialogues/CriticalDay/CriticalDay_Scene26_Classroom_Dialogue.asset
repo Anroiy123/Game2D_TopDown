@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: CriticalDay_Scene26_Classroom_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: CriticalDay_Scene26_Classroom
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(Hmm, nay th\u1EB1ng kia kh\xF4ng qua r\u1EE7 m\xECnh \u0111i ch\u01A1i n\u1EEFa
+      \xE0...)"
+    - "(Th\xF4i th\xEC tho\u1EA3i m\xE1i h\u01A1n ch\xFAt n\xE0o r\u1ED3i...)"
+    - "(Nh\u01B0ng sao l\u1EA1i c\xF3 c\u1EA3m gi\xE1c tr\u1ED1ng tr\u1EA3i nh\u1EC9?)"
+    - "(C\xF3 ph\u1EA3i c\u1EA3m gi\xE1c n\xE0y l\xE0 do th\xF3i quen kh\xF4ng nh\u1EC9?)"
+    - "(Th\xF4i k\u1EC7 \u0111i. Quan tr\u1ECDng l\xE0 chi\u1EC1u nay.)"
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(M\u1EB9 d\u1EB7n v\u1EC1 s\u1EDBm...)"
+    - "(Ph\u1EA3i gi\u1EA3i quy\u1EBFt chuy\u1EC7n l\u0169 kia cho nhanh. Kh\xF4ng
+      d\xE2y d\u01B0a n\u1EEFa.)"
+    - "(M\xECnh c\u0169ng m\u1EC7t m\u1ECFi r\u1ED3i, l\xFAc n\xE0o c\u0169ng b\u1ECB
+      t\u1EE5i n\xF3 ch\xE8n \xE9p...)"
+    - "(L\xE0m tinh th\u1EA7n m\xECnh c\u0169ng c\xF3 ch\xFAt kh\xF4ng \u1ED5n.)"
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - critical_scene26_completed
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

@@ -1,0 +1,33 @@
+{
+  "_comment": "Critical Day - Scene 26: Trên trường - Đức suy nghĩ về chiều nay",
+  "conversationName": "CriticalDay_Scene26_Classroom",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Hmm, nay thằng kia không qua rủ mình đi chơi nữa à...)",
+        "(Thôi thì thoải mái hơn chút nào rồi...)",
+        "(Nhưng sao lại có cảm giác trống trải nhỉ?)",
+        "(Có phải cảm giác này là do thói quen không nhỉ?)",
+        "(Thôi kệ đi. Quan trọng là chiều nay.)"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Mẹ dặn về sớm...)",
+        "(Phải giải quyết chuyện lũ kia cho nhanh. Không dây dưa nữa.)",
+        "(Mình cũng mệt mỏi rồi, lúc nào cũng bị tụi nó chèn ép...)",
+        "(Làm tinh thần mình cũng có chút không ổn.)"
+      ],
+      "next": -1,
+      "setFlags": ["critical_scene26_completed"]
+    }
+  ]
+}

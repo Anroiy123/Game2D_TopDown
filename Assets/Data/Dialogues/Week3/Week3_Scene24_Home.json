@@ -1,0 +1,47 @@
+{
+  "_comment": "Week 3 - Scene 24 Home: Về nhà sau khi bị xin tiền/đánh - Mẹ lo lắng",
+  "conversationName": "Week3_Scene24_Home",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đức về đến nhà, trong lòng ấm ức...",
+        "Không nói gì, Đức phóng thẳng lên phòng."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Ơ thằng này mấy nay hay nhỉ, bữa trước đã nhắc nó rồi mà nay nó về lại quên chào à.",
+        "Chắc chuyện từ bữa chưa giải quyết xong rồi, phải đi hỏi nó mới được chứ cứ thế này là không được rồi."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Reng reng reng..."
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "À thôi, để làm nốt việc đã.",
+        "Tối hoặc khi nào rảnh mình hỏi nó sau cũng chưa muộn."
+      ],
+      "next": -1,
+      "setFlags": ["week3_scene24_home_completed", "mom_noticed_something_wrong"]
+    }
+  ]
+}
