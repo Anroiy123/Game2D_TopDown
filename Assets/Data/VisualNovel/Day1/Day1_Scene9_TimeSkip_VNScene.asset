@@ -28,7 +28,8 @@ MonoBehaviour:
   requiredFlags:
   - day1_scene8_completed
   forbiddenFlags: []
-  setFlagsOnEnter: []
+  setFlagsOnEnter:
+  - day1_scene9_completed
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - 

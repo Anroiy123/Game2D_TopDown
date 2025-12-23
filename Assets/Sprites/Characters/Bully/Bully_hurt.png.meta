@@ -123,10 +123,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,12 +143,12 @@ TextureImporter:
       name: Bully_hurt_1
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 0
-        width: 18
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Bully_hurt_2
       rect:
         serializedVersion: 2
-        x: 31
+        x: 32
         y: 0
-        width: 66
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: Bully_hurt_3
       rect:
         serializedVersion: 2
-        x: 95
+        x: 48
         y: 0
-        width: 18
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: Bully_hurt_4
       rect:
         serializedVersion: 2
-        x: 111
+        x: 64
         y: 0
-        width: 18
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: Bully_hurt_5
       rect:
         serializedVersion: 2
-        x: 127
+        x: 80
         y: 0
-        width: 66
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: Bully_hurt_6
       rect:
         serializedVersion: 2
-        x: 193
-        y: 6
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 0
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,11 +271,143 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Bully_hurt_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715e4fae55be0ec48a0fa7d7d1d2ed13
+      internalID: -2127115797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_hurt_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785dca5a66090eb4189451f4a138dc99
+      internalID: -1006055134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_hurt_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76109168cd8be7745b1f82eb37e1096e
+      internalID: 802988485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_hurt_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eab8112a18f0f441aa0fb719475324f
+      internalID: 1249452222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_hurt_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a648a5d10222b8f41a0dbe51f84aecdc
+      internalID: 1729989040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bully_hurt_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1e71a1aea8cae41b6e87abeb4b739e
+      internalID: 295659338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bedd8b799909300409d1f6b927f09da0
     internalID: 0
     vertices: []
     indices: 
@@ -283,15 +415,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":13.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Bully_hurt_0: -6742714209409566069
       Bully_hurt_1: -8757402860373252513
+      Bully_hurt_10: 1249452222
+      Bully_hurt_11: 1729989040
+      Bully_hurt_12: 295659338
       Bully_hurt_2: 3289769367732162000
       Bully_hurt_3: 7904721327229189370
       Bully_hurt_4: 5110365406179924859
       Bully_hurt_5: 85090852174640885
       Bully_hurt_6: 2520915832609121463
+      Bully_hurt_7: -2127115797
+      Bully_hurt_8: -1006055134
+      Bully_hurt_9: 802988485
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: CriticalDay_Scene28B_Home_Choice_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: CriticalDay_Scene28B_Home_Choice
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "V\u1EC1 r\u1ED3i \u0111\u1EA5y \xE0? Sao nay v\u1EC1 tr\u1EC5 th\u1EBF con?"
+    - "Con b\u1ECB g\xEC th\u1EBF, sao x\xE2y x\xE1t kh\u1EAFp ng\u01B0\u1EDDi th\u1EBF
+      n\xE0y?"
+    - "\xD4i con t\xF4i ..."
+    choices:
+    - choiceText: "M\u1EB9 \u01A1i... con b\u1ECB b\u1EAFt n\u1EA1t... (Th\xFA nh\u1EADn)"
+      nextNodeId: 100
+      actionId: 
+      nextVNScene: {fileID: 0}
+      endVNMode: 0
+      loadTopDownScene: 
+      topDownSpawnPointId: 
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - confessed_to_mom
+      - ending2_true_tellparents
+      setFlagsFalse: []
+      variableChanges: []
+    - choiceText: "D\u1EA1 kh\xF4ng c\xF3 g\xEC \u0111\xE2u m\u1EB9... (Gi\u1EA5u
+        m\u1EB9)"
+      nextNodeId: 200
+      actionId: 
+      nextVNScene: {fileID: 0}
+      endVNMode: 0
+      loadTopDownScene: 
+      topDownSpawnPointId: 
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue:
+      - hid_from_mom
+      - ending3_bad_darklife
+      setFlagsFalse: []
+      variableChanges: []
+    nextNodeId: -1
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 100
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "M\u1EB9 \u01A1i... con b\u1ECB b\u1EAFt n\u1EA1t su\u1ED1t m\u1EA5y tu\u1EA7n
+      nay..."
+    - "T\u1EE5i n\xF3 ch\u1EB7n \u0111\u01B0\u1EDDng con, \u0111\xF2i ti\u1EC1n,
+      r\u1ED3i \u0111\xE1nh con..."
+    - "Con s\u1EE3 l\u1EAFm m\u1EB9 \u01A1i... con kh\xF4ng mu\u1ED1n \u0111i h\u1ECDc
+      n\u1EEFa \u0111\xE2u..."
+    choices: []
+    nextNodeId: 110
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 110
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\xD4i con trai m\u1EB9, sao con gi\u1EA5u m\u1EB9 chuy\u1EC7n n\xE0y?"
+    - "\u0110\u1EEBng kh\xF3c n\u1EEFa con, m\u1EB9 \u1EDF \u0111\xE2y m\xE0."
+    - "\u0110\u1EC3 m\u1EB9 lo cho con. M\u1EB9 s\u1EBD g\u1ECDi cho c\xF4 gi\xE1o
+      ngay."
+    choices: []
+    nextNodeId: 120
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 120
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "C\u1EA3m \u01A1n m\u1EB9..."
+    - "Con xin l\u1ED7i v\xEC \u0111\xE3 gi\u1EA5u m\u1EB9..."
+    - "Con c\u1EA3m th\u1EA5y nh\u1EB9 nh\xF5m h\u01A1n r\u1ED3i..."
+    choices:
+    - choiceText: "\u0110\u1EBFn ending 2 ->"
+      nextNodeId: -1
+      actionId: trigger_ending2_storytelling
+      nextVNScene: {fileID: 0}
+      endVNMode: 1
+      loadTopDownScene: 
+      topDownSpawnPointId: 
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue: []
+      setFlagsFalse: []
+      variableChanges: []
+    nextNodeId: -1
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 200
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "D\u1EA1 kh\xF4ng c\xF3 g\xEC \u0111\xE2u m\u1EB9..."
+    - "Con \u0111i \u0111\u01B0\u1EDDng kh\xF4ng \u0111\u1EC3 \xFD l\u1EE1 v\u1EA5p
+      c\u1EE5c \u0111\xE1 n\xEAn t\xE9 th\xF4i."
+    - "Con l\xEAn ph\xF2ng tr\u01B0\u1EDBc \u0111\xE2y m\u1EB9."
+    choices: []
+    nextNodeId: 210
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 210
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "M\u1EAFt m\xE0y \u0111\u1EC3 \u0111\xE2u m\xE0 \u0111i \u0111\u1EE9ng kh\xF4ng
+      c\u1EA9n th\u1EADn th\u1EBF con..."
+    - "Nh\u01B0ng tao th\u1EA5y m\xE0y l\u1EA1 l\u1EAFm con..."
+    - "C\xF3 chuy\u1EC7n g\xEC nh\u1EDB ph\u1EA3i n\xF3i v\u1EDBi m\u1EB9 nghe ch\u01B0a?"
+    choices: []
+    nextNodeId: 220
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 220
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "D\u1EA1 v\xE2ng, con bi\u1EBFt r\u1ED3i."
+    - "(M\xECnh kh\xF4ng mu\u1ED1n m\u1EB9 lo...)"
+    - "(M\xECnh s\u1EBD t\u1EF1 gi\u1EA3i quy\u1EBFt...)"
+    choices:
+    - choiceText: "\u0110\u1EBFn Ending 3 ->"
+      nextNodeId: -1
+      actionId: trigger_ending3_storytelling
+      nextVNScene: {fileID: 0}
+      endVNMode: 0
+      loadTopDownScene: 
+      topDownSpawnPointId: 
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue: []
+      setFlagsFalse: []
+      variableChanges: []
+    nextNodeId: -1
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

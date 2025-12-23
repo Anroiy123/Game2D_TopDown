@@ -1,0 +1,55 @@
+{
+  "_comment": "Critical Day - Scene 28A: Về nhà sau khi thắng fight - ENDING 1 (Good_StandUp)",
+  "conversationName": "CriticalDay_Scene28A_Home_AfterWin",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Trời đất ơi! Con bị gì thế này?",
+        "Sao xây xát khắp người thế?",
+        "Ai làm con thế này?"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Mẹ ơi... con bị bắt nạt suốt mấy tuần nay.",
+        "Chiều nay con chịu hết nổi rồi nên đánh lại.",
+        "Con thắng rồi mẹ... nhưng con sợ lắm..."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Sao con giấu mẹ chuyện này?",
+        "Mẹ lo cho con muốn chết!",
+        "Để mẹ gọi cho cô giáo ngay, nhà trường phải can thiệp."
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Con xin lỗi mẹ...",
+        "Con không muốn mẹ lo lắng...",
+        "Nhưng giờ con cảm thấy nhẹ nhõm hơn rồi..."
+      ],
+      "next": -1,
+      "setFlags": ["confessed_to_mom", "ending1_good_standup"],
+      "actionId": "trigger_ending1_storytelling",
+      "_comment": "Trigger Storytelling Ending 1 - Good_StandUp"
+    }
+  ]
+}
+

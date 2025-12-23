@@ -25,6 +25,13 @@ public class DialogueChoice
     [Tooltip("Kết thúc VN mode sau khi chọn (dùng khi không có nextVNScene)")]
     public bool endVNMode = false;
 
+    [Header("Top-Down Scene Transition")]
+    [Tooltip("Load scene top-down trực tiếp (không qua VN). Ưu tiên thấp hơn nextVNScene.")]
+    public string loadTopDownScene;
+
+    [Tooltip("SpawnPoint ID khi load scene top-down")]
+    public string topDownSpawnPointId;
+
     [Header("Conditions (Khi nào hiển thị choice này)")]
     [Tooltip("Flags cần có để hiển thị choice này (tất cả phải true)")]
     public string[] requiredFlags;
@@ -209,6 +216,17 @@ public class DialogueNode
 
     [Tooltip("ID của node tiếp theo (dùng khi không có choices, -1 = kết thúc)")]
     public int nextNodeId = -1;
+
+    [Header("VN Scene Transition")]
+    [Tooltip("VN Scene sẽ chuyển đến sau khi node này kết thúc (ưu tiên cao hơn nextNodeId)")]
+    public VNSceneData nextVNScene;
+
+    [Header("Top-Down Scene Transition")]
+    [Tooltip("Load scene top-down sau khi node kết thúc (ưu tiên thấp hơn nextVNScene)")]
+    public string loadTopDownScene;
+
+    [Tooltip("SpawnPoint ID khi load scene top-down")]
+    public string topDownSpawnPointId;
 
     [Header("On Enter Effects")]
     [Tooltip("Flags sẽ được set TRUE khi vào node này")]

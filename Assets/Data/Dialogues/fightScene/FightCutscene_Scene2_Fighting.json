@@ -1,0 +1,59 @@
+{
+  "_comment": "Fight Cutscene - Scene 2: Đánh nhau (Background: fightScene2.png)",
+  "conversationName": "FightCutscene_Scene2_Fighting",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Thủ lĩnh lao vào đánh trước.",
+        "Đức né tránh, rồi đánh trả."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Hai người vật lộn trên đường.",
+        "Đức bị đấm vào mặt, máu chảy ra."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Nhưng Đức không ngã.",
+        "Đức đứng dậy, tiếp tục chiến đấu."
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Tao sẽ không chạy nữa!",
+        "Tao sẽ không để mày bắt nạt tao nữa!"
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Đức tập trung tất cả sức lực...",
+        "Và đánh một cú mạnh vào mặt Thủ lĩnh."
+      ],
+      "next": -1,
+      "_comment": "Kết thúc Scene 2 → Chuyển sang Scene 3"
+    }
+  ]
+}
+

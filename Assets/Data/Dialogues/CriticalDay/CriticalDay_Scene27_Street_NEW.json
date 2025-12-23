@@ -1,0 +1,244 @@
+{
+  "_comment": "Critical Day - Scene 27: Trên đường về - Gặp tụi bắt nạt - LỰA CHỌN ĐỊNH MỆNH (3 ENDINGS)",
+  "conversationName": "CriticalDay_Scene27_Street",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Hít hà...)",
+        "(Tụi nó lại đứng đây. Phải làm nhanh thôi rồi còn về nữa.)"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Tiền đây... hôm nay tao đưa hết cho tụi mày.",
+        "Cầm lấy, rồi để tao đi về."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Ồ, hôm nay anh bạn dứt khoát thế. Có tiến bộ, đáng khen.",
+        "Nhưng hôm nay tụi tao không cần đống đấy nữa đâu."
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Hôm nay tụi tao muốn chơi một trò chơi với mày.",
+        "Tù xì. Mày biết chơi chứ?",
+        "Thua thì phải chịu phạt đấy nhé."
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Tao phải làm gì đây...)",
+        "(Nếu chơi thì chắc chắn tao thua... nhưng từ chối thì...)"
+      ],
+      "choices": [
+        {
+          "text": "Đối mặt 1v1 với Thủ lĩnh",
+          "next": -1,
+          "nextVNScene": "FightCutscene_Scene1_Confrontation",
+          "setTrue": ["choice_confronted_1v1"],
+          "setFalse": ["choice_played_game", "choice_refused_game"],
+          "_comment": "ENDING 1 PATH - Good_StandUp - Chuyển sang VN Scene"
+        },
+        {
+          "text": "Chơi Tù xì",
+          "next": 200,
+          "setTrue": ["choice_played_game"],
+          "setFalse": ["choice_confronted_1v1", "choice_refused_game"],
+          "_comment": "ENDING 2/3 PATH - Bị đánh"
+        },
+        {
+          "text": "Từ chối chơi",
+          "next": 300,
+          "setTrue": ["choice_refused_game"],
+          "setFalse": ["choice_confronted_1v1", "choice_played_game"],
+          "setFalse": ["choice_confronted_1v1", "choice_played_game"],
+          "_comment": "ENDING 2/3 PATH - Bị đánh"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Tao không chơi trò đó đâu.",
+        "Nhưng nếu mày muốn chơi, tao đề nghị một trò khác."
+      ],
+      "next": 110,
+      "_comment": "=== ENDING 1 BRANCH: Đối mặt 1v1 ==="
+    },
+    {
+      "id": 110,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": ["Ồ? Trò gì thế?", "Mày dám đề nghị với tao à?"],
+      "next": 120
+    },
+    {
+      "id": 120,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Tao nói, một mình tao với một mình mày.",
+        "Nếu tao thắng, từ nay về sau, đừng bao giờ đụng đến tao nữa."
+      ],
+      "next": 130
+    },
+    {
+      "id": 130,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Ha ha ha! Tự tin gớm nhỉ?",
+        "Thôi được, chiều mày.",
+        "Nhưng mày thua, tao sẽ chơi với mày gấp đôi cái trò kia."
+      ],
+      "next": -1,
+      "setFlags": ["critical_scene27_completed", "stood_up_to_bullies"],
+      "actionId": "trigger_fight_cutscene",
+      "_comment": "Trigger FightCutscene - sau đó chuyển sang Scene 28A"
+    },
+    {
+      "id": 200,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "T-t-tụi mày nhớ phải giữ lời đấy...",
+        "Tao chơi... nhưng nếu tao thắng thì tụi mày phải để tao yên."
+      ],
+      "next": 210,
+      "_comment": "=== ENDING 2/3 BRANCH: Chơi Tù xì ==="
+    },
+    {
+      "id": 210,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Ha ha ha! Được, tao hứa.",
+        "Nhưng mày thua thì phải chịu phạt đấy nhé."
+      ],
+      "next": 220
+    },
+    {
+      "id": 220,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Đức chơi Tù xì với Thủ lĩnh...",
+        "Nhưng kết quả đã rõ từ trước."
+      ],
+      "next": 230
+    },
+    {
+      "id": 230,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": ["Ha ha ha! Tao thắng rồi!", "Giờ thì... chịu phạt đi thôi."],
+      "next": 240
+    },
+    {
+      "id": 240,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Khoan đã... tụi mày hứa mà...",
+        "Tụi mày nói là sẽ để tao yên..."
+      ],
+      "next": 250
+    },
+    {
+      "id": 250,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Tao có nói thế đâu?",
+        "Tao chỉ nói là tao hứa thôi. Hứa gì thì tao không nhớ.",
+        "Giờ thì... đánh nó đi!"
+      ],
+      "next": 260
+    },
+    {
+      "id": 260,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Đức bị đánh...",
+        "Không thể chống cự...",
+        "Chỉ có thể co ro và chịu đựng..."
+      ],
+      "next": -1,
+      "setFlags": [
+        "critical_scene27_completed",
+        "got_beaten",
+        "played_game_and_lost"
+      ],
+      "actionId": "trigger_scene28b",
+      "_comment": "Chuyển sang Scene 28B - Về nhà - Lựa chọn cuối cùng (Ending 2/3)"
+    },
+    {
+      "id": 300,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": ["Tao không chơi.", "Tụi mày cứ lấy tiền đi, rồi để tao về."],
+      "next": 310,
+      "_comment": "=== ENDING 2/3 BRANCH: Từ chối chơi ==="
+    },
+    {
+      "id": 310,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": ["Ồ? Mày từ chối à?", "Mày nghĩ mày có quyền từ chối tao à?"],
+      "next": 320
+    },
+    {
+      "id": 320,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Tao cho mày cơ hội mà mày không biết trân trọng.",
+        "Vậy thì... đánh nó đi!"
+      ],
+      "next": 330
+    },
+    {
+      "id": 330,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Đức bị đánh...",
+        "Không thể chống cự...",
+        "Chỉ có thể co ro và chịu đựng..."
+      ],
+      "next": -1,
+      "setFlags": [
+        "critical_scene27_completed",
+        "got_beaten",
+        "refused_game_and_beaten"
+      ],
+      "actionId": "trigger_scene28b",
+      "_comment": "Chuyển sang Scene 28B - Về nhà - Lựa chọn cuối cùng (Ending 2/3)"
+    }
+  ]
+}

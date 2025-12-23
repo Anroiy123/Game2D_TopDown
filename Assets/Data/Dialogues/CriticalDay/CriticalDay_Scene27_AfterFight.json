@@ -1,0 +1,77 @@
+{
+  "_comment": "Critical Day - Scene 27: Dialogue sau khi Đức thắng trận đánh 1v1",
+  "conversationName": "CriticalDay_Scene27_AfterFight",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Hà... hà... hàaaaaaaa!",
+        "Từ giờ, không ai trong tụi mày được đụng đến tao nữa!"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Cút hết đi!",
+        "Tao không phải đứa để tụi mày bắt nạt dễ dàng đâu!",
+        "Tụi mày còn đụng vào tao nữa thì tao hoặc tụi mày phải nằm xuống đấy!"
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đàn em 1",
+      "isPlayer": false,
+      "lines": [
+        "Anh... anh ơi! Đứng dậy đi anh!"
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Đàn em 2",
+      "isPlayer": false,
+      "lines": [
+        "Thằng này điên rồi! Chạy đi!"
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đám đàn em hoảng sợ bỏ chạy tán loạn...",
+        "Thủ lĩnh nằm bất động trên mặt đất."
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Thở hổn hển...)",
+        "(Mình... mình đã làm được...)",
+        "(Cuối cùng mình cũng đứng lên được rồi...)"
+      ],
+      "next": 60
+    },
+    {
+      "id": 60,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Người đau nhức khắp nơi... nhưng trong lòng nhẹ nhõm lạ thường.)",
+        "(Phải về nhà thôi... Mẹ đang chờ...)"
+      ],
+      "next": -1
+    }
+  ]
+}

@@ -297,7 +297,7 @@ public class NPCInteraction : MonoBehaviour
         }
         
         // Bắt đầu dialogue
-        dialogueSystem.StartDialogueWithChoices(entry.dialogueData, OnDialogueEnd, OnDialogueAction);
+        dialogueSystem.StartDialogueWithChoices(entry.dialogueData, OnDialogueEnd, OnDialogueAction, OnVNSceneTransition);
     }
 
     // Callback từ bên ngoài (NPCSurroundPlayer)
@@ -351,11 +351,11 @@ public class NPCInteraction : MonoBehaviour
         if (useAvatarMode)
         {
             var (avatarMap, flipMap) = BuildAvatarMaps();
-            dialogueSystem.StartDialogueWithAvatars(activeDialogue, avatarMap, flipMap, false, OnDialogueEnd, OnDialogueAction);
+            dialogueSystem.StartDialogueWithAvatars(activeDialogue, avatarMap, flipMap, false, OnDialogueEnd, OnDialogueAction, OnVNSceneTransition);
         }
         else
         {
-            dialogueSystem.StartDialogueWithChoices(activeDialogue, OnDialogueEnd, OnDialogueAction);
+            dialogueSystem.StartDialogueWithChoices(activeDialogue, OnDialogueEnd, OnDialogueAction, OnVNSceneTransition);
         }
     }
 
@@ -448,12 +448,12 @@ public class NPCInteraction : MonoBehaviour
                 {
                     // Tạo avatar map và flip map từ avatarEntries
                     var (avatarMap, flipMap) = BuildAvatarMaps();
-                    dialogueSystem.StartDialogueWithAvatars(activeDialogue, avatarMap, flipMap, true, OnDialogueEnd, OnDialogueAction);
+                    dialogueSystem.StartDialogueWithAvatars(activeDialogue, avatarMap, flipMap, true, OnDialogueEnd, OnDialogueAction, OnVNSceneTransition);
                 }
                 else
                 {
                     // Sử dụng dialogue với choices (không có avatar)
-                    dialogueSystem.StartDialogueWithChoices(activeDialogue, OnDialogueEnd, OnDialogueAction);
+                    dialogueSystem.StartDialogueWithChoices(activeDialogue, OnDialogueEnd, OnDialogueAction, OnVNSceneTransition);
                 }
             }
             else
@@ -551,7 +551,7 @@ public class NPCInteraction : MonoBehaviour
     private void OnDialogueAction(string actionId)
     {
         Debug.Log($"NPC {npcName} received action: {actionId}");
-        
+
         // Xử lý các action khác nhau
         switch (actionId)
         {
@@ -571,9 +571,54 @@ public class NPCInteraction : MonoBehaviour
                 // Trigger cutscene bullies đánh player
                 TriggerBeatCutscene();
                 break;
+            case "trigger_fight_cutscene":
+                // Trigger cutscene đánh nhau 1v1 (Scene 27 - Đức vs Thủ lĩnh)
+                TriggerFightCutscene();
+                break;
+            
+            // Storytelling Endings
+            case "trigger_ending1_storytelling":
+            case "trigger_ending2_storytelling":
+            case "trigger_ending3_storytelling":
+                // Delegate to VisualNovelManager which has the storytelling references
+                if (VisualNovelManager.Instance != null)
+                {
+                    // Use reflection or direct method call
+                    TriggerStorytellingEnding(actionId);
+                }
+                else
+                {
+                    Debug.LogError($"[NPCInteraction] Cannot trigger {actionId} - VisualNovelManager not found!");
+                }
+                break;
+                
             default:
                 Debug.Log($"Unknown action: {actionId}");
                 break;
+        }
+    }
+
+    /// <summary>
+    /// Callback khi dialogue node yêu cầu chuyển sang VN scene
+    /// </summary>
+    private void OnVNSceneTransition(VNSceneData nextVNScene)
+    {
+        if (nextVNScene == null)
+        {
+            Debug.LogError("[NPCInteraction] OnVNSceneTransition: nextVNScene is null!");
+            return;
+        }
+
+        Debug.Log($"[NPCInteraction] Transitioning to VN scene: {nextVNScene.name}");
+
+        // Gọi VisualNovelManager để chuyển scene
+        if (VisualNovelManager.Instance != null)
+        {
+            VisualNovelManager.Instance.StartVNScene(nextVNScene, null);
+        }
+        else
+        {
+            Debug.LogError("[NPCInteraction] VisualNovelManager.Instance is null!");
         }
     }
 
@@ -592,6 +637,57 @@ public class NPCInteraction : MonoBehaviour
         else
         {
             Debug.LogWarning($"[NPCInteraction] {npcName}: BullyBeatCutscene not found in scene!");
+        }
+    }
+
+    /// <summary>
+    /// Trigger cutscene đánh nhau 1v1 (Scene 27)
+    /// Tìm FightCutscene trong scene và chạy
+    /// </summary>
+    private void TriggerFightCutscene()
+    {
+        FightCutscene cutscene = FindFirstObjectByType<FightCutscene>();
+        if (cutscene != null)
+        {
+            Debug.Log($"[NPCInteraction] {npcName}: Triggering FightCutscene");
+            cutscene.StartFightCutscene();
+        }
+        else
+        {
+            Debug.LogWarning($"[NPCInteraction] {npcName}: FightCutscene not found in scene!");
+        }
+    }
+
+    /// <summary>
+    /// Trigger Storytelling Ending thông qua VisualNovelManager
+    /// </summary>
+    private void TriggerStorytellingEnding(string actionId)
+    {
+        Debug.Log($"[NPCInteraction] {npcName}: Triggering storytelling ending: {actionId}");
+        
+        // Get the storytelling data from VisualNovelManager and play it
+        StorytellingSequenceData sequenceData = null;
+        
+        switch (actionId)
+        {
+            case "trigger_ending1_storytelling":
+                sequenceData = VisualNovelManager.Instance.GetEnding1Data();
+                break;
+            case "trigger_ending2_storytelling":
+                sequenceData = VisualNovelManager.Instance.GetEnding2Data();
+                break;
+            case "trigger_ending3_storytelling":
+                sequenceData = VisualNovelManager.Instance.GetEnding3Data();
+                break;
+        }
+        
+        if (sequenceData != null && StorytellingManager.Instance != null)
+        {
+            StorytellingManager.Instance.PlaySequence(sequenceData);
+        }
+        else
+        {
+            Debug.LogError($"[NPCInteraction] Cannot play storytelling - sequenceData={sequenceData != null}, StorytellingManager={StorytellingManager.Instance != null}");
         }
     }
 

@@ -17,15 +17,16 @@ Unity 6 (6000.2.14f1) 2D top-down classroom simulation game about school bullyin
 ```
 Assets/Scripts/
 ├── Core/          # Singleton managers (DontDestroyOnLoad)
-├── Player/        # PlayerMovement
-├── NPC/           # NPCInteraction, NPCFollowPlayer, NPCSurroundPlayer, BullyEncounterZone
-├── Dialogue/      # DialogueSystem, DialogueData
-├── Scene/         # SceneTransition, SpawnManager, ScreenFader, LocalTeleporter
+├── Player/        # PlayerMovement, PlayerSelfDialogue
+├── NPC/           # NPCInteraction, NPCFollowPlayer, NPCSurroundPlayer, BullyEncounterZone, FightCutscene, BullyBeatCutscene
+├── Dialogue/      # DialogueSystem, DialogueData, DialogueTrigger
+├── Scene/         # SceneTransition, SpawnManager, ScreenFader, LocalTeleporter, TimeSkipTrigger
 ├── VisualNovel/   # VN mode (static backgrounds + dialogue overlay)
+├── Storytelling/  # StorytellingManager, StorytellingSequenceData (endings)
 ├── Interaction/   # BedInteraction, DoorController, InteractableOutline
 ├── Utilities/     # CameraHelper, SerializableDictionary
-├── Data/          # ScriptableObject assets (.asset files)
-└── Editor/        # Editor tools (SceneSetupHelper, NPCAnimatorGenerator, NPCSurroundSetupHelper)
+├── Debug/         # DebugFlagMenu, QuickFlagSetter
+└── Editor/        # Editor tools (SceneSetupHelper, NPCAnimatorGenerator, StorytellingSequenceCreator)
 ```
 
 ## ScriptableObject Best Practices (CRITICAL)
@@ -235,7 +236,7 @@ DialogueData (ScriptableObject) [Create via: Right-click → Dialogue/Dialogue D
 
 - `DAY_1_COMPLETED`, `MET_BULLIES`, `BEFRIENDED_BULLIES`, `GOT_BEATEN`
 - `TALKED_TO_TEACHER`, `INVITED_BY_CLASSMATE`, `REJECTED_CLASSMATE`
-- `MOM_WORRIED`, `CONFESSED_TO_MOM`, `BROUGHT_KNIFE`
+- `MOM_WORRIED`, `CONFESSED_TO_MOM`, `HID_FROM_MOM`, `BROUGHT_KNIFE`
 
 **StoryManager.VarKeys constants:**
 
@@ -381,9 +382,12 @@ Searches for `CinemachineCamera` or `CinemachineVirtualCamera` MonoBehaviours an
 ## Input Keys
 
 - **WASD/Arrows**: Movement
+- **Shift**: Sprint (run faster)
 - **E**: Interact (sit/stand, talk, continue dialogue, doors, teleporters, bed)
-- **ESC**: Exit dialogue
+- **ESC**: Exit dialogue / Skip storytelling
 - **1-9 / Numpad1-9**: Select dialogue choices
+- **F1**: Debug Flag Menu (Editor only)
+- **T**: Test VN Scene (if VNSceneQuickTest component exists)
 
 ## External Dependencies
 
@@ -408,6 +412,13 @@ Searches for `CinemachineCamera` or `CinemachineVirtualCamera` MonoBehaviours an
   - Auto-creates folder structure
   - Handles overwrite with confirmation
   - Example JSON files: `Assets/Scripts/Data/Dialogues/example_dialogue.json`, `advanced_example.json`
+
+**`Tools/Storytelling/` menu:**
+
+- `Create Sequence` - Create StorytellingSequenceData for endings
+  - Configure segments with backgrounds, texts, illustrations
+  - Set ending type and next scene
+  - Supports skip functionality
 
 **`Tools/NPC Setup/` menu:**
 
@@ -557,6 +568,118 @@ VNScene.returnToTopDown = true;
 VNScene.topDownSceneName = "HomeScene"; // Different
 VNScene.spawnPointId = "from_street";
 ```
+
+## Storytelling System (Endings)
+
+**StorytellingManager** - Singleton for ending sequences:
+
+```csharp
+// Start an ending sequence
+StorytellingManager.Instance.StartSequence(sequenceData, onComplete);
+
+// Check if playing
+bool isPlaying = StorytellingManager.Instance.IsPlaying;
+
+// Stop sequence
+StorytellingManager.Instance.StopSequence();
+```
+
+**StorytellingSequenceData** (ScriptableObject) [Create via: Tools → Storytelling → Create Sequence]:
+
+```
+StorytellingSequenceData
+├── sequenceName, description
+├── endingType: EndingType
+├── segments: StorySegment[]
+│   ├── backgroundImage: Sprite
+│   ├── text: string (TextArea)
+│   ├── illustration: Sprite (optional)
+│   ├── displayDuration: float
+│   ├── delayBefore: float
+│   └── bgm: AudioClip
+├── nextSceneName (MainMenu, Credits, etc.)
+├── allowSkip: bool
+└── skipKey: KeyCode (default: Escape)
+```
+
+**StorytellingTrigger** - Component to trigger storytelling:
+
+- Modes: OnTriggerEnter, OnInteract, OnSceneStart, Manual
+- Supports conditions (requiredFlags, forbiddenFlags)
+- Can set flags after completion
+
+## Cutscene Systems
+
+**FightCutscene** - 1v1 combat cutscene (Scene 27):
+
+```csharp
+// Start fight cutscene
+fightCutscene.StartFightCutscene();
+fightCutscene.StartFightCutscene(onComplete);
+
+// Properties
+bool isPlaying = fightCutscene.IsPlaying;
+```
+
+Features:
+- Multiple fight rounds with attack/hurt animations
+- Screen flash and camera shake effects
+- Bully minions scatter after defeat
+- Supports afterFightVNScene or afterFightDialogueNPC
+
+**BullyBeatCutscene** - Multiple bullies beat player:
+
+```csharp
+// Start beat cutscene
+bullyBeatCutscene.StartBeatCutscene();
+bullyBeatCutscene.StartBeatCutscene(onComplete);
+```
+
+Features:
+- Multiple bullies take turns punching
+- Auto-sets GOT_BEATEN flag and increases FEAR_LEVEL
+- Supports afterBeatVNScene or afterBeatDialogueNPC
+
+## Additional Components
+
+**DialogueTrigger** - Trigger dialogue from non-NPC objects:
+
+```csharp
+// Trigger from code
+dialogueTrigger.TriggerFromExternal();
+dialogueTrigger.ResetTrigger();
+```
+
+Features:
+- Avatar mode with speaker sprites
+- Conditional dialogues
+- Chain to next VN scene, dialogue, or Unity scene
+- Modes: OnTriggerEnter, OnInteract, OnSceneStart
+
+**PlayerSelfDialogue** - Player inner thoughts:
+
+```csharp
+// Trigger from code
+playerSelfDialogue.TriggerDialogueFromExternal(onComplete);
+```
+
+Features:
+- Auto-trigger on scene start (triggerOnSceneStart)
+- Auto-trigger when flag is set (triggerOnFlagSet)
+- Conditional dialogues with priority
+
+**TimeSkipTrigger** - Time skip with text overlay:
+
+```csharp
+// Trigger from code
+timeSkipTrigger.TriggerFromExternal();
+timeSkipTrigger.TriggerFromExternal(onComplete);
+```
+
+Features:
+- Multiple text entries displayed sequentially
+- Advance days automatically
+- Chain to VN scene or Unity scene after
 
 Always answer in vietnamese
 

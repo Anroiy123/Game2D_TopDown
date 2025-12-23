@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: CriticalDay_Scene28A_Home_AfterWin_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: CriticalDay_Scene28A_Home_AfterWin
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Tr\u1EDDi \u0111\u1EA5t \u01A1i! Con b\u1ECB g\xEC th\u1EBF n\xE0y?"
+    - "Sao x\xE2y x\xE1t kh\u1EAFp ng\u01B0\u1EDDi th\u1EBF?"
+    - "Ai l\xE0m con th\u1EBF n\xE0y?"
+    choices: []
+    nextNodeId: 10
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "M\u1EB9 \u01A1i... con b\u1ECB b\u1EAFt n\u1EA1t su\u1ED1t m\u1EA5y tu\u1EA7n
+      nay."
+    - "Chi\u1EC1u nay con ch\u1ECBu h\u1EBFt n\u1ED5i r\u1ED3i n\xEAn \u0111\xE1nh
+      l\u1EA1i."
+    - "Con th\u1EAFng r\u1ED3i m\u1EB9... nh\u01B0ng con s\u1EE3 l\u1EAFm..."
+    choices: []
+    nextNodeId: 20
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: "M\u1EB9"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Sao con gi\u1EA5u m\u1EB9 chuy\u1EC7n n\xE0y?"
+    - "M\u1EB9 lo cho con mu\u1ED1n ch\u1EBFt!"
+    - "\u0110\u1EC3 m\u1EB9 g\u1ECDi cho c\xF4 gi\xE1o ngay, nh\xE0 tr\u01B0\u1EDDng
+      ph\u1EA3i can thi\u1EC7p."
+    choices: []
+    nextNodeId: 30
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 30
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "Con xin l\u1ED7i m\u1EB9..."
+    - "Con kh\xF4ng mu\u1ED1n m\u1EB9 lo l\u1EAFng..."
+    - "Nh\u01B0ng gi\u1EDD con c\u1EA3m th\u1EA5y nh\u1EB9 nh\xF5m h\u01A1n r\u1ED3i..."
+    choices:
+    - choiceText: "\u0110\u1EBFn ending 1"
+      nextNodeId: -1
+      actionId: trigger_ending1_storytelling
+      nextVNScene: {fileID: 0}
+      endVNMode: 0
+      loadTopDownScene: 
+      topDownSpawnPointId: 
+      requiredFlags: []
+      forbiddenFlags: []
+      variableConditions: []
+      setFlagsTrue: []
+      setFlagsFalse: []
+      variableChanges: []
+    nextNodeId: -1
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter:
+    - confessed_to_mom
+    - ending1_good_standup
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

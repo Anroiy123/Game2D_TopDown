@@ -21,6 +21,9 @@ public class NodeJson
     public List<string> lines = new List<string>();
     public List<ChoiceJson> choices;
     public int next = -1;
+    public string nextVNScene; // Path to VNSceneData asset
+    public string loadScene;   // Top-down scene name (MỚI)
+    public string spawnPoint;  // SpawnPoint ID for top-down scene (MỚI)
     public List<string> setFlags;
     public List<VarChangeJson> varChanges;
 }
@@ -33,6 +36,8 @@ public class ChoiceJson
     public string action;
     public string vnScene;      // Path to VNSceneData asset
     public bool endVNMode;      // End VN mode after choice
+    public string loadScene;    // Top-down scene name (MỚI)
+    public string spawnPoint;   // SpawnPoint ID for top-down scene (MỚI)
     public List<string> requireFlags;
     public List<string> forbidFlags;
     public List<VarConditionJson> varConditions;
@@ -188,10 +193,23 @@ public class DialogueJsonImporter : EditorWindow
                 isPlayerSpeaking = nj.isPlayer,
                 dialogueLines = nj.lines != null ? nj.lines.ToArray() : new string[0],
                 nextNodeId = nj.next,
+                loadTopDownScene = nj.loadScene ?? "",
+                topDownSpawnPointId = nj.spawnPoint ?? "",
                 setFlagsOnEnter = nj.setFlags != null ? nj.setFlags.ToArray() : new string[0],
                 variableChangesOnEnter = ConvertVarChanges(nj.varChanges),
                 choices = ConvertChoices(nj.choices)
             };
+
+            // Load VNSceneData if path provided
+            if (!string.IsNullOrEmpty(nj.nextVNScene))
+            {
+                node.nextVNScene = AssetDatabase.LoadAssetAtPath<VNSceneData>(nj.nextVNScene);
+                if (node.nextVNScene == null)
+                {
+                    Debug.LogWarning($"VNSceneData not found at: {nj.nextVNScene}");
+                }
+            }
+
             nodes.Add(node);
         }
         return nodes.ToArray();
@@ -209,6 +227,8 @@ public class DialogueJsonImporter : EditorWindow
                 nextNodeId = cj.next,
                 actionId = cj.action ?? "",
                 endVNMode = cj.endVNMode,
+                loadTopDownScene = cj.loadScene ?? "",
+                topDownSpawnPointId = cj.spawnPoint ?? "",
                 requiredFlags = cj.requireFlags != null ? cj.requireFlags.ToArray() : new string[0],
                 forbiddenFlags = cj.forbidFlags != null ? cj.forbidFlags.ToArray() : new string[0],
                 variableConditions = ConvertVarConditions(cj.varConditions),

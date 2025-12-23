@@ -45,7 +45,8 @@ MonoBehaviour:
     spawnPointId: Desk_spawn
   requiredFlags:
   - day1_scene2_completed
-  forbiddenFlags: []
+  forbiddenFlags:
+  - day1_classroom_completed
   setFlagsOnEnter:
   - day1_classroom_completed
   - day1_scene3_completed

@@ -1,0 +1,104 @@
+{
+  "_comment": "Critical Day - Scene 28B: Về nhà sau khi bị đánh - LỰA CHỌN CUỐI CÙNG (ENDING 2/3)",
+  "conversationName": "CriticalDay_Scene28B_Home_Choice",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Về rồi đấy à? Sao nay về trễ thế con?",
+        "Con bị gì thế, sao xây xát khắp người thế này?",
+        "Mày có bị sao không con?"
+      ],
+      "choices": [
+        {
+          "text": "Mẹ ơi... con bị bắt nạt... (Thú nhận)",
+          "next": 100,
+          "setTrue": ["confessed_to_mom", "ending2_true_tellparents"],
+          "_comment": "ENDING 2 - True_TellParents"
+        },
+        {
+          "text": "Dạ không có gì đâu mẹ... (Giấu mẹ)",
+          "next": 200,
+          "setTrue": ["hid_from_mom", "ending3_bad_darklife"],
+          "_comment": "ENDING 3 - Bad_DarkLife"
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Mẹ ơi... con bị bắt nạt suốt mấy tuần nay...",
+        "Tụi nó chặn đường con, đòi tiền, rồi đánh con...",
+        "Con sợ lắm mẹ ơi... con không muốn đi học nữa đâu..."
+      ],
+      "next": 110,
+      "_comment": "=== ENDING 2 BRANCH: Thú nhận với mẹ ==="
+    },
+    {
+      "id": 110,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Ôi con trai mẹ, sao con giấu mẹ chuyện này?",
+        "Đừng khóc nữa con, mẹ ở đây mà.",
+        "Để mẹ lo cho con. Mẹ sẽ gọi cho cô giáo ngay."
+      ],
+      "next": 120
+    },
+    {
+      "id": 120,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Cảm ơn mẹ...",
+        "Con xin lỗi vì đã giấu mẹ...",
+        "Con cảm thấy nhẹ nhõm hơn rồi..."
+      ],
+      "next": -1,
+      "actionId": "trigger_ending2_storytelling",
+      "_comment": "Trigger Storytelling Ending 2 - True_TellParents"
+    },
+    {
+      "id": 200,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Dạ không có gì đâu mẹ...",
+        "Con đi đường không để ý lỡ vấp cục đá nên té thôi.",
+        "Con lên phòng trước đây mẹ."
+      ],
+      "next": 210,
+      "_comment": "=== ENDING 3 BRANCH: Giấu mẹ ==="
+    },
+    {
+      "id": 210,
+      "speaker": "Mẹ",
+      "isPlayer": false,
+      "lines": [
+        "Mắt mày để đâu mà đi đứng không cẩn thận thế con...",
+        "Nhưng tao thấy mày lạ lắm con...",
+        "Có chuyện gì nhớ phải nói với mẹ nghe chưa?"
+      ],
+      "next": 220
+    },
+    {
+      "id": 220,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Dạ vâng, con biết rồi.",
+        "(Mình không muốn mẹ lo...)",
+        "(Mình sẽ tự giải quyết...)"
+      ],
+      "next": -1,
+      "actionId": "trigger_ending3_storytelling",
+      "_comment": "Trigger Storytelling Ending 3 - Bad_DarkLife"
+    }
+  ]
+}
+

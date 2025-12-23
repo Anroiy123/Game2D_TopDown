@@ -1,0 +1,306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: CriticalDay_Scene27B_GotBeaten_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: CriticalDay_Scene27B_GotBeaten
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: "Th\u1EE7 l\u0129nh"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\xE1nh n\xF3 \u0111i!"
+    - "Cho n\xF3 bi\u1EBFt th\u1EBF n\xE0o l\xE0 l\u1EC5 \u0111\u1ED9!"
+    choices: []
+    nextNodeId: 10
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "C\u1EA3 \u0111\xE1m bu l\u1EA1i \u0110\u1EE9c..."
+    - "Kh\xF4ng k\u1ECBp ph\u1EA3n \u1EE9ng, \u0110\u1EE9c \u0111\xE3 b\u1ECB \u0111\u1EA9y
+      ng\xE3 xu\u1ED1ng \u0111\u1EA5t."
+    choices: []
+    nextNodeId: 20
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: "\u0110\xE0n em 1"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Ha ha! M\xE0y ngh\u0129 m\xE0y l\xE0 ai?"
+    - "D\xE1m c\xE3i l\u1EA1i anh tao \xE0?"
+    choices: []
+    nextNodeId: 30
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 30
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "B\u1EE5p!"
+    - "M\u1ED9t c\xFA \u0111\u1EA5m tr\xFAng v\xE0o m\u1EB7t \u0110\u1EE9c."
+    choices: []
+    nextNodeId: 40
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 40
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - Ugh...!
+    - "(\u0110au qu\xE1... m\u1EB7t tao...)"
+    choices: []
+    nextNodeId: 50
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 50
+    speakerName: "\u0110\xE0n em 2"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\xE1 n\xF3 \u0111i!"
+    - "Cho n\xF3 nh\u1EDB \u0111\u1EDDi!"
+    choices: []
+    nextNodeId: 60
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 60
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "B\u1EE5p! B\u1ECBch! B\u1EE5p!"
+    - "Nh\u1EEFng c\xFA \u0111\xE1 li\xEAn ti\u1EBFp v\xE0o ng\u01B0\u1EDDi \u0110\u1EE9c."
+    - "\u0110\u1EE9c ch\u1EC9 c\xF3 th\u1EC3 co ro, che m\u1EB7t."
+    choices: []
+    nextNodeId: 70
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 70
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(T\u1EA1i sao... t\u1EA1i sao l\u1EA1i nh\u01B0 th\u1EBF n\xE0y...)"
+    - "(Tao \u0111\xE3 l\xE0m g\xEC sai ch\u1EE9...)"
+    - "(Ai \u0111\xF3... c\u1EE9u tao v\u1EDBi...)"
+    choices: []
+    nextNodeId: 80
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 80
+    speakerName: "Th\u1EE7 l\u0129nh"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "M\xE0y th\u1EA5y ch\u01B0a?"
+    - "\u0110\xE2y l\xE0 c\xE1i gi\xE1 ph\u1EA3i tr\u1EA3 khi kh\xF4ng bi\u1EBFt
+      \u0111i\u1EC1u."
+    - "L\u1EA7n sau nh\u1EDB ngoan ngo\xE3n h\u01A1n nh\xE9."
+    choices: []
+    nextNodeId: 90
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 90
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Th\u1EE7 l\u0129nh \u0111\xE1 th\xEAm m\u1ED9t c\xFA v\xE0o b\u1EE5ng \u0110\u1EE9c."
+    - "\u0110\u1EE9c ho s\u1EB7c s\u1EE5a, n\u01B0\u1EDBc m\u1EAFt tr\xE0o ra."
+    choices: []
+    nextNodeId: 100
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 100
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "Kh\u1EE5... kh\u1EE5..."
+    - "(Kh\xF4ng th\u1EDF \u0111\u01B0\u1EE3c... \u0111au qu\xE1...)"
+    choices: []
+    nextNodeId: 110
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 110
+    speakerName: "Th\u1EE7 l\u0129nh"
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Th\xF4i \u0111\u01B0\u1EE3c r\u1ED3i, \u0111\u1EE7 r\u1ED3i."
+    - "\u0110\u1EC3 n\xF3 s\u1ED1ng m\xE0 c\xF2n mang ti\u1EC1n cho t\u1EE5i tao."
+    - "\u0110i th\xF4i anh em."
+    choices: []
+    nextNodeId: 120
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 120
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "T\u1EE5i b\u1EAFt n\u1EA1t c\u01B0\u1EDDi ha h\u1EA3 r\u1ED3i b\u1ECF \u0111i..."
+    - "\u0110\u1EC3 l\u1EA1i \u0110\u1EE9c m\u1ED9t m\xECnh n\u1EB1m tr\xEAn con
+      \u0111\u01B0\u1EDDng v\u1EAFng."
+    choices: []
+    nextNodeId: 130
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 130
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(\u0110au qu\xE1... to\xE0n th\xE2n \u0111au nh\u1EE9c...)"
+    - "(M\xE1u... m\xE1u ch\u1EA3y ra t\u1EEB mi\u1EC7ng...)"
+    - "(Tao ph\u1EA3i v\u1EC1 nh\xE0... ph\u1EA3i \u0111\u1EE9ng d\u1EADy...)"
+    choices: []
+    nextNodeId: 140
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 140
+    speakerName: 
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\u1EE9c c\u1ED1 g\u1EAFng ch\u1ED1ng tay \u0111\u1EE9ng d\u1EADy..."
+    - "Ch\xE2n run r\u1EA9y, su\xFDt ng\xE3."
+    - "Nh\u01B0ng \u0110\u1EE9c v\u1EABn c\u1ED1 g\u1EAFng l\xEA b\u01B0\u1EDBc v\u1EC1
+      nh\xE0..."
+    choices: []
+    nextNodeId: 150
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 150
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "(M\xECnh kh\xF4ng th\u1EC3 \u0111\u1EC3 m\u1EB9 th\u1EA5y nh\u01B0 th\u1EBF
+      n\xE0y...)"
+    - "(Ph\u1EA3i ngh\u0129 ra l\xFD do g\xEC \u0111\xF3...)"
+    - "(Hay l\xE0... n\xF3i th\u1EADt v\u1EDBi m\u1EB9...?)"
+    choices: []
+    nextNodeId: -1
+    nextVNScene: {fileID: 0}
+    loadTopDownScene: 
+    topDownSpawnPointId: 
+    setFlagsOnEnter:
+    - critical_scene27b_completed
+    - got_beaten_detailed
+    variableChangesOnEnter:
+    - variableName: fear_level
+      operation: 1
+      value: 35
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

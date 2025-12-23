@@ -624,348 +624,378 @@ _(Nguyên đám bu lại - bụp bụp bụp)_
 
 ## KẾT CỤC 1: ĐỨNG LÊN CHỐNG LẠI (Good_StandUp)
 
-### 🎮 Cảnh E1-1: Về nhà sau khi thắng
+### 🎬 Cảnh 28A: Về nhà sau khi thắng
 
-**Chế độ**: `Top-down` (Phòng khách)
-**Scene ID**: `Ending1_Scene1_Home`
+**Chế độ**: `Visual Novel` (Background phòng khách)
+**Scene ID**: `CriticalDay_Scene28A_Home_AfterWin`
 
-**Mẹ**: "Về rồi đấy à, sao nay về trễ thế con, sáng mẹ có dặn là nay về sớm mà. Con bị gì thế, sao xây xát khắp người thế này, mày có bị sao không con, mày đi đánh nhau à?"
+**Mẹ**: "Trời đất ơi! Con bị gì thế này? Sao xây xát khắp người thế?"
 
-**Đức**: "Mẹ ơi... con... con bị bắt nạt suốt mấy tuần nay. Mấy thằng du côn ngoài đường hay chặn con lại, đòi tiền, dọa nạt, rồi còn đánh con nữa. Chiều nay con gặp tụi nó, con chịu hết nổi rồi nên đánh lại. Con cho tụi nó biết con không phải là người dễ đụng vào rồi. Giờ thì ổn rồi, mẹ đừng lo nữa, tụi nó sợ con rồi, không dám làm gì đâu."
+**Đức**: "Mẹ ơi... con bị bắt nạt suốt mấy tuần nay. Chiều nay con chịu hết nổi rồi nên đánh lại. Con thắng rồi mẹ... nhưng con sợ lắm..."
 
-**Mẹ**: "Trời đất ơi, sao con giấu mẹ chuyện này? Mẹ lo cho con muốn chết đây này! Đánh nhau nguy hiểm lắm, lỡ tụi nó kéo bè kéo đảng trả thù thì sao? Con còn nhỏ, không nên tự giải quyết một mình như vậy. Thôi, để mẹ gọi cho cô giáo chủ nhiệm ngay tối nay, kể hết mọi chuyện cho cô ấy nghe. Nhà trường phải can thiệp chứ để thế này nguy hiểm quá."
+**Mẹ**: "Sao con giấu mẹ chuyện này? Mẹ lo cho con muốn chết! Để mẹ gọi cho cô giáo ngay, nhà trường phải can thiệp."
 
-**Đức**: "Con xin lỗi mẹ, tại con không muốn mẹ lo. Nhưng giờ con lo tụi nó được rồi mà, con mạnh lắm."
-
-**Mẹ**: "Mạnh mẽ cái gì, mẹ vẫn lo chứ. Mày là con trai mẹ, mẹ phải bảo vệ mày chứ. Để mẹ gọi điện, xem nhà trường giải quyết thế nào."
+_(Kết thúc dialogue → Chuyển sang **STORYTELLING ENDING 1**)_
 
 ---
 
-_(Chuyển cảnh: Màn hình đen - Tối hôm đó)_
+### 📖 STORYTELLING ENDING 1: "SẼ CÓ NHỮNG CON CÁ PHẢI GIẢ CHÓ"
+
+**Chế độ**: `Storytelling` (Màn hình đen + Text cuộn + Ảnh minh họa)
+
+```
+[Màn hình đen - Text cuộn chậm]
+
+Tối hôm đó...
+
+Mẹ Đức gọi điện cho cô giáo chủ nhiệm.
+
+Nhà trường phối hợp với công an xử lý tụi bắt nạt.
 
 ---
 
-### 🎬 Cảnh E1-2: Tối hôm đó - Mẹ gọi điện
+Sáng hôm sau...
 
-**Chế độ**: `Visual Novel` (Background phòng khách - avatar mẹ gọi điện)
-**Scene ID**: `Ending1_Scene2_PhoneCall`
+Cô giáo gọi Đức lên phòng, hỏi thăm và an ủi.
 
-**Mẹ**: "Alo, cô giáo chủ nhiệm lớp Đức phải không ạ? Em là mẹ cháu Đức đây."
-
-**Cô giáo**: "Dạ vâng ạ, phụ huynh gọi em có chuyện gì không ạ"
-
-**Mẹ**: "Chuyện là bạn Đức nhà em gặp chuyện cô ạ, chiều nay thằng bé đi học về trễ, trên người nó toàn là vết trầy xước, em hỏi thì nó kêu là nó vừa đánh nhau với tụi bắt nạt. Đức kể là từ tuần đầu đi học gặp bọn đó rồi dần dần bị tụi nó bắt nạt, đến chiều nay thì Đức không chịu được nữa nên đã đánh trả, cháu có nói là đánh cho tụi kia sợ rồi, nhưng em lo lắm cô ạ, em sợ tụi kia trả thù. Cô có thể xử lý giúp bạn Đức chuyện này được không cô, nhà trường phải làm gì chứ để thế này em lo chết mất."
-
-**Giáo viên**: "Ôi chị ơi, sao lại có chuyện như vậy? Cô xin lỗi vì không nhận ra sớm hơn. Cô sẽ báo ngay cho ban giám hiệu nhà trường và cam kết giải quyết triệt để. Chúng em sẽ phối hợp với công an nếu cần, và để đảm bảo an toàn, cô sẽ sắp xếp hai bạn trong lớp đi cùng bạn Đức về nhà trong một tuần tới. Chị yên tâm, cô sẽ theo dõi sát sao tình hình của cháu, đảm bảo mọi chuyện như này sẽ chấm dứt."
-
-**Mẹ**: "Em cảm ơn cô nhiều lắm. Nhờ cô giúp cháu nó với."
+"Em đừng lo nữa nhé. Cô sẽ xử lý chuyện này."
 
 ---
 
-_(Chuyển cảnh: Màn hình đen - Sáng hôm sau)_
+Trong một tuần...
+
+Hai bạn trong lớp tình nguyện đi cùng Đức về nhà.
+
+"Ê Đức, đi về cùng tụi tao nhé. Có tụi tao đây, tụi nó không dám làm gì đâu."
+
+Tụi bắt nạt không dám xuất hiện nữa.
 
 ---
 
-### 🎬 Cảnh E1-3: Sáng hôm sau - Trên lớp
+Một tháng sau...
 
-**Chế độ**: `Visual Novel` (Background lớp học - avatar cô giáo)
-**Scene ID**: `Ending1_Scene3_Classroom`
+Đức dần mở lòng với bạn bè.
 
-**Cô giáo**: "Đức này, em cảm thấy thế nào rồi, có ổn chưa? Cô nghe mẹ em kể hết rồi. Em đừng lo nữa nhé, nhà trường sẽ xử lý chuyện này. Cuối giờ hôm nay và trong một tuần tới, sẽ có hai bạn trong lớp đi cùng em về nhà để đảm bảo an toàn. Nếu có gì lạ, em báo cô ngay nhé."
+Những người bạn mới giúp Đức vượt qua nỗi sợ hãi.
 
-**Đức**: "Dạ, em cảm ơn cô ạ. Em ổn rồi ạ."
+Đức học cách đứng lên cho bản thân...
 
----
-
-_(Chuyển cảnh: Màn hình đen - Trong một tuần đó)_
+Nhưng cũng biết khi nào cần nhờ người lớn giúp đỡ.
 
 ---
 
-### 🎮 Cảnh E1-4: Trong một tuần đó - Bạn bè hộ tống
+[Ảnh: Đức cười cùng bạn bè trên sân trường]
 
-**Chế độ**: `Top-down` (Trên trường)
-**Scene ID**: `Ending1_Scene4_School_Protected`
+Cuộc sống không phải lúc nào cũng dễ dàng.
 
-**Bạn 1**: "Ê Đức, đi về cùng tụi tao nhé. Cô dặn rồi, đi chung cho an toàn. Mày kể tao nghe coi, tụi kia là tụi nào mà dám bắt nạt mày?"
+Nhưng khi bạn có dũng khí đứng lên...
 
-**Bạn 2**: "Ừ đúng đó, có tụi tao đây, tụi nó không dám làm gì đâu. Từ nay mày cứ đi với tụi tao, anh em mình bảo vệ nhau."
+Và tìm kiếm sự giúp đỡ từ những người xung quanh...
 
-**Đức**: "Ừm, cảm ơn tụi mày nhiều."
-
-_(Chú thích: Trong tuần đó, tụi bắt nạt không dám xuất hiện gây sự nữa thật. Chúng sợ bị nhà trường và công an xử lý.)_
+Bạn sẽ không còn cô đơn nữa.
 
 ---
 
-### 🎯 KẾT THÚC 1: SẼ CÓ NHỮNG CON CÁ PHẢI GIẢ CHÓ
+ENDING 1: SẼ CÓ NHỮNG CON CÁ PHẢI GIẢ CHÓ
 
-**Thông điệp**: Đứng lên chống lại bạo lực, tìm kiếm sự giúp đỡ từ gia đình và nhà trường là cách đúng đắn để bảo vệ bản thân.
+"Đứng lên chống lại bạo lực, và tìm kiếm sự giúp đỡ từ gia đình và nhà trường."
+
+[THE END]
+```
 
 ---
 
 ## KẾT CỤC 2: THÚ NHẬN VỚI MẸ (True_TellParents)
 
-### Về nhà sau khi bị đánh
+### 🎬 Cảnh 28B: Về nhà - Lựa chọn cuối cùng
 
-**Địa điểm**: Phòng khách (Top down)
+**Chế độ**: `Visual Novel` (Background phòng khách)
+**Scene ID**: `CriticalDay_Scene28B_Home_Choice`
 
-**Mẹ**: "Về rồi đấy à, sao nay về trễ thế con, sáng mẹ có dặn là nay về sớm mà. Con bị gì thế, sao xây xát khắp người thế này, mày có bị sao không con, mày đi đánh nhau à?"
+**Mẹ**: "Về rồi đấy à? Sao nay về trễ thế con? Con bị gì thế, sao xây xát khắp người thế này? Mày có bị sao không con?"
 
-**Đức**: "Mẹ ơi... con... con bị bắt nạt suốt mấy tuần nay. Tụi nó chặn đường con, đòi tiền, rồi đánh con tơi tả. Con sợ lắm mẹ ơi, con không muốn đi học nữa đâu. Mẹ giúp con đi, con chịu hết nổi rồi, huhu..."
+#### 🔀 LỰA CHỌN CUỐI CÙNG:
 
-**Mẹ**: "Ôi con trai mẹ, sao con giấu mẹ chuyện này? Đừng khóc nữa con, mẹ ở đây mà. 1 tuần sau con cứ ở nhà để bình tĩnh lại đi, chuyện còn lại để mẹ lo. Mẹ sẽ tìm cách cho con, nếu cần thì cho con chuyển trường luôn, nhưng lần này mẹ sẽ tìm hiểu kĩ hơn. Giờ mẹ gọi cho cô giáo chủ nhiệm ngay, báo nhà trường giải quyết dứt điểm chuyện này."
+**A. Thú nhận với mẹ** → ENDING 2
 
-**Đức**: "Huhuhu… Con sợ lắm, tụi nó đánh con đau lắm"
+**Đức**: "Mẹ ơi... con bị bắt nạt suốt mấy tuần nay... Tụi nó chặn đường con, đòi tiền, rồi đánh con... Con sợ lắm mẹ ơi... con không muốn đi học nữa đâu..."
 
-**Mẹ**: "Yên tâm, mẹ sẽ lo cho con hết. Con là con của mẹ, trừ khi được sự cho phép của mẹ thì không thằng bố con nào được động vào con mẹ. Con cứ lên phòng nghỉ đi, để mẹ lo."
+**Mẹ**: "Ôi con trai mẹ, sao con giấu mẹ chuyện này? Đừng khóc nữa con, mẹ ở đây mà. Để mẹ lo cho con. Mẹ sẽ gọi cho cô giáo ngay."
 
----
-
-### Tối hôm đó - Mẹ gọi điện
-
-**Địa điểm**: Phòng khách (avatar mẹ gọi điện)
-
-**Mẹ**: "Alo cô ơi, có chuyện này em phải thảo luận với cô gấp. Cháu Đức nhà em mới vào học trường mình được mấy tuần mà thằng bé đã bị bắt nạt đến mức tâm lý không ổn định rồi. Tụi côn đồ hay chặn đường về của cháu, đánh cháu xây xát hết người, bây giờ sợ không dám đi học nữa. Em muốn cho cháu nghỉ một tuần, rồi tính đến chuyện chuyển trường. Cô báo nhà trường giúp em với, phải xử lý mọi chuyện gấp cho em, cho tụi kia không lộng hành được nữa, em nhìn con em xót lắm."
-
-**Giáo viên**: "Ôi chị ơi, sao lại có chuyện như vậy? Cô xin lỗi vì không nhận ra sớm hơn. Cô sẽ báo ngay cho ban giám hiệu nhà trường và cam kết giải quyết triệt để. Chúng em sẽ phối hợp với công an nếu cần, và để đảm bảo an toàn, cô sẽ sắp xếp hai bạn trong lớp đi cùng bạn Đức về nhà trong một tuần tới, nếu Đức có ý định đi học lại. Chị yên tâm, nghe được chuyện như vậy, thân là giáo viên của chủ nhiệm của cháu, em cũng rất đau lòng. Em đảm bảo mọi chuyện như này sẽ chấm dứt. Cô cam kết sẽ xử lý triệt để tình trạng này, không để mọi chuyện đi xa hơn nữa."
+_(Kết thúc dialogue → Chuyển sang **STORYTELLING ENDING 2**)_
 
 ---
 
-### Sau đó
+**B. Giấu mẹ** → ENDING 3
 
-_(Chú thích: Nhà trường phối hợp với công an xử lý tụi bắt nạt, phát hiện chúng dính líu đến chất cấm, nên bị đưa lên phường quản thúc sau đó sẽ điều tra thêm vào cho vào trại giáo dưỡng. Đức được chuyển trường an toàn, bắt đầu cuộc sống mới mà không còn bị bắt nạt.)_
+**Đức**: "Dạ không có gì đâu mẹ... Con đi đường không để ý lỡ vấp cục đá nên té thôi. Con lên phòng trước đây mẹ."
 
----
+**Mẹ**: "Mắt mày để đâu mà đi đứng không cẩn thận thế con... Nhưng tao thấy mày lạ lắm con, có chuyện gì nhớ phải nói với mẹ nghe chưa?"
 
-### 🎯 KẾT THÚC 2: CHIA SẺ VỚI GIA ĐÌNH
+**Đức**: "Dạ vâng, con biết rồi. (Mình không muốn mẹ lo...)"
 
-**Thông điệp**: Chia sẻ với gia đình khi gặp khó khăn là điều quan trọng. Cha mẹ luôn sẵn sàng bảo vệ và giúp đỡ con cái vượt qua khó khăn.
-
----
-
-## KẾT CỤC 3 & 4: GIẤU MẸ - HAI CON ĐƯỜNG
-
-### Về nhà - Giấu sự thật
-
-**Địa điểm**: Phòng khách
-
-**Đức**: "Dạ không có gì đâu mẹ, con đi đường không để ý lỡ vấp cục đá nên té thôi, con lên phòng trước đây"
-
-**Mẹ**: "Mắt mày để đâu mà đi đứng không cẩn thận thế con, lần sau làm gì thì cứ từ từ mà làm, cẩn thận hơn, nhưng tao thấy mày lạ lắm con, có chuyện gì nhớ phải nói với mẹ nghe chưa?"
-
-**Đức**: "Dạ vâng con biết rồi, con không sao, con lên phòng đây."
+_(Kết thúc dialogue → Chuyển sang **STORYTELLING ENDING 3**)_
 
 ---
 
-### Trong phòng Đức
+### 📖 STORYTELLING ENDING 2: "CHIA SẺ VỚI GIA ĐÌNH"
 
-**Địa điểm**: Phòng Đức
+**Chế độ**: `Storytelling` (Màn hình đen + Text cuộn + Ảnh minh họa)
 
-**Đức** _(suy nghĩ)_: "Sao mình thấy khó chịu thế này... Mai đi học lại gặp tụi nó thì sao? Phải có cách gì đó chứ mình không chịu nổi nữa rồi, mình không muốn bị đau nữa. Hay là mang đồ phòng thân nhỉ?"
+```
+[Màn hình đen - Text cuộn chậm]
 
-_(Liếc mắt qua bàn học thấy chiếc dao rọc giấy)_
+Đức khóc trong vòng tay mẹ.
 
-**Đức** _(tiếp tục suy nghĩ)_: "Nhưng lỡ lỡ bị phát hiện thì sao …. nhưng mình sợ lắm, mình không muốn bị đau nữa đâu"
+Lần đầu tiên sau nhiều tuần, Đức cảm thấy nhẹ lòng.
 
----
+Mẹ vuốt tóc con, an ủi:
 
-## LỰA CHỌN ĐỊNH MỆNH: MANG DAO HAY KHÔNG?
-
-### Lựa chọn A: Mang dao
-
-### Lựa chọn B: Không mang
+"Con đừng sợ nữa. Mẹ ở đây mà."
 
 ---
 
-### Sáng hôm sau
+Tối hôm đó...
 
-**Địa điểm**: Phòng khách (Top down)
+Mẹ Đức gọi điện cho cô giáo và báo cảnh sát.
 
-**Đức**: _……._
+Nhà trường và công an phối hợp điều tra.
 
-**Mẹ**: "Ơ, thằng này hôm nay sao thế? Đi học mà không thèm chào mình luôn à? Chắc chắn nó bị gì ở trường rồi. Chiều nó về phải hỏi cho ra lẽ."
+Phát hiện tụi bắt nạt dính líu đến chất cấm.
 
----
-
-### Trên lớp
-
-**Địa điểm**: Lớp học
-
-**Bạn kế bàn**: "Thưa cô, em xung phong ạ"
-
-**Đức**: "Ha, _(che tay đỡ và né tránh)_ Đừng, đừng đánh đánh tao!"
-
-**Bạn kế bàn**: "Ơ Đức, mày bị gì thế? Tâm trí mày trên mây à hay lại ảo game rồi."
+Chúng bị đưa lên phường quản thúc, sau đó vào trại giáo dưỡng.
 
 ---
 
-### Chiều về - Gặp tụi bắt nạt
+Một tuần sau...
 
-**Địa điểm**: Trên đường (Top down)
+Mẹ Đức quyết định cho con chuyển trường.
 
-**Thủ lĩnh**: "Ê mày, lại đây với tụi tao, hôm nay tụi tao có một tin vui cho mày đây, tụi tao vừa nghĩ ra 1 trò chơi mới tên là 'Ai là vua', nếu bây giờ mày chơi với tụi tao và làm tụi tao vui thì từ hôm nay tụi tao sẽ không đụng đến mày nữa."
+"Con ơi, mẹ đã tìm được trường mới rồi. Gần nhà hơn, an toàn hơn."
 
-**Đức**: "Nhưng lần trước tụi mày cũng nói thế mà sao hôm nay tụi mày vẫn chặn đường tao"
-
-**Thủ lĩnh**: "Lần trước là chuyện của lần trước, lần này khác, lần này tao hứa với mày, nếu mày làm tụi tao vui thì tụi tao sẽ tha cho m. Sao mày có muốn chơi không đây? À tao nói trước là chuẩn bị tinh thần đi nhé, nếu tụi tao không vui thì chắc mày biết rồi nhỉ"
+"Mẹ sẽ đưa đón con mỗi ngày. Mẹ sẽ không để con phải trải qua chuyện này nữa."
 
 ---
 
-## KẾT CỤC 3: MANG DAO - BI KỊCH (Bad_Murder)
+Sáng ngày đầu tiên ở trường mới...
 
-### Trường hợp đã mang dao
+Đức vẫn còn e dè, nhưng không còn sợ hãi như trước.
 
-**Đức**: "Tao không muốn chơi! Đừng gây sự với tao nữa, tránh ra"
+Vì Đức biết: Mẹ luôn ở đây, sẵn sàng bảo vệ con.
 
-**Thủ lĩnh**: "Uầy, cu em này hôm nay mạnh mồm nhỉ? Hôm qua ăn đánh thế vẫn chưa sợ à"
-
-**Đức**: _(Lôi dao ra)_ "Đừng đụng vào tao! Tránh ra, đừng lại gần tao, tao không nhịn tụi mày nữa đâu"
-
-**Thủ lĩnh**: "Há há há, cu em này hôm nay mang cả dao đi à, cũng gọi là có chút bản lĩnh đấy, để anh xem thử mày có dám làm gì không?"
-
-**Đức**: _(Lùi lại)_ "Đừng lại gần đây! Đi ra chỗ khác, tụi mày lại gần là tao xiên"
-
-**Thủ lĩnh**: "Thôi em của anh, ngoan nào. Nghe anh nói, trẻ em thì không nên cầm những vật sắc nhọn như này đâu, trả cho người lớn đi em, đưa đây để anh giữ cho."
-
-_(Thủ lĩnh tiến lại gần - top-down)_
-
-**Đức**: "Mày tránh ra, arrrrrrgggghhhhhh"
-
-_(Đức vung dao chém, xiên về phía trước)_
-
-_(Xoẹt! Máu bắn lên)_
-
-**Thủ lĩnh**: "Aaaaaarrrrgggg, cổ tao, cư-cư-cư tao …. Ọc ọc ọc ọc"
-
-**Đàn em**: "Đại ca, đại ca."
-
-_(Đàn em chạy lại gần - top down)_
-
-**Đàn em**: "Tụ-tụ-tụi mày nhanh gọi người giúp đi, đại ca không thở nữa, đại ca chết rồi, gọi ai đó đi"
-
-**Đức**: "M–m-mình... vừa làm gì thế này..."
+Và lần này, Đức sẽ không giấu giếm nữa.
 
 ---
 
-### Tại nhà
+Một năm sau...
 
-**Địa điểm**: Nhà (Background)
+Đức đã có những người bạn mới.
 
-**Hàng xóm** _(giấu mặt)_: "Chị ơi, chị ơi, nhanh ra đây đi, con-con chị nó giết người rồi"
+Đức học cách chia sẻ, học cách tin tưởng.
 
-**Mẹ**: "…….. Hả hả, c-chị nói cái gì vậy, c-con em làm gì ………….."
+Đôi khi Đức vẫn nhớ lại những ngày tháng đen tối...
 
-_(Top down trên đường - Mẹ chạy ra, xe cứu thương cảnh sát, í o í o)_
-
----
-
-### 3 tháng sau - Tòa án
-
-**Địa điểm**: Tòa án
-
-_(Đùng đùng đùng - tiếng gõ búa)_
-
-**Thẩm phán**: "Vì các lẽ trên, căn cứ vào Điều 126 Bộ luật Hình sự năm 2015, căn cứ Điều 331 và Điều 333 Bộ luật Tố tụng hình sự, tòa tuyên án bị cáo Đoàn Văn Đức phạm tội giết người trong trạng thái phòng vệ quá mức cần thiết, xử phạt bị cáo Đoàn Văn Đức 3 năm 6 tháng tù giam. Xét thấy trong quá trình xảy ra sự việc, bị hại là người chủ động dùng hung khí tấn công trước, bị cáo hoảng loạn, mất khả năng kiềm chế nên đã chống trả quá mức cần thiết; đây là tình tiết giảm nhẹ theo quy định của pháp luật."
-
-**Thẩm phán**: "Buộc bị cáo phải nộp án phí hình sự sơ thẩm theo quy định. Bị cáo có quyền kháng cáo trong thời hạn 15 ngày kể từ ngày tuyên án."
-
-_(Đùng đùng đùng)_
-
-**Mẹ**: "Hức hức C-con ơiiiiii" _(Ngất)_
-
-**Giáo viên chủ nhiệm**: "Chị ơi, chị ơi"
-
-**Bạn**: "T-tao lẽ ra tao nên cố gắng, kiên trì với mày hơn, giá như ngày ấy tao đừng từ bỏ mày dễ như vậy, Đức ơi"
+Nhưng giờ đây, Đức biết mình không còn cô đơn nữa.
 
 ---
 
-### 🎯 KẾT THÚC 3: BI KỊCH CỦA SỰ HOẢNG LOẠN
+[Ảnh: Đức và mẹ cùng nhau đi dạo]
 
-**Thông điệp**: Bạo lực chỉ sinh ra bạo lực. Việc mang hung khí để tự vệ có thể dẫn đến hậu quả không thể lường trước, hủy hoại cả cuộc đời mình và người khác.
+Gia đình là nơi bạn luôn có thể trở về.
 
----
+Đừng bao giờ giấu giếm khi bạn gặp khó khăn.
 
-## KẾT CỤC 4: KHÔNG MANG DAO - CÁI CHẾT (Bad_Death)
-
-### Trường hợp không mang dao
-
-**Đức**: "T-t-tụi mày nhớ phải giữ lời đấy"
-
-**Thủ lĩnh**: "Hahaha, được, bây giờ mày vô đây rút thăm đi, ai rút được lá thăm vua thì sẽ được làm vua và ra lệnh cho những người còn lại."
-
-_(Một hồi sau)_
-
-**Thủ lĩnh**: "Ha ha, tao lại được làm vua rồi! Mày, tk Đức, bây giờ tao ra lệnh cho mày quỳ xuống liếm dép cho tao!"
-
-**Đức**: "Arrrgghhh, thế là quá lắm rồi, tao không chơi nữa, tụi mày chơi bẩn, tụi mày lừa tao!"
-
-**Thủ lĩnh**: "Sao thế, sao lại dừng rồi, mày cãi lệnh vua? Tụi tao đang vui, ngồi xuống chơi tiếp đi rồi tụi tao tha cho, mày không muốn được tự do à"
-
-**Đức**: "Khôngggg, tao không chơi nữa, tao năn nỉ tụi mày tha cho tao đi"
-
-_(Bắt đầu chuẩn bị chạy)_
-
-**Đàn em**: "A, thằng này định đánh bài chuồn à, ae giữ nó lại cho đại ca!"
-
-**Thủ lĩnh**: "Mày hư lắm Đức à, tụi tao đã cho mày một con đường thoát rồi nhưng mày lại nói không, thôi giờ tao không muốn chơi nữa rồi, bây giờ tay tao hơi ngứa, đang cần có bao cát để gãi đây."
-
-**Thủ lĩnh**: "Tụi mày giữ chặt nó"
-
-_(Bụp bụp bụp)_
-
-**Đức**: "Aaaaa! Hức hức, tha cho tao đi, tao xin lỗi"
-
-**Thủ lĩnh**: "Giờ thì trễ rồi"
-
-**Đức**: "Aaaaaaa, tao sống chết với tụi mày"
-
-**Đàn em**: "Á à, thằng này gan, anh em đâu xông vào hết, chơi nó"
-
-_(Cả đám bụp bụp bụp)_
-
-**Đức**: "……………"
-
-**Thủ lĩnh**: "Ê sao mày không nói gì nữa, mở mồm ra coi, ê thằng kia."
-
-**Đàn em**: "Anh tao gọi mày kia, dậy đi, ê ê"
-
-**Thủ lĩnh**: "Ê ê ê thằng này, dậy đi, tao biết mày đang giả chết mà, dậy đi thằng này, ê ê ê"
-
-**Đàn em**: "T-tụi mày ai đó gọi cứu thương đi, t-thằng này nó nằm rồi"
+Cha mẹ luôn sẵn sàng giúp đỡ con cái vượt qua mọi thử thách.
 
 ---
 
-### Vài ngày sau - Đức mất
+ENDING 2: CHIA SẺ VỚI GIA ĐÌNH
 
-_(Công an điều tra, tụi bắt nạt bị bắt)_
+"Khi bạn chia sẻ với gia đình, bạn không còn phải đối mặt với khó khăn một mình."
 
----
-
-### Đám tang
-
-**Địa điểm**: Đám tang
-
-**Mẹ**: "Hức Con ơiiiiii, Đức ơiiiii sao con không kể với mẹ, hức hức hức"
-
-**Cô giáo**: "Đức ơi, cô-cô xin lỗi, cô xin lỗi con nhiều lắm, là do cô, cô không nhận ra sớm hơn."
-
-**Bạn**: "Đức ơi, tao hối hận lắm, lẽ ra hồi đấy tao nên cố gắng hơn, kiên trì hơn với mày, nếu hồi đó tao với mày là bạn thì đâu ra nông nỗi này."
+[THE END]
+```
 
 ---
 
-### 🎯 KẾT THÚC 4: CÁI GIÁ CỦA SỰ IM LẶNG
+## KẾT CỤC 3: GIẤU MẸ - CUỘC ĐỜI ĐEN TỐI (Bad_DarkLife)
 
-**Thông điệp**: Im lặng chịu đựng bạo lực có thể dẫn đến hậu quả bi thảm nhất. Đừng bao giờ giấu giếm khi bị bắt nạt, hãy tìm kiếm sự giúp đỡ từ người lớn.
+### 📖 STORYTELLING ENDING 3: "CUỘC ĐỜI ĐEN TỐI"
+
+**Chế độ**: `Storytelling` (Màn hình đen + Text cuộn + Ảnh minh họa)
+
+```
+[Màn hình đen - Text cuộn chậm, âm nhạc u ám]
+
+Đức nằm trên giường, nhìn trần nhà.
+
+Vết thương trên người đau nhức.
+
+Nhưng đau hơn cả là nỗi sợ hãi trong lòng.
+
+"Mai... lại phải gặp tụi nó nữa rồi..."
 
 ---
 
-## TỔNG KẾT CÁC KẾT CỤC
+Ngày hôm sau...
 
-| Kết cục      | Tên              | Điều kiện                             | Thông điệp chính                             |
-| ------------ | ---------------- | ------------------------------------- | -------------------------------------------- |
-| **Ending 1** | Good_StandUp     | Đánh trả thành công + Thú nhận với mẹ | Đứng lên chống lại và tìm kiếm sự giúp đỡ    |
-| **Ending 2** | True_TellParents | Bị đánh + Thú nhận với mẹ ngay        | Chia sẻ với gia đình là điều quan trọng nhất |
-| **Ending 3** | Bad_Murder       | Bị đánh + Giấu mẹ + Mang dao          | Bạo lực sinh ra bạo lực, hủy hoại cả hai bên |
-| **Ending 4** | Bad_Death        | Bị đánh + Giấu mẹ + Không mang dao    | Im lặng chịu đựng dẫn đến bi kịch            |
+Đức đi học với tâm trạng nặng nề.
+
+Trên lớp, Đức không thể tập trung.
+
+Mỗi tiếng động đều khiến Đức giật mình.
+
+---
+
+Chiều về...
+
+Tụi bắt nạt lại chặn đường.
+
+"Ê mày, lại đây! Hôm nay tụi tao có trò chơi mới cho mày đây."
+
+Đức run rẩy, đưa hết tiền trong túi.
+
+Nhưng chúng vẫn không tha.
+
+Bụp! Bụp! Bụp!
+
+---
+
+Một tuần sau...
+
+Đức bắt đầu trốn học.
+
+Mỗi sáng, Đức nói dối mẹ là đi học.
+
+Nhưng thực ra, Đức chỉ lang thang ngoài đường.
+
+Ngồi trong công viên, nhìn những đứa trẻ khác vui chơi.
+
+---
+
+Một tháng sau...
+
+Nhà trường gọi điện cho mẹ Đức.
+
+"Cháu Đức đã nghỉ học 3 tuần liên tục rồi ạ."
+
+Mẹ Đức sốc, hỏi con.
+
+Đức vẫn giấu: "Con bị ốm mẹ ạ..."
+
+---
+
+Hai tháng sau...
+
+Đức hoàn toàn bỏ học.
+
+Mẹ Đức phát hiện ra sự thật, nhưng đã quá muộn.
+
+Đức đã mất hết niềm tin vào mọi người.
+
+Đức nhốt mình trong phòng, không muốn gặp ai.
+
+---
+
+Sáu tháng sau...
+
+Đức bắt đầu có những suy nghĩ tiêu cực.
+
+"Tại sao mình phải sống?"
+
+"Tại sao mình lại yếu đuối đến thế?"
+
+"Tại sao không ai hiểu mình?"
+
+---
+
+Một năm sau...
+
+Đức vẫn chưa quay lại trường.
+
+Mẹ Đức đã già đi rất nhiều, tóc bạc trắng.
+
+Mẹ tự trách mình: "Tại sao mẹ không nhận ra sớm hơn..."
+
+Nhưng giờ đây, đã quá muộn.
+
+---
+
+Nhiều năm sau...
+
+Đức trở thành một người trưởng thành...
+
+Nhưng vẫn mang trong mình những vết thương tâm lý.
+
+Sợ đám đông. Sợ giao tiếp. Sợ tin tưởng người khác.
+
+Cuộc đời Đức như một bóng tối...
+
+Không bao giờ tìm thấy ánh sáng.
+
+---
+
+[Ảnh: Silhouette của Đức ngồi một mình trong bóng tối]
+
+Im lặng chịu đựng không phải là sức mạnh.
+
+Đó là sự yếu đuối khiến bạn mất đi chính mình.
+
+Khi bạn giấu giếm nỗi đau...
+
+Bạn đang tự giam mình trong một nhà tù vô hình.
+
+---
+
+Và đôi khi...
+
+Nhà tù đó sẽ theo bạn suốt đời.
+
+---
+
+ENDING 3: CUỘC ĐỜI ĐEN TỐI
+
+"Im lặng chịu đựng bạo lực có thể hủy hoại cả cuộc đời bạn. Đừng bao giờ giấu giếm khi bị bắt nạt."
+
+[THE END]
+```
+
+---
+
+## TỔNG KẾT CÁC KẾT CỤC (CẤU TRÚC MỚI - ĐƠN GIẢN HÓA)
+
+| Kết cục      | Tên              | Điều kiện                 | Chế độ       | Thông điệp chính                             |
+| ------------ | ---------------- | ------------------------- | ------------ | -------------------------------------------- |
+| **Ending 1** | Good_StandUp     | Đánh trả thành công       | Storytelling | Đứng lên chống lại và tìm kiếm sự giúp đỡ    |
+| **Ending 2** | True_TellParents | Bị đánh + Thú nhận với mẹ | Storytelling | Chia sẻ với gia đình là điều quan trọng nhất |
+| **Ending 3** | Bad_DarkLife     | Bị đánh + Giấu mẹ         | Storytelling | Im lặng chịu đựng hủy hoại cả cuộc đời       |
+
+### 🎯 CẤU TRÚC ENDING MỚI
+
+```
+Scene 27: Gặp tụi bắt nạt (Lựa chọn 1)
+├── Đối mặt 1v1 → FightCutscene → Scene 28A → STORYTELLING Ending 1
+└── Bị đánh (2 lựa chọn khác) → Scene 28B (Lựa chọn 2)
+    ├── Thú nhận với mẹ → STORYTELLING Ending 2
+    └── Giấu mẹ → STORYTELLING Ending 3
+```
+
+### 📝 THAY ĐỔI QUAN TRỌNG
+
+**Đã bỏ:**
+
+- ❌ Tình tiết mang dao (không thực tế với học sinh cấp 2)
+- ❌ Tình tiết giết người (quá nặng, không phù hợp)
+- ❌ Tình tiết chết (quá bi kịch)
+- ❌ Scene phòng ngủ quyết định mang dao
+- ❌ Scene tòa án, đám tang
+
+**Thay thế bằng:**
+
+- ✅ Storytelling kể hậu quả tâm lý thực tế
+- ✅ Tập trung vào message về bạo lực học đường
+- ✅ Giảm 70% số scene cần tạo
+- ✅ Dễ phát triển và replay hơn
 
 ---
 
@@ -978,16 +1008,26 @@ _(Công an điều tra, tụi bắt nạt bị bắt)_
 - `GOT_BEATEN` - Đã bị đánh
 - `TALKED_TO_TEACHER` - Đã nói chuyện với giáo viên
 - `CONFESSED_TO_MOM` - Đã thú nhận với mẹ
-- `BROUGHT_KNIFE` - Đã mang dao
+- `HID_FROM_MOM` - Đã giấu mẹ
 - `STOOD_UP` - Đã đứng lên chống lại
+- `ENDING1_GOOD_STANDUP` - Trigger Ending 1
+- `ENDING2_TRUE_TELLPARENTS` - Trigger Ending 2
+- `ENDING3_BAD_DARKLIFE` - Trigger Ending 3
 
 ### Biến số quan trọng
 
 - `CURRENT_DAY` - Ngày hiện tại trong game
 - `MONEY` - Số tiền còn lại (bắt đầu: 50000)
-- `FEAR_LEVEL` - Mức độ sợ hãi
+- `FEAR_LEVEL` - Mức độ sợ hãi (0-100)
 - `ESCAPED_COUNT` - Số lần bỏ chạy
+- `GAVE_MONEY_COUNT` - Số lần đưa tiền
+
+### Action IDs cho Storytelling
+
+- `trigger_ending1_storytelling` - Bắt đầu Storytelling Ending 1
+- `trigger_ending2_storytelling` - Bắt đầu Storytelling Ending 2
+- `trigger_ending3_storytelling` - Bắt đầu Storytelling Ending 3
 
 ---
 
-**Lưu ý**: Mỗi lựa chọn của người chơi sẽ ảnh hưởng trực tiếp đến kết cục cuối cùng. Game nhấn mạnh tầm quan trọng của việc chia sẻ với gia đình và nhà trường khi gặp bạo lực học đường.
+**Lưu ý**: Cấu trúc mới tập trung vào storytelling thay vì dialogue phức tạp, giúp message về bạo lực học đường rõ ràng hơn và dễ phát triển hơn cho indie game.

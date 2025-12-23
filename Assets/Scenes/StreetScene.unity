@@ -60221,7 +60221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &243764055
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60401,41 +60401,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1434382566}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &275224526
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 275224527}
-  m_Layer: 0
-  m_Name: BullyGroup
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &275224527
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275224526}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 383466562}
-  - {fileID: 1485112365}
-  - {fileID: 962436700}
-  - {fileID: 946320658}
-  m_Father: {fileID: 392867921}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &303238686
 GameObject:
@@ -60617,7 +60582,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 275224527}
+  - {fileID: 383466562}
+  - {fileID: 1485112365}
+  - {fileID: 962436700}
+  - {fileID: 946320658}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &394295498
@@ -63438,6 +63406,114 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437055687}
   m_CullTransparentMesh: 1
+--- !u!1 &453756934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 453756935}
+  - component: {fileID: 453756937}
+  - component: {fileID: 453756936}
+  m_Layer: 0
+  m_Name: NPCSurroundController_Scene27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &453756935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453756934}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 30.43, y: -2.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 817449578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &453756936
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453756934}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.54702854}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 3.721117}
+  m_EdgeRadius: 0
+--- !u!114 &453756937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453756934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9348a07f36f205844be1d4407cbdd57d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::NPCSurroundController
+  npcBullies:
+  - {fileID: 1616425733}
+  - {fileID: 1485112364}
+  - {fileID: 962436699}
+  - {fileID: 946320657}
+  surroundRadius: 1
+  formationType: 1
+  moveSpeed: 5
+  delayBetweenNPCs: 0.2
+  nextVNScene: {fileID: 0}
+  nextDialogueNPC: {fileID: 1616425746}
+  triggerOnce: 1
+  autoSetupOnStart: 1
+  requiredFlags:
+  - critical_scene26_completed
+  forbiddenFlags:
+  - critical_scene27_completed
 --- !u!1 &466245498
 GameObject:
   m_ObjectHideFlags: 0
@@ -63563,12 +63639,12 @@ GameObject:
   - component: {fileID: 486151187}
   - component: {fileID: 486151186}
   m_Layer: 0
-  m_Name: BullyFollowTrigger_day1_Scene13
+  m_Name: BullyFollowTrigger_week1_Scene13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &486151186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63584,7 +63660,8 @@ MonoBehaviour:
   triggerOnce: 1
   requiredFlags:
   - week1_scene12_completed
-  forbiddenFlags: []
+  forbiddenFlags:
+  - week1_scene13_started
   skipIfFlag: 
   existingBullyNPCs:
   - {fileID: 1616425733}
@@ -63606,6 +63683,7 @@ MonoBehaviour:
   formationBehindOffset: -2
   nextVNTrigger: {fileID: 0}
   nextTriggerDelay: 3
+  setFlagsOnTrigger: []
 --- !u!61 &486151187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69633,7 +69711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &655702958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70344,7 +70422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &761345601
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -70444,6 +70522,8 @@ MonoBehaviour:
   formationBehindOffset: -2
   nextVNTrigger: {fileID: 0}
   nextTriggerDelay: 3
+  setFlagsOnTrigger:
+  - day1_scene5_bullies_spawned
 --- !u!1 &780661851
 GameObject:
   m_ObjectHideFlags: 0
@@ -70561,12 +70641,12 @@ Transform:
   - {fileID: 1158627021}
   - {fileID: 851954551}
   - {fileID: 1404057457}
-  - {fileID: 1972931821}
-  - {fileID: 243764057}
   - {fileID: 655702960}
-  - {fileID: 879671085}
+  - {fileID: 243764057}
   - {fileID: 1422696870}
   - {fileID: 1916535985}
+  - {fileID: 453756935}
+  - {fileID: 1065956105}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &851954548
@@ -70586,7 +70666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &851954549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70668,114 +70748,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 817449578}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &879671084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 879671085}
-  - component: {fileID: 879671087}
-  - component: {fileID: 879671086}
-  m_Layer: 0
-  m_Name: NPCSurroundController_Scene20
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &879671085
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879671084}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.179958, y: -1.9240503, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 817449578}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &879671086
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879671084}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.54702854}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 3.721117}
-  m_EdgeRadius: 0
---- !u!114 &879671087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879671084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9348a07f36f205844be1d4407cbdd57d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: GameScripts::NPCSurroundController
-  npcBullies:
-  - {fileID: 1616425733}
-  - {fileID: 1485112364}
-  - {fileID: 962436699}
-  - {fileID: 946320657}
-  surroundRadius: 1
-  formationType: 1
-  moveSpeed: 5
-  delayBetweenNPCs: 0.2
-  nextVNScene: {fileID: 0}
-  nextDialogueNPC: {fileID: 1616425746}
-  triggerOnce: 1
-  autoSetupOnStart: 1
-  requiredFlags:
-  - day2_scene20_playerThought_completed
-  forbiddenFlags:
-  - day2_scene21_completed
 --- !u!1 &893797977
 GameObject:
   m_ObjectHideFlags: 0
@@ -70930,6 +70902,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: GameScripts::NPCPositionByFlag
   conditions:
   - flagName: day2_scene19_completed
+    flagValue: 1
+    targetPosition: {fileID: 903369452}
+    hideInstead: 0
+    priority: 200
+  - flagName: critical_scene26_completed
     flagValue: 1
     targetPosition: {fileID: 903369452}
     hideInstead: 0
@@ -71194,6 +71171,11 @@ MonoBehaviour:
     targetPosition: {fileID: 161667167}
     hideInstead: 0
     priority: 200
+  - flagName: critical_scene26_completed
+    flagValue: 1
+    targetPosition: {fileID: 161667167}
+    hideInstead: 0
+    priority: 200
   defaultPosition: {fileID: 0}
   hideByDefault: 0
 --- !u!1 &975020456
@@ -71357,7 +71339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &993610796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71371,7 +71353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: GameScripts::QuickFlagSetter
   flagsToSetTrue:
-  - week3_scene23_completed
+  - critical_scene26_completed
   flagsToSetFalse: []
   variablesToSet: []
   editorOnly: 1
@@ -71670,6 +71652,79 @@ Sprite:
   m_Bones: []
   m_ScriptableObjects: []
   m_SpriteID: 
+--- !u!1 &1065956104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1065956105}
+  - component: {fileID: 1065956106}
+  m_Layer: 0
+  m_Name: FightCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1065956105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065956104}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.24498, y: -1.6140909, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 817449578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1065956106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065956104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c29cb06ac286a74aad21bbd0c613d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::FightCutscene
+  opponent: {fileID: 0}
+  fightRounds: 3
+  attackInterval: 0.6
+  roundDelay: 0.8
+  playerAttackTrigger: Punch
+  playerHurtTrigger: Hurt
+  npcAttackTrigger: Punch
+  npcHurtTrigger: Hurt
+  npcDefeatTrigger: Defeat
+  playerWins: 1
+  finalBlowDelay: 0.5
+  useScreenFlash: 1
+  playerHitFlashColor: {r: 1, g: 0, b: 0, a: 0.3}
+  npcHitFlashColor: {r: 1, g: 1, b: 0, a: 0.3}
+  flashDuration: 0.1
+  useCameraShake: 1
+  shakeIntensity: 0.1
+  shakeDuration: 0.15
+  waitForDialogueEnd: 1
+  delayAfterDialogue: 0.3
+  afterFightVNScene: {fileID: 0}
+  afterFightDialogueNPC: {fileID: 0}
+  afterFightDelay: 1
+  flagsToSetTrue: []
+  flagsToSetFalse: []
+  bullyMinions: []
+  scatterSpeed: 5
+  scatterDistance: 10
+  showDebugLogs: 1
 --- !u!213 &1078436538
 Sprite:
   m_ObjectHideFlags: 0
@@ -71897,7 +71952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1158627020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72480,7 +72535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1309260554
 Transform:
   m_ObjectHideFlags: 0
@@ -74514,7 +74569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1404057456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74843,13 +74898,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485112364}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0eff8dbbe6c4d9749bd1b5c2bdb076b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: GameScripts::NPCPositionByFlag
   conditions:
   - flagName: day2_scene19_completed
+    flagValue: 1
+    targetPosition: {fileID: 1978562257}
+    hideInstead: 0
+    priority: 200
+  - flagName: critical_scene26_completed
     flagValue: 1
     targetPosition: {fileID: 1978562257}
     hideInstead: 0
@@ -74881,7 +74941,7 @@ Transform:
   m_GameObject: {fileID: 1491430639}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.84, y: -18.38, z: 0}
+  m_LocalPosition: {x: 10.37, y: -18.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78500,6 +78560,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: GameScripts::NPCPositionByFlag
   conditions:
   - flagName: day2_scene19_completed
+    flagValue: 1
+    targetPosition: {fileID: 1491430640}
+    hideInstead: 0
+    priority: 200
+  - flagName: critical_scene26_completed
     flagValue: 1
     targetPosition: {fileID: 1491430640}
     hideInstead: 0
@@ -104923,58 +104988,6 @@ Sprite:
   m_Bones: []
   m_ScriptableObjects: []
   m_SpriteID: 
---- !u!1 &1972931819
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1972931821}
-  - component: {fileID: 1972931820}
-  m_Layer: 0
-  m_Name: VNTrigger_day2_Scene20
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1972931820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972931819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2842c1908b9540e45a299039ad63384e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: GameScripts::VNTrigger
-  vnScene: {fileID: 0}
-  mode: 0
-  interactionKey: 101
-  triggerOnce: 1
-  requiredFlags:
-  - day2_scene19_completed
-  forbiddenFlags: []
-  interactionPrompt: {fileID: 0}
---- !u!4 &1972931821
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972931819}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.29996, y: -2.6440496, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 817449578}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975581175
 GameObject:
   m_ObjectHideFlags: 0
@@ -105646,7 +105659,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 275224527}
+    m_TransformParent: {fileID: 392867921}
     m_Modifications:
     - target: {fileID: 4674538433782817707, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -105754,7 +105767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: conditionalDialogues.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: avatarEntries.Array.data[0].speakerName
@@ -105801,6 +105814,10 @@ PrefabInstance:
       value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].priority
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].dialogueData
       value: 
       objectReference: {fileID: 11400000, guid: 0ebc03fbd145d3d4691d954790a6a864, type: 2}
@@ -105812,6 +105829,10 @@ PrefabInstance:
       propertyPath: conditionalDialogues.Array.data[2].dialogueData
       value: 
       objectReference: {fileID: 11400000, guid: f33fbee832f0db84c9b858ee46d947c5, type: 2}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].dialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: 81cf2fc8b25dab04e9410d59ba6d8c37, type: 2}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].autoTriggerDelay
       value: 0
@@ -105826,6 +105847,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: conditionalDialogues.Array.data[2].autoTriggerDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].autoTriggerDelay
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
@@ -105853,6 +105878,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].allowedScenes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].requiredFlags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].forbiddenFlags.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -105862,6 +105895,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: conditionalDialogues.Array.data[2].forbiddenFlags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].forbiddenFlags.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
@@ -105901,6 +105938,14 @@ PrefabInstance:
       value: choice_ran_away_day2
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].allowedScenes.Array.data[0]'
+      value: StreetScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].requiredFlags.Array.data[0]'
+      value: critical_scene26_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[0].forbiddenFlags.Array.data[0]'
       value: day2_scene20_completed
       objectReference: {fileID: 0}
@@ -105911,6 +105956,10 @@ PrefabInstance:
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[2].forbiddenFlags.Array.data[0]'
       value: week3_scene24_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].forbiddenFlags.Array.data[0]'
+      value: critical_scene27_completed
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].setFlagsOnComplete.Array.size
@@ -105925,6 +105974,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: conditionalDialogues.Array.data[3].setFlagsOnComplete.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[0].setFlagsOnComplete.Array.data[0]'
       value: day2_scene20_completed
       objectReference: {fileID: 0}
@@ -105935,6 +105988,10 @@ PrefabInstance:
     - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[2].setFlagsOnComplete.Array.data[0]'
       value: week3_scene24_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7046256447239862605, guid: bcec631324c268a41995fb32264a62b1, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[3].setFlagsOnComplete.Array.data[0]'
+      value: critical_scene27_completed
       objectReference: {fileID: 0}
     - target: {fileID: 7097385736630059067, guid: bcec631324c268a41995fb32264a62b1, type: 3}
       propertyPath: showDebugLogs
@@ -105957,7 +106014,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 275224527}
+    m_TransformParent: {fileID: 392867921}
     m_Modifications:
     - target: {fileID: 386119529710729638, guid: 94ed6b1cf4d22e54ab53778a4b17269e, type: 3}
       propertyPath: m_Name
@@ -106040,7 +106097,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 275224527}
+    m_TransformParent: {fileID: 392867921}
     m_Modifications:
     - target: {fileID: 288726052709065484, guid: b4c7174829786764ca636c7ea96981bd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -106130,7 +106187,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 275224527}
+    m_TransformParent: {fileID: 392867921}
     m_Modifications:
     - target: {fileID: 2203522536453875576, guid: 4f661269c5e3260499e9071070c0c8da, type: 3}
       propertyPath: m_Enabled

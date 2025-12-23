@@ -1,0 +1,49 @@
+{
+  "_comment": "Fight Cutscene - Scene 1: Đối mặt (Background: fightScene1.png)",
+  "conversationName": "FightCutscene_Scene1_Confrontation",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Đức và Thủ lĩnh đối mặt nhau.",
+        "Không khí căng thẳng đến tột độ."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Mày nghĩ mày thắng được tao à?",
+        "Tao đã đánh bao nhiêu thằng như mày rồi."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Đức nắm chặt tay, tim đập thình thịch.",
+        "Nhưng lần này, Đức không chạy."
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Tao không còn sợ mày nữa.",
+        "Hôm nay, tao sẽ chấm dứt chuyện này!"
+      ],
+      "next": -1,
+      "_comment": "Kết thúc Scene 1 → Chuyển sang Scene 2"
+    }
+  ]
+}
+

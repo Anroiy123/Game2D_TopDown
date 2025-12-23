@@ -54,21 +54,20 @@
     <Compile Include="Assets\Scripts\Interaction\SimpleInteractionPrompt.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCInteraction.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueData.cs" />
-<<<<<<< HEAD
+    <Compile Include="Assets\Scripts\Storytelling\StorytellingSequenceData.cs" />
+    <Compile Include="Assets\Scripts\Editor\StorytellingSequenceCreator.cs" />
     <Compile Include="Assets\Scripts\Scene\TimeSkipTrigger.cs" />
     <Compile Include="Assets\Scripts\VisualNovel\VNSequenceData.cs" />
     <Compile Include="Assets\Scripts\Interaction\InteractionIndicator.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerSelfDialogue.cs" />
-=======
-    <Compile Include="Assets\Scripts\VisualNovel\VNSequenceData.cs" />
-    <Compile Include="Assets\Scripts\Interaction\InteractionIndicator.cs" />
->>>>>>> 0954b783c16b63685748755df6d97601a92e6ef3
     <Compile Include="Assets\Scripts\NPC\BullyEncounterZone.cs" />
+    <Compile Include="Assets\Scripts\Storytelling\StorytellingManager.cs" />
     <Compile Include="Assets\Scripts\NPC\BullyFollowTrigger.cs" />
     <Compile Include="Assets\Scripts\Interaction\InteractableOutline.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCFollowPlayer.cs" />
     <Compile Include="Assets\Scripts\VisualNovel\VNScene.cs" />
     <Compile Include="Assets\Scripts\VisualNovel\VNSceneQuickTest.cs" />
+    <Compile Include="Assets\Scripts\Storytelling\StorySegment.cs" />
     <Compile Include="Assets\Scripts\Editor\ReassignVNSceneDataScript.cs" />
     <Compile Include="Assets\Scripts\VisualNovel\VisualNovelData.cs" />
     <Compile Include="Assets\Scripts\Scene\SpawnManager.cs" />
@@ -77,12 +76,10 @@
     <Compile Include="Assets\Scripts\NPC\NPCPositionByFlag.cs" />
     <Compile Include="Assets\Scripts\Utilities\SerializableDictionary.cs" />
     <Compile Include="Assets\Scripts\Editor\FixScene7AAsset.cs" />
+    <Compile Include="Assets\Scripts\Storytelling\StorytellingTrigger.cs" />
     <Compile Include="Assets\Scripts\Editor\ForceReimportVNScene3.cs" />
     <Compile Include="Assets\Scripts\Interaction\DoorController.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
-=======
->>>>>>> 0954b783c16b63685748755df6d97601a92e6ef3
     <Compile Include="Assets\Scripts\Core\SaveData.cs" />
     <Compile Include="Assets\Scripts\Interaction\BedInteraction.cs" />
     <Compile Include="Assets\Scripts\Editor\DialogueJsonImporter.cs" />
@@ -90,11 +87,9 @@
     <Compile Include="Assets\Scripts\Scene\ScreenFader.cs" />
     <Compile Include="Assets\Scripts\Scene\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\VisualNovel\VisualNovelManager.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\NPC\BullyBeatCutscene.cs" />
-=======
->>>>>>> 0954b783c16b63685748755df6d97601a92e6ef3
     <Compile Include="Assets\Scripts\NPC\NPCSurroundPlayer.cs" />
+    <Compile Include="Assets\Scripts\Storytelling\StorytellingQuickTest.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\Scripts\Editor\CreateAfterConfrontationSpawn.cs" />
     <Compile Include="Assets\Scripts\Debug\QuickFlagSetter.cs" />
@@ -105,6 +100,7 @@
     <Compile Include="Assets\Scripts\Utilities\CameraHelper.cs" />
     <Compile Include="Assets\Scripts\Editor\VNSceneValidator.cs" />
     <Compile Include="Assets\Scripts\Debug\DebugFlagMenu.cs" />
+    <Compile Include="Assets\Scripts\NPC\FightCutscene.cs" />
     <Compile Include="Assets\Scripts\Editor\InteractionIndicatorSetup.cs" />
     <Compile Include="Assets\Scripts\Editor\NPCSurroundSetupHelper.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />

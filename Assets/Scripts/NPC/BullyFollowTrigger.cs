@@ -60,6 +60,10 @@ public class BullyFollowTrigger : MonoBehaviour
     [Tooltip("Delay trước khi activate VNTrigger tiếp theo (giây)")]
     [SerializeField] private float nextTriggerDelay = 3f;
 
+    [Header("On Complete Effects")]
+    [Tooltip("Flags sẽ được set TRUE sau khi trigger")]
+    [SerializeField] private string[] setFlagsOnTrigger;
+
     private bool hasTriggered = false;
     private GameObject[] activeBullies; // NPCs đang active (từ existing hoặc spawned)
 
@@ -76,6 +80,7 @@ public class BullyFollowTrigger : MonoBehaviour
         }
 
         // Kiểm tra forbiddenFlags
+        bool hasForbiddenFlag = false;
         if (StoryManager.Instance != null && forbiddenFlags != null && forbiddenFlags.Length > 0)
         {
             foreach (string flag in forbiddenFlags)
@@ -83,7 +88,23 @@ public class BullyFollowTrigger : MonoBehaviour
                 if (!string.IsNullOrEmpty(flag) && StoryManager.Instance.GetFlag(flag))
                 {
                     hasTriggered = true;
+                    hasForbiddenFlag = true;
                     Debug.Log($"[BullyFollowTrigger] BLOCKED - Có forbidden flag: {flag}");
+                    break;
+                }
+            }
+        }
+
+        // Kiểm tra requiredFlags
+        bool hasAllRequiredFlags = true;
+        if (StoryManager.Instance != null && requiredFlags != null && requiredFlags.Length > 0)
+        {
+            foreach (string flag in requiredFlags)
+            {
+                if (!string.IsNullOrEmpty(flag) && !StoryManager.Instance.GetFlag(flag))
+                {
+                    hasAllRequiredFlags = false;
+                    Debug.Log($"[BullyFollowTrigger] Chưa có required flag: {flag}, không ẩn NPCs");
                     break;
                 }
             }
@@ -98,16 +119,24 @@ public class BullyFollowTrigger : MonoBehaviour
             return; // Skip phần còn lại
         }
 
-        // Ẩn existing bullies ban đầu
-        if (existingBullyNPCs != null && existingBullyNPCs.Length > 0)
+        // CHỈ ẩn existing bullies nếu trigger này sẽ hoạt động
+        // (có đủ requiredFlags VÀ không có forbiddenFlags)
+        bool shouldHideBullies = hasAllRequiredFlags && !hasForbiddenFlag && !hasTriggered;
+        
+        if (shouldHideBullies && existingBullyNPCs != null && existingBullyNPCs.Length > 0)
         {
             foreach (var bully in existingBullyNPCs)
             {
                 if (bully != null)
                 {
                     bully.SetActive(false);
+                    Debug.Log($"[BullyFollowTrigger] Ẩn {bully.name} - chờ trigger");
                 }
             }
+        }
+        else if (!shouldHideBullies)
+        {
+            Debug.Log($"[BullyFollowTrigger] Không ẩn NPCs - conditions chưa thỏa mãn hoặc đã triggered");
         }
 
         // Ẩn next trigger ban đầu
@@ -144,10 +173,23 @@ public class BullyFollowTrigger : MonoBehaviour
 
         Debug.Log("[BullyFollowTrigger] Player vào zone - Activate bullies!");
 
-        // Set flag
+        // Set skipIfFlag (legacy)
         if (StoryManager.Instance != null && !string.IsNullOrEmpty(skipIfFlag))
         {
             StoryManager.Instance.SetFlag(skipIfFlag, true);
+        }
+
+        // Set custom flags on trigger
+        if (StoryManager.Instance != null && setFlagsOnTrigger != null)
+        {
+            foreach (string flag in setFlagsOnTrigger)
+            {
+                if (!string.IsNullOrEmpty(flag))
+                {
+                    StoryManager.Instance.SetFlag(flag, true);
+                    Debug.Log($"[BullyFollowTrigger] Set flag: {flag} = true");
+                }
+            }
         }
 
         // Ưu tiên dùng existing NPCs, nếu không có thì spawn mới

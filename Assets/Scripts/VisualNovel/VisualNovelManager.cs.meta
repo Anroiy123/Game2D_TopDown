@@ -1,2 +1,22 @@
 fileFormatVersion: 2
 guid: 2e02aa053f2c0fd4f8570ac12c8cabd7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - vnCanvas: {instanceID: 0}
+  - vnPanel: {instanceID: 0}
+  - backgroundImage: {instanceID: 0}
+  - locationText: {instanceID: 0}
+  - characterContainer: {instanceID: 0}
+  - characterPrefab: {instanceID: 0}
+  - dialogueSystem: {instanceID: 0}
+  - day1Scene7A: {instanceID: 0}
+  - ending1_GoodStandUp: {fileID: 11400000, guid: 6fce1bc799695174c8059f7bc3972bc7, type: 2}
+  - ending2_TrueTellParents: {instanceID: 0}
+  - ending3_BadDarkLife: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

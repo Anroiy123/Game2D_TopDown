@@ -53,6 +53,7 @@ public class DialogueSystem : MonoBehaviour
     private Action<string> onChoiceAction; // Callback khi player chọn một action đặc biệt
     private Action<VNSceneData> onVNSceneTransition; // Callback khi chuyển sang VN scene khác
     private Action onEndVNMode; // Callback khi kết thúc VN mode
+    private Action<string, string> onTopDownSceneTransition; // Callback khi chuyển sang top-down scene (sceneName, spawnPointId)
 
     // Avatar mode variables
     private bool isAvatarModeActive = false;
@@ -293,7 +294,8 @@ public class DialogueSystem : MonoBehaviour
         Action onComplete = null,
         Action<string> onAction = null,
         Action<VNSceneData> onVNTransition = null,
-        Action onEndVN = null)
+        Action onEndVN = null,
+        Action<string, string> onTopDownTransition = null)
     {
         if (dialogueData == null || dialogueData.nodes == null || dialogueData.nodes.Length == 0)
         {
@@ -311,6 +313,7 @@ public class DialogueSystem : MonoBehaviour
         onChoiceAction = onAction;
         onVNSceneTransition = onVNTransition;
         onEndVNMode = onEndVN;
+        onTopDownSceneTransition = onTopDownTransition;
         dialogueActive = true;
         isShowingChoices = false;
 
@@ -340,13 +343,15 @@ public class DialogueSystem : MonoBehaviour
     /// <param name="lockPlayer">Có khóa player movement không (default: true)</param>
     /// <param name="onComplete">Callback khi dialogue kết thúc</param>
     /// <param name="onAction">Callback khi có action đặc biệt</param>
+    /// <param name="onVNTransition">Callback khi cần chuyển sang VN scene</param>
     public void StartDialogueWithAvatars(
         DialogueData dialogueData,
         Dictionary<string, Sprite> avatarMap,
         Dictionary<string, bool> avatarFlipMap = null,
         bool lockPlayer = true,
         Action onComplete = null,
-        Action<string> onAction = null)
+        Action<string> onAction = null,
+        Action<VNSceneData> onVNTransition = null)
     {
         if (dialogueData == null || dialogueData.nodes == null || dialogueData.nodes.Length == 0)
         {
@@ -384,7 +389,7 @@ public class DialogueSystem : MonoBehaviour
         currentDialogueData = dialogueData;
         onDialogueComplete = onComplete;
         onChoiceAction = onAction;
-        onVNSceneTransition = null; // Không dùng VN transition trong avatar mode
+        this.onVNSceneTransition = onVNTransition; // Support VN transition in avatar mode
         onEndVNMode = null;
         dialogueActive = true;
         isShowingChoices = false;
@@ -737,7 +742,54 @@ public class DialogueSystem : MonoBehaviour
         // Nếu có choices thì đã được hiện rồi, không làm gì thêm
         if (isShowingChoices) return;
 
-        // Nếu không có choices, chuyển đến nextNode
+        // Priority 1: Check if node has nextVNScene
+        if (currentNode.nextVNScene != null)
+        {
+            Debug.Log($"[DialogueSystem] Node {currentNode.nodeId} has nextVNScene: {currentNode.nextVNScene.name}");
+
+            if (onVNSceneTransition != null)
+            {
+                Debug.Log($"[DialogueSystem] Invoking onVNSceneTransition callback...");
+                onVNSceneTransition.Invoke(currentNode.nextVNScene);
+            }
+            else
+            {
+                Debug.LogError("[DialogueSystem] onVNSceneTransition callback is NULL! Cannot transition to VN scene.");
+            }
+
+            return; // Don't go to next node, VN scene will handle it
+        }
+
+        // Priority 2: Check if node has loadTopDownScene (MỚI)
+        if (!string.IsNullOrEmpty(currentNode.loadTopDownScene))
+        {
+            Debug.Log($"[DialogueSystem] Node {currentNode.nodeId} has loadTopDownScene: {currentNode.loadTopDownScene}, spawn: {currentNode.topDownSpawnPointId}");
+
+            // End dialogue trước khi chuyển scene
+            EndDialogue();
+
+            // Notify để chuyển scene
+            if (onTopDownSceneTransition != null)
+            {
+                onTopDownSceneTransition.Invoke(currentNode.loadTopDownScene, currentNode.topDownSpawnPointId);
+            }
+            else
+            {
+                // Fallback: Gọi trực tiếp GameManager nếu không có callback
+                if (GameManager.Instance != null)
+                {
+                    GameManager.Instance.LoadScene(currentNode.loadTopDownScene, currentNode.topDownSpawnPointId);
+                }
+                else
+                {
+                    Debug.LogError("[DialogueSystem] Cannot load scene - no callback and GameManager is null!");
+                }
+            }
+
+            return; // Don't go to next node, scene transition will handle it
+        }
+
+        // Priority 3: Nếu không có choices, chuyển đến nextNode
         GoToNode(currentNode.nextNodeId);
     }
 
@@ -861,7 +913,7 @@ public class DialogueSystem : MonoBehaviour
             button.onClick.AddListener(() => {
                 // Apply choice effects BEFORE processing choice
                 capturedChoice.ApplyEffects();
-                OnChoiceSelected(capturedChoice.nextNodeId, capturedChoice.actionId, capturedChoice.nextVNScene, capturedChoice.endVNMode);
+                OnChoiceSelected(capturedChoice.nextNodeId, capturedChoice.actionId, capturedChoice.nextVNScene, capturedChoice.endVNMode, capturedChoice.loadTopDownScene, capturedChoice.topDownSpawnPointId);
             });
         }
     }
@@ -869,7 +921,7 @@ public class DialogueSystem : MonoBehaviour
     /// <summary>
     /// Xử lý khi player chọn một choice
     /// </summary>
-    private void OnChoiceSelected(int nextNodeId, string actionId, VNSceneData nextVNScene, bool endVNMode)
+    private void OnChoiceSelected(int nextNodeId, string actionId, VNSceneData nextVNScene, bool endVNMode, string loadTopDownScene = "", string topDownSpawnPointId = "")
     {
         // Priority 1: VN Scene transition
         if (nextVNScene != null)
@@ -879,7 +931,41 @@ public class DialogueSystem : MonoBehaviour
             return; // Don't go to next node, VN scene will handle it
         }
 
-        // Priority 2: End VN mode
+        // Priority 2: Top-Down Scene transition (MỚI)
+        if (!string.IsNullOrEmpty(loadTopDownScene))
+        {
+            Debug.Log($"[DialogueSystem] Choice selected top-down scene: {loadTopDownScene}, spawn: {topDownSpawnPointId}");
+            
+            // Gọi action callback trước nếu có
+            if (!string.IsNullOrEmpty(actionId))
+            {
+                onChoiceAction?.Invoke(actionId);
+            }
+
+            // End dialogue trước khi chuyển scene
+            EndDialogue();
+
+            // Notify để chuyển scene
+            if (onTopDownSceneTransition != null)
+            {
+                onTopDownSceneTransition.Invoke(loadTopDownScene, topDownSpawnPointId);
+            }
+            else
+            {
+                // Fallback: Gọi trực tiếp GameManager nếu không có callback
+                if (GameManager.Instance != null)
+                {
+                    GameManager.Instance.LoadScene(loadTopDownScene, topDownSpawnPointId);
+                }
+                else
+                {
+                    Debug.LogError("[DialogueSystem] Cannot load scene - no callback and GameManager is null!");
+                }
+            }
+            return;
+        }
+
+        // Priority 3: End VN mode
         if (endVNMode)
         {
             // IMPORTANT: Gọi action callback TRƯỚC KHI end VN mode
@@ -896,7 +982,7 @@ public class DialogueSystem : MonoBehaviour
             return;
         }
 
-        // Priority 3: Action callback (legacy)
+        // Priority 4: Action callback (legacy)
         if (!string.IsNullOrEmpty(actionId))
         {
             onChoiceAction?.Invoke(actionId);
@@ -947,7 +1033,7 @@ public class DialogueSystem : MonoBehaviour
         // IMPORTANT: Apply choice effects (set flags, change variables) BEFORE processing choice
         choice.ApplyEffects();
 
-        OnChoiceSelected(choice.nextNodeId, choice.actionId, choice.nextVNScene, choice.endVNMode);
+        OnChoiceSelected(choice.nextNodeId, choice.actionId, choice.nextVNScene, choice.endVNMode, choice.loadTopDownScene, choice.topDownSpawnPointId);
     }
 
     /// <summary>

@@ -119,6 +119,62 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &21104264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 21104266}
+  - component: {fileID: 21104265}
+  m_Layer: 0
+  m_Name: VisualNovelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &21104265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21104264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e02aa053f2c0fd4f8570ac12c8cabd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: GameScripts::VisualNovelManager
+  vnCanvas: {fileID: 0}
+  vnPanel: {fileID: 0}
+  backgroundImage: {fileID: 0}
+  locationText: {fileID: 0}
+  characterContainer: {fileID: 0}
+  characterPrefab: {fileID: 0}
+  dialogueSystem: {fileID: 0}
+  day1Scene7A: {fileID: 0}
+  ending1_GoodStandUp: {fileID: 11400000, guid: 6fce1bc799695174c8059f7bc3972bc7, type: 2}
+  ending2_TrueTellParents: {fileID: 11400000, guid: 4f999dd5d0010a34aa9780bf6771b0d4, type: 2}
+  ending3_BadDarkLife: {fileID: 11400000, guid: 869145a3c5ad80442a5c1043e11db6fc, type: 2}
+  canvasSortOrder: 300
+--- !u!4 &21104266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21104264}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.67064, y: 0.54327, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &49406911
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &127448704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1534,7 +1590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &435598184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,7 +1604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: GameScripts::QuickFlagSetter
   flagsToSetTrue:
-  - week3_scene24_home_completed
+  - game_start
   flagsToSetFalse: []
   variablesToSet: []
   editorOnly: 1
@@ -1883,7 +1939,7 @@ Transform:
   m_GameObject: {fileID: 562843444}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.43, y: -2.56, z: -10}
+  m_LocalPosition: {x: -0.46, y: -0.94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1938,7 +1994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &568494976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1955,7 +2011,8 @@ MonoBehaviour:
   mode: 2
   interactionKey: 0
   triggerOnce: 1
-  requiredFlags: []
+  requiredFlags:
+  - game_start
   forbiddenFlags:
   - day1_scene1_completed
   interactionPrompt: {fileID: 0}
@@ -2386,6 +2443,10 @@ PrefabInstance:
       value: "M\u1EB9"
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: useAvatarMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: useAdvancedDialogue
       value: 1
       objectReference: {fileID: 0}
@@ -2411,7 +2472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: avatarEntries.Array.data[0].speakerName
@@ -2450,6 +2511,14 @@ PrefabInstance:
       value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[4].priority
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[5].priority
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].dialogueData
       value: 
       objectReference: {fileID: 11400000, guid: 0e1965abe6a278d4c961477395a9369c, type: 2}
@@ -2465,6 +2534,34 @@ PrefabInstance:
       propertyPath: conditionalDialogues.Array.data[3].dialogueData
       value: 
       objectReference: {fileID: 11400000, guid: bab131e1c8bdf31419aa0e8bcaf80e99, type: 2}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[4].dialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: 7be540be52c8799478580a0a04ceecfa, type: 2}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[5].dialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: ee188fc59ee15464fa5f422f92a32fa5, type: 2}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[4].autoTriggerDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[4].triggerOnFlagSet
+      value: critical_scene27_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[5].autoTriggerDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[4].triggerOnSceneStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[5].triggerOnSceneStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].allowedScenes.Array.size
       value: 1
@@ -2498,6 +2595,22 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[4].allowedScenes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[4].requiredFlags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[5].allowedScenes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[5].requiredFlags.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[0].forbiddenFlags.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2511,6 +2624,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[3].forbiddenFlags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[4].forbiddenFlags.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[5].forbiddenFlags.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
@@ -2546,6 +2667,38 @@ PrefabInstance:
       value: week3_scene24_home_completed
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[4].allowedScenes.Array.data[0]'
+      value: HomeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[4].requiredFlags.Array.data[0]'
+      value: stood_up_to_bullies
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[4].requiredFlags.Array.data[1]'
+      value: critical_scene27_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[4].requiredFlags.Array.data[2]'
+      value: fight_won
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[5].allowedScenes.Array.data[0]'
+      value: HomeScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[5].requiredFlags.Array.data[0]'
+      value: got_beaten
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[5].requiredFlags.Array.data[1]'
+      value: critical_scene27_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[5].requiredFlags.Array.data[2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[0].forbiddenFlags.Array.data[0]'
       value: day1_scene8_completed
       objectReference: {fileID: 0}
@@ -2562,6 +2715,14 @@ PrefabInstance:
       value: critical_scene25_completed
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[4].forbiddenFlags.Array.data[0]'
+      value: scene28a_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[5].forbiddenFlags.Array.data[0]'
+      value: scene28a_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[1].setFlagsOnComplete.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2576,6 +2737,14 @@ PrefabInstance:
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: conditionalDialogues.Array.data[3].setFlagsOnComplete.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[4].setFlagsOnComplete.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: conditionalDialogues.Array.data[5].setFlagsOnComplete.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[1].setFlagsOnComplete.Array.data[0]'
@@ -2595,6 +2764,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
       propertyPath: 'conditionalDialogues.Array.data[3].setFlagsOnComplete.Array.data[2]'
+      value: mom_worried
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[4].setFlagsOnComplete.Array.data[0]'
+      value: scene28a_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[4].setFlagsOnComplete.Array.data[1]'
+      value: critical_scene25_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[4].setFlagsOnComplete.Array.data[2]'
+      value: mom_worried
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[5].setFlagsOnComplete.Array.data[0]'
+      value: scene28a_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[5].setFlagsOnComplete.Array.data[1]'
+      value: critical_scene25_completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821167623192150166, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
+      propertyPath: 'conditionalDialogues.Array.data[5].setFlagsOnComplete.Array.data[2]'
       value: mom_worried
       objectReference: {fileID: 0}
     - target: {fileID: 5510346647566054424, guid: 54cb7900284e6b54c879314df88bd236, type: 3}
@@ -7070,7 +7263,7 @@ Transform:
   m_GameObject: {fileID: 1194211824}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.43, y: -2.56, z: -10}
+  m_LocalPosition: {x: -0.46, y: -0.94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7133,11 +7326,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7783642297000837500, guid: 439f0f417b7f8e342a32c899d4bdc808, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.43
+      value: -0.46
       objectReference: {fileID: 0}
     - target: {fileID: 7783642297000837500, guid: 439f0f417b7f8e342a32c899d4bdc808, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.56
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 7783642297000837500, guid: 439f0f417b7f8e342a32c899d4bdc808, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8615,8 +8808,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1707927216}
-  - component: {fileID: 1707927215}
   - component: {fileID: 1707927217}
+  - component: {fileID: 1707927215}
   m_Layer: 0
   m_Name: TimeSkipTrigger_Scene20_21
   m_TagString: Untagged
@@ -12111,7 +12304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2034292712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18850,13 +19043,13 @@ SceneRoots:
   - {fileID: 562843447}
   - {fileID: 1225245097}
   - {fileID: 1194211827}
+  - {fileID: 435598185}
   - {fileID: 826964401}
   - {fileID: 1812900699}
   - {fileID: 1333555307}
   - {fileID: 1845648496}
   - {fileID: 1557128157}
   - {fileID: 2122588998}
-  - {fileID: 435598185}
   - {fileID: 568494978}
   - {fileID: 127448705}
   - {fileID: 2034292713}
@@ -18867,3 +19060,4 @@ SceneRoots:
   - {fileID: 1782497617}
   - {fileID: 1971837212}
   - {fileID: 1100778019}
+  - {fileID: 21104266}

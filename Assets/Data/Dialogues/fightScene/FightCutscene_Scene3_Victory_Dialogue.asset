@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6105f5041d92c9448a210b3d17e95586, type: 3}
+  m_Name: FightCutscene_Scene3_Victory_Dialogue
+  m_EditorClassIdentifier: GameScripts::DialogueData
+  conversationName: FightCutscene_Scene3_Victory
+  startNodeId: 0
+  nodes:
+  - nodeId: 0
+    speakerName: Narrator
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Th\u1EE7 l\u0129nh ng\xE3 xu\u1ED1ng."
+    - "Kh\xF4ng th\u1EC3 \u0111\u1EE9ng d\u1EADy n\u1EEFa."
+    choices: []
+    nextNodeId: 10
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 10
+    speakerName: Narrator
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\u1EE9c \u0111\u1EE9ng, th\u1EDF h\u1ED5n h\u1EC3n."
+    - "Tay run r\u1EA9y, nh\u01B0ng trong l\xF2ng nh\u1EB9 nh\xF5m."
+    choices: []
+    nextNodeId: 20
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 20
+    speakerName: Narrator
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "L\u1EA7n \u0111\u1EA7u ti\xEAn, \u0110\u1EE9c c\u1EA3m th\u1EA5y m\xECnh kh\xF4ng
+      c\xF2n y\u1EBFu \u0111u\u1ED1i n\u1EEFa."
+    choices: []
+    nextNodeId: 30
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 30
+    speakerName: "\u0110\u1EE9c"
+    isPlayerSpeaking: 1
+    dialogueLines:
+    - "Tao... tao th\u1EAFng r\u1ED3i..."
+    - "Tao \u0111\xE3 l\xE0m \u0111\u01B0\u1EE3c..."
+    choices: []
+    nextNodeId: 40
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 40
+    speakerName: Narrator
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "\u0110\xE1m b\u1EA1n c\u1EE7a Th\u1EE7 l\u0129nh nh\xECn \u0110\u1EE9c..."
+    - "R\u1ED3i b\u1ECF ch\u1EA1y."
+    choices: []
+    nextNodeId: 50
+    setFlagsOnEnter: []
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}
+  - nodeId: 50
+    speakerName: Narrator
+    isPlayerSpeaking: 0
+    dialogueLines:
+    - "Kh\xF4ng ai d\xE1m \u0111\u1EE5ng \u0111\u1EBFn \u0110\u1EE9c n\u1EEFa."
+    - "\u0110\u1EE9c \u0111\xE3 \u0111\u1EE9ng l\xEAn cho ch\xEDnh m\xECnh."
+    choices: []
+    nextNodeId: -1
+    setFlagsOnEnter:
+    - fight_won
+    - stood_up_successfully
+    variableChangesOnEnter: []
+    speakerPortrait: {fileID: 0}
+    emotion: 
+    voiceClip: {fileID: 0}
+    sfxClip: {fileID: 0}

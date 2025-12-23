@@ -1,0 +1,70 @@
+{
+  "_comment": "Fight Cutscene - Scene 3: Đức thắng (Background: fightScene3.png)",
+  "conversationName": "FightCutscene_Scene3_Victory",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Thủ lĩnh ngã xuống.",
+        "Không thể đứng dậy nữa."
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Đức đứng, thở hổn hển.",
+        "Tay run rẩy, nhưng trong lòng nhẹ nhõm."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Lần đầu tiên, Đức cảm thấy mình không còn yếu đuối nữa."
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Tao... tao thắng rồi...",
+        "Tao đã làm được..."
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Đám bạn của Thủ lĩnh nhìn Đức...",
+        "Rồi bỏ chạy."
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "Narrator",
+      "isPlayer": false,
+      "lines": [
+        "Không ai dám đụng đến Đức nữa.",
+        "Đức đã đứng lên cho chính mình."
+      ],
+      "next": -1,
+      "setFlags": ["fight_won", "stood_up_successfully"],
+      "actionId": "trigger_scene28a",
+      "_comment": "Kết thúc FightCutscene → Chuyển sang Scene 28A (HomeScene)"
+    }
+  ]
+}
+

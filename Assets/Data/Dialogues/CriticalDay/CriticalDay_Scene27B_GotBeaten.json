@@ -1,0 +1,179 @@
+{
+  "_comment": "Critical Day - Scene 27B: Đức bị đánh sau khi không chọn đối mặt (VN Scene)",
+  "conversationName": "CriticalDay_Scene27B_GotBeaten",
+  "startNodeId": 0,
+  "nodes": [
+    {
+      "id": 0,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Đánh nó đi!",
+        "Cho nó biết thế nào là lễ độ!"
+      ],
+      "next": 10
+    },
+    {
+      "id": 10,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Cả đám bu lại Đức...",
+        "Không kịp phản ứng, Đức đã bị đẩy ngã xuống đất."
+      ],
+      "next": 20
+    },
+    {
+      "id": 20,
+      "speaker": "Đàn em 1",
+      "isPlayer": false,
+      "lines": [
+        "Ha ha! Mày nghĩ mày là ai?",
+        "Dám cãi lại anh tao à?"
+      ],
+      "next": 30
+    },
+    {
+      "id": 30,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Bụp!",
+        "Một cú đấm trúng vào mặt Đức."
+      ],
+      "next": 40
+    },
+    {
+      "id": 40,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Ugh...!",
+        "(Đau quá... mặt tao...)"
+      ],
+      "next": 50
+    },
+    {
+      "id": 50,
+      "speaker": "Đàn em 2",
+      "isPlayer": false,
+      "lines": [
+        "Đá nó đi!",
+        "Cho nó nhớ đời!"
+      ],
+      "next": 60
+    },
+    {
+      "id": 60,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Bụp! Bịch! Bụp!",
+        "Những cú đá liên tiếp vào người Đức.",
+        "Đức chỉ có thể co ro, che mặt."
+      ],
+      "next": 70
+    },
+    {
+      "id": 70,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Tại sao... tại sao lại như thế này...)",
+        "(Tao đã làm gì sai chứ...)",
+        "(Ai đó... cứu tao với...)"
+      ],
+      "next": 80
+    },
+    {
+      "id": 80,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Mày thấy chưa?",
+        "Đây là cái giá phải trả khi không biết điều.",
+        "Lần sau nhớ ngoan ngoãn hơn nhé."
+      ],
+      "next": 90
+    },
+    {
+      "id": 90,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Thủ lĩnh đá thêm một cú vào bụng Đức.",
+        "Đức ho sặc sụa, nước mắt trào ra."
+      ],
+      "next": 100
+    },
+    {
+      "id": 100,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "Khụ... khụ...",
+        "(Không thở được... đau quá...)"
+      ],
+      "next": 110
+    },
+    {
+      "id": 110,
+      "speaker": "Thủ lĩnh",
+      "isPlayer": false,
+      "lines": [
+        "Thôi được rồi, đủ rồi.",
+        "Để nó sống mà còn mang tiền cho tụi tao.",
+        "Đi thôi anh em."
+      ],
+      "next": 120
+    },
+    {
+      "id": 120,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Tụi bắt nạt cười ha hả rồi bỏ đi...",
+        "Để lại Đức một mình nằm trên con đường vắng."
+      ],
+      "next": 130
+    },
+    {
+      "id": 130,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Đau quá... toàn thân đau nhức...)",
+        "(Máu... máu chảy ra từ miệng...)",
+        "(Tao phải về nhà... phải đứng dậy...)"
+      ],
+      "next": 140
+    },
+    {
+      "id": 140,
+      "speaker": "",
+      "isPlayer": false,
+      "lines": [
+        "Đức cố gắng chống tay đứng dậy...",
+        "Chân run rẩy, suýt ngã.",
+        "Nhưng Đức vẫn cố gắng lê bước về nhà..."
+      ],
+      "next": 150
+    },
+    {
+      "id": 150,
+      "speaker": "Đức",
+      "isPlayer": true,
+      "lines": [
+        "(Mình không thể để mẹ thấy như thế này...)",
+        "(Phải nghĩ ra lý do gì đó...)",
+        "(Hay là... nói thật với mẹ...?)"
+      ],
+      "next": -1,
+      "setFlags": ["critical_scene27b_completed", "got_beaten_detailed"],
+      "varChanges": [
+        { "name": "fear_level", "op": "add", "value": 35 }
+      ],
+      "_comment": "Kết thúc VN scene bị đánh → Chuyển sang Scene 28B (Home Choice)"
+    }
+  ]
+}

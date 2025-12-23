@@ -51,6 +51,20 @@ public class VisualNovelManager : MonoBehaviour
     [Header("Day 1 Scene References")]
     [Tooltip("Scene 7A - Confrontation (VN mode)")]
     [SerializeField] private VNSceneData day1Scene7A;
+    
+    [Header("Ending Storytelling References")]
+    [Tooltip("Ending 1 - Good StandUp")]
+    [SerializeField] private StorytellingSequenceData ending1_GoodStandUp;
+    [Tooltip("Ending 2 - True TellParents")]
+    [SerializeField] private StorytellingSequenceData ending2_TrueTellParents;
+    [Tooltip("Ending 3 - Bad DarkLife")]
+    [SerializeField] private StorytellingSequenceData ending3_BadDarkLife;
+    #endregion
+    
+    #region Public Getters for Endings
+    public StorytellingSequenceData GetEnding1Data() => ending1_GoodStandUp;
+    public StorytellingSequenceData GetEnding2Data() => ending2_TrueTellParents;
+    public StorytellingSequenceData GetEnding3Data() => ending3_BadDarkLife;
     #endregion
 
     #region Settings
@@ -315,7 +329,8 @@ public class VisualNovelManager : MonoBehaviour
                 OnDialogueComplete,
                 OnDialogueAction,
                 OnVNSceneTransition,
-                () => EndVNMode());
+                () => EndVNMode(),
+                OnTopDownSceneTransition);
         }
         else
         {
@@ -728,6 +743,32 @@ public class VisualNovelManager : MonoBehaviour
                 TriggerNPCSurround();
                 break;
 
+            // Critical Day - Fight Cutscene
+            case "trigger_fight_cutscene":
+                TriggerFightCutscene();
+                break;
+
+            // Critical Day - Scene 28B (Về nhà sau bị đánh)
+            case "trigger_scene28b":
+                TriggerScene28B();
+                break;
+
+            // Critical Day - Scene 28A (Về nhà sau thắng fight)
+            case "trigger_scene28a":
+                TriggerScene28A();
+                break;
+
+            // Endings
+            case "trigger_ending1_storytelling":
+                TriggerEnding1();
+                break;
+            case "trigger_ending2_storytelling":
+                TriggerEnding2();
+                break;
+            case "trigger_ending3_storytelling":
+                TriggerEnding3();
+                break;
+
             // Day 1 Scene 6 choices (DEPRECATED - use nextVNScene instead)
             case "trigger_scene7a":
                 HandleTriggerScene7A();
@@ -798,6 +839,109 @@ public class VisualNovelManager : MonoBehaviour
         }
     }
 
+    #region Critical Day Action Handlers
+
+    /// <summary>
+    /// Trigger Fight Cutscene (Storytelling)
+    /// </summary>
+    private void TriggerFightCutscene()
+    {
+        Debug.Log("[VNManager] Triggering Fight Cutscene...");
+
+        // Load StorytellingSequenceData
+        StorytellingSequenceData fightSequence = Resources.Load<StorytellingSequenceData>("Storytelling/fightScene");
+
+        if (fightSequence != null)
+        {
+            // End VN mode first
+            EndVNMode();
+
+            // Start storytelling sequence
+            StorytellingManager.Instance.PlaySequence(fightSequence, () =>
+            {
+                Debug.Log("[VNManager] Fight Cutscene completed!");
+                // Sequence tự động chuyển về HomeScene nhờ Next Scene Name
+            });
+        }
+        else
+        {
+            Debug.LogError("[VNManager] Fight Cutscene not found at Resources/Storytelling/fightScene!");
+        }
+    }
+
+    /// <summary>
+    /// Trigger Scene 28B (Về nhà sau bị đánh)
+    /// </summary>
+    private void TriggerScene28B()
+    {
+        Debug.Log("[VNManager] Triggering Scene 28B...");
+        EndVNMode();
+        GameManager.Instance?.LoadScene("HomeScene", "after_beaten");
+    }
+
+    /// <summary>
+    /// Trigger Scene 28A (Về nhà sau thắng fight)
+    /// </summary>
+    private void TriggerScene28A()
+    {
+        Debug.Log("[VNManager] Triggering Scene 28A...");
+        EndVNMode();
+        GameManager.Instance?.LoadScene("HomeScene", "after_fight");
+    }
+
+    /// <summary>
+    /// Trigger Ending 1 Storytelling
+    /// </summary>
+    private void TriggerEnding1()
+    {
+        Debug.Log("[VNManager] Triggering Ending 1...");
+        if (ending1_GoodStandUp != null)
+        {
+            EndVNMode();
+            StorytellingManager.Instance.PlaySequence(ending1_GoodStandUp);
+        }
+        else
+        {
+            Debug.LogError("[VNManager] Ending 1 not assigned! Please assign in Inspector.");
+        }
+    }
+
+    /// <summary>
+    /// Trigger Ending 2 Storytelling
+    /// </summary>
+    private void TriggerEnding2()
+    {
+        Debug.Log("[VNManager] Triggering Ending 2...");
+        if (ending2_TrueTellParents != null)
+        {
+            EndVNMode();
+            StorytellingManager.Instance.PlaySequence(ending2_TrueTellParents);
+        }
+        else
+        {
+            Debug.LogError("[VNManager] Ending 2 not assigned! Please assign in Inspector.");
+        }
+    }
+
+    /// <summary>
+    /// Trigger Ending 3 Storytelling
+    /// </summary>
+    private void TriggerEnding3()
+    {
+        Debug.Log("[VNManager] Triggering Ending 3...");
+        if (ending3_BadDarkLife != null)
+        {
+            EndVNMode();
+            StorytellingManager.Instance.PlaySequence(ending3_BadDarkLife);
+        }
+        else
+        {
+            Debug.LogError("[VNManager] Ending 3 not assigned! Please assign in Inspector.");
+        }
+    }
+
+    #endregion
+
     /// <summary>
     /// Handle VN scene transition from dialogue choice
     /// </summary>
@@ -820,6 +964,47 @@ public class VisualNovelManager : MonoBehaviour
         currentScene = nextScene;
         nextScene.ApplyOnEnterEffects();
         StartCoroutine(TransitionBetweenScenes());
+    }
+
+    /// <summary>
+    /// Handle top-down scene transition from dialogue choice/node
+    /// Kết thúc VN mode và chuyển sang scene top-down
+    /// </summary>
+    private void OnTopDownSceneTransition(string sceneName, string spawnPointId)
+    {
+        if (string.IsNullOrEmpty(sceneName))
+        {
+            Debug.LogError("[VNManager] OnTopDownSceneTransition: sceneName is null or empty!");
+            return;
+        }
+
+        Debug.Log($"[VNManager] Top-down scene transition: {sceneName}, spawn: {spawnPointId}");
+
+        // Kết thúc VN mode trước
+        isVNModeActive = false;
+        
+        // Cleanup VN UI
+        if (vnCanvas != null) vnCanvas.gameObject.SetActive(false);
+        if (backgroundImage != null) backgroundImage.gameObject.SetActive(false);
+        if (characterContainer != null)
+        {
+            foreach (Transform child in characterContainer)
+            {
+                Destroy(child.gameObject);
+            }
+        }
+
+        // Load scene top-down
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.LoadScene(sceneName, spawnPointId);
+        }
+        else
+        {
+            Debug.LogError("[VNManager] GameManager.Instance is null! Cannot load scene.");
+        }
+
+        currentScene = null;
     }
 
     /// <summary>

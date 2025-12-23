@@ -1,0 +1,94 @@
+========================================
+QUICK SETUP - FIGHT SCENE & ENDINGS
+========================================
+
+✅ ĐÃ HOÀN THÀNH:
+- 6 JSON files (Scene 27, 28A, 28B, Fight x3)
+- Code trong VisualNovelManager.cs đã update
+
+========================================
+BƯỚC TIẾP THEO:
+========================================
+
+1. IMPORT JSON (5 phút)
+   - Menu: Tools → Dialogue → Import JSON to DialogueData
+   - Chọn 6 files JSON trong thư mục này
+
+2. TẠO FIGHT SCENE STORYTELLING (10 phút)
+   - Menu: Tools → Storytelling → Create Sequence
+   - Sequence Name: fightScene
+   - Number of Segments: 3
+   - Next Scene: HomeScene
+   - Save Path: Assets/Data/Storytelling/
+   
+   Sau đó chỉnh sửa 3 segments:
+   
+   Segment 0:
+   - Background: fightScene1.png
+   - Text:
+     - "Đức và Thủ lĩnh đối mặt nhau."
+     - "Không khí căng thẳng đến tột độ."
+     - "Thủ lĩnh: 'Mày nghĩ mày thắng được tao à?'"
+     - "Đức: 'Tao không còn sợ mày nữa.'"
+   
+   Segment 1:
+   - Background: fightScene2.png
+   - Text:
+     - "Thủ lĩnh lao vào đánh trước."
+     - "Đức né tránh, rồi đánh trả."
+     - "Hai người vật lộn trên đường."
+     - "Đức bị đấm vào mặt, nhưng không ngã."
+     - "Đức: 'Tao sẽ không chạy nữa!'"
+   
+   Segment 2:
+   - Background: fightScene3.png
+   - Text:
+     - "Cuối cùng, Thủ lĩnh ngã xuống."
+     - "Đức đứng, thở hổn hển."
+     - "Lần đầu tiên, Đức cảm thấy mình không còn yếu đuối nữa."
+     - "Đức: 'Tao... tao thắng rồi...'"
+     - "Đám bạn của Thủ lĩnh bỏ chạy."
+
+3. SET FLAGS (2 phút)
+   - Mở fightScene asset
+   - Set Flags On Complete (Size = 3):
+     [0] fight_won
+     [1] stood_up_successfully
+     [2] critical_scene27_completed
+
+4. DI CHUYỂN VÀO RESOURCES (QUAN TRỌNG!)
+   - Tạo thư mục: Assets/Resources/Storytelling/
+   - Di chuyển fightScene.asset vào đó
+   - (Để Resources.Load() hoạt động)
+
+5. TẠO SPAWN POINTS (5 phút)
+   - Mở HomeScene
+   - Tạo 2 spawn points:
+     * after_fight (vị trí về nhà sau thắng)
+     * after_beaten (vị trí về nhà sau bị đánh)
+
+========================================
+TEST:
+========================================
+
+1. Play Scene 27
+2. Chọn "Đối mặt 1v1"
+3. Kiểm tra Fight Scene hiển thị
+4. Kiểm tra chuyển về HomeScene
+5. Kiểm tra Scene 28A dialogue
+
+========================================
+ACTION IDS ĐÃ IMPLEMENT:
+========================================
+
+✅ trigger_fight_cutscene
+✅ trigger_scene28a
+✅ trigger_scene28b
+✅ trigger_ending1_storytelling
+✅ trigger_ending2_storytelling
+✅ trigger_ending3_storytelling
+
+========================================
+THỜI GIAN: ~25 phút
+========================================
+
