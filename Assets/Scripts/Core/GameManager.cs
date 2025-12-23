@@ -87,6 +87,9 @@ public class GameManager : MonoBehaviour
 
         // Tự động tạo ScreenFader nếu chưa có
         EnsureScreenFaderExists();
+        
+        // Tự động tạo ScreenModeManager nếu chưa có
+        EnsureScreenModeManagerExists();
     }
 
     /// <summary>
@@ -99,6 +102,19 @@ public class GameManager : MonoBehaviour
             GameObject faderObj = new GameObject("ScreenFader");
             faderObj.AddComponent<ScreenFader>();
             Debug.Log("[GameManager] Tự động tạo ScreenFader");
+        }
+    }
+
+    /// <summary>
+    /// Đảm bảo ScreenModeManager tồn tại (F11 toggle fullscreen)
+    /// </summary>
+    private void EnsureScreenModeManagerExists()
+    {
+        if (ScreenModeManager.Instance == null)
+        {
+            GameObject screenModeObj = new GameObject("ScreenModeManager");
+            screenModeObj.AddComponent<ScreenModeManager>();
+            Debug.Log("[GameManager] Tự động tạo ScreenModeManager");
         }
     }
 

@@ -26,6 +26,7 @@ public class MainMenuController : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private Slider musicVolumeSlider;
     [SerializeField] private Slider sfxVolumeSlider;
+    [SerializeField] private Toggle fullscreenToggle;
     [SerializeField] private Button backButton;
     
     [Header("Scene Settings")]
@@ -150,6 +151,13 @@ public class MainMenuController : MonoBehaviour
             sfxVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 1f);
             sfxVolumeSlider.onValueChanged.AddListener(OnSFXVolumeChanged);
         }
+
+        // Fullscreen toggle
+        if (fullscreenToggle != null)
+        {
+            fullscreenToggle.isOn = PlayerPrefs.GetInt("IsFullscreen", 1) == 1;
+            fullscreenToggle.onValueChanged.AddListener(OnFullscreenToggleChanged);
+        }
     }
     #endregion
     
@@ -244,6 +252,32 @@ public class MainMenuController : MonoBehaviour
     private void OnSFXVolumeChanged(float value)
     {
         PlayerPrefs.SetFloat("SFXVolume", value);
+    }
+
+    private void OnFullscreenToggleChanged(bool isFullscreen)
+    {
+        if (ScreenModeManager.Instance != null)
+        {
+            if (isFullscreen)
+                ScreenModeManager.Instance.SetFullscreen();
+            else
+                ScreenModeManager.Instance.SetWindowed();
+        }
+        else
+        {
+            // Fallback nếu chưa có ScreenModeManager
+            if (isFullscreen)
+            {
+                Resolution res = Screen.currentResolution;
+                Screen.SetResolution(res.width, res.height, FullScreenMode.FullScreenWindow);
+            }
+            else
+            {
+                Screen.SetResolution(1280, 720, FullScreenMode.Windowed);
+            }
+            PlayerPrefs.SetInt("IsFullscreen", isFullscreen ? 1 : 0);
+            PlayerPrefs.Save();
+        }
     }
     #endregion
     

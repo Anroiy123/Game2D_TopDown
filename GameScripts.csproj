@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\VisualNovel\VNSceneQuickTest.cs" />
     <Compile Include="Assets\Scripts\Storytelling\StorySegment.cs" />
     <Compile Include="Assets\Scripts\Editor\ReassignVNSceneDataScript.cs" />
+    <Compile Include="Assets\Scripts\Core\ScreenModeManager.cs" />
     <Compile Include="Assets\Scripts\VisualNovel\VisualNovelData.cs" />
     <Compile Include="Assets\Scripts\Scene\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCSurroundController.cs" />
