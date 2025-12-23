@@ -51,7 +51,9 @@ MonoBehaviour:
   - choice_ran_away_week1
   setFlagsOnEnter:
   - week1_scene14a2_completed
+  - week1_encounter_complete
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - week1_encounter_complete
+  - week1_scene14a2_completed
   variableChangesOnComplete: []

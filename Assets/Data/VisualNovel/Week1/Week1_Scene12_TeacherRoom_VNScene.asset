@@ -15,7 +15,7 @@ MonoBehaviour:
   sceneData:
     sceneName: Week1_Scene12_TeacherRoom
     locationText: "Ph\xF2ng gi\xE1o vi\xEAn"
-    backgroundImage: {fileID: 6081253000217835118, guid: 1f97bca4103556b42917e65651d61dc2, type: 3}
+    backgroundImage: {fileID: 1301774999366514414, guid: ab4e2baccd838c240870b93275337b37, type: 3}
     backgroundTint: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.003921569}
     characters:
     - characterSprite: {fileID: -4441732071139527466, guid: 3dcc7ddfc7d634a478634a93f2f25599, type: 3}
@@ -43,7 +43,9 @@ MonoBehaviour:
   - week1_scene12_completed
   setFlagsOnEnter:
   - week1_scene12_completed
+  - week1_teacher_talk_completed
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - week1_teacher_talk_completed
+  - week1_scene12_completed
   variableChangesOnComplete: []

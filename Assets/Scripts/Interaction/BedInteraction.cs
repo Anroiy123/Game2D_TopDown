@@ -1,11 +1,9 @@
 using UnityEngine;
-using System.Collections;
 
 public class BedInteraction : MonoBehaviour
 {
     [Header("Sleep Settings")]
-    [SerializeField] private float sleepDuration = 2f; // Thời gian animation ngủ
-    [SerializeField] private bool advanceDay = true; // Có tăng ngày không
+    [SerializeField] private bool advanceDay = true; // Có tăng ngày không khi thức dậy
 
     [Header("Sleep Position")]
     [Tooltip("Vị trí player sẽ nằm khi ngủ (kéo thả Transform hoặc để trống để dùng center của BoxCollider)")]
@@ -16,6 +14,7 @@ public class BedInteraction : MonoBehaviour
 
     private bool isPlayerNearby = false;
     private bool isSleeping = false;
+    private Vector3 originalPosition; // Lưu vị trí trước khi ngủ
     private Transform playerTransform;
     private PlayerMovement playerMovement;
     private Animator playerAnimator;
@@ -39,47 +38,84 @@ public class BedInteraction : MonoBehaviour
             return;
         }
 
-        if (isPlayerNearby && !isSleeping && Input.GetKeyDown(KeyCode.E))
+        // Toggle sleep: nhấn E lần 1 để ngủ, nhấn E lần 2 để thức dậy
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            StartCoroutine(SleepRoutine());
+            ToggleSleep();
         }
     }
 
-    private IEnumerator SleepRoutine()
+    /// <summary>
+    /// Toggle trạng thái ngủ/thức - giống như Chair toggle
+    /// </summary>
+    private void ToggleSleep()
     {
-        isSleeping = true;
-        
-        // 1. Khóa player movement
+        isSleeping = !isSleeping;
+        Debug.Log($"ToggleSleep called! isSleeping = {isSleeping}");
+
+        if (isSleeping)
+        {
+            // --- BẮT ĐẦU NGỦ ---
+            StartSleeping();
+        }
+        else
+        {
+            // --- THỨC DẬY ---
+            WakeUp();
+        }
+    }
+
+    /// <summary>
+    /// Bắt đầu ngủ
+    /// </summary>
+    private void StartSleeping()
+    {
+        // 1. Lưu vị trí hiện tại để có thể quay lại
+        if (playerTransform != null)
+        {
+            originalPosition = playerTransform.position;
+        }
+
+        // 2. Khóa player movement
         if (playerMovement != null)
         {
             playerMovement.SetSleepingState(true);
         }
 
-        // 2. Di chuyển player đến vị trí ngủ trên giường
+        // 3. Di chuyển player đến vị trí ngủ trên giường
         if (playerTransform != null)
         {
             Vector3 targetPosition = GetSleepPosition();
             playerTransform.position = targetPosition;
         }
 
-        // 3. Bật animation ngủ
+        // 4. Bật animation ngủ
         if (playerAnimator != null)
         {
             playerAnimator.SetBool(sleepingHash, true);
         }
 
-        // Ẩn prompt
+        // 5. Ẩn prompt
         if (interactionPrompt != null)
         {
             interactionPrompt.SetActive(false);
         }
 
-        Debug.Log("Player bắt đầu ngủ...");
+        Debug.Log("Player bắt đầu ngủ... Nhấn E để thức dậy.");
+    }
 
-        // 4. Đợi animation ngủ
-        yield return new WaitForSeconds(sleepDuration);
+    /// <summary>
+    /// Thức dậy
+    /// </summary>
+    private void WakeUp()
+    {
+        // 1. Tắt animation ngủ
+        if (playerAnimator != null)
+        {
+            playerAnimator.SetBool(sleepingHash, false);
+        }
 
-        // 5. Xử lý logic sau khi ngủ (tăng ngày)
+        // 2. Xử lý logic sau khi ngủ (tăng ngày)
         if (advanceDay && StoryManager.Instance != null)
         {
             int currentDay = StoryManager.Instance.GetVariable(StoryManager.VarKeys.CURRENT_DAY);
@@ -87,22 +123,22 @@ public class BedInteraction : MonoBehaviour
             Debug.Log($"Đã sang ngày mới: Ngày {currentDay + 1}");
         }
 
-        // 6. Tắt animation ngủ
-        if (playerAnimator != null)
+        // 3. Đẩy player ra khỏi giường một chút (tránh trigger lại ngay)
+        if (playerTransform != null)
         {
-            playerAnimator.SetBool(sleepingHash, false);
+            // Đẩy xuống phía trước giường (Y dương = xuống trong hệ tọa độ này)
+            playerTransform.position = originalPosition + new Vector3(0, 0.5f, 0);
         }
 
-        // 7. Mở khóa player movement
+        // 4. Mở khóa player movement
         if (playerMovement != null)
         {
             playerMovement.SetSleepingState(false);
         }
 
-        isSleeping = false;
         Debug.Log("Player đã thức dậy!");
 
-        // Hiện lại prompt nếu player vẫn ở gần
+        // 5. Hiện lại prompt nếu player vẫn ở gần
         if (isPlayerNearby && interactionPrompt != null)
         {
             interactionPrompt.SetActive(true);

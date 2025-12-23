@@ -1,171 +1,203 @@
-﻿# 🎮 Game 2D Top-Down Classroom
+﻿# 🎮 Game Thanh Hóa - Bạo Lực Học Đường
 
-A 2D top-down classroom simulation game built with **Unity 6**.
+Game 2D top-down mô phỏng về chủ đề **bạo lực học đường** (school bullying), xây dựng bằng Unity 6.
 
-![Unity](https://img.shields.io/badge/Unity-6-000000?style=flat&logo=unity)
-![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp)
-![License](https://img.shields.io/badge/License-MIT-blue)
+## 📖 Giới thiệu
 
-## 📖 Mô tả
+### Bối cảnh
+- **Nhân vật chính**: Đức - học sinh chuyển trường, nhút nhát, cô đơn, dễ bị bắt nạt
+- **Chủ đề**: Cuộc sống của Đức trước, trong và sau khi bị bắt nạt
+- **Gameplay**: Kết hợp Top-down exploration + Visual Novel storytelling
 
-Game mô phỏng lớp học 2D theo góc nhìn top-down. Người chơi có thể di chuyển trong lớp học, ngồi vào ghế và tương tác với các NPC thông qua hệ thống đối thoại.
+### Tính năng chính
+- 🚶 Di chuyển 4 hướng (WASD/Arrows) trong môi trường 2D top-down
+- 💬 Hệ thống Dialogue với branching choices và conditions
+- 🎬 Visual Novel Mode cho các cảnh kể chuyện
+- 📖 Storytelling System cho các ending sequences
+- 🎯 Story System với flags/variables quyết định kết cục
+- 🎭 NPC Behaviors: Follow player, surround player, waypoint walking
+- ⚔️ Cutscene System: Fight 1v1, Bully beat
+- 🔔 Interaction Indicators: Animated (NPCs) và Simple (doors, beds)
 
-## ✨ Tính năng
-
-- 🚶 **Di chuyển 4 hướng** - WASD hoặc phím mũi tên
-- 🪑 **Ngồi ghế** - Nhấn E khi đứng gần ghế
-- 💬 **Hệ thống đối thoại** - Tương tác với NPC, hiệu ứng typewriter
-- 🔄 **NPC quay mặt** - NPC tự động quay về phía người chơi khi nói chuyện
-- 🎨 **Animation Blend Tree** - Animation mượt mà cho cả Player và NPC
+### 3 Kết cục
+| Ending | Tên | Điều kiện | Thông điệp |
+|--------|-----|-----------|------------|
+| **Good** | Đứng lên chống lại | Đánh trả thành công | Đứng lên và tìm kiếm sự giúp đỡ |
+| **True** | Chia sẻ với gia đình | Thú nhận với mẹ | Gia đình luôn ở bên bạn |
+| **Bad** | Cuộc đời đen tối | Giấu mẹ | Im lặng chịu đựng hủy hoại cuộc đời |
 
 ## 🎮 Điều khiển
 
-| Phím              | Hành động                                             |
-| ----------------- | ----------------------------------------------------- |
-| **WASD / Arrows** | Di chuyển                                             |
-| **E**             | Tương tác (ngồi/đứng, nói chuyện, tiếp tục đối thoại) |
-| **ESC**           | Thoát đối thoại                                       |
+| Phím | Hành động |
+|------|-----------|
+| **WASD / Arrows** | Di chuyển |
+| **Shift** | Sprint (chạy nhanh) |
+| **E** | Tương tác (ngồi, nói chuyện, tiếp tục dialogue) |
+| **ESC** | Thoát dialogue / Skip storytelling |
+| **1-9** | Chọn dialogue choices |
+| **F1** | Debug Flag Menu (Editor only) |
+| **T** | Test VN Scene (nếu có VNSceneQuickTest) |
+
+## 🔧 Yêu cầu
+
+- **Unity 6** (6000.2.14f1+)
+- **2D Sprite** package
+- **Cinemachine** 3.1.5 (camera follow)
+- **Input System** 1.16.0 (chưa dùng, đang dùng legacy Input)
+- **Super Tiled2Unity** 2.4.0 (import Tiled maps)
+
+## 🚀 Cài đặt
+
+1. Clone repository
+2. Mở project bằng Unity Hub (Unity 6000.2.14f1+)
+3. Mở scene `Assets/Scenes/MainMenu.unity` hoặc `HomeScene.unity`
+4. Nhấn **Play** để chạy game
 
 ## 🏗️ Cấu trúc dự án
 
 ```
 Assets/
 ├── Scripts/
-│   ├── Core/                    # Singleton Managers
-│   │   ├── GameManager.cs       # Game state, scene loading
-│   │   ├── StoryManager.cs      # Story flags/variables
-│   │   ├── SaveManager.cs       # Save/Load game
+│   ├── Core/                    # Singleton Managers (DontDestroyOnLoad)
+│   │   ├── GameManager.cs       # Game state, scene loading, spawn player
+│   │   ├── StoryManager.cs      # Story flags/variables, ending determination
+│   │   ├── SaveManager.cs       # Save/Load game (JSON)
 │   │   └── SaveData.cs          # Save data structure
 │   ├── Player/
-│   │   └── PlayerMovement.cs    # Điều khiển player, ngồi ghế
+│   │   ├── PlayerMovement.cs    # Di chuyển, ngồi ghế, trạng thái
+│   │   └── PlayerSelfDialogue.cs # Player tự thoại (inner thoughts)
 │   ├── NPC/
-│   │   ├── NPCInteraction.cs    # Tương tác NPC, hiển thị tên
-│   │   └── BullyEncounterZone.cs # Trigger zones bắt nạt
+│   │   ├── NPCInteraction.cs    # Tương tác NPC, trigger dialogue
+│   │   ├── NPCFollowPlayer.cs   # NPC đi theo player (bullies)
+│   │   ├── NPCSurroundPlayer.cs # NPCs vây quanh player
+│   │   ├── FightCutscene.cs     # Cutscene đánh nhau 1v1
+│   │   └── BullyBeatCutscene.cs # Cutscene bullies đánh player
 │   ├── Dialogue/
-│   │   ├── DialogueSystem.cs    # Hệ thống đối thoại UI
-│   │   └── DialogueData.cs      # ScriptableObject dialogue
+│   │   ├── DialogueSystem.cs    # UI dialogue, typewriter, choices
+│   │   ├── DialogueData.cs      # ScriptableObject dialogue structure
+│   │   └── DialogueTrigger.cs   # Trigger dialogue từ objects
+│   ├── VisualNovel/
+│   │   ├── VisualNovelManager.cs # VN mode singleton
+│   │   ├── VNSceneData.cs       # VNSceneData ScriptableObject
+│   │   └── VNTrigger.cs         # Trigger VN scenes
+│   ├── Storytelling/            # Ending/Cutscene storytelling system
+│   │   ├── StorytellingManager.cs
+│   │   ├── StorytellingSequenceData.cs
+│   │   └── StorytellingTrigger.cs
 │   ├── Scene/
 │   │   ├── SceneTransition.cs   # Door/Portal chuyển scene
-│   │   ├── LocalTeleporter.cs   # Teleport trong scene
 │   │   ├── SpawnManager.cs      # Quản lý spawn points
-│   │   ├── SpawnPoint.cs        # Điểm spawn
-│   │   └── ScreenFader.cs       # Fade in/out effect
+│   │   ├── ScreenFader.cs       # Fade in/out + transition text
+│   │   └── TimeSkipTrigger.cs   # Trigger time skip
 │   ├── Interaction/
-│   │   ├── BedInteraction.cs    # Tương tác giường ngủ
-│   │   ├── DoorController.cs    # Điều khiển cửa
-│   │   └── InteractableOutline.cs # Hiệu ứng outline
-│   ├── Utilities/
-│   │   ├── CameraHelper.cs      # Camera snap helper
-│   │   └── SerializableDictionary.cs # Dictionary serialize
-│   ├── Data/                    # ScriptableObject assets
-│   │   └── AdamDialogue.asset
+│   │   ├── BedInteraction.cs    # Ngủ, tăng ngày
+│   │   ├── DoorController.cs    # Mở/đóng cửa animation
+│   │   └── InteractionIndicator.cs # Animated indicator (NPCs)
+│   ├── Debug/                   # Debug tools (Editor only)
+│   │   └── DebugFlagMenu.cs     # F1 menu set flags runtime
 │   └── Editor/                  # Editor tools
-│       ├── NPCAnimatorGenerator.cs
-│       └── SceneSetupHelper.cs
+│       ├── DialogueJsonImporter.cs
+│       ├── VNSceneCreator.cs
+│       └── StorytellingSequenceCreator.cs
+├── Data/
+│   ├── Dialogues/               # JSON dialogue files + DialogueData assets
+│   │   ├── Day1/, Day2/, Week1/, Week3/, CriticalDay/
+│   │   └── NPCs/
+│   ├── VisualNovel/             # VNSceneData assets
+│   └── Storytelling/            # StorytellingSequenceData assets (endings)
+├── Scenes/                      # Unity scenes
+│   ├── MainMenu.unity
+│   ├── HomeScene.unity
+│   ├── ClassroomScene.unity
+│   └── StreetScene.unity
+├── Prefabs/                     # Prefabs (Player, NPC, Chair)
 ├── Animation/                   # Animation clips & controllers
-├── Prefabs/                     # Prefabs (Chair, NPC...)
-├── Scenes/                      # Game scenes
 ├── Sprites/                     # Sprite assets
-└── TileMap/                     # Tilemap assets
+├── TileMap/                     # Tilemap assets (Super Tiled2Unity)
+└── BackGround&Avatar/           # VN backgrounds và character avatars
 ```
-
-## 🔧 Yêu cầu
-
-- **Unity 6** (6000.0.0 trở lên)
-- **2D Sprite** package
-- **Cinemachine** (cho camera follow)
-
-## 🚀 Cài đặt
-
-1. Clone repository:
-
-   ```bash
-   git clone https://github.com/Anroiy123/Game2D_TopDown.git
-   ```
-
-2. Mở project bằng Unity Hub
-
-3. Mở scene `Assets/Scenes/SampleScene.unity`
-
-4. Nhấn **Play** để chạy game
 
 ## 📝 Hệ thống Scripts
 
 ### Core (Singleton Managers)
 
-| Script            | Chức năng                                            |
-| ----------------- | ---------------------------------------------------- |
-| `GameManager.cs`  | Quản lý game state, scene loading, DontDestroyOnLoad |
-| `StoryManager.cs` | Story flags/variables, ending determination          |
-| `SaveManager.cs`  | Lưu/Load game vào JSON file                          |
-| `SaveData.cs`     | Cấu trúc dữ liệu save game                           |
+| Script | Chức năng |
+|--------|-----------|
+| `GameManager.cs` | Quản lý game state, scene loading, DontDestroyOnLoad |
+| `StoryManager.cs` | Story flags/variables, ending determination |
+| `SaveManager.cs` | Lưu/Load game vào JSON file |
 
 ### Player
 
-| Script              | Chức năng                                  |
-| ------------------- | ------------------------------------------ |
-| `PlayerMovement.cs` | Di chuyển, ngồi ghế, trạng thái nói chuyện |
+| Script | Chức năng |
+|--------|-----------|
+| `PlayerMovement.cs` | Di chuyển, ngồi ghế, trạng thái (talking, sleeping, locked) |
+| `PlayerSelfDialogue.cs` | Player tự thoại, auto-trigger by flags |
 
-### NPC
+### Dialogue & Visual Novel
 
-| Script                  | Chức năng                                     |
-| ----------------------- | --------------------------------------------- |
-| `NPCInteraction.cs`     | Tương tác NPC, hiển thị tên, trigger dialogue |
-| `BullyEncounterZone.cs` | Trigger zones cho bully encounters            |
+| Script | Chức năng |
+|--------|-----------|
+| `DialogueSystem.cs` | UI dialogue, typewriter effect, choices, avatar mode |
+| `DialogueData.cs` | ScriptableObject cho dialogue với conditions |
+| `VisualNovelManager.cs` | VN mode: background + characters + dialogue |
+| `VNSceneData.cs` | ScriptableObject cho VN scenes |
 
-### Dialogue
+### Storytelling (Endings)
 
-| Script                    | Chức năng                                               |
-| ------------------------- | ------------------------------------------------------- |
-| `DialogueSystem.cs`       | UI dialogue, typewriter effect, choices                 |
-| `DialogueData.cs`         | ScriptableObject cho dialogue với conditions            |
-| `DialogueJsonImporter.cs` | **[Editor Tool]** Import JSON thành DialogueData assets |
+| Script | Chức năng |
+|--------|-----------|
+| `StorytellingManager.cs` | Singleton quản lý storytelling sequences |
+| `StorytellingSequenceData.cs` | ScriptableObject cho ending sequences |
+| `StorytellingTrigger.cs` | Trigger storytelling từ scene |
 
-### Scene
+## 🛠️ Editor Tools
 
-| Script               | Chức năng                               |
-| -------------------- | --------------------------------------- |
-| `SceneTransition.cs` | Door/Portal chuyển scene với conditions |
-| `LocalTeleporter.cs` | Teleport trong cùng scene (cầu thang)   |
-| `SpawnManager.cs`    | Quản lý spawn points trong scene        |
-| `SpawnPoint.cs`      | Điểm spawn với facing direction         |
-| `ScreenFader.cs`     | Fade in/out effect khi chuyển scene     |
+| Menu | Chức năng |
+|------|-----------|
+| `Tools → Game Setup → Create Managers (All)` | Tạo tất cả managers |
+| `Tools → Dialogue → Import JSON to DialogueData` | Import JSON thành DialogueData |
+| `Tools → Visual Novel → Create VN Scene Quick Setup` | Tạo nhanh VN scene |
+| `Tools → Visual Novel → Validate VN Scene` | Kiểm tra VN scene |
+| `Tools → Storytelling → Create Sequence` | Tạo storytelling sequence |
+| `Tools → NPC Animator Generator` | Generate NPC animators |
+| `Tools → Interaction → Setup Indicator on Selected NPC` | Setup interaction indicator |
 
-### Interaction
-
-| Script                   | Chức năng                     |
-| ------------------------ | ----------------------------- |
-| `BedInteraction.cs`      | Ngủ, tăng ngày mới            |
-| `DoorController.cs`      | Mở/đóng cửa animation         |
-| `InteractableOutline.cs` | Viền trắng khi player đến gần |
-
-### Utilities
-
-| Script                      | Chức năng                          |
-| --------------------------- | ---------------------------------- |
-| `CameraHelper.cs`           | Snap camera khi teleport           |
-| `SerializableDictionary.cs` | Dictionary serialize cho Inspector |
-
-## Thêm NPC mới
+## 📋 Tạo NPC mới
 
 1. Tạo GameObject với Sprite, Animator, Box Collider 2D
 2. Thêm tag `NPC`
 3. Add component `NPCInteraction`
 4. Cấu hình:
    - `NPC Name`: Tên hiển thị
-   - `Dialogue Lines`: Các câu đối thoại (Legacy mode)
-   - **HOẶC** `Dialogue Data`: Kéo DialogueData asset vào (Advanced mode)
+   - `Dialogue Data`: Kéo DialogueData asset vào
    - `Interaction Range`: Khoảng cách tương tác
 5. Tạo `NameCanvas` (World Space) làm con của NPC
 
-### 🆕 Tạo Dialogue bằng JSON (Khuyên dùng!)
+### Tạo Dialogue bằng JSON (Khuyên dùng!)
 
 1. **Viết JSON:**
    ```json
    {
      "conversationName": "NPC_Dialogue",
+     "startNodeId": 0,
      "nodes": [
-       { "id": 0, "speaker": "NPC Name", "lines": ["Hello!"], "next": -1 }
+       {
+         "id": 0,
+         "speaker": "Mẹ",
+         "lines": ["Đức ơi, dậy đi con!"],
+         "next": 1
+       },
+       {
+         "id": 1,
+         "speaker": "Đức",
+         "isPlayer": true,
+         "lines": ["Dạ..."],
+         "choices": [
+           { "text": "Chào mẹ", "next": 2, "setTrue": ["greeted_mom"] },
+           { "text": "Im lặng", "next": 3 }
+         ]
+       }
      ]
    }
    ```
@@ -174,24 +206,91 @@ Assets/
 4. **Kéo asset** vào `NPCInteraction.dialogueData`
 5. **Tick** `Use Advanced Dialogue`
 
-Xem thêm: `docs/dialogue.md` - Hướng dẫn JSON chi tiết
+## 📊 Story Flow
 
-## Lưu ý quan trọng
+```
+NGÀY 1 (Day1): Scene 1-9
+├── Phòng ngủ → Phòng khách → Lớp học → Đường phố
+├── Gặp tụi bắt nạt lần đầu
+└── Về nhà
+
+TUẦN 1 (Week1): Scene 10-16
+├── Giờ ra chơi → Gặp cô giáo
+├── Gặp lại tụi bắt nạt
+└── Bị ép "kết bạn"
+
+NGÀY 2 (Day2): Scene 17-21
+├── Lớp học → Đường phố
+├── Bị xin tiền lần đầu
+└── Về nhà
+
+TUẦN 3 (Week3): Scene 21-24
+├── Tin tức bạo lực học đường
+├── Thông điệp cảnh báo
+└── Bị chặn đường xin tiền
+
+CRITICAL DAY: Scene 25-28
+├── Mẹ dặn về sớm
+├── Gặp tụi bắt nạt lần cuối
+└── Lựa chọn quyết định → 3 Endings
+```
+
+## ⚠️ Lưu ý quan trọng
 
 - **Hệ tọa độ**: Y dương (+) = xuống/phía trước, Y âm (-) = lên/phía sau
-- **Sit Offset**: Điều chỉnh Y trong Inspector để player ngồi đúng vị trí ghế
 - **Animator Parameters**: Speed, Horizontal, Vertical, IsSitting
+- **Tags**: `Player`, `NPC`, `Chair`
+- **Sorting Layers**: Default, Ground, Low Decoration, Main, High/Overhead
 
-## Đóng góp
+## 📚 Tài liệu chi tiết
 
-Mọi đóng góp đều được hoan nghênh! Vui lòng tạo Issue hoặc Pull Request.
+- `docs/story.md` - Cốt truyện chi tiết
+- `docs/dialogue.md` - Hướng dẫn hệ thống dialogue
+- `docs/flags.md` - Danh sách flags và variables
+- `docs/visualnovel_README.md` - Hướng dẫn VN system
+- `docs/README_STORYTELLING.md` - Hướng dẫn Storytelling system
+- `docs/interaction_system_overview.md` - Hệ thống interaction indicators
 
-## License
+## 🎯 API Reference
 
-MIT License - Xem file [LICENSE](LICENSE) để biết thêm chi tiết.
+### PlayerMovement
+```csharp
+SetTalkingState(bool talking)    // Khóa khi dialogue
+SetSleepingState(bool sleeping)  // Khóa khi ngủ
+SetMovementEnabled(bool enabled) // Khóa từ bên ngoài (cutscene)
+SetNearNPC(bool nearNPC)         // Ưu tiên NPC hơn ghế
+```
 
----
+### VisualNovelManager
+```csharp
+StartVNScene(VNSceneData, Action onComplete)
+EndVNMode()
+IsVNModeActive // Property
+```
 
-**Made with using Unity**
+### StoryManager
+```csharp
+SetFlag(string key, bool value)
+GetFlag(string key) → bool
+SetVariable(string key, int value)
+GetVariable(string key) → int
+DetermineEnding() → EndingType
+```
 
-cốt truyện : https://docs.google.com/document/d/10_BDYeSPHmhrsQGLkuvwZt2ko-SPkldQgseSSnkpYgo/edit?tab=t.0
+### StorytellingManager
+```csharp
+StartSequence(StorytellingSequenceData, Action onComplete)
+StopSequence()
+IsPlaying // Property
+```
+
+### ScreenFader
+```csharp
+FadeOut(Action onComplete)
+FadeIn(Action onComplete)
+FadeWithTextCoroutine(string text, float duration) → IEnumerator
+```
+
+## 📄 License
+
+Project này được phát triển cho mục đích giáo dục về chủ đề bạo lực học đường.

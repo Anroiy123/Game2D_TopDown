@@ -101,11 +101,13 @@ public class ScreenFader : MonoBehaviour
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         scaler.referenceResolution = new Vector2(1920, 1080);
 
-        // Thêm GraphicRaycaster
-        if (GetComponent<GraphicRaycaster>() == null)
+        // Thêm GraphicRaycaster - nhưng disable để không block UI khác
+        var raycaster = GetComponent<GraphicRaycaster>();
+        if (raycaster == null)
         {
-            gameObject.AddComponent<GraphicRaycaster>();
+            raycaster = gameObject.AddComponent<GraphicRaycaster>();
         }
+        raycaster.enabled = false; // Disable để không block pause menu
 
         // Tạo Image con
         GameObject imageObj = new GameObject("FadeImage");

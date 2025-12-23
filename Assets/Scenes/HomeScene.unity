@@ -2518,7 +2518,7 @@ MonoBehaviour:
   flagsToSetFalse: []
   variablesToSet: []
   editorOnly: 1
-  showLogs: 1
+  showLogs: 0
   showUI: 1
 --- !u!4 &435598185
 Transform:

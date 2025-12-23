@@ -32,5 +32,5 @@ MonoBehaviour:
   - day1_scene9_completed
   variableChangesOnEnter: []
   setFlagsOnComplete:
-  - 
+  - day1_scene9_completed
   variableChangesOnComplete: []

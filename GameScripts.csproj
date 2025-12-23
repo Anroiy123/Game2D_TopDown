@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\Scene\ScreenFader.cs" />
     <Compile Include="Assets\Scripts\Scene\SpawnPoint.cs" />
     <Compile Include="Assets\Scripts\VisualNovel\VisualNovelManager.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseMenuManager.cs" />
     <Compile Include="Assets\Scripts\NPC\BullyBeatCutscene.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCSurroundPlayer.cs" />
     <Compile Include="Assets\Scripts\Storytelling\StorytellingQuickTest.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\Scripts\VisualNovel\VNTrigger.cs" />
     <Compile Include="Assets\Scripts\Scene\LocalTeleporter.cs" />
     <Compile Include="Assets\Scripts\Utilities\CameraHelper.cs" />
+    <Compile Include="Assets\Scripts\UI\GameHUDManager.cs" />
     <Compile Include="Assets\Scripts\Editor\VNSceneValidator.cs" />
     <Compile Include="Assets\Scripts\Debug\DebugFlagMenu.cs" />
     <Compile Include="Assets\Scripts\NPC\FightCutscene.cs" />

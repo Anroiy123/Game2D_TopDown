@@ -39,7 +39,8 @@ MonoBehaviour:
     spawnPointId: Desk_spawn
   requiredFlags: []
   forbiddenFlags: []
-  setFlagsOnEnter: []
+  setFlagsOnEnter:
+  - week1_started
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - week1_started

@@ -90,6 +90,12 @@ public class GameManager : MonoBehaviour
         
         // Tự động tạo ScreenModeManager nếu chưa có
         EnsureScreenModeManagerExists();
+        
+        // Tự động tạo PauseMenuManager nếu chưa có
+        EnsurePauseMenuManagerExists();
+        
+        // Tự động tạo GameHUDManager nếu chưa có
+        EnsureGameHUDManagerExists();
     }
 
     /// <summary>
@@ -115,6 +121,32 @@ public class GameManager : MonoBehaviour
             GameObject screenModeObj = new GameObject("ScreenModeManager");
             screenModeObj.AddComponent<ScreenModeManager>();
             Debug.Log("[GameManager] Tự động tạo ScreenModeManager");
+        }
+    }
+
+    /// <summary>
+    /// Đảm bảo PauseMenuManager tồn tại (ESC pause menu)
+    /// </summary>
+    private void EnsurePauseMenuManagerExists()
+    {
+        if (PauseMenuManager.Instance == null)
+        {
+            GameObject pauseMenuObj = new GameObject("PauseMenuManager");
+            pauseMenuObj.AddComponent<PauseMenuManager>();
+            Debug.Log("[GameManager] Tự động tạo PauseMenuManager");
+        }
+    }
+
+    /// <summary>
+    /// Đảm bảo GameHUDManager tồn tại (Location, Scene info, Interaction hint)
+    /// </summary>
+    private void EnsureGameHUDManagerExists()
+    {
+        if (GameHUDManager.Instance == null)
+        {
+            GameObject hudObj = new GameObject("GameHUDManager");
+            hudObj.AddComponent<GameHUDManager>();
+            Debug.Log("[GameManager] Tự động tạo GameHUDManager");
         }
     }
 

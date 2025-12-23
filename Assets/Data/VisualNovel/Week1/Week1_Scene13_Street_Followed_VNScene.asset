@@ -39,6 +39,7 @@ MonoBehaviour:
   - week1_scene13_started
   - bullies_following_week1
   - week1_encounter_complete
+  - week1_scene13_completed
   variableChangesOnEnter: []
   setFlagsOnComplete:
   - week1_scene13_completed
