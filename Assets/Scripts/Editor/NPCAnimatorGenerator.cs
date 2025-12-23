@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.Animations;
@@ -286,3 +287,5 @@ public class NPCAnimatorGenerator : EditorWindow
         return true;
     }
 }
+
+#endif

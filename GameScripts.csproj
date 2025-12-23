@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Dialogue\DialogueSystem.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\Scene\SceneTransition.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCDefaultDirection.cs" />
     <Compile Include="Assets\Scripts\Interaction\SimpleInteractionPrompt.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scripts\NPC\NPCSurroundController.cs" />
     <Compile Include="Assets\Scripts\Editor\SceneSetupHelper.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCPositionByFlag.cs" />
+    <Compile Include="Assets\Scripts\Editor\MainMenuSceneCreator.cs" />
     <Compile Include="Assets\Scripts\Utilities\SerializableDictionary.cs" />
     <Compile Include="Assets\Scripts\Editor\FixScene7AAsset.cs" />
     <Compile Include="Assets\Scripts\Storytelling\StorytellingTrigger.cs" />

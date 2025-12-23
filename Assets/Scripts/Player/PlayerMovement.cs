@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 3f;
-    [SerializeField] private float sprintSpeed = 6f;
+    [SerializeField] private float sprintSpeed = 10f;
     [SerializeField] private Vector3 sitOffset = new Vector3(0, 1.2f, 0); // Dịch xuống để ngồi phía trước ghế (Y dương = xuống)
 
     // Sprint state

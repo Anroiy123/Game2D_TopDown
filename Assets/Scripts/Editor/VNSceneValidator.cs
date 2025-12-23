@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 
@@ -190,3 +191,5 @@ public class VNSceneValidator : EditorWindow
     }
 }
 
+
+#endif

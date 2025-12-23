@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2bee7f61f43bdc4ebe116c69815f158, type: 3}
+  m_Name: Ending3_BadDarkLife_Sequence
+  m_EditorClassIdentifier: GameScripts::StorytellingSequenceData
+  sequenceName: Ending3_BadDarkLife
+  description: 
+  segments:
+  - backgroundImage: {fileID: -613138548843371274, guid: 85dd535737d0b564a939eeb6afb19ade, type: 3}
+    backgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    illustrationImage: {fileID: 0}
+    illustrationPosition: 0
+    illustrationScale: 1
+    textLines:
+    - "\u0110\u1EE9c l\xEAn ph\xF2ng..."
+    - "Ng\u1ED3i tr\xEAn gi\u01B0\u1EDDng , t\u1EF1 tr\xE1ch b\u1EA3n th\xE2n"
+    - "T\u1EA1i sao m\xECnh l\u1EA1i y\u1EBFu \u0111u\u1ED1i \u0111\u1EBFn th\u1EBF..."
+    - "\u0110\u1EE9c kh\xF3c th\u1EA7m, kh\xF4ng d\xE1m \u0111\u1EC3 m\u1EB9 nghe
+      th\u1EA5y."
+    typewriterSpeed: 0.03
+    autoAdvanceDelay: 0
+    fadeToBlackBefore: 1
+    delayBefore: 0
+    backgroundTransition: 1
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmVolume: 0.5
+    sfxVolume: 1
+    customPosition: {x: 0.5, y: 0.5}
+  - backgroundImage: {fileID: 4522904445974891948, guid: 7222ef3b489300c4e82a7dac9662b024, type: 3}
+    backgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    illustrationImage: {fileID: 0}
+    illustrationPosition: 0
+    illustrationScale: 1
+    textLines:
+    - "M\u1ED9t tu\u1EA7n sau..."
+    - "T\u1EE5i b\u1EAFt n\u1EA1t v\u1EABn ti\u1EBFp t\u1EE5c."
+    - "Ch\xFAng bi\u1EBFt \u0110\u1EE9c kh\xF4ng d\xE1m n\xF3i v\u1EDBi ai. Ch\xFAng
+      c\xE0ng ng\xE0y c\xE0ng t\xE1o t\u1EE3n h\u01A1n"
+    typewriterSpeed: 0.03
+    autoAdvanceDelay: 0
+    fadeToBlackBefore: 0
+    delayBefore: 0
+    backgroundTransition: 1
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmVolume: 0.5
+    sfxVolume: 1
+    customPosition: {x: 0.5, y: 0.5}
+  - backgroundImage: {fileID: 1598813732090135729, guid: 40bd1600b972b804f93f0e35256a9729, type: 3}
+    backgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    illustrationImage: {fileID: 0}
+    illustrationPosition: 0
+    illustrationScale: 1
+    textLines:
+    - "M\u1ED9t th\xE1ng sau..."
+    - "\u0110\u1EE9c b\u1EAFt \u0111\u1EA7u ngh\u1EC9 h\u1ECDc."
+    - "M\u1EB9 \u01A1i, con b\u1ECB \u1ED1m..."
+    - "M\u1EB9 lo l\u1EAFng, nh\u01B0ng kh\xF4ng bi\u1EBFt l\xFD do th\u1EADt s\u1EF1."
+    typewriterSpeed: 0.03
+    autoAdvanceDelay: 0
+    fadeToBlackBefore: 0
+    delayBefore: 0
+    backgroundTransition: 1
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmVolume: 0.5
+    sfxVolume: 1
+    customPosition: {x: 0.5, y: 0.5}
+  - backgroundImage: {fileID: -8737051449468613274, guid: 6bc576dcf88fa9e4db237a0029be6f2e, type: 3}
+    backgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    illustrationImage: {fileID: 0}
+    illustrationPosition: 0
+    illustrationScale: 1
+    textLines:
+    - "Ba th\xE1ng sau..."
+    - "\"\u0110\u1EE9c ho\xE0n to\xE0n kh\xF4ng \u0111i h\u1ECDc n\u1EEFa"
+    - "M\u1EB9 \u0111\u01B0a con \u0111i b\xE1c s\u0129, nh\u01B0ng kh\xF4ng t\xECm
+      ra b\u1EC7nh g\xEC."
+    - "Con trai m\u1EB9 b\u1ECB sao th\u1EBF n\xE0y?"
+    - "M\u1EB9 kh\xF3c, nh\u01B0ng \u0110\u1EE9c v\u1EABn kh\xF4ng n\xF3i."
+    typewriterSpeed: 0.03
+    autoAdvanceDelay: 0
+    fadeToBlackBefore: 0
+    delayBefore: 0
+    backgroundTransition: 1
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmVolume: 0.5
+    sfxVolume: 1
+    customPosition: {x: 0.5, y: 0.5}
+  - backgroundImage: {fileID: -613138548843371274, guid: 85dd535737d0b564a939eeb6afb19ade, type: 3}
+    backgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    illustrationImage: {fileID: 0}
+    illustrationPosition: 0
+    illustrationScale: 1
+    textLines:
+    - "S\xE1u th\xE1ng sau..."
+    - "\u0110\u1EE9c b\u1EAFt \u0111\u1EA7u c\xF3 nh\u1EEFng suy ngh\u0129 ti\xEAu
+      c\u1EF1c."
+    - "T\u1EA1i sao m\xECnh ph\u1EA3i s\u1ED1ng ?"
+    - "T\u1EA1i sao kh\xF4ng ai hi\u1EC3u m\xECnh ? "
+    typewriterSpeed: 0.03
+    autoAdvanceDelay: 0
+    fadeToBlackBefore: 0
+    delayBefore: 0
+    backgroundTransition: 1
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmVolume: 0.5
+    sfxVolume: 1
+    customPosition: {x: 0.5, y: 0.5}
+  - backgroundImage: {fileID: 2628835220944126691, guid: 0d5bc70ab7a54c644bb33924ed00a088, type: 3}
+    backgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    illustrationImage: {fileID: 0}
+    illustrationPosition: 0
+    illustrationScale: 1
+    textLines:
+    - "M\u1ED9t n\u0103m sau..."
+    - "\u0110\u1EE9c v\u1EABn ch\u01B0a quay l\u1EA1i tr\u01B0\u1EDDng."
+    - "M\u1EB9 \u0110\u1EE9c \u0111\xE3 gi\xE0 \u0111i r\u1EA5t nhi\u1EC1u, t\xF3c
+      b\u1EA1c tr\u1EAFng."
+    - "M\u1EB9 t\u1EF1 tr\xE1ch m\xECnh: \"T\u1EA1i sao m\u1EB9 kh\xF4ng nh\u1EADn
+      ra s\u1EDBm h\u01A1n...\""
+    typewriterSpeed: 0.03
+    autoAdvanceDelay: 0
+    fadeToBlackBefore: 0
+    delayBefore: 0
+    backgroundTransition: 1
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmVolume: 0.5
+    sfxVolume: 1
+    customPosition: {x: 0.5, y: 0.5}
+  - backgroundImage: {fileID: 535868378625167085, guid: 6e75e2e1c76187a47b6b3171bbf3a446, type: 3}
+    backgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    illustrationImage: {fileID: 0}
+    illustrationPosition: 0
+    illustrationScale: 1
+    textLines:
+    - "Nhi\u1EC1u n\u0103m sau..."
+    - "\u0110\u1EE9c tr\u1EDF th\xE0nh m\u1ED9t ng\u01B0\u1EDDi tr\u01B0\u1EDFng
+      th\xE0nh..."
+    - "Nh\u01B0ng v\u1EABn mang trong m\xECnh nh\u1EEFng v\u1EBFt th\u01B0\u01A1ng
+      t\xE2m l\xFD."
+    - "S\u1EE3 \u0111\xE1m \u0111\xF4ng. S\u1EE3 giao ti\u1EBFp. S\u1EE3 tin t\u01B0\u1EDFng
+      ng\u01B0\u1EDDi kh\xE1c."
+    - "Cu\u1ED9c \u0111\u1EDDi \u0110\u1EE9c nh\u01B0 m\u1ED9t b\xF3ng t\u1ED1i...
+      kh\xF4ng bao gi\u1EDD t\xECm th\u1EA5y \xE1nh s\xE1ng."
+    typewriterSpeed: 0.03
+    autoAdvanceDelay: 0
+    fadeToBlackBefore: 0
+    delayBefore: 0
+    backgroundTransition: 1
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmVolume: 0.5
+    sfxVolume: 1
+    customPosition: {x: 0.5, y: 0.5}
+  - backgroundImage: {fileID: 0}
+    backgroundTint: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.003921569}
+    illustrationImage: {fileID: 0}
+    illustrationPosition: 0
+    illustrationScale: 1
+    textLines:
+    - "ENDING 3: CU\u1ED8C \u0110\u1EDCI \u0110EN T\u1ED0I"
+    - "Im l\u1EB7ng ch\u1ECBu \u0111\u1EF1ng kh\xF4ng ph\u1EA3i l\xE0 s\u1EE9c m\u1EA1nh."
+    - "\u0110\u1EEBng bao gi\u1EDD gi\u1EA5u gi\u1EBFm khi b\u1ECB b\u1EAFt n\u1EA1t.
+      H\xE3y chia s\u1EBB v\u1EDBi ng\u01B0\u1EDDi th\xE2n"
+    - '[THE END]'
+    typewriterSpeed: 0.03
+    autoAdvanceDelay: 0
+    fadeToBlackBefore: 0
+    delayBefore: 0
+    backgroundTransition: 1
+    bgm: {fileID: 0}
+    sfx: {fileID: 0}
+    bgmVolume: 0.5
+    sfxVolume: 1
+    customPosition: {x: 0.5, y: 0.5}
+  endingType: 0
+  setFlagsOnStart: []
+  setFlagsOnComplete: []
+  variableChangesOnStart: []
+  variableChangesOnComplete: []
+  nextSceneName: MainMenu
+  delayBeforeNextScene: 2
+  allowSkip: 1
+  skipKey: 27
+  skipHintText: "Nh\u1EA5n ESC \u0111\u1EC3 b\u1ECF qua"
+  segmentFadeDuration: 0.5

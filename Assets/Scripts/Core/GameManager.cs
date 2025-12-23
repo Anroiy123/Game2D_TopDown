@@ -24,10 +24,21 @@ public class GameManager : MonoBehaviour
                 {
                     GameObject go = new GameObject("GameManager");
                     _instance = go.AddComponent<GameManager>();
+                    Debug.Log("[GameManager] Auto-created GameManager instance");
                 }
             }
             return _instance;
         }
+    }
+
+    /// <summary>
+    /// Reset application quitting flag - gọi khi domain reload để đảm bảo singleton hoạt động
+    /// </summary>
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetStaticFields()
+    {
+        _applicationIsQuitting = false;
+        _instance = null;
     }
     #endregion
 
@@ -101,7 +112,12 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
         if (_instance == this)
         {
-            _applicationIsQuitting = true;
+            // CHỈ clear instance, KHÔNG set _applicationIsQuitting
+            // Vì DontDestroyOnLoad, OnDestroy chỉ gọi khi quit hoặc manual destroy
+            if (!_applicationIsQuitting)
+            {
+                _instance = null;
+            }
         }
     }
 

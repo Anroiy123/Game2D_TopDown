@@ -18,7 +18,12 @@ public class VisualNovelManager : MonoBehaviour
     {
         get
         {
-            if (_applicationIsQuitting) return null;
+            // QUAN TRỌNG: Nếu đang quitting thì return null
+            if (_applicationIsQuitting) 
+            {
+                Debug.LogWarning("[VNManager] Instance requested but application is quitting!");
+                return null;
+            }
 
             if (_instance == null)
             {
@@ -27,9 +32,36 @@ public class VisualNovelManager : MonoBehaviour
                 {
                     GameObject go = new GameObject("VisualNovelManager");
                     _instance = go.AddComponent<VisualNovelManager>();
+                    Debug.Log("[VNManager] Auto-created VisualNovelManager instance");
                 }
             }
             return _instance;
+        }
+    }
+
+    /// <summary>
+    /// Reset application quitting flag - gọi khi domain reload (Enter Play Mode)
+    /// </summary>
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetStaticFields()
+    {
+        Debug.Log("[VNManager] ResetStaticFields called - resetting singleton state");
+        _applicationIsQuitting = false;
+        _instance = null;
+    }
+
+    /// <summary>
+    /// Đảm bảo singleton được reset khi scene load mới
+    /// Gọi sau khi scene load để fix timing issues
+    /// </summary>
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    private static void OnAfterSceneLoad()
+    {
+        // Reset quitting flag khi scene load mới (trong trường hợp bị stuck)
+        if (_applicationIsQuitting)
+        {
+            Debug.LogWarning("[VNManager] _applicationIsQuitting was true after scene load - resetting!");
+            _applicationIsQuitting = false;
         }
     }
     #endregion
@@ -62,9 +94,60 @@ public class VisualNovelManager : MonoBehaviour
     #endregion
     
     #region Public Getters for Endings
-    public StorytellingSequenceData GetEnding1Data() => ending1_GoodStandUp;
-    public StorytellingSequenceData GetEnding2Data() => ending2_TrueTellParents;
-    public StorytellingSequenceData GetEnding3Data() => ending3_BadDarkLife;
+    private const string ENDING1_PATH = "Storytelling/Ending1_GoodStandUp_Sequence";
+    private const string ENDING2_PATH = "Storytelling/Ending2_TrueTellParents_Sequence";
+    private const string ENDING3_PATH = "Storytelling/Ending3_BadDarkLife_Sequence";
+    
+    public StorytellingSequenceData GetEnding1Data()
+    {
+        if (ending1_GoodStandUp == null)
+        {
+            ending1_GoodStandUp = Resources.Load<StorytellingSequenceData>(ENDING1_PATH);
+            if (ending1_GoodStandUp == null)
+            {
+                Debug.LogError($"[VNManager] Ending 1 not found at Resources/{ENDING1_PATH}! Please move asset to Resources folder.");
+            }
+            else
+            {
+                Debug.Log($"[VNManager] Loaded Ending 1 from Resources: {ending1_GoodStandUp.sequenceName}");
+            }
+        }
+        return ending1_GoodStandUp;
+    }
+    
+    public StorytellingSequenceData GetEnding2Data()
+    {
+        if (ending2_TrueTellParents == null)
+        {
+            ending2_TrueTellParents = Resources.Load<StorytellingSequenceData>(ENDING2_PATH);
+            if (ending2_TrueTellParents == null)
+            {
+                Debug.LogError($"[VNManager] Ending 2 not found at Resources/{ENDING2_PATH}! Please move asset to Resources folder.");
+            }
+            else
+            {
+                Debug.Log($"[VNManager] Loaded Ending 2 from Resources: {ending2_TrueTellParents.sequenceName}");
+            }
+        }
+        return ending2_TrueTellParents;
+    }
+    
+    public StorytellingSequenceData GetEnding3Data()
+    {
+        if (ending3_BadDarkLife == null)
+        {
+            ending3_BadDarkLife = Resources.Load<StorytellingSequenceData>(ENDING3_PATH);
+            if (ending3_BadDarkLife == null)
+            {
+                Debug.LogError($"[VNManager] Ending 3 not found at Resources/{ENDING3_PATH}! Please move asset to Resources folder.");
+            }
+            else
+            {
+                Debug.Log($"[VNManager] Loaded Ending 3 from Resources: {ending3_BadDarkLife.sequenceName}");
+            }
+        }
+        return ending3_BadDarkLife;
+    }
     #endregion
 
     #region Settings
@@ -107,13 +190,28 @@ public class VisualNovelManager : MonoBehaviour
     private void OnApplicationQuit()
     {
         _applicationIsQuitting = true;
+        Debug.Log("[VNManager] Application quitting - setting flag");
     }
 
     private void OnDestroy()
     {
         if (_instance == this)
         {
-            _applicationIsQuitting = true;
+            // CHỈ set _applicationIsQuitting khi thực sự quit application
+            // KHÔNG set khi scene unload hoặc object bị destroy bình thường
+            // Vì DontDestroyOnLoad, OnDestroy chỉ được gọi khi quit hoặc manual destroy
+            
+            // Kiểm tra xem có đang trong quá trình quit không
+            // Nếu không phải quit, chỉ clear instance reference
+            if (!_applicationIsQuitting)
+            {
+                Debug.Log("[VNManager] OnDestroy called but not quitting - clearing instance only");
+                _instance = null;
+            }
+            else
+            {
+                Debug.Log("[VNManager] OnDestroy called during quit");
+            }
         }
     }
 

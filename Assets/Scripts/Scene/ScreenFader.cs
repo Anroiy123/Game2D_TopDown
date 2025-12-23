@@ -12,6 +12,16 @@ public class ScreenFader : MonoBehaviour
     public static ScreenFader Instance { get; private set; }
     private static bool _applicationIsQuitting = false;
 
+    /// <summary>
+    /// Reset application quitting flag - gọi khi domain reload để đảm bảo singleton hoạt động
+    /// </summary>
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetStaticFields()
+    {
+        _applicationIsQuitting = false;
+        Instance = null;
+    }
+
     [Header("Fade Settings")]
     [SerializeField] private float fadeDuration = 0.5f;
     [SerializeField] private Color fadeColor = Color.black;
@@ -63,7 +73,11 @@ public class ScreenFader : MonoBehaviour
     {
         if (Instance == this)
         {
-            _applicationIsQuitting = true;
+            // CHỈ clear instance, KHÔNG set _applicationIsQuitting
+            if (!_applicationIsQuitting)
+            {
+                Instance = null;
+            }
         }
     }
 

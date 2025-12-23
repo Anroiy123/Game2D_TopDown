@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 
@@ -29,3 +30,5 @@ public class ForceReimportVNScene3
     }
 }
 
+
+#endif

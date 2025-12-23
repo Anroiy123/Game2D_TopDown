@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 /// <summary>
 /// VNTrigger - Component để trigger cảnh Visual Novel
@@ -31,6 +32,10 @@ public class VNTrigger : MonoBehaviour
     [Header("Visual Feedback")]
     [SerializeField] private GameObject interactionPrompt;
 
+    [Header("Debug")]
+    [Tooltip("Hiển thị debug logs")]
+    [SerializeField] private bool showDebugLogs = true;
+
     public enum TriggerMode
     {
         OnTriggerEnter,
@@ -40,6 +45,9 @@ public class VNTrigger : MonoBehaviour
 
     private bool playerInRange = false;
     private bool hasTriggered = false;
+    private bool isPendingTrigger = false; // Đang chờ retry trigger
+    private const int MAX_RETRY_ATTEMPTS = 5;
+    private const float RETRY_DELAY = 0.1f;
 
     private void Start()
     {
@@ -116,11 +124,13 @@ public class VNTrigger : MonoBehaviour
 
     private void TryTriggerVN()
     {
-        Debug.Log($"[VNTrigger] {gameObject.name}: TryTriggerVN() called. hasTriggered={hasTriggered}, triggerOnce={triggerOnce}");
+        if (showDebugLogs)
+            Debug.Log($"[VNTrigger] {gameObject.name}: TryTriggerVN() called. hasTriggered={hasTriggered}, triggerOnce={triggerOnce}");
 
         if (hasTriggered && triggerOnce)
         {
-            Debug.Log($"[VNTrigger] {gameObject.name}: Already triggered, skipping.");
+            if (showDebugLogs)
+                Debug.Log($"[VNTrigger] {gameObject.name}: Already triggered, skipping.");
             return;
         }
         if (!CheckConditions()) return;
@@ -131,8 +141,34 @@ public class VNTrigger : MonoBehaviour
             return;
         }
 
-        Debug.Log($"[VNTrigger] {gameObject.name}: ✓ Triggering VN scene '{vnScene.name}'");
+        // QUAN TRỌNG: Check null cho VisualNovelManager.Instance
+        // Có thể null trong quá trình scene transition
+        if (VisualNovelManager.Instance == null)
+        {
+            Debug.LogWarning($"[VNTrigger] {gameObject.name}: VisualNovelManager.Instance is null! Starting retry...");
+            
+            // Chỉ retry nếu chưa đang pending
+            if (!isPendingTrigger)
+            {
+                isPendingTrigger = true;
+                StartCoroutine(RetryTriggerVN());
+            }
+            return;
+        }
+
+        // Kiểm tra VN mode đang active không
+        if (VisualNovelManager.Instance.IsVNModeActive)
+        {
+            if (showDebugLogs)
+                Debug.Log($"[VNTrigger] {gameObject.name}: VN mode is active, skipping trigger.");
+            return;
+        }
+
+        if (showDebugLogs)
+            Debug.Log($"[VNTrigger] {gameObject.name}: ✓ Triggering VN scene '{vnScene.name}'");
+        
         hasTriggered = true;
+        isPendingTrigger = false;
 
         if (interactionPrompt != null)
         {
@@ -142,6 +178,48 @@ public class VNTrigger : MonoBehaviour
         VisualNovelManager.Instance.StartVNScene(vnScene, OnVNComplete);
     }
 
+    /// <summary>
+    /// Retry trigger VN scene khi VisualNovelManager chưa sẵn sàng
+    /// </summary>
+    private IEnumerator RetryTriggerVN()
+    {
+        int attempts = 0;
+        
+        while (attempts < MAX_RETRY_ATTEMPTS)
+        {
+            yield return new WaitForSeconds(RETRY_DELAY);
+            attempts++;
+            
+            if (showDebugLogs)
+                Debug.Log($"[VNTrigger] {gameObject.name}: Retry attempt {attempts}/{MAX_RETRY_ATTEMPTS}");
+
+            // Check nếu đã triggered bởi cách khác
+            if (hasTriggered && triggerOnce)
+            {
+                if (showDebugLogs)
+                    Debug.Log($"[VNTrigger] {gameObject.name}: Already triggered during retry, stopping.");
+                isPendingTrigger = false;
+                yield break;
+            }
+
+            // Check VisualNovelManager đã sẵn sàng chưa
+            if (VisualNovelManager.Instance != null)
+            {
+                if (showDebugLogs)
+                    Debug.Log($"[VNTrigger] {gameObject.name}: VisualNovelManager ready! Triggering now.");
+                
+                isPendingTrigger = false;
+                TryTriggerVN();
+                yield break;
+            }
+        }
+
+        // Hết retry attempts
+        Debug.LogError($"[VNTrigger] {gameObject.name}: Failed to trigger VN scene after {MAX_RETRY_ATTEMPTS} attempts! VisualNovelManager not available.");
+        isPendingTrigger = false;
+        hasTriggered = false; // Reset để có thể thử lại sau
+    }
+
     private bool CheckConditions()
     {
         if (StoryManager.Instance == null) return true;
@@ -149,11 +227,11 @@ public class VNTrigger : MonoBehaviour
         bool requiredMet = StoryManager.Instance.CheckRequiredFlags(requiredFlags);
         bool forbiddenMet = StoryManager.Instance.CheckForbiddenFlags(forbiddenFlags);
 
-        if (!requiredMet)
+        if (!requiredMet && showDebugLogs)
         {
             Debug.Log($"[VNTrigger] {gameObject.name}: BLOCKED - Required flags not met. Need: [{string.Join(", ", requiredFlags ?? new string[0])}]");
         }
-        if (!forbiddenMet)
+        if (!forbiddenMet && showDebugLogs)
         {
             Debug.Log($"[VNTrigger] {gameObject.name}: BLOCKED - Has forbidden flags. Forbidden: [{string.Join(", ", forbiddenFlags ?? new string[0])}]");
         }
@@ -163,7 +241,8 @@ public class VNTrigger : MonoBehaviour
 
     private void OnVNComplete()
     {
-        Debug.Log($"[VNTrigger] {gameObject.name}: VN scene completed");
+        if (showDebugLogs)
+            Debug.Log($"[VNTrigger] {gameObject.name}: VN scene completed");
 
         // Reset trigger if needed
         if (!triggerOnce)
@@ -186,6 +265,12 @@ public class VNTrigger : MonoBehaviour
     public void ResetTrigger()
     {
         hasTriggered = false;
+        isPendingTrigger = false;
     }
+
+    /// <summary>
+    /// Kiểm tra trigger đang pending không
+    /// </summary>
+    public bool IsPendingTrigger => isPendingTrigger;
 }
 
